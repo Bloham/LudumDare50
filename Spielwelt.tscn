@@ -1,13 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Bodenplatte.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Prefabs/console.tscn" type="PackedScene" id=3]
-<<<<<<< HEAD
-[ext_resource path="res://Wecker.tscn" type="PackedScene" id=4]
-=======
 [ext_resource path="res://Audio/Music/music_layer_1.ogg" type="AudioStream" id=4]
->>>>>>> origin/main
+[ext_resource path="res://Wecker.tscn" type="PackedScene" id=5]
 
 [node name="Spielwelt" type="Spatial"]
 
@@ -153,15 +150,19 @@ transform = Transform( 0.567171, -9.98328, -0.111232, -7.33953, -0.49245, 6.7741
 [node name="console17" parent="Assets" instance=ExtResource( 3 )]
 transform = Transform( 0.567171, -9.98328, -0.111232, -9.94204, -0.554566, -0.921031, 0.913324, 0.162826, -9.95687, 28.3996, 9.49682, -0.261061 )
 
-<<<<<<< HEAD
-[node name="Wecker" parent="." instance=ExtResource( 4 )]
-transform = Transform( 0.980515, -0.196442, 0, 0.196442, 0.980515, 0, 0, 0, 1, -124.715, 1.70469, 12.0137 )
-
-[node name="Wecker2" parent="." instance=ExtResource( 4 )]
-transform = Transform( -0.0694907, -0.0986277, 0.636078, 0.0147353, 0.639362, 0.100747, -0.993962, 0.0390641, -0.102532, -0.737152, 1.36811, 128.84 )
-=======
 [node name="Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
 autoplay = true
 bus = "Music"
->>>>>>> origin/main
+
+[node name="Wecker" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -132.788, 2.22424, -7.61185 )
+
+[node name="Wecker2" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.6032, 2.22424, -7.61185 )
+
+[node name="Wecker3" parent="." instance=ExtResource( 5 )]
+transform = Transform( -0.278471, 0, 0.960445, 0.344474, 0.933468, 0.0998769, -0.896544, 0.358661, -0.259944, 54.6032, 4.60349, 139.99 )
+
+[node name="Wecker4" parent="." instance=ExtResource( 5 )]
+transform = Transform( 0.11599, -0.109211, -0.987228, 0.776774, 0.629408, 0.0216359, 0.619006, -0.769362, 0.157837, 54.6032, 0.0682278, -145.378 )

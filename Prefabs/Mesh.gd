@@ -17,7 +17,7 @@ func _ready():
 	rng.set_seed(xfactor)
 	var xscalar = rng.randf_range(1, 100)
 	scalar_fadingSpeed *= xscalar
-	print (scalar_fadingSpeed)
+	#print (scalar_fadingSpeed)
 	
 	if(is_visible):
 		Mat.get_active_material(0).set_shader_param("ScalarInput", -1)
