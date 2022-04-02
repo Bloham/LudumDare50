@@ -1,9 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=21 format=2]
 
 [ext_resource path="res://noisetexture.tres" type="Texture" id=1]
-[ext_resource path="res://Textures/Default OBJ_Roughness.png" type="Texture" id=2]
-[ext_resource path="res://Textures/Default OBJ_Normal_OpenGL.png" type="Texture" id=3]
-[ext_resource path="res://Textures/Default OBJ_Base_color.png" type="Texture" id=4]
 
 [sub_resource type="VisualShaderNodeScalarOp" id=2]
 output_port_for_preview = 0
@@ -196,8 +193,20 @@ nodes/fragment/17/node = SubResource( 17 )
 nodes/fragment/17/position = Vector2( 840, -200 )
 nodes/fragment/connections = PoolIntArray( 3, 0, 4, 0, 4, 0, 5, 0, 2, 0, 7, 0, 7, 0, 8, 0, 8, 0, 9, 0, 5, 0, 8, 1, 9, 0, 0, 1, 8, 0, 10, 0, 10, 0, 11, 1, 11, 0, 12, 0, 12, 0, 13, 0, 14, 0, 13, 1, 13, 0, 0, 5, 15, 0, 0, 0, 17, 0, 0, 3, 16, 0, 0, 8 )
 
+[sub_resource type="StreamTexture" id=18]
+flags = 7
+load_path = "res://.import/T_NES_Evil_Albedo.png-4cbf9b937d78a4d54f190a102b38ad83.s3tc.stex"
+
+[sub_resource type="StreamTexture" id=19]
+flags = 7
+load_path = "res://.import/T_NES_Evil_Normal.png-21e2889f7274d0e7529960d947186444.s3tc.stex"
+
+[sub_resource type="StreamTexture" id=20]
+flags = 7
+load_path = "res://.import/T_NES_Evil_Roughness.png-907c2ff31ff96bf9bc33b4c2914e6940.s3tc.stex"
+
 [resource]
 shader = SubResource( 14 )
-shader_param/Textrure_Albedo = ExtResource( 4 )
-shader_param/Texture_Roughness = ExtResource( 2 )
-shader_param/Texture_Normal = ExtResource( 3 )
+shader_param/Textrure_Albedo = SubResource( 18 )
+shader_param/Texture_Roughness = SubResource( 20 )
+shader_param/Texture_Normal = SubResource( 19 )

@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Materials/M_Console_Evil.tres" type="Material" id=1]
+[ext_resource path="res://Assets/SM_Console_Evil.obj" type="ArrayMesh" id=2]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="SM_NES_Evil" type="MeshInstance" parent="."]
+mesh = ExtResource( 2 )
+material/0 = ExtResource( 1 )

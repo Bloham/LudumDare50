@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Default OBJ_Normal_OpenGL.png-debd7d1ef8d9c26f57a89576f15dec73.s3tc.stex"
-path.etc="res://.import/Default OBJ_Normal_OpenGL.png-debd7d1ef8d9c26f57a89576f15dec73.etc.stex"
+path.s3tc="res://.import/T_Console_Evil_Roughness.png-c160f2f8636ba6db88d807d8bc861402.s3tc.stex"
+path.etc="res://.import/T_Console_Evil_Roughness.png-c160f2f8636ba6db88d807d8bc861402.etc.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Textures/Default OBJ_Normal_OpenGL.png"
-dest_files=[ "res://.import/Default OBJ_Normal_OpenGL.png-debd7d1ef8d9c26f57a89576f15dec73.s3tc.stex", "res://.import/Default OBJ_Normal_OpenGL.png-debd7d1ef8d9c26f57a89576f15dec73.etc.stex" ]
+source_file="res://Textures/T_Console_Evil_Roughness.png"
+dest_files=[ "res://.import/T_Console_Evil_Roughness.png-c160f2f8636ba6db88d807d8bc861402.s3tc.stex", "res://.import/T_Console_Evil_Roughness.png-c160f2f8636ba6db88d807d8bc861402.etc.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/mode=2
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
-compress/normal_map=1
+compress/normal_map=0
 flags/repeat=true
 flags/filter=true
 flags/mipmaps=true
