@@ -1,9 +1,10 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://Assets/Plane.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Assets/cube.obj" type="ArrayMesh" id=3]
 [ext_resource path="res://noisetexture.tres" type="Texture" id=4]
+[ext_resource path="res://Assets/SM_Balloon_Happy.obj" type="ArrayMesh" id=5]
 
 [sub_resource type="VisualShaderNodeScalarOp" id=2]
 output_port_for_preview = 0
@@ -177,3 +178,8 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.13862, 1.40579, -23.4191 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.101304, 9.90843, 0.800899 )
+
+[node name="SM_Balloon_Happy" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.81923, -5.10469, 25.5319 )
+mesh = ExtResource( 5 )
+material/0 = null
