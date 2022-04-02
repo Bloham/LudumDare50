@@ -10,3 +10,4 @@
 mesh = ExtResource( 2 )
 material/0 = ExtResource( 1 )
 script = ExtResource( 3 )
+is_visible = false
