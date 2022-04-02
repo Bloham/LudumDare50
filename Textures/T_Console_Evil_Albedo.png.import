@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Default OBJ_Roughness.png-948c71c71247a07bdbcd9ecdeee6435b.s3tc.stex"
-path.etc="res://.import/Default OBJ_Roughness.png-948c71c71247a07bdbcd9ecdeee6435b.etc.stex"
+path.s3tc="res://.import/T_Console_Evil_Albedo.png-d17b8f3335bf13ccc49f99cf63abfe1f.s3tc.stex"
+path.etc="res://.import/T_Console_Evil_Albedo.png-d17b8f3335bf13ccc49f99cf63abfe1f.etc.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Textures/Default OBJ_Roughness.png"
-dest_files=[ "res://.import/Default OBJ_Roughness.png-948c71c71247a07bdbcd9ecdeee6435b.s3tc.stex", "res://.import/Default OBJ_Roughness.png-948c71c71247a07bdbcd9ecdeee6435b.etc.stex" ]
+source_file="res://Textures/T_Console_Evil_Albedo.png"
+dest_files=[ "res://.import/T_Console_Evil_Albedo.png-d17b8f3335bf13ccc49f99cf63abfe1f.s3tc.stex", "res://.import/T_Console_Evil_Albedo.png-d17b8f3335bf13ccc49f99cf63abfe1f.etc.stex" ]
 
 [params]
 
