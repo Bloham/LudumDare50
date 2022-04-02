@@ -1,24 +1,24 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Assets/Sphere.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://Player.gd" type="Script" id=2]
 
-[sub_resource type="CapsuleShape" id=1]
-radius = 1.39616
-height = 0.002
+[sub_resource type="CapsuleMesh" id=1]
+radius = 0.9
+mid_height = 1.8
 
-[node name="KinematicBody" type="KinematicBody"]
+[sub_resource type="CapsuleShape" id=2]
+height = 1.94201
+
+[node name="Player" type="KinematicBody"]
 script = ExtResource( 2 )
 
-[node name="Sphere" type="MeshInstance" parent="."]
-mesh = ExtResource( 1 )
-material/0 = null
+[node name="CSGMesh" type="CSGMesh" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
+mesh = SubResource( 1 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, 0, -2.284, 0, 1, 0, 0, 3.003, 0 )
-shape = SubResource( 1 )
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
+shape = SubResource( 2 )
 
-[node name="LookPivot" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.41729, 0 )
-
-[node name="Camera" type="Camera" parent="LookPivot"]
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
