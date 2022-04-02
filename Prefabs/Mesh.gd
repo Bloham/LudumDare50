@@ -25,10 +25,9 @@ func _process(delta):
 	if (is_fading):
 		scalar_fading += delta * scalar_fadingSpeed
 		Mat.get_active_material(0).set_shader_param("ScalarInput", scalar_fading)
-		print (Mat.get_active_material(0).get_shader_param("ScalarInput"))
 	
 func _input(event):
 	if event is InputEventKey:
 		if event.pressed and event.scancode == KEY_F and !is_fading:
-			print ("F key was pressed- fadeable objects should fade now")
+#			print ("F key was pressed- fadeable objects should fade now")
 			is_fading = true
