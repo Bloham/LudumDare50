@@ -1,9 +1,28 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Assets/Plane.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/cube.obj" type="ArrayMesh" id=3]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 29.3868, 0.303377, 28.6966 )
 
 [node name="WeltBoden" type="Spatial"]
 
 [node name="Plane" type="MeshInstance" parent="."]
 mesh = ExtResource( 1 )
 material/0 = null
+
+[node name="cube" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75031, 1.40718, -27.1183 )
+mesh = ExtResource( 3 )
+skeleton = NodePath("../KinematicBody")
+material/0 = null
+
+[node name="KinematicBody" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.97956, 0 )
+
+[node name="StaticBody" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+shape = SubResource( 1 )
