@@ -14,6 +14,10 @@ config/name="LDJam50"
 run/main_scene="res://Spielwelt.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Global="*res://global.gd"
+
 [display]
 
 window/size/width=1280
@@ -61,6 +65,7 @@ run={
 3d_physics/layer_1="player"
 3d_physics/layer_2="enemies"
 3d_physics/layer_3="world"
+3d_physics/layer_4="items"
 
 [physics]
 
