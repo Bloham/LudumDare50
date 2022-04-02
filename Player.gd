@@ -15,9 +15,13 @@ func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED) #disable mouse zeiger
 
 func _input(event):
+	if event is InputEventKey:
+		if event.pressed and event.scancode == KEY_ESCAPE:
+			get_tree().quit()
 	if event is InputEventMouseMotion:
 		rotate_y(deg2rad(-1 * event.relative.x * MOUSE_SENSITIVITY))
-		look_pivot.rotate_x(deg2rad(event.relative.y * MOUSE_SENSITIVITY))
+		look_pivot.rotate_x(deg2rad(event.relative.y * -MOUSE_SENSITIVITY))
+		look_pivot.rotation.x = clamp(look_pivot.rotation.x, deg2rad(-90), deg2rad(90))
 
 func _physics_process(delta: float) -> void:
 	var move_direction := Vector3.ZERO
@@ -28,6 +32,7 @@ func _physics_process(delta: float) -> void:
 	_velocity.z = move_direction.z * speed
 	_velocity.y -= gravity * delta
 	
+	
 	var just_landed := is_on_floor() and _snap_vector == Vector3.ZERO
 	var is_jumping := is_on_floor() and Input.is_action_just_pressed("ui_accept")
 	if is_jumping:
@@ -36,4 +41,3 @@ func _physics_process(delta: float) -> void:
 	elif just_landed:
 		_snap_vector = Vector3.DOWN
 	_velocity = move_and_slide_with_snap(_velocity, _snap_vector, Vector3.UP, true)
-

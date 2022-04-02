@@ -19,6 +19,6 @@ transform = Transform( 1, 0, 0, 0, 0, -2.284, 0, 1, 0, 0, 3.003, 0 )
 shape = SubResource( 1 )
 
 [node name="LookPivot" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.41729, 0 )
 
 [node name="Camera" type="Camera" parent="LookPivot"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.45467, -0.845506 )
