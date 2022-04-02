@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Bodenplatte.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Prefabs/console.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Audio/Music/music_layer_1.ogg" type="AudioStream" id=4]
 
 [node name="Spielwelt" type="Spatial"]
 
@@ -69,7 +70,7 @@ transform = Transform( 0.425305, 0.417931, 0.802776, -0.700897, 0.713263, 0, -0.
 transform = Transform( -3.11777e-08, -3.06372e-08, 1, -0.700897, 0.713263, 0, -0.713263, -0.700897, -4.37114e-08, 91.5588, 30.1331, 167.933 )
 
 [node name="Bodenplatte16" parent="Boden" instance=ExtResource( 2 )]
-transform = Transform( 9.35331e-08, 9.19115e-08, -1, -0.700897, 0.713263, 0, 0.713263, 0.700897, 1.31134e-07, -2.65601, 30.0013, -177.245 )
+transform = Transform( 9.35331e-08, 9.19115e-08, -1, -0.700897, 0.713263, 0, 0.713263, 0.700897, 1.31134e-07, -2.74557, 30.0013, -177.248 )
 
 [node name="Bodenplatte17" parent="Boden" instance=ExtResource( 2 )]
 transform = Transform( 9.35331e-08, 9.19115e-08, -1, -0.700897, 0.713263, 0, 0.713263, 0.700897, 1.31134e-07, 91.5588, 30.0013, -177.245 )
@@ -147,3 +148,8 @@ transform = Transform( 0.567171, -9.98328, -0.111232, -7.33953, -0.49245, 6.7741
 
 [node name="console17" parent="Assets" instance=ExtResource( 3 )]
 transform = Transform( 0.567171, -9.98328, -0.111232, -9.94204, -0.554566, -0.921031, 0.913324, 0.162826, -9.95687, 28.3996, 9.49682, -0.261061 )
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+autoplay = true
+bus = "Music"

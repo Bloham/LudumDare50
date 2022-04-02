@@ -36,14 +36,18 @@ func movement():
 	#move Forward and Backwards
 	if Input.is_action_pressed("ui_up"):
 		dir += transform.basis.z
+		_play_footsteps()
 	elif Input.is_action_pressed("ui_down"):
 		dir -= transform.basis.z
+		_play_footsteps()
 	
 	#move sideways
 	if Input.is_action_pressed("ui_left"):
 		dir += transform.basis.x
+		_play_footsteps()
 	elif Input.is_action_pressed("ui_right"):
 		dir -= transform.basis.x
+		_play_footsteps()
 	
 	#running
 	if Input.is_action_pressed("run"):
@@ -59,7 +63,17 @@ func movement():
 	velocity = dir.normalized() * speed
 	velocity.y = vel_y
 	
-
+	if velocity == Vector3(0,-1,0):
+		$AudioStreamPlayer.stop()
+	
+	
+func _play_footsteps():
+	if  !$AudioStreamPlayer.playing:
+		$AudioStreamPlayer.stream = load("res://Audio/SFX/sfx_footsteps_walk.wav")
+		$AudioStreamPlayer.pitch_scale = 0.66
+		$AudioStreamPlayer.play()
+		
+	
 func _input(event):
 	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 		rotate_y(lerp(0, -spin, event.relative.x*(mouse_sensitivity * 0.01)))
