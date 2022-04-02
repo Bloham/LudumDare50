@@ -5,5 +5,4 @@ func _ready():
 	
 	
 func _on_DestroyAlarm_body_entered(body):
-	print("gggagaga")
-	
+	pass
