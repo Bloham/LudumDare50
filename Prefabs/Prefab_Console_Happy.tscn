@@ -20,6 +20,7 @@ roughness = 0.22
 [node name="SM_Console_Happy" instance=ExtResource( 1 )]
 
 [node name="SM_NES_Happy_Mesh002" parent="." index="0"]
+software_skinning_transform_normals = false
 material/0 = SubResource( 1 )
 
 [node name="SM_NES_Happy_Mesh006" parent="." index="1"]
