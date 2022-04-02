@@ -4,8 +4,17 @@ export var speed := 7.0
 export var jump_strength := 20.0
 export var gravity := 50.0
 
+const MOUSE_SENSITIVITY = 0.2
+
 var _velocity := Vector3.ZERO
 var _snap_vector := Vector3.DOWN
+
+func _ready():
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED) #disable mouse zeiger
+
+func _input(event):
+	if event is InputEventMouseMotion:
+		rotate_y(deg2rad(-1 * event.relative.x * MOUSE_SENSITIVITY))
 
 func _physics_process(delta: float) -> void:
 	var move_direction := Vector3.ZERO
