@@ -195,15 +195,12 @@ nodes/fragment/connections = PoolIntArray( 3, 0, 4, 0, 4, 0, 5, 0, 2, 0, 7, 0, 7
 
 [sub_resource type="StreamTexture" id=18]
 flags = 7
-load_path = "res://.import/T_NES_Evil_Albedo.png-4cbf9b937d78a4d54f190a102b38ad83.s3tc.stex"
 
 [sub_resource type="StreamTexture" id=19]
 flags = 7
-load_path = "res://.import/T_NES_Evil_Normal.png-21e2889f7274d0e7529960d947186444.s3tc.stex"
 
 [sub_resource type="StreamTexture" id=20]
 flags = 7
-load_path = "res://.import/T_NES_Evil_Roughness.png-907c2ff31ff96bf9bc33b4c2914e6940.s3tc.stex"
 
 [resource]
 shader = SubResource( 14 )
