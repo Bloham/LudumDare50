@@ -5,6 +5,6 @@
 
 [node name="Spatial" type="Spatial"]
 
-[node name="SM_NES_Evil" type="MeshInstance" parent="."]
+[node name="SM_Console_Evil" type="MeshInstance" parent="."]
 mesh = ExtResource( 2 )
 material/0 = ExtResource( 1 )
