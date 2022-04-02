@@ -8,8 +8,6 @@ export var walk_speed = 8
 export var run_speed = 20
 export var jump_strength := 20.0
 
-var _snap_vector := Vector3.DOWN
-
 #var camera rotation
 onready var player_camera = $Camera
 var spin = 0.1
@@ -24,20 +22,12 @@ func _physics_process(delta):
 	
 	if not is_on_floor():
 		velocity.y += -gravity
-	movement(delta)
+		print("falling")
+	
+	movement()
 	velocity = move_and_slide(velocity, Vector3.ZERO)
-	
-	#jumping
-#	var just_landed := is_on_floor() and _snap_vector == Vector3.ZERO
-#	var is_jumping := is_on_floor() and Input.is_action_just_pressed("ui_accept")
-#	if is_jumping:
-#		vel_y = jump_strength
-#		_snap_vector = Vector3.ZERO
-#	elif just_landed:
-#		_snap_vector = Vector3.DOWN
-#	velocity = move_and_slide_with_snap(velocity, _snap_vector, Vector3.UP, true)
-	
-func movement(delta):
+
+func movement():
 	var dir = Vector3.ZERO
 	var vel_y = velocity.y
 	
@@ -60,6 +50,10 @@ func movement(delta):
 		speed = run_speed
 	else:
 		speed = walk_speed
+	
+	#Jumping
+	if is_on_floor() and Input.is_action_just_pressed("ui_accept"):
+		velocity.y += jump_strength
 	
 	velocity = dir.normalized() * speed
 	velocity.y = vel_y
