@@ -1,0 +1,64 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://AlarmClock.gd" type="Script" id=1]
+
+[sub_resource type="SphereShape" id=1]
+radius = 0.5
+
+[sub_resource type="SphereMesh" id=2]
+
+[sub_resource type="Animation" id=3]
+resource_name = "CollisionShapeSize"
+length = 45.0
+step = 1.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("CollisionShape:shape:radius")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 45 ),
+"transitions": PoolRealArray( 1, 2.46229 ),
+"update": 0,
+"values": [ 0.5, 25.0 ]
+}
+
+[sub_resource type="Animation" id=4]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("CollisionShape:shape:radius")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.5 ]
+}
+
+[sub_resource type="SphereShape" id=5]
+radius = 1.5
+
+[node name="AlarmClock" type="RigidBody"]
+script = ExtResource( 1 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+shape = SubResource( 1 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/CollisionShapeSize = SubResource( 3 )
+anims/RESET = SubResource( 4 )
+
+[node name="DestroyAlarm" type="Area" parent="."]
+
+[node name="AlarmCollisionShape" type="CollisionShape" parent="DestroyAlarm"]
+shape = SubResource( 5 )
+
+[connection signal="body_entered" from="DestroyAlarm" to="." method="_on_Area_body_entered"]

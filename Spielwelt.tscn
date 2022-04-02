@@ -166,12 +166,14 @@ skeleton = NodePath("")
 material/0 = SubResource( 15 )
 
 [node name="StaticBody" type="StaticBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.13924, 0 )
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+visible = false
 shape = SubResource( 1 )
 
 [node name="CSGBox" type="CSGBox" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.13862, 1.40579, -23.4191 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.101304, 3.21623, 0.800899 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.101304, 9.90843, 0.800899 )
