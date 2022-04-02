@@ -15,6 +15,7 @@ export var mouse_sensitivity = 5
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	player_camera.current = true
 
 func _physics_process(delta):
 	player_camera.rotation_degrees.y = 180
