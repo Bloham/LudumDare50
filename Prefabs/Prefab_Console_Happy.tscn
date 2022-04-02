@@ -7,11 +7,15 @@ albedo_color = Color( 0.862745, 0.54902, 0.941176, 1 )
 
 [sub_resource type="SpatialMaterial" id=2]
 albedo_color = Color( 0.192157, 0.937255, 0.85098, 1 )
-roughness = 0.53
+metallic = 0.15
+metallic_specular = 0.76
+roughness = 0.38
 
 [sub_resource type="SpatialMaterial" id=3]
 albedo_color = Color( 0.972549, 0.643137, 0.294118, 1 )
-roughness = 0.54
+metallic = 0.06
+metallic_specular = 0.88
+roughness = 0.22
 
 [node name="SM_Console_Happy" instance=ExtResource( 1 )]
 

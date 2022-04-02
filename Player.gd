@@ -2,7 +2,7 @@ extends KinematicBody
 
 var velocity = Vector3.ZERO
 var speed = 10
-var gravity = 1
+var gravity = 2
 
 export var walk_speed = 8
 export var run_speed = 20
@@ -22,7 +22,7 @@ func _physics_process(delta):
 	
 	if not is_on_floor():
 		velocity.y += -gravity
-		print("falling")
+		#print("falling")
 	
 	movement()
 	velocity = move_and_slide(velocity, Vector3.ZERO)
@@ -54,6 +54,7 @@ func movement():
 	#Jumping
 	if is_on_floor() and Input.is_action_just_pressed("ui_accept"):
 		velocity.y += jump_strength
+		print("Jump")
 	
 	velocity = dir.normalized() * speed
 	velocity.y = vel_y
