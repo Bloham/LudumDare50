@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://AlarmClock.gd" type="Script" id=1]
 
@@ -9,6 +9,9 @@ radius = 0.5
 
 [sub_resource type="SphereMesh" id=7]
 material = SubResource( 6 )
+
+[sub_resource type="SpatialMaterial" id=8]
+albedo_color = Color( 1, 0.0666667, 0.0666667, 1 )
 
 [sub_resource type="Animation" id=3]
 resource_name = "CollisionShapeSize"
@@ -53,7 +56,7 @@ shape = SubResource( 1 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
 mesh = SubResource( 7 )
-material/0 = null
+material/0 = SubResource( 8 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/CollisionShapeSize = SubResource( 3 )
