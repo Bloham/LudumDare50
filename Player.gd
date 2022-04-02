@@ -2,7 +2,7 @@ extends KinematicBody
 
 var velocity = Vector3.ZERO
 var speed = 10
-var gravity = 2
+var gravity = 1
 
 export var walk_speed = 8
 export var run_speed = 20
@@ -65,15 +65,14 @@ func movement():
 	
 	if velocity == Vector3(0,-1,0):
 		$AudioStreamPlayer.stop()
-	
-	
+
 func _play_footsteps():
 	if  !$AudioStreamPlayer.playing:
 		$AudioStreamPlayer.stream = load("res://Audio/SFX/sfx_footsteps_walk.wav")
 		$AudioStreamPlayer.pitch_scale = 0.66
 		$AudioStreamPlayer.play()
 		
-	
+
 func _input(event):
 	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 		rotate_y(lerp(0, -spin, event.relative.x*(mouse_sensitivity * 0.01)))
