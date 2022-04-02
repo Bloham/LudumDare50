@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Assets/SM_Base_Plane.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://Prefabs/Prefab_Console_Evil.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Prefabs/Prefab_Console_Happy.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Prefabs/Prefab_Balloon_Happy.tscn" type="PackedScene" id=4]
 
 [sub_resource type="ProceduralSky" id=2]
 radiance_size = 1
@@ -34,7 +35,6 @@ glow_hdr_threshold = 0.92
 glow_hdr_luminance_cap = 11.63
 glow_hdr_scale = 1.81
 glow_high_quality = true
-adjustment_saturation = 1.35
 
 [node name="Spatial" type="Spatial"]
 
@@ -61,7 +61,15 @@ transform = Transform( 0.912177, 0, -0.409796, 0, 1, 0, 0.409796, 0, 0.912177, -
 transform = Transform( 0.912177, 0, -0.409796, 0, 1, 0, 0.409796, 0, 0.912177, -7.67776, 2.14377, -14.6521 )
 
 [node name="Spatial" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.418029, 0.652882, -13.3044 )
+transform = Transform( 0.939842, 0, 0.34161, 0, 1, 0, -0.34161, 0, 0.939842, -0.418029, 0.652882, -13.3044 )
+
+[node name="Spatial3" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.418029, 1.55159, -13.3044 )
+
+[node name="Spatial7" parent="." instance=ExtResource( 3 )]
+transform = Transform( 0.943118, 0, -0.332457, 0, 1, 0, 0.332457, 0, 0.943118, -0.418029, 2.44013, -13.4717 )
 
 [node name="Spatial2" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.30147, 0.645832, -13.4013 )
+
+[node name="Spatial8" parent="." instance=ExtResource( 4 )]
