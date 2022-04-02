@@ -1,11 +1,14 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://AlarmClock.gd" type="Script" id=1]
 
 [sub_resource type="SphereShape" id=1]
 radius = 0.5
 
-[sub_resource type="SphereMesh" id=2]
+[sub_resource type="SpatialMaterial" id=6]
+
+[sub_resource type="SphereMesh" id=7]
+material = SubResource( 6 )
 
 [sub_resource type="Animation" id=3]
 resource_name = "CollisionShapeSize"
@@ -49,7 +52,7 @@ script = ExtResource( 1 )
 shape = SubResource( 1 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
-mesh = SubResource( 2 )
+mesh = SubResource( 7 )
 material/0 = null
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -57,8 +60,12 @@ anims/CollisionShapeSize = SubResource( 3 )
 anims/RESET = SubResource( 4 )
 
 [node name="DestroyAlarm" type="Area" parent="."]
+transform = Transform( 1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
+collision_mask = 2
 
 [node name="AlarmCollisionShape" type="CollisionShape" parent="DestroyAlarm"]
+transform = Transform( 4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0 )
 shape = SubResource( 5 )
 
-[connection signal="body_entered" from="DestroyAlarm" to="." method="_on_Area_body_entered"]
+[connection signal="body_entered" from="DestroyAlarm" to="." method="_on_DestroyAlarm_body_entered"]
+[connection signal="gameplay_entered" from="DestroyAlarm/AlarmCollisionShape" to="." method="_on_AlarmCollisionShape_gameplay_entered"]
