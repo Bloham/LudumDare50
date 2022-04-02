@@ -1,10 +1,7 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Assets/SM_Base_Plane.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Prefabs/console.tscn" type="PackedScene" id=4]
-[ext_resource path="res://AlarmClock.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Wecker.tscn" type="PackedScene" id=6]
 
 [sub_resource type="SpatialMaterial" id=2]
 albedo_color = Color( 0.180392, 0.411765, 0.196078, 1 )
@@ -28,14 +25,6 @@ collision_mask = 0
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3, 0 )
 shape = SubResource( 1 )
 
-[node name="console" parent="SM_Base_Plane/StaticBody" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.559115, 0.390806, 11.48 )
-
 [node name="Player" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0 )
-
-[node name="AlarmClock" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.9731, 4.37027, 25.9366 )
-
-[node name="Wecker" parent="." instance=ExtResource( 6 )]
-transform = Transform( -0.0469321, 0, 0.998898, 0, 1, 0, -0.998898, 0, -0.0469321, 2.0463, 2.94717, 33.2129 )
+transform = Transform( 0.992108, 0, -0.125385, 0, 1, 0, 0.125385, 0, 0.992108, 0, 2, 0 )
+collision_mask = 14
