@@ -1,9 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Assets/SM_Base_Plane.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Materials/M_Fading_Base.tres" type="Material" id=3]
 [ext_resource path="res://Prefabs/console.tscn" type="PackedScene" id=4]
+[ext_resource path="res://AlarmClock.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Wecker.tscn" type="PackedScene" id=6]
 
 [sub_resource type="BoxShape" id=1]
 extents = Vector3( 49.7937, 1, 49.8456 )
@@ -17,6 +19,8 @@ material/0 = ExtResource( 3 )
 
 [node name="StaticBody" type="StaticBody" parent="SM_Base_Plane"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0 )
+collision_layer = 4
+collision_mask = 0
 
 [node name="CollisionShape" type="CollisionShape" parent="SM_Base_Plane/StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3, 0 )
@@ -27,3 +31,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.559115, 0.390806, 11.48 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0 )
+
+[node name="AlarmClock" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.9731, 4.37027, 25.9366 )
+
+[node name="Wecker" parent="." instance=ExtResource( 6 )]
+transform = Transform( -0.0469321, 0, 0.998898, 0, 1, 0, -0.998898, 0, -0.0469321, 2.0463, 2.94717, 33.2129 )

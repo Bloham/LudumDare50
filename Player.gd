@@ -58,6 +58,7 @@ func movement():
 	
 	velocity = dir.normalized() * speed
 	velocity.y = vel_y
+	
 
 func _input(event):
 	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
