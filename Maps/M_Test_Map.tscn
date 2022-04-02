@@ -1,8 +1,25 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Assets/SM_Base_Plane.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Textures/Default OBJ_Roughness.png" type="Texture" id=2]
+[ext_resource path="res://Textures/Default OBJ_Base_color.png" type="Texture" id=3]
+[ext_resource path="res://Textures/Default OBJ_Normal_OpenGL.png" type="Texture" id=4]
+[ext_resource path="res://Assets/SM_Nintendo.obj" type="ArrayMesh" id=5]
+[ext_resource path="res://Assets/SM_Nintendo_Unwrapped.obj" type="ArrayMesh" id=6]
+
+[sub_resource type="ProceduralSky" id=2]
+radiance_size = 1
+sky_top_color = Color( 0.054902, 0.905882, 0.866667, 1 )
+sky_horizon_color = Color( 0.756863, 0.160784, 1, 1 )
+sky_curve = 0.0614718
+sky_energy = 0.2
+ground_bottom_color = Color( 0, 0, 0, 1 )
+ground_horizon_color = Color( 0.333333, 0.0745098, 0.431373, 1 )
 
 [sub_resource type="Environment" id=1]
+background_mode = 2
+background_sky = SubResource( 2 )
+background_sky_custom_fov = 8.9
 ambient_light_color = Color( 0.537255, 0.729412, 0.792157, 1 )
 ambient_light_energy = 0.43
 fog_enabled = true
@@ -12,16 +29,33 @@ fog_depth_end = 73.0
 fog_depth_curve = 2.82843
 fog_height_max = -428.6
 dof_blur_far_enabled = true
-dof_blur_near_enabled = true
+dof_blur_far_distance = 42.49
 glow_enabled = true
-glow_intensity = 1.93
 glow_strength = 1.39
-glow_bloom = 0.03
+glow_bloom = 0.06
 glow_hdr_threshold = 0.92
 glow_hdr_luminance_cap = 11.63
 glow_hdr_scale = 1.81
 glow_high_quality = true
 adjustment_saturation = 1.35
+
+[sub_resource type="SpatialMaterial" id=3]
+
+[sub_resource type="SpatialMaterial" id=4]
+next_pass = SubResource( 3 )
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource( 3 )
+normal_enabled = true
+normal_scale = 1.0
+normal_texture = ExtResource( 4 )
+
+[sub_resource type="SpatialMaterial" id=5]
+albedo_texture = ExtResource( 3 )
+roughness = 0.55
+roughness_texture = ExtResource( 2 )
+normal_enabled = true
+normal_scale = 1.0
+normal_texture = ExtResource( 4 )
 
 [node name="Spatial" type="Spatial"]
 
@@ -32,8 +66,88 @@ material/0 = null
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.994555, 0.104216, 0, -0.104216, 0.994555, 0.264149, 5.33562, 0 )
 light_color = Color( 0.984314, 0.0352941, 0.968627, 1 )
-light_energy = 2.252
 shadow_enabled = true
+directional_shadow_split_1 = 0.136
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource( 1 )
+
+[node name="SM_Nintendo" type="MeshInstance" parent="."]
+transform = Transform( 0.191666, 0, -0.98146, 0, 1, 0, 0.98146, 0, 0.191666, 19.9733, 0.166691, 14.6705 )
+mesh = ExtResource( 5 )
+material/0 = null
+
+[node name="SM_Nintendo2" type="MeshInstance" parent="."]
+transform = Transform( -0.980775, 0, 0.195142, 0, 1, 0, -0.195142, 0, -0.980775, 18.3066, 1.20785, 14.6705 )
+mesh = ExtResource( 5 )
+material/0 = null
+
+[node name="SM_Nintendo3" type="MeshInstance" parent="."]
+transform = Transform( -0.141731, 0, 0.989905, 0, 1, 0, -0.989905, 0, -0.141731, 19.9165, 2.15482, 14.6857 )
+mesh = ExtResource( 5 )
+material/0 = SubResource( 4 )
+
+[node name="SM_Nintendo_Unwrapped" type="MeshInstance" parent="."]
+transform = Transform( 0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -6.34867, -0.0740129, -8.52094 )
+mesh = ExtResource( 6 )
+material/0 = SubResource( 5 )
+
+[node name="SM_Nintendo_Unwrapped2" type="MeshInstance" parent="."]
+transform = Transform( 0.00881987, 0, -0.00471274, 0, 0.01, 0, 0.00471274, 0, 0.00881987, -6.45217, 0.822254, -8.49542 )
+mesh = ExtResource( 6 )
+material/0 = SubResource( 5 )
+
+[node name="SM_Nintendo_Unwrapped9" type="MeshInstance" parent="."]
+transform = Transform( -0.00956423, -0.000235516, 0.00291032, -0.000177546, 0.00999588, 0.000225437, -0.00291443, 0.000163942, -0.00956448, -6.45217, 1.80611, -8.49542 )
+mesh = ExtResource( 6 )
+material/0 = SubResource( 5 )
+
+[node name="SM_Nintendo_Unwrapped3" type="MeshInstance" parent="."]
+transform = Transform( 0.0498938, 0.00296741, 0.00134315, 0.00147023, -0.00211876, -0.0499334, -0.00290655, 0.0498669, -0.00220152, -22.7091, 4.32253, -46.4191 )
+mesh = ExtResource( 6 )
+material/0 = SubResource( 5 )
+
+[node name="SM_Nintendo_Unwrapped4" type="MeshInstance" parent="."]
+transform = Transform( -0.000232481, 0.0021917, 0.0499514, 0.0499149, 0.00291396, 0.000104456, -0.00290655, 0.0498669, -0.00220152, -1.7575, 4.99357, -46.2986 )
+mesh = ExtResource( 6 )
+material/0 = SubResource( 5 )
+
+[node name="SM_Nintendo_Unwrapped10" type="MeshInstance" parent="."]
+transform = Transform( -0.000232481, 0.0021917, 0.0499514, 0.0499149, 0.00291396, 0.000104456, -0.00290655, 0.0498669, -0.00220152, 7.95404, 4.99357, -46.2986 )
+mesh = ExtResource( 6 )
+material/0 = SubResource( 5 )
+
+[node name="SM_Nintendo_Unwrapped11" type="MeshInstance" parent="."]
+transform = Transform( -0.000232481, 0.0021917, 0.0499514, 0.0499149, 0.00291396, 0.000104456, -0.00290655, 0.0498669, -0.00220152, -31.528, 4.99357, -45.0723 )
+mesh = ExtResource( 6 )
+material/0 = SubResource( 5 )
+
+[node name="SM_Nintendo_Unwrapped12" type="MeshInstance" parent="."]
+transform = Transform( -0.00265042, 0.0445956, 0.0224545, 0.0499149, 0.00291396, 0.000104456, -0.00121547, 0.0224219, -0.0446742, -31.528, 4.99357, -25.3991 )
+mesh = ExtResource( 6 )
+material/0 = SubResource( 5 )
+
+[node name="SM_Nintendo_Unwrapped13" type="MeshInstance" parent="."]
+transform = Transform( 0.00276668, -0.0467658, -0.0174731, 0.0499149, 0.00291396, 0.000104456, 0.000920617, -0.0174491, 0.0468474, -28.2768, 16.9376, -24.0078 )
+mesh = ExtResource( 6 )
+material/0 = SubResource( 5 )
+
+[node name="SM_Nintendo_Unwrapped5" type="MeshInstance" parent="."]
+transform = Transform( -0.0038656, 0.00828235, 0.0491575, 0.0497686, 0.00346366, 0.00333008, -0.00285368, 0.0491875, -0.0085118, -22.8922, 15.4469, -46.9325 )
+mesh = ExtResource( 6 )
+material/0 = SubResource( 5 )
+
+[node name="SM_Nintendo_Unwrapped7" type="MeshInstance" parent="."]
+transform = Transform( 0.0498007, 0.00339053, 0.00289669, 0.0034268, -0.00831256, -0.0491849, -0.00285368, 0.0491875, -0.0085118, -19.1036, 27.2132, -46.9325 )
+mesh = ExtResource( 6 )
+material/0 = SubResource( 5 )
+
+[node name="SM_Nintendo_Unwrapped8" type="MeshInstance" parent="."]
+transform = Transform( 0.0498007, 0.00339053, 0.00289669, 0.0034268, -0.00831256, -0.0491849, -0.00285368, 0.0491875, -0.0085118, -7.68672, 27.2132, -46.9325 )
+mesh = ExtResource( 6 )
+material/0 = SubResource( 5 )
+
+[node name="SM_Nintendo_Unwrapped6" type="MeshInstance" parent="."]
+transform = Transform( 0.000355528, 0.0108647, 0.048804, -0.0499315, -0.00245247, 0.000909711, 0.00259149, -0.0487436, 0.0108324, -2.06403, 16.7725, -43.2945 )
+mesh = ExtResource( 6 )
+material/0 = SubResource( 5 )
