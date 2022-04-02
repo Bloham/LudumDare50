@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Bodenplatte.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Prefabs/console.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Wecker.tscn" type="PackedScene" id=4]
 
 [node name="Spielwelt" type="Spatial"]
 
@@ -147,3 +148,9 @@ transform = Transform( 0.567171, -9.98328, -0.111232, -7.33953, -0.49245, 6.7741
 
 [node name="console17" parent="Assets" instance=ExtResource( 3 )]
 transform = Transform( 0.567171, -9.98328, -0.111232, -9.94204, -0.554566, -0.921031, 0.913324, 0.162826, -9.95687, 28.3996, 9.49682, -0.261061 )
+
+[node name="Wecker" parent="." instance=ExtResource( 4 )]
+transform = Transform( 0.980515, -0.196442, 0, 0.196442, 0.980515, 0, 0, 0, 1, -124.715, 1.70469, 12.0137 )
+
+[node name="Wecker2" parent="." instance=ExtResource( 4 )]
+transform = Transform( -0.0694907, -0.0986277, 0.636078, 0.0147353, 0.639362, 0.100747, -0.993962, 0.0390641, -0.102532, -0.737152, 1.36811, 128.84 )
