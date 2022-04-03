@@ -5,16 +5,21 @@ extends Spatial
 # var a = 2
 # var b = "text"
 var spielwelt
+var manager_items
+var is_triggered = false
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	spielwelt = get_tree().get_root().get_node("Spielwelt")
+	manager_items = get_tree().get_root().get_node("Spielwelt").get_node("Assets").get_node("Items")
 
 func albtraum():
 #	print(self.name, " ist nun im Alptraumland")
-	get_node("MeshHappy").is_fading = true
-	get_node("MeshEvil").is_fading = true
+	if(!is_triggered):
+		is_triggered = true
+		get_node("MeshHappy").is_fading = true
+		get_node("MeshEvil").is_fading = true
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
