@@ -12,7 +12,9 @@ func _ready():
 
 func albtraum():
 	print(self.name, " ist nun im Alptraumland")
-	pass
+	get_node("MeshHappy").is_fading = true
+	get_node("MeshEvil").is_fading = true
+#	self.get_node("Mesh_Evil").get("is_fading") = true
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
