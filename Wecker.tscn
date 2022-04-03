@@ -20,6 +20,7 @@ collision_layer = 12
 shape = SubResource( 1 )
 
 [node name="WeckerAsset" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 3.03777, 0 )
 
 [node name="WeckerArea" type="Area" parent="WeckerAsset"]
 collision_layer = 6

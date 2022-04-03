@@ -1999,7 +1999,7 @@ bus = "Music"
 transform = Transform( 0.220156, -0.517199, 0.827065, -0.0303318, 0.843828, 0.535755, -0.974993, -0.143036, 0.170086, 445.432, 85.6225, 68.5983 )
 far = 1000.0
 target = NodePath("../CameraTarget")
-speed = 0.05
+speed = 0.01
 enabled = true
 
 [node name="CameraTarget" type="Spatial" parent="Other/StartGame"]
