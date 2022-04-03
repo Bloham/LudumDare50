@@ -1,6 +1,6 @@
 extends Node
 
-var WeckersArray = []
+#var WeckersArray = []
 var WeckersAnzahl = 0
 var rng = RandomNumberGenerator.new()
 var SpawnLocations = []
@@ -11,7 +11,7 @@ export var difficultyLevel = 1
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	rng.randomize()
-	WeckersArray = get_children()
+	#WeckersArray = get_children()
 	SpawnLocations = get_node("SpawnLocations")
 	t = get_node("SpawnTimer")
 	WeckersAnzahl = SpawnLocations.get_child_count()
@@ -28,4 +28,5 @@ func onGameStart():
 
 func SpawnWecker():
 	var weckerNummerX = round(rng.randf_range(0,WeckersAnzahl))
+	
 	print("Random Wecker Nummer ",weckerNummerX, " is spawning")
