@@ -15,7 +15,7 @@ func _ready():
 func erweitereRadius():
 	currentRadius = currentRadius + radiusIncrease
 	collider.radius = currentRadius
-	print(self.name," Radius wächst auf: ",collider.radius)
+	#print(self.name," Radius wächst auf: ",collider.radius)
 	pass
 	
 
