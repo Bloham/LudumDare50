@@ -12,7 +12,7 @@ normal_enabled = true
 normal_scale = 1.0
 normal_texture = ExtResource( 3 )
 
-[node name="Spatial" type="Spatial"]
+[node name="Prefab_Console_Happy" type="Spatial"]
 
 [node name="SM_Console_Happy" type="MeshInstance" parent="."]
 mesh = ExtResource( 4 )
