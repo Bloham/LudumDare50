@@ -8,7 +8,8 @@ extends Spatial
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	$AudioStreamPlayer3D.stream = load ("res://Audio/SFX/Wecker_loop.ogg")
+	$AudioStreamPlayer3D.play()
 
 func _play_alarm_sfx():
 	pass
@@ -20,5 +21,8 @@ func _play_alarm_sfx():
 
 func _on_Area_body_entered(body):
 	print(body)
+	$AudioStreamPlayer3D.stream = load ("res://Audio/SFX/WeckerDestroy.wav")
+	$AudioStreamPlayer3D.play()
+	yield(get_tree().create_timer(2.0), "timeout")
 	queue_free()
 	pass # Replace with function body.
