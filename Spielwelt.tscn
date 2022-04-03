@@ -6,10 +6,10 @@
 [ext_resource path="res://Audio/Music/music_layer_1-01.ogg" type="AudioStream" id=4]
 [ext_resource path="res://Wecker.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Spielwelt.gd" type="Script" id=6]
-[ext_resource path="res://WeckerManager.gd" type="Script" id=7]
 [ext_resource path="res://Prefabs/Prefab_SkyClock.tscn" type="PackedScene" id=8]
 [ext_resource path="res://ItemManager.gd" type="Script" id=9]
 [ext_resource path="res://Prefabs/Items/Item_Tree.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Spawner.gd" type="Script" id=11]
 [ext_resource path="res://Prefabs/Items/Item_TallRock.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Prefabs/Items/Item_Hedge.tscn" type="PackedScene" id=13]
 
@@ -1722,7 +1722,6 @@ transform = Transform( 0.719866, -0.245558, -1.84973, 0.590922, 1.91056, -0.0236
 transform = Transform( 2.05688, 0, 0, 0, 2.05688, 0, 0, 0, 2.05688, 1.29155, 0.111633, 0.171108 )
 
 [node name="AllWecker" type="Node" parent="."]
-script = ExtResource( 7 )
 
 [node name="Wecker" parent="AllWecker" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -132.788, 2.22424, -7.61185 )
@@ -1759,3 +1758,19 @@ enabled = true
 
 [node name="CameraTarget" type="Spatial" parent="Other/StartGame"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 32.2194, -82.2219 )
+
+[node name="Spawner" type="Node" parent="Other"]
+script = ExtResource( 11 )
+
+[node name="SpawnTimer" type="Timer" parent="Other/Spawner"]
+
+[node name="SpawnLocations" type="Node" parent="Other/Spawner"]
+
+[node name="SpawnLocation1" type="Position3D" parent="Other/Spawner/SpawnLocations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14.4798, -6.91469, 124.526 )
+
+[node name="SpawnLocation2" type="Position3D" parent="Other/Spawner/SpawnLocations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -52.3363, -7.20244, 19.4343 )
+
+[node name="SpawnLocation3" type="Position3D" parent="Other/Spawner/SpawnLocations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 132.488, -1.10728, 13.7908 )

@@ -7,34 +7,31 @@ extends Node
 var WeckersArray = []
 var WeckersAnzahl = 0
 var rng = RandomNumberGenerator.new()
+var SpawnerLocations = []
+var t = Timer
 
-export var difficultyLevel = 2
+export var difficultyLevel = 1
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
-#	rng.randomize()
-#	WeckersArray = get_children()
-#	WeckersAnzahl = get_child_count()
-#	for wk in WeckersArray:
-#		wk.translation.y += 1000
-#		print(wk.translation.y)
+	rng.randomize()
+	WeckersArray = get_children()
+	SpawnerLocations = get_tree().get_root().get_node("Spielwelt").get_node("Other").get_node("Spawner")
+	t = get_tree().get_root().get_node("Spielwelt").get_node("Other").get_node("SpawnTimer")
+	WeckersAnzahl = SpawnerLocations.get_child_count()
+	
+	#Timer that spawns the Wecker
+	t.set_wait_time(difficultyLevel*5)
+	t.set_one_shot(false)
 
-	 # Replace with function body.
 
 func onGameStart():
-	pass
-#	var t = Timer.new()
-#	t.set_wait_time(gameOverDelay)
-#	t.set_one_shot(true)
-#	self.add_child(t)
-#	t.start()
-#	print("game over timer startet")
-#	yield(t, "timeout")
-
+	t.start()
+	yield(t, "timeout")
+	SpawnWecker()
 
 func SpawnWecker():
-	var weckerNummerX = rng.randf_range(0,WeckersAnzahl)
+	var weckerNummerX = round(rng.randf_range(0,WeckersAnzahl))
 	print("Random Wecker Nummer ",weckerNummerX, " is spawning")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
