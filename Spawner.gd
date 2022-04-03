@@ -4,6 +4,7 @@ extends Node
 var WeckersAnzahl = 0
 var rng = RandomNumberGenerator.new()
 var SpawnLocations = []
+var SpawnLocationIndices = []
 var t = Timer
 
 export var difficultyLevel = 1
@@ -16,7 +17,9 @@ func _ready():
 	t = get_node("SpawnTimer")
 	WeckersAnzahl = get_node("SpawnLocations").get_child_count()
 	print(SpawnLocations)
-	
+	SpawnLocationIndices = []
+	for i in SpawnLocations:
+		SpawnLocationIndices.append(false)
 	#Timer that spawns the Wecker
 	t.set_wait_time(difficultyLevel*10)
 	t.set_one_shot(false)
@@ -29,4 +32,6 @@ func onGameStart():
 
 func SpawnWecker():
 	var weckerNummerX = round(rng.randf_range(0,WeckersAnzahl))
-	print("Random Wecker Nummer ",weckerNummerX, " is spawning")
+	if(SpawnLocationIndices[weckerNummerX] == false):
+		SpawnLocationIndices[weckerNummerX] = true
+		print("Random Wecker Nummer ",weckerNummerX, " is spawning")
