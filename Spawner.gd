@@ -29,7 +29,7 @@ func onGameStart():
 	t.start()
 
 func SpawnWecker():
-	print("SpawnWecker tries to spawn a Random Wecker")
+	print("SpawnWecker tries to spawn a Random Wecker at 1 out of ",WeckersAnzahl," locations")
 	var weckerNummerX = round(rng.randf_range(0,WeckersAnzahl - 1))
 	if(SpawnLocationIndices[weckerNummerX] == false):
 		SpawnLocationIndices[weckerNummerX] = true
@@ -39,9 +39,9 @@ func SpawnWecker():
 		Wecker.set_spawner(self)
 		var spielwelt = get_tree().get_root().get_node("Spielwelt")
 		spielwelt.get_node("AllWecker").add_child(Wecker)
-		print("Random Wecker ",Wecker.name," is spawning at spawn location nr",weckerNummerX)
+		print("Random Wecker ",Wecker.name," is spawning at spawn location nr ",weckerNummerX)
 	else:
-		print("Random Wecker cant be spawned since its spawn location is occupied")
+		print("Random Wecker cant be spawned since its spawn location ",weckerNummerX," is occupied")
 		
 func clear_spawnIndex(cleared_index):
 		SpawnLocationIndices[cleared_index] = false
