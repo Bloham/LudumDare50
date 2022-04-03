@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://MainMenu.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Prefabs/Terrain.tscn" type="PackedScene" id=2]
@@ -10,7 +10,6 @@
 [ext_resource path="res://Prefabs/Prefab_SkyClock.tscn" type="PackedScene" id=8]
 [ext_resource path="res://ItemManager.gd" type="Script" id=9]
 [ext_resource path="res://Prefabs/Items/Item_Tree.tscn" type="PackedScene" id=10]
-[ext_resource path="res://Player.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Prefabs/Items/Item_TallRock.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Prefabs/Items/Item_Hedge.tscn" type="PackedScene" id=13]
 
@@ -34,7 +33,7 @@ transform = Transform( 10.5423, 0, 0, 0, 10.5423, 0, 0, 0, 10.5423, -115.496, -5
 transform = Transform( -1.62182, 0, -4.72966, 0, 5, 0, 4.72966, 0, -1.62182, -24.6949, -8.50129, 11.2666 )
 
 [node name="Item_Tree3" parent="Assets/Items" instance=ExtResource( 10 )]
-transform = Transform( -4.48192, 0, 7.55321, 0, 8.78285, 0, -7.55321, 0, -4.48192, -51.2035, 5.22941, 100.772 )
+transform = Transform( -4.48192, 0, 7.55321, 0, 8.78285, 0, -7.55321, 0, -4.48192, -51.2035, -9.48608, 100.772 )
 
 [node name="Item_Tree4" parent="Assets/Items" instance=ExtResource( 10 )]
 transform = Transform( -5.23919, 0, 8.82942, 0, 10.2668, 0, -8.82942, 0, -5.23919, 48.4986, -8.67955, -27.5307 )
@@ -46,7 +45,7 @@ transform = Transform( -3.5933, 0, 6.05566, 0, 7.0415, 0, -6.05566, 0, -3.5933, 
 transform = Transform( 6.93771, 0, 1.20459, 0, 7.0415, 0, -1.20459, 0, 6.93771, 119.527, -0.944012, -1.52759 )
 
 [node name="Item_Tree7" parent="Assets/Items" instance=ExtResource( 10 )]
-transform = Transform( -4.67296, 0, 7.87517, 0, 9.15723, 0, -7.87517, 0, -4.67296, 52.1922, -4.66531, 99.1531 )
+transform = Transform( -4.67296, 0, 7.87517, 0, 9.15723, 0, -7.87517, 0, -4.67296, 52.1922, -12.7386, 99.1531 )
 
 [node name="Item_Tree8" parent="Assets/Items" instance=ExtResource( 10 )]
 transform = Transform( 6.3113, 0, 6.63493, 0, 9.15723, 0, -6.63493, 0, 6.3113, -53.7749, 8.51075, -110.166 )
@@ -474,11 +473,8 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -132.788, 2.22424, -7.61185 )
 [node name="Wecker2" parent="AllWecker" instance=ExtResource( 5 )]
 transform = Transform( -0.993197, 0, -0.116445, 0, 1, 0, 0.116445, 0, -0.993197, 54.6032, 2.22424, 16.6583 )
 
-[node name="Wecker X" parent="AllWecker" instance=ExtResource( 5 )]
-transform = Transform( -0.993197, 0, -0.116445, 0, 1, 0, 0.116445, 0, -0.993197, 43.892, -1000, 16.658 )
-
 [node name="Wecker3" parent="AllWecker" instance=ExtResource( 5 )]
-transform = Transform( -0.278471, 0, 0.960445, 0.344474, 0.933468, 0.0998769, -0.896544, 0.358661, -0.259944, 54.6032, 4.60349, 139.99 )
+transform = Transform( -0.278471, 0, 0.960445, 0.344474, 0.933468, 0.0998769, -0.896544, 0.358661, -0.259944, 54.6032, -4.9123, 139.99 )
 
 [node name="Wecker4" parent="AllWecker" instance=ExtResource( 5 )]
 transform = Transform( 0.11599, -0.109211, -0.987228, 0.653276, 0.757087, -0.00699826, 0.748182, -0.64412, 0.159159, 54.6032, 4.02484, -141.743 )
@@ -493,7 +489,6 @@ bus = "Music"
 [node name="StartGame" type="Node" parent="Other"]
 
 [node name="MainMenu" parent="Other/StartGame" instance=ExtResource( 1 )]
-visible = false
 
 [node name="MenueCamera" type="InterpolatedCamera" parent="Other/StartGame"]
 transform = Transform( 1, 0, 0, 0, 0.92278, 0.385326, 0, -0.385326, 0.92278, 0, 46.0927, 166.682 )
@@ -504,6 +499,3 @@ enabled = true
 
 [node name="CameraTarget" type="Spatial" parent="Other/StartGame"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 32.2194, -82.2219 )
-
-[node name="Player" parent="." instance=ExtResource( 11 )]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -24.1889, -1.11524, -7.57787 )
