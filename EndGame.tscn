@@ -109,3 +109,6 @@ custom_fonts/font = SubResource( 3 )
 custom_styles/hover = SubResource( 5 )
 custom_styles/normal = SubResource( 4 )
 text = "Play Again"
+
+[connection signal="button_up" from="VBoxContainer/quit" to="." method="_on_quit_button_up"]
+[connection signal="pressed" from="VBoxContainer/PlayAgain" to="." method="_on_PlayAgain_pressed"]
