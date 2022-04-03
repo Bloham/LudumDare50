@@ -43,22 +43,22 @@ transform = Transform( 0.713263, 0.700897, 0, -0.700897, 0.713263, 0, 0, 0, 1, -
 transform = Transform( 0.713263, 0.700897, 0, -0.700897, 0.713263, 0, 0, 0, 1, -169.824, 30.0013, -94.2148 )
 
 [node name="Bodenplatte22" parent="Assets/Boden" instance=ExtResource( 2 )]
-transform = Transform( 0.514106, 0.505193, -0.693163, -0.700897, 0.713263, 0, 0.494407, 0.485836, 0.720781, -156.23, 25.1869, -153.864 )
+transform = Transform( 0.514106, 0.505193, -0.693163, -0.700897, 0.713263, 0, 0.494407, 0.485836, 0.720781, -156.23, 25.1869, -146.464 )
 
 [node name="Bodenplatte12" parent="Assets/Boden" instance=ExtResource( 2 )]
 transform = Transform( 0.713263, 0.700897, 0, -0.700897, 0.713263, 0, 0, 0, 1, -169.958, 30.1331, 93.6102 )
 
 [node name="Bodenplatte19" parent="Assets/Boden" instance=ExtResource( 2 )]
-transform = Transform( -0.713263, -0.700897, -8.74228e-08, -0.700897, 0.713263, 0, 6.23554e-08, 6.12743e-08, -1, 176.824, 30.0013, -0.604568 )
+transform = Transform( -0.713263, -0.700897, -8.74228e-08, -0.700897, 0.713263, 0, 6.23554e-08, 6.12743e-08, -1, 166.384, 30.0013, -0.604568 )
 
 [node name="Bodenplatte20" parent="Assets/Boden" instance=ExtResource( 2 )]
-transform = Transform( -0.713263, -0.700897, -8.74228e-08, -0.700897, 0.713263, 0, 6.23554e-08, 6.12743e-08, -1, 176.824, 30.0013, 93.6102 )
+transform = Transform( -0.713263, -0.700897, -8.74228e-08, -0.700897, 0.713263, 0, 6.23554e-08, 6.12743e-08, -1, 166.384, 30.0013, 93.6102 )
 
 [node name="Bodenplatte24" parent="Assets/Boden" instance=ExtResource( 2 )]
-transform = Transform( -0.547254, -0.537766, 0.641342, -0.700897, 0.713263, 0, -0.457446, -0.449515, -0.767255, 137.309, 30.0013, 134.782 )
+transform = Transform( -0.547254, -0.537766, 0.641342, -0.700897, 0.713263, 0, -0.457446, -0.449515, -0.767255, 126.869, 30.0013, 134.782 )
 
 [node name="Bodenplatte21" parent="Assets/Boden" instance=ExtResource( 2 )]
-transform = Transform( -0.713263, -0.700897, -8.74228e-08, -0.700897, 0.713263, 0, 6.23554e-08, 6.12743e-08, -1, 176.958, 30.1331, -94.2148 )
+transform = Transform( -0.713263, -0.700897, -8.74228e-08, -0.700897, 0.713263, 0, 6.23554e-08, 6.12743e-08, -1, 166.518, 30.1331, -94.2148 )
 
 [node name="Bodenplatte13" parent="Assets/Boden" instance=ExtResource( 2 )]
 transform = Transform( -3.11777e-08, -3.06372e-08, 1, -0.700897, 0.713263, 0, -0.713263, -0.700897, -4.37114e-08, -2.05142, 30.0013, 167.799 )
@@ -73,16 +73,16 @@ transform = Transform( 0.425305, 0.417931, 0.802776, -0.700897, 0.713263, 0, -0.
 transform = Transform( -3.11777e-08, -3.06372e-08, 1, -0.700897, 0.713263, 0, -0.713263, -0.700897, -4.37114e-08, 91.5588, 30.1331, 167.933 )
 
 [node name="Bodenplatte16" parent="Assets/Boden" instance=ExtResource( 2 )]
-transform = Transform( 9.35331e-08, 9.19115e-08, -1, -0.700897, 0.713263, 0, 0.713263, 0.700897, 1.31134e-07, -2.74557, 30.0013, -177.248 )
+transform = Transform( 9.35331e-08, 9.19115e-08, -1, -0.700897, 0.713263, 0, 0.713263, 0.700897, 1.31134e-07, -2.74557, 30.0013, -169.848 )
 
 [node name="Bodenplatte17" parent="Assets/Boden" instance=ExtResource( 2 )]
-transform = Transform( 9.35331e-08, 9.19115e-08, -1, -0.700897, 0.713263, 0, 0.713263, 0.700897, 1.31134e-07, 91.5588, 30.0013, -177.245 )
+transform = Transform( 9.35331e-08, 9.19115e-08, -1, -0.700897, 0.713263, 0, 0.713263, 0.700897, 1.31134e-07, 91.5588, 30.0013, -169.845 )
 
 [node name="Bodenplatte25" parent="Assets/Boden" instance=ExtResource( 2 )]
-transform = Transform( -0.507057, -0.498266, -0.703296, -0.700897, 0.713263, 0, 0.501634, 0.492938, -0.710898, 158.378, 30.0013, -157.658 )
+transform = Transform( -0.507057, -0.498266, -0.703296, -0.700897, 0.713263, 0, 0.501634, 0.492938, -0.710898, 147.938, 30.0013, -150.258 )
 
 [node name="Bodenplatte18" parent="Assets/Boden" instance=ExtResource( 2 )]
-transform = Transform( 9.35331e-08, 9.19115e-08, -1, -0.700897, 0.713263, 0, 0.713263, 0.700897, 1.31134e-07, -96.2662, 30.1331, -177.379 )
+transform = Transform( 9.35331e-08, 9.19115e-08, -1, -0.700897, 0.713263, 0, 0.713263, 0.700897, 1.31134e-07, -96.2662, 30.1331, -169.979 )
 
 [node name="Bodenplatte5" parent="Assets/Boden" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 93.6399, -0.23607, -94.0593 )
