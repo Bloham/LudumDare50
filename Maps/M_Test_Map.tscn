@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Assets/SM_Base_Plane.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://Prefabs/Prefab_Console_Evil.tscn" type="PackedScene" id=2]
@@ -7,8 +7,9 @@
 [ext_resource path="res://Prefabs/Prefab_Clock.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Prefabs/Prefab_Rock_Big_Evil.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Prefabs/Prefab_Rock_Big_Happy.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Prefabs/Prefab_Bush_Happy.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Prefabs/Prefab_Tree_Happy_Top.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Prefabs/Prefab_Tree_Happy.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Prefabs/Prefab_Tree_Evil.tscn" type="PackedScene" id=10]
 
 [sub_resource type="ProceduralSky" id=2]
 radiance_size = 1
@@ -102,3 +103,9 @@ transform = Transform( 0.384179, 0, 0.590748, 0, 0.704682, 0, -0.590748, 0, 0.38
 
 [node name="Prefab_Tree_Happy" parent="." instance=ExtResource( 9 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.0609, 0, -8.66401 )
+
+[node name="Spatial11" parent="." instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.525, -17.6246, -37.2193 )
+
+[node name="Spatial12" parent="." instance=ExtResource( 10 )]
+transform = Transform( -0.480591, 0, -0.876945, 0, 1, 0, 0.876945, 0, -0.480591, 0, 0, -10.8578 )
