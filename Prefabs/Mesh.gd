@@ -20,14 +20,8 @@ func _ready():
 	scalar_fading = Mat.get_active_material(0).get_shader_param("ScalarInput")
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+
 func _process(delta):
 	if (is_fading):
 		scalar_fading = clamp(scalar_fading + delta * scalar_fadingSpeed, -1, 1)
 		Mat.get_active_material(0).set_shader_param("ScalarInput", scalar_fading)
-	
-#func _input(event):
-#	if event is InputEventKey:
-#		if event.pressed and event.scancode == KEY_F and !is_fading:
-#			print ("F key was pressed- fadeable objects should fade now")
-#			is_fading = true

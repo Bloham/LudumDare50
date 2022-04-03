@@ -5,7 +5,7 @@ export var radiusIncrease = 5
 onready var collider = get_node("CollisionShape").shape
 onready var timer = get_node("Timer")
 
-var currentRadius = 45
+export var currentRadius = 45
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

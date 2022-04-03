@@ -260,20 +260,20 @@ transform = Transform( -0.233876, 0, 4.99453, 0, 5, 0, -4.99453, 0, -0.233876, 3
 [node name="Item56" parent="Assets/Items" instance=ExtResource( 3 )]
 transform = Transform( 4.96082, 0, -0.624675, 0, 5, 0, 0.624675, 0, 4.96082, 33.18, 7.92007, -118.217 )
 
-[node name="Wecker" type="Node" parent="."]
+[node name="AllWecker" type="Node" parent="."]
 script = ExtResource( 7 )
 
-[node name="Wecker" parent="Wecker" instance=ExtResource( 5 )]
+[node name="Wecker" parent="AllWecker" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -132.788, 2.22424, -7.61185 )
 
-[node name="Wecker2" parent="Wecker" instance=ExtResource( 5 )]
+[node name="Wecker2" parent="AllWecker" instance=ExtResource( 5 )]
 transform = Transform( -0.993197, 0, -0.116445, 0, 1, 0, 0.116445, 0, -0.993197, 54.6032, 2.22424, 16.6583 )
 
-[node name="Wecker3" parent="Wecker" instance=ExtResource( 5 )]
+[node name="Wecker3" parent="AllWecker" instance=ExtResource( 5 )]
 transform = Transform( -0.278471, 0, 0.960445, 0.344474, 0.933468, 0.0998769, -0.896544, 0.358661, -0.259944, 54.6032, 4.60349, 139.99 )
 
-[node name="Wecker4" parent="Wecker" instance=ExtResource( 5 )]
-transform = Transform( 0.11599, -0.109211, -0.987228, 0.776774, 0.629408, 0.0216359, 0.619006, -0.769362, 0.157837, 54.6032, 0.0682278, -145.378 )
+[node name="Wecker4" parent="AllWecker" instance=ExtResource( 5 )]
+transform = Transform( 0.11599, -0.109211, -0.987228, 0.653276, 0.757087, -0.00699826, 0.748182, -0.64412, 0.159159, 54.6032, 4.02484, -141.743 )
 
 [node name="Other" type="Node" parent="."]
 
