@@ -50,6 +50,69 @@ transform = Transform( -4.67296, 0, 7.87517, 0, 9.15723, 0, -7.87517, 0, -4.6729
 [node name="Item_Tree8" parent="Assets/Items" instance=ExtResource( 10 )]
 transform = Transform( 6.3113, 0, 6.63493, 0, 9.15723, 0, -6.63493, 0, 6.3113, -53.7749, 8.51075, -110.166 )
 
+[node name="Item_Tree38" parent="Assets/Items" instance=ExtResource( 10 )]
+transform = Transform( 6.3113, 0, 6.63493, 0, 9.15723, 0, -6.63493, 0, 6.3113, -5.94973, 8.51075, -260.521 )
+
+[node name="Item_Tree27" parent="Assets/Items" instance=ExtResource( 10 )]
+transform = Transform( 6.3113, 0, 6.63493, 0, 9.15723, 0, -6.63493, 0, 6.3113, -243.468, 17.0121, -187.076 )
+
+[node name="Item_Tree28" parent="Assets/Items" instance=ExtResource( 10 )]
+transform = Transform( 5.51372, 0, 5.79645, 0, 8, 0, -5.79645, 0, 5.51372, -290.036, 7.43589, -187.076 )
+
+[node name="Item_Tree29" parent="Assets/Items" instance=ExtResource( 10 )]
+transform = Transform( 10.3382, 0, 10.8684, 0, 15, 0, -10.8684, 0, 10.3382, -255.069, 5.56213, -232.617 )
+
+[node name="Item_Tree11" parent="Assets/Items" instance=ExtResource( 10 )]
+transform = Transform( -4.29816, 1.83608, -4.51764, 1.30005, 6.06266, 1.36975, 4.54461, 0.0022105, -4.32293, 128.752, -9.11325, -110.168 )
+
+[node name="Item_Tree26" parent="Assets/Items" instance=ExtResource( 10 )]
+transform = Transform( -6.58206, 2.89798, -6.94825, -1.44711, 8.57027, 4.94533, 7.38799, 4.26053, -5.22164, 128.752, -9.11326, -149.348 )
+
+[node name="Item_Tree13" parent="Assets/Items" instance=ExtResource( 10 )]
+transform = Transform( -3.50916, -3.28278, -4.32663, -2.5348, 5.39801, -2.27899, 4.69876, 0.460347, -4.13031, 169.927, -4.796, -110.159 )
+
+[node name="Item_Tree22" parent="Assets/Items" instance=ExtResource( 10 )]
+transform = Transform( -2.66222, -0.435613, -2.95344, -0.508087, 3.96557, -0.126907, 2.94184, 0.290687, -2.69464, 148.357, -4.796, -110.159 )
+
+[node name="Item_Tree23" parent="Assets/Items" instance=ExtResource( 10 )]
+transform = Transform( -2.4264, -1.48941, -2.80967, -1.20754, 3.70097, -0.919071, 2.94184, 0.290687, -2.69464, 157.4, -6.73781, -110.159 )
+
+[node name="Item_Tree24" parent="Assets/Items" instance=ExtResource( 10 )]
+transform = Transform( -2.70951, 0.409616, -2.91389, 1.0251, 3.84432, -0.412793, 2.75821, -1.02638, -2.70903, 141.397, -6.73781, -98.465 )
+
+[node name="Item_Tree25" parent="Assets/Items" instance=ExtResource( 10 )]
+transform = Transform( -2.70951, 0.409616, -2.91389, 0.0641844, 3.96834, 0.498162, 2.94184, 0.290687, -2.69464, 141.397, -6.73781, -110.159 )
+
+[node name="Item_Tree12" parent="Assets/Items" instance=ExtResource( 10 )]
+transform = Transform( 4.49047, 0, 4.72073, 0, 6.3346, 0, -4.54461, 0, 4.32293, 144.161, 44.5509, -110.173 )
+
+[node name="Item_Tree10" parent="Assets/Items" instance=ExtResource( 10 )]
+transform = Transform( -4.49044, -0.0235493, -4.7207, 0.0166936, -6.33455, 0.0175496, -4.54461, 0, 4.32293, 243.521, 98.5066, -110.11 )
+
+[node name="Item_Tree16" parent="Assets/Items" instance=ExtResource( 10 )]
+transform = Transform( -3.54692, 3.88479, -3.72879, -2.75385, -5.00355, -2.89506, -4.54461, 0, 4.32293, 213.809, 87.7464, -110.11 )
+
+[node name="Item_Tree15" parent="Assets/Items" instance=ExtResource( 10 )]
+transform = Transform( -3.79113, -3.3949, -3.98553, 2.40658, -5.34806, 2.52998, -4.54461, 0, 4.32293, 271.196, 91.6369, -110.11 )
+
+[node name="Item_Tree17" parent="Assets/Items" instance=ExtResource( 10 )]
+transform = Transform( -4.29911, -1.82952, -4.51956, -1.03728, -5.32435, 3.26674, -4.6108, 2.90366, 3.14247, 285.656, 134.82, -134.466 )
+
+[node name="Item_Tree19" parent="Assets/Items" instance=ExtResource( 10 )]
+transform = Transform( -4.29911, -1.82952, -4.51956, 1.83633, -8.20327, 1.76613, -4.52688, -0.0809712, 4.34075, 255.718, 167.343, -106.599 )
+
+[node name="Item_Tree18" parent="Assets/Items" instance=ExtResource( 10 )]
+transform = Transform( -1.91042, 3.42771, 4.95488, -1.03728, -5.32435, 3.26674, 6.00767, 0.170704, 2.39805, 188.53, 134.82, -109.136 )
+
+[node name="Item_Tree20" parent="Assets/Items" instance=ExtResource( 10 )]
+transform = Transform( -1.28891, 5.36473, 3.09806, -1.75054, -3.36416, 5.06206, 6.00767, 0.170704, 2.39805, 146.507, 160.327, -109.136 )
+
+[node name="Item_Tree21" parent="Assets/Items" instance=ExtResource( 10 )]
+transform = Transform( -2.12996, -0.800374, 5.89507, 0.536688, -7.75602, -0.846989, 6.00767, 0.170704, 2.39805, 148.062, 157.427, -109.136 )
+
+[node name="Item_Tree14" parent="Assets/Items" instance=ExtResource( 10 )]
+transform = Transform( 4.49047, 0, 4.72073, 0, 6.3346, 0, -4.54461, 0, 4.32293, 243.521, -1.41902, -110.11 )
+
 [node name="Item_TallRock" parent="Assets/Items" instance=ExtResource( 12 )]
 transform = Transform( 3.40025, 0, 0, 0, 3.40025, 0, 0, 0, 3.40025, -40.4404, -4.01188, -1.36062 )
 
@@ -66,7 +129,7 @@ transform = Transform( -3.30933, 0, 0.781072, 0, 3.40025, 0, -0.781072, 0, -3.30
 transform = Transform( -3.30933, 0, 0.781072, 0, 3.40025, 0, -0.781072, 0, -3.30933, -54.399, -8.89749, 8.42895 )
 
 [node name="Item_TallRock4" parent="Assets/Items" instance=ExtResource( 12 )]
-transform = Transform( -5.45536, 0, 1.28758, 0, 5.60525, 0, -1.28758, 0, -5.45536, -42.7672, 0.879943, 5.83406 )
+transform = Transform( -5.45536, 0, 1.28758, 0, 5.60525, 0, -1.28758, 0, -5.45536, -223.771, 48.4979, 5.83406 )
 
 [node name="Item_TallRock10" parent="Assets/Items" instance=ExtResource( 12 )]
 transform = Transform( 1.8221, 0, 2.87083, 0, 3.40025, 0, -2.87083, 0, 1.8221, -48.1656, -4.01188, 67.6079 )
@@ -162,7 +225,43 @@ transform = Transform( 5.01061, -0.307011, -2.49366, 0.662568, 5.52777, 0.650763
 transform = Transform( 3.79953, 0, 4.12097, 0, 5.60525, 0, -4.12097, 0, 3.79953, 129, -0.689679, 59.8415 )
 
 [node name="Item_TallRock38" parent="Assets/Items" instance=ExtResource( 12 )]
-transform = Transform( 1.5001, -0.559009, -5.37178, -0.812513, 5.48833, -0.798036, 5.33932, 0.992243, 1.38777, 117.715, -6.28571, 53.4836 )
+transform = Transform( 1.44288, -0.537685, -5.16687, -0.812513, 5.48833, -0.798036, 3.37021, 0.62631, 0.875969, 268.91, 30.1779, 53.4836 )
+
+[node name="Item_TallRock40" parent="Assets/Items" instance=ExtResource( 12 )]
+transform = Transform( 1.44288, -0.537685, -5.16687, 0.572042, 9.10185, -0.787432, 3.45018, -1.20988, 1.08938, 268.91, 42.7885, 67.8225 )
+
+[node name="Item_TallRock41" parent="Assets/Items" instance=ExtResource( 12 )]
+transform = Transform( 1.44288, -0.537685, -5.16687, -1.71175, 12.5154, -1.78041, 3.29597, 3.34687, 0.572124, 268.91, 42.7885, 84.6625 )
+
+[node name="Item_TallRock42" parent="Assets/Items" instance=ExtResource( 12 )]
+transform = Transform( 1.44288, -0.537685, -5.16687, 2.36042, 10.3744, -0.420447, 2.90112, -4.93139, 1.32333, 268.171, 47.9993, 120.601 )
+
+[node name="Item_TallRock43" parent="Assets/Items" instance=ExtResource( 12 )]
+transform = Transform( 1.44288, -0.537685, -5.16687, -1.4437, 9.24385, -1.36511, 3.45019, 6.81896, 0.253871, 268.171, 47.9993, 148.314 )
+
+[node name="Item_TallRock47" parent="Assets/Items" instance=ExtResource( 12 )]
+transform = Transform( 1.44288, -0.537685, -5.16687, 0.306041, 11.3449, -1.09514, 3.72752, 1.79996, 0.853614, 268.171, 38.0706, 42.4223 )
+
+[node name="Item_TallRock48" parent="Assets/Items" instance=ExtResource( 12 )]
+transform = Transform( 1.79967, -0.613896, -4.62432, 1.2944, 4.8276, -0.137137, 4.48171, -1.14778, 1.89654, 289.215, 97.5933, 208.607 )
+
+[node name="Item_TallRock44" parent="Assets/Items" instance=ExtResource( 12 )]
+transform = Transform( 1.44288, -0.537685, -5.16687, 2.90988, 9.12874, -0.137377, 2.34961, -6.97231, 1.3817, 268.171, 47.9993, 198.194 )
+
+[node name="Item_TallRock49" parent="Assets/Items" instance=ExtResource( 12 )]
+transform = Transform( 1.44288, -0.537685, -5.16687, 3.57538, -0.672579, 1.06843, -1.09758, -11.4671, 0.88681, 268.171, 89.5843, 147.203 )
+
+[node name="Item_TallRock45" parent="Assets/Items" instance=ExtResource( 12 )]
+transform = Transform( 1.79967, -0.613896, -4.62432, 1.47731, 4.77641, -0.0591569, 4.42479, -1.34501, 1.90057, 268.171, 47.9993, 238.404 )
+
+[node name="Item_TallRock46" parent="Assets/Items" instance=ExtResource( 12 )]
+transform = Transform( 1.79967, -0.613896, -4.62432, 1.47731, 4.77641, -0.0591569, 4.42479, -1.34501, 1.90057, 343.386, 72.4164, 96.1991 )
+
+[node name="Item_TallRock51" parent="Assets/Items" instance=ExtResource( 12 )]
+transform = Transform( 0.359933, -0.122779, -0.924864, 0.295461, 0.955281, -0.0118314, 0.884958, -0.269003, 0.380114, 305.779, 136.377, -27.2148 )
+
+[node name="Item_TallRock50" parent="Assets/Items" instance=ExtResource( 12 )]
+transform = Transform( 0.719866, -0.245558, -1.84973, 0.590922, 1.91056, -0.0236628, 1.76992, -0.538006, 0.760228, 343.386, 119.617, -13.2813 )
 
 [node name="Item_TallRock39" parent="Assets/Items" instance=ExtResource( 12 )]
 transform = Transform( -5.36286, 0.458598, 1.56467, 0.662568, 5.52777, 0.650763, -1.4898, 0.807574, -5.34295, 113.039, -1.51818, 42.5536 )
@@ -184,6 +283,375 @@ transform = Transform( 0.135771, -0.0506113, 2.85948, 0, 2.8627, 0.0506683, -2.8
 
 [node name="Item_Hedge3" parent="Assets/Items" instance=ExtResource( 13 )]
 transform = Transform( 0.135771, -0.0506113, 2.85948, 0, 2.8627, 0.0506683, -2.85993, -0.00240271, 0.13575, 112.192, 20.1677, 43.5215 )
+
+[node name="Item_Hedge7" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.135771, -0.0506113, 2.85948, 0, 2.8627, 0.0506683, -2.85993, -0.00240271, 0.13575, 232.214, 71.2599, -106.416 )
+
+[node name="Item_Hedge9" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.135771, -0.0506113, 2.85948, 0, 2.8627, 0.0506683, -2.85993, -0.00240271, 0.13575, 258.688, 86.2145, -106.416 )
+
+[node name="Item_Hedge8" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.237101, -0.088384, 4.99359, 0, 4.99922, 0.0884835, -4.99438, -0.00419591, 0.237064, 250.015, 71.2599, -106.416 )
+
+[node name="Item_Hedge18" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.474043, 0.0824032, 9.98842, -0.0122891, 9.99966, -0.0819127, -9.98875, -0.00839181, 0.474128, -174.072, 50.5158, -106.416 )
+
+[node name="Item_Hedge125" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.474043, 0.0824032, 9.98842, -0.0122891, 9.99966, -0.0819127, -9.98875, -0.00839181, 0.474128, -399.991, 20.8004, -106.416 )
+
+[node name="Item_Hedge126" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.474043, 0.0824032, 9.98842, -0.0122891, 9.99966, -0.0819127, -9.98875, -0.00839181, 0.474128, -399.991, 18.6784, -53.0498 )
+
+[node name="Item_Hedge113" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.294056, 0.051116, 6.19598, -0.00987723, 8.03714, -0.0658366, -8.2736, -0.00695087, 0.392716, -174.072, 48.6281, -153.849 )
+
+[node name="Item_Hedge19" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -229.834, 37.1921, -201.124 )
+
+[node name="Item_Hedge20" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -222.986, 57.649, -201.124 )
+
+[node name="Item_Hedge21" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -220.943, 57.649, -189.413 )
+
+[node name="Item_Hedge22" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -215.775, 46.6562, -186.796 )
+
+[node name="Item_Hedge45" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -215.775, 55.0835, -186.796 )
+
+[node name="Item_Hedge23" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -218.91, 46.6562, -193.842 )
+
+[node name="Item_Hedge24" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -190.808, 66.9282, -193.842 )
+
+[node name="Item_Hedge30" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -207.651, 66.9282, -193.842 )
+
+[node name="Item_Hedge46" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -200.986, 77.4536, -193.824 )
+
+[node name="Item_Hedge47" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -201.13, 66.9282, -193.842 )
+
+[node name="Item_Hedge25" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -219.884, 70.1778, -183.502 )
+
+[node name="Item_Hedge26" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -201.096, 66.9282, -205.904 )
+
+[node name="Item_Hedge27" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -195.54, 66.9282, -205.904 )
+
+[node name="Item_Hedge28" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -195.54, 73.0209, -205.904 )
+
+[node name="Item_Hedge29" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -212.529, 73.0209, -199.829 )
+
+[node name="Item_Hedge43" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0948085, 0.0164806, 1.99768, -0.00245781, 1.99993, -0.0163825, -1.99775, -0.00167836, 0.0948255, -212.529, 102.898, -199.829 )
+
+[node name="Item_Hedge48" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0948085, 0.0164806, 1.99768, -0.00245781, 1.99993, -0.0163825, -1.99775, -0.00167836, 0.0948255, -212.529, 80.549, -189.52 )
+
+[node name="Item_Hedge31" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -216.725, 73.0209, -195.061 )
+
+[node name="Item_Hedge32" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -216.725, 73.0209, -188.256 )
+
+[node name="Item_Hedge33" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -216.725, 65.1422, -188.256 )
+
+[node name="Item_Hedge50" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -201.13, 80.7179, -175.482 )
+
+[node name="Item_Hedge51" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -219.884, 83.9674, -165.142 )
+
+[node name="Item_Hedge52" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -201.096, 80.7179, -187.545 )
+
+[node name="Item_Hedge53" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -195.54, 80.7179, -187.545 )
+
+[node name="Item_Hedge54" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -195.54, 86.8105, -187.545 )
+
+[node name="Item_Hedge55" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -212.529, 86.8105, -181.47 )
+
+[node name="Item_Hedge56" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0948085, 0.0164806, 1.99768, -0.00245781, 1.99993, -0.0163825, -1.99775, -0.00167836, 0.0948255, -212.529, 116.687, -181.47 )
+
+[node name="Item_Hedge57" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0948085, 0.0164806, 1.99768, -0.00245781, 1.99993, -0.0163825, -1.99775, -0.00167836, 0.0948255, -212.529, 94.3387, -171.16 )
+
+[node name="Item_Hedge58" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -216.725, 86.8105, -176.702 )
+
+[node name="Item_Hedge59" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -216.725, 86.8105, -169.896 )
+
+[node name="Item_Hedge60" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -216.725, 78.9319, -169.896 )
+
+[node name="Item_Hedge61" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0349369, 0.00809199, 0.918934, -0.000905703, 0.981966, -0.00753597, -0.736171, -0.000824076, 0.0436197, -201.13, 80.7179, -193.596 )
+
+[node name="Item_Hedge62" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0349369, 0.00809199, 0.918934, -0.000905703, 0.981966, -0.00753597, -0.736171, -0.000824076, 0.0436197, -219.884, 83.9674, -183.256 )
+
+[node name="Item_Hedge63" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0349369, 0.00809199, 0.918934, -0.000905703, 0.981966, -0.00753597, -0.736171, -0.000824076, 0.0436197, -201.096, 80.7179, -205.658 )
+
+[node name="Item_Hedge64" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0349369, 0.00809199, 0.918934, -0.000905703, 0.981966, -0.00753597, -0.736171, -0.000824076, 0.0436197, -195.54, 80.7179, -205.658 )
+
+[node name="Item_Hedge65" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0349369, 0.00809199, 0.918934, -0.000905703, 0.981966, -0.00753597, -0.736171, -0.000824076, 0.0436197, -195.54, 86.8105, -205.658 )
+
+[node name="Item_Hedge66" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0349369, 0.00809199, 0.918934, -0.000905703, 0.981966, -0.00753597, -0.736171, -0.000824076, 0.0436197, -212.529, 86.8105, -199.583 )
+
+[node name="Item_Hedge67" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0349369, 0.00809199, 0.918934, -0.000905703, 0.981966, -0.00753597, -0.736171, -0.000824076, 0.0436197, -212.529, 116.687, -199.583 )
+
+[node name="Item_Hedge68" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0349369, 0.00809199, 0.918934, -0.000905703, 0.981966, -0.00753597, -0.736171, -0.000824076, 0.0436197, -212.529, 94.3387, -189.273 )
+
+[node name="Item_Hedge69" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0349369, 0.00809199, 0.918934, -0.000905703, 0.981966, -0.00753597, -0.736171, -0.000824076, 0.0436197, -216.725, 86.8105, -194.815 )
+
+[node name="Item_Hedge70" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0349369, 0.00809199, 0.918934, -0.000905703, 0.981966, -0.00753597, -0.736171, -0.000824076, 0.0436197, -216.725, 86.8105, -188.01 )
+
+[node name="Item_Hedge72" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -229.834, 93.6843, -174.92 )
+
+[node name="Item_Hedge73" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -222.986, 114.141, -174.92 )
+
+[node name="Item_Hedge74" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -220.943, 114.141, -163.209 )
+
+[node name="Item_Hedge75" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -215.775, 103.148, -160.593 )
+
+[node name="Item_Hedge76" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -215.775, 111.576, -160.593 )
+
+[node name="Item_Hedge77" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -218.91, 103.148, -167.638 )
+
+[node name="Item_Hedge78" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -190.808, 123.42, -167.638 )
+
+[node name="Item_Hedge79" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -207.651, 123.42, -167.638 )
+
+[node name="Item_Hedge80" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -200.986, 133.946, -167.62 )
+
+[node name="Item_Hedge81" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -201.13, 123.42, -167.638 )
+
+[node name="Item_Hedge82" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -219.884, 126.67, -157.298 )
+
+[node name="Item_Hedge83" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -201.096, 123.42, -179.7 )
+
+[node name="Item_Hedge84" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -195.54, 123.42, -179.7 )
+
+[node name="Item_Hedge85" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -195.54, 129.513, -179.7 )
+
+[node name="Item_Hedge86" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -212.529, 129.513, -173.625 )
+
+[node name="Item_Hedge87" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0948085, 0.0164806, 1.99768, -0.00245781, 1.99993, -0.0163825, -1.99775, -0.00167836, 0.0948255, -212.529, 159.39, -173.625 )
+
+[node name="Item_Hedge88" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0948085, 0.0164806, 1.99768, -0.00245781, 1.99993, -0.0163825, -1.99775, -0.00167836, 0.0948255, -212.529, 137.041, -163.316 )
+
+[node name="Item_Hedge89" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -216.725, 129.513, -168.857 )
+
+[node name="Item_Hedge90" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -216.725, 129.513, -162.052 )
+
+[node name="Item_Hedge91" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -216.725, 121.634, -162.052 )
+
+[node name="Item_Hedge92" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -201.13, 137.21, -149.279 )
+
+[node name="Item_Hedge93" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -219.884, 140.46, -138.938 )
+
+[node name="Item_Hedge114" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0948085, 0.0164806, 1.99768, -0.00245781, 1.99993, -0.0163825, -1.99775, -0.00167836, 0.0948255, -212.529, 229.399, -149.692 )
+
+[node name="Item_Hedge121" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0948085, 0.0164806, 1.99768, -0.00245781, 1.99993, -0.0163825, -1.99775, -0.00167836, 0.0948255, -188.423, 229.399, -135.833 )
+
+[node name="Item_Hedge115" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0948085, 0.0164806, 1.99768, -0.00245781, 1.99993, -0.0163825, -1.99775, -0.00167836, 0.0948255, -212.529, 207.051, -139.382 )
+
+[node name="Item_Hedge116" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -216.725, 199.523, -144.924 )
+
+[node name="Item_Hedge117" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -216.725, 199.523, -138.118 )
+
+[node name="Item_Hedge118" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -216.725, 191.644, -138.118 )
+
+[node name="Item_Hedge119" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -201.13, 207.22, -125.345 )
+
+[node name="Item_Hedge120" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -219.884, 210.469, -115.005 )
+
+[node name="Item_Hedge94" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -201.096, 137.21, -161.341 )
+
+[node name="Item_Hedge95" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -195.54, 137.21, -161.341 )
+
+[node name="Item_Hedge96" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -195.54, 143.303, -161.341 )
+
+[node name="Item_Hedge97" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -212.529, 143.303, -155.266 )
+
+[node name="Item_Hedge98" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0948085, 0.0164806, 1.99768, -0.00245781, 1.99993, -0.0163825, -1.99775, -0.00167836, 0.0948255, -212.529, 173.179, -155.266 )
+
+[node name="Item_Hedge99" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0948085, 0.0164806, 1.99768, -0.00245781, 1.99993, -0.0163825, -1.99775, -0.00167836, 0.0948255, -212.529, 150.831, -144.956 )
+
+[node name="Item_Hedge100" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -216.725, 143.303, -150.498 )
+
+[node name="Item_Hedge101" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -216.725, 143.303, -143.693 )
+
+[node name="Item_Hedge102" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -216.725, 135.424, -143.693 )
+
+[node name="Item_Hedge103" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0349369, 0.00809199, 0.918934, -0.000905703, 0.981966, -0.00753597, -0.736171, -0.000824076, 0.0436197, -201.13, 137.21, -167.392 )
+
+[node name="Item_Hedge104" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0349369, 0.00809199, 0.918934, -0.000905703, 0.981966, -0.00753597, -0.736171, -0.000824076, 0.0436197, -219.884, 140.46, -157.052 )
+
+[node name="Item_Hedge105" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0349369, 0.00809199, 0.918934, -0.000905703, 0.981966, -0.00753597, -0.736171, -0.000824076, 0.0436197, -201.096, 137.21, -179.454 )
+
+[node name="Item_Hedge106" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0349369, 0.00809199, 0.918934, -0.000905703, 0.981966, -0.00753597, -0.736171, -0.000824076, 0.0436197, -195.54, 137.21, -179.454 )
+
+[node name="Item_Hedge107" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0349369, 0.00809199, 0.918934, -0.000905703, 0.981966, -0.00753597, -0.736171, -0.000824076, 0.0436197, -195.54, 143.303, -179.454 )
+
+[node name="Item_Hedge108" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0349369, 0.00809199, 0.918934, -0.000905703, 0.981966, -0.00753597, -0.736171, -0.000824076, 0.0436197, -212.529, 143.303, -173.379 )
+
+[node name="Item_Hedge109" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0349369, 0.00809199, 0.918934, -0.000905703, 0.981966, -0.00753597, -0.736171, -0.000824076, 0.0436197, -212.529, 173.179, -173.379 )
+
+[node name="Item_Hedge110" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0349369, 0.00809199, 0.918934, -0.000905703, 0.981966, -0.00753597, -0.736171, -0.000824076, 0.0436197, -212.529, 150.831, -163.069 )
+
+[node name="Item_Hedge111" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0349369, 0.00809199, 0.918934, -0.000905703, 0.981966, -0.00753597, -0.736171, -0.000824076, 0.0436197, -216.725, 143.303, -168.611 )
+
+[node name="Item_Hedge112" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0349369, 0.00809199, 0.918934, -0.000905703, 0.981966, -0.00753597, -0.736171, -0.000824076, 0.0436197, -216.725, 143.303, -161.806 )
+
+[node name="Item_Hedge71" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0349369, 0.00809199, 0.918934, -0.000905703, 0.981966, -0.00753597, -0.736171, -0.000824076, 0.0436197, -216.725, 78.9319, -188.01 )
+
+[node name="Item_Hedge49" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -216.725, 101.366, -188.256 )
+
+[node name="Item_Hedge34" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -216.725, 65.1422, -198.322 )
+
+[node name="Item_Hedge35" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -222.037, 65.1422, -198.322 )
+
+[node name="Item_Hedge36" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -222.037, 65.1422, -192.073 )
+
+[node name="Item_Hedge37" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0237021, 0.00412016, 0.599305, -0.000614453, 0.499983, -0.00491476, -0.499438, -0.000419591, 0.0284477, -222.037, 72.4665, -192.073 )
+
+[node name="Item_Hedge38" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -222.037, 72.4665, -201.926 )
+
+[node name="Item_Hedge39" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -222.037, 95.4664, -201.926 )
+
+[node name="Item_Hedge40" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -222.037, 95.4664, -193.83 )
+
+[node name="Item_Hedge41" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -222.037, 91.2558, -193.83 )
+
+[node name="Item_Hedge42" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0474043, 0.00824032, 0.998842, -0.00122891, 0.999966, -0.00819127, -0.998875, -0.000839181, 0.0474128, -222.037, 91.2558, -198.016 )
+
+[node name="Item_Hedge44" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.0209439, 0.00821521, 0.999747, -0.00122891, 0.999966, -0.00819127, -0.99978, -0.00105704, 0.0209533, -209.959, 91.2558, -197.903 )
+
+[node name="Item_Hedge10" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.237101, -0.088384, 4.99359, 0, 4.99922, 0.0884835, -4.99438, -0.00419591, 0.237064, 235.226, 84.9291, -106.416 )
+
+[node name="Item_Hedge11" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.237101, -0.088384, 4.99359, 0, 4.99922, 0.0884835, -4.99438, -0.00419591, 0.237064, 251.055, 84.9291, -106.416 )
+
+[node name="Item_Hedge13" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.474202, -0.176768, 9.98719, 0, 9.99843, 0.176967, -9.98875, -0.00839181, 0.474128, 261.379, 111.775, -106.416 )
+
+[node name="Item_Hedge14" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.853563, -0.318182, 17.9769, 0, 17.9972, 0.318541, -17.9797, -0.0151053, 0.85343, 220.382, 136.019, -106.416 )
+
+[node name="Item_Tree30" parent="Assets/Items" instance=ExtResource( 10 )]
+transform = Transform( -4.29911, -1.82952, -4.51956, -1.03728, -5.32435, 3.26674, -4.6108, 2.90366, 3.14247, 47.2209, 134.82, -350.094 )
+
+[node name="Item_Tree31" parent="Assets/Items" instance=ExtResource( 10 )]
+transform = Transform( -1.91042, 3.42771, 4.95488, -1.03728, -5.32435, 3.26674, 6.00767, 0.170704, 2.39805, -49.9052, 134.82, -324.764 )
+
+[node name="Item_Tree32" parent="Assets/Items" instance=ExtResource( 10 )]
+transform = Transform( 4.49047, 0, 4.72073, 0, 6.3346, 0, -4.54461, 0, 4.32293, 5.08655, -1.41902, -325.738 )
+
+[node name="Item_Hedge122" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.237101, -0.088384, 4.99359, 0, 4.99922, 0.0884835, -4.99438, -0.00419591, 0.237064, 11.5804, 71.2599, -322.044 )
+
+[node name="Item_Hedge123" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.474202, -0.176768, 9.98719, 0, 9.99843, 0.176967, -9.98875, -0.00839181, 0.474128, 22.9443, 111.775, -322.044 )
+
+[node name="Item_Hedge124" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.853563, -0.318182, 17.9769, 0, 17.9972, 0.318541, -17.9797, -0.0151053, 0.85343, -18.0529, 136.019, -322.044 )
+
+[node name="Item_Hedge15" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.948404, -0.353536, 19.9744, 0, 19.9969, 0.353934, -19.9775, -0.0167836, 0.948255, 148.147, 186.069, -106.416 )
+
+[node name="Item_Hedge16" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.379362, -0.141414, 7.98975, 0, 7.99875, 0.141574, -7.991, -0.00671345, 0.379302, 148.147, 80.2875, -106.416 )
+
+[node name="Item_Hedge17" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.711303, -0.176768, 7.98975, 0, 9.99843, 0.141574, -23.3305, -0.013067, 0.590618, 148.147, 124.987, -106.416 )
+
+[node name="Item_Hedge12" parent="Assets/Items" instance=ExtResource( 13 )]
+transform = Transform( 0.237101, -0.088384, 4.99359, 0, 4.99922, 0.0884835, -4.99438, -0.00419591, 0.237064, 275.814, 123.528, -106.416 )
 
 [node name="Item_FlatRock" parent="Assets/Items" instance=ExtResource( 3 )]
 transform = Transform( 5.18035, 0, 0, 0, 5.18035, 0, 0, 0, 5.18035, -11.8153, -7.6194, -51.2068 )
@@ -254,6 +722,75 @@ transform = Transform( 2.66643, 0, -3.70827, 0, 4.5674, 0, 3.70827, 0, 2.66643, 
 [node name="Item_FlatRock23" parent="Assets/Items" instance=ExtResource( 3 )]
 transform = Transform( -0.249467, 0, -4.56058, 0, 4.5674, 0, 4.56058, 0, -0.249467, -11.3418, 81.6413, -55.8805 )
 
+[node name="Item_FlatRock93" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( 5.18035, 0, 0, 0, 5.18035, 0, 0, 0, 5.18035, -11.2858, 87.8151, -55.6909 )
+
+[node name="Item_FlatRock94" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( 4.1199, 0, -3.14045, 0, 5.18035, 0, 3.14045, 0, 4.1199, -12.5726, 92.2238, -56.2282 )
+
+[node name="Item_FlatRock95" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( 5.13232, 0, -0.703771, 0, 5.18035, 0, 0.703771, 0, 5.13232, -12.5726, 97.0928, -56.2282 )
+
+[node name="Item_FlatRock96" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( 3.55561, 0, -3.76745, 0, 5.18035, 0, 3.76745, 0, 3.55561, -12.4061, 101.716, -56.3062 )
+
+[node name="Item_FlatRock97" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( 3.69395, 0, 0, 0, 3.69395, 0, 0, 0, 3.69395, -11.4704, 105.626, -57.6928 )
+
+[node name="Item_FlatRock98" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( 2.93777, 0, -2.23936, 0, 3.69395, 0, 2.23936, 0, 2.93777, -12.388, 108.77, -58.0759 )
+
+[node name="Item_FlatRock99" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( 3.6597, 0, -0.501837, 0, 3.69395, 0, 0.501837, 0, 3.6597, -12.388, 112.241, -58.0759 )
+
+[node name="Item_FlatRock100" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( 2.53539, 0, -2.68645, 0, 3.69395, 0, 2.68645, 0, 2.53539, -12.2692, 115.538, -58.1315 )
+
+[node name="Item_FlatRock101" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( 3.14549, 0, -3.31164, 0, 4.5674, 0, 3.31164, 0, 3.14549, -11.7304, 119.671, -57.3186 )
+
+[node name="Item_FlatRock102" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( 0.493989, 0, -4.5406, 0, 4.5674, 0, 4.5406, 0, 0.493989, -12.1683, 123.558, -58.4674 )
+
+[node name="Item_FlatRock103" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( 2.66643, 0, -3.70827, 0, 4.5674, 0, 3.70827, 0, 2.66643, -12.1683, 127.851, -58.4674 )
+
+[node name="Item_FlatRock104" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -0.249467, 0, -4.56058, 0, 4.5674, 0, 4.56058, 0, -0.249467, -12.0173, 131.927, -58.4084 )
+
+[node name="Item_FlatRock105" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( 4.1199, 0, -3.14045, 0, 5.18035, 0, 3.14045, 0, 4.1199, -11.3676, 137.372, -58.1844 )
+
+[node name="Item_FlatRock106" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( 5.13232, 0, -0.703771, 0, 5.18035, 0, 0.703771, 0, 5.13232, -11.3676, 142.241, -58.1844 )
+
+[node name="Item_FlatRock107" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( 3.55561, 0, -3.76745, 0, 5.18035, 0, 3.76745, 0, 3.55561, -11.2011, 146.864, -58.2624 )
+
+[node name="Item_FlatRock108" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( 3.69395, 0, 0, 0, 3.69395, 0, 0, 0, 3.69395, -10.2654, 150.774, -59.649 )
+
+[node name="Item_FlatRock109" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( 2.93777, 0, -2.23936, 0, 3.69395, 0, 2.23936, 0, 2.93777, -11.183, 153.918, -60.0322 )
+
+[node name="Item_FlatRock110" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( 3.6597, 0, -0.501837, 0, 3.69395, 0, 0.501837, 0, 3.6597, -11.183, 157.39, -60.0322 )
+
+[node name="Item_FlatRock111" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( 2.53539, 0, -2.68645, 0, 3.69395, 0, 2.68645, 0, 2.53539, -11.0642, 160.686, -60.0878 )
+
+[node name="Item_FlatRock112" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( 3.14549, 0, -3.31164, 0, 4.5674, 0, 3.31164, 0, 3.14549, -10.5254, 164.82, -59.2748 )
+
+[node name="Item_FlatRock113" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( 0.493989, 0, -4.5406, 0, 4.5674, 0, 4.5406, 0, 0.493989, -10.9633, 168.707, -60.4237 )
+
+[node name="Item_FlatRock114" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( 2.66643, 0, -3.70827, 0, 4.5674, 0, 3.70827, 0, 2.66643, -10.9633, 173, -60.4237 )
+
+[node name="Item_FlatRock115" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -0.249467, 0, -4.56058, 0, 4.5674, 0, 4.56058, 0, -0.249467, -10.8123, 177.076, -60.3646 )
+
 [node name="Item_FlatRock24" parent="Assets/Items" instance=ExtResource( 3 )]
 transform = Transform( -2.42923, 0, -4.57546, 0, 5.18035, 0, 4.57546, 0, -2.42923, -14.101, -7.6194, 115.824 )
 
@@ -322,6 +859,372 @@ transform = Transform( -4.52564, 0, -0.616154, 0, 4.5674, 0, 0.616154, 0, -4.525
 
 [node name="Item_FlatRock46" parent="Assets/Items" instance=ExtResource( 3 )]
 transform = Transform( -3.91108, 0, 2.35894, 0, 4.5674, 0, -2.35894, 0, -3.91108, -10.1951, 81.6413, 118.434 )
+
+[node name="Item_FlatRock116" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -2.42923, 0, -4.57546, 0, 5.18035, 0, 4.57546, 0, -2.42923, -14.101, -7.6194, 320.555 )
+
+[node name="Item_FlatRock117" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.70571, 0, -2.16617, 0, 5.18035, 0, 2.16617, 0, -4.70571, -13.023, -3.21066, 319.67 )
+
+[node name="Item_FlatRock118" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.02831, 0, -4.20302, 0, 5.18035, 0, 4.20302, 0, -3.02831, -13.023, 1.65832, 319.67 )
+
+[node name="Item_FlatRock119" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.99488, 0, -1.37376, 0, 5.18035, 0, 1.37376, 0, -4.99488, -13.0322, 6.28125, 319.854 )
+
+[node name="Item_FlatRock120" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -1.73221, 0, -3.26262, 0, 3.69395, 0, 3.26262, 0, -1.73221, -12.2463, 10.1913, 321.33 )
+
+[node name="Item_FlatRock121" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.35549, 0, -1.54463, 0, 3.69395, 0, 1.54463, 0, -3.35549, -11.4776, 13.3351, 320.7 )
+
+[node name="Item_FlatRock122" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -2.15939, 0, -2.99704, 0, 3.69395, 0, 2.99704, 0, -2.15939, -11.4776, 16.807, 320.7 )
+
+[node name="Item_FlatRock123" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.56169, 0, -0.979582, 0, 3.69395, 0, 0.979582, 0, -3.56169, -11.4842, 20.1034, 320.831 )
+
+[node name="Item_FlatRock124" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.39998, 0, -1.22527, 0, 4.5674, 0, 1.22527, 0, -4.39998, -12.4549, 24.2369, 320.924 )
+
+[node name="Item_FlatRock125" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.24206, 0, 1.69293, 0, 4.5674, 0, -1.69293, 0, -4.24206, -11.2348, 28.124, 321.077 )
+
+[node name="Item_FlatRock126" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.52564, 0, -0.616154, 0, 4.5674, 0, 0.616154, 0, -4.52564, -11.2348, 32.4168, 321.077 )
+
+[node name="Item_FlatRock127" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.91108, 0, 2.35894, 0, 4.5674, 0, -2.35894, 0, -3.91108, -11.3578, 36.4928, 321.183 )
+
+[node name="Item_FlatRock128" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.70571, 0, -2.16617, 0, 5.18035, 0, 2.16617, 0, -4.70571, -11.8603, 41.9379, 321.652 )
+
+[node name="Item_FlatRock129" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.02831, 0, -4.20302, 0, 5.18035, 0, 4.20302, 0, -3.02831, -11.8603, 46.8068, 321.652 )
+
+[node name="Item_FlatRock130" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.99488, 0, -1.37376, 0, 5.18035, 0, 1.37376, 0, -4.99488, -11.8695, 51.4298, 321.835 )
+
+[node name="Item_FlatRock131" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -1.73221, 0, -3.26262, 0, 3.69395, 0, 3.26262, 0, -1.73221, -11.0836, 55.3398, 323.312 )
+
+[node name="Item_FlatRock132" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.35549, 0, -1.54463, 0, 3.69395, 0, 1.54463, 0, -3.35549, -10.3149, 58.4836, 322.681 )
+
+[node name="Item_FlatRock133" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -2.15939, 0, -2.99704, 0, 3.69395, 0, 2.99704, 0, -2.15939, -10.3149, 61.9555, 322.681 )
+
+[node name="Item_FlatRock134" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.56169, 0, -0.979582, 0, 3.69395, 0, 0.979582, 0, -3.56169, -10.3214, 65.252, 322.812 )
+
+[node name="Item_FlatRock135" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.39998, 0, -1.22527, 0, 4.5674, 0, 1.22527, 0, -4.39998, -11.2921, 69.3854, 322.907 )
+
+[node name="Item_FlatRock136" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.24206, 0, 1.69293, 0, 4.5674, 0, -1.69293, 0, -4.24206, -10.0721, 73.2725, 323.059 )
+
+[node name="Item_FlatRock137" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.52564, 0, -0.616154, 0, 4.5674, 0, 0.616154, 0, -4.52564, -10.0721, 77.5653, 323.059 )
+
+[node name="Item_FlatRock138" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.91108, 0, 2.35894, 0, 4.5674, 0, -2.35894, 0, -3.91108, -10.1951, 81.6413, 323.165 )
+
+[node name="Item_FlatRock139" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -2.42923, 0, -4.57546, 0, 5.18035, 0, 4.57546, 0, -2.42923, -89.5287, -7.6194, 320.555 )
+
+[node name="Item_FlatRock140" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.70571, 0, -2.16617, 0, 5.18035, 0, 2.16617, 0, -4.70571, -88.4507, -3.21066, 319.67 )
+
+[node name="Item_FlatRock141" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.02831, 0, -4.20302, 0, 5.18035, 0, 4.20302, 0, -3.02831, -88.4507, 1.65832, 319.67 )
+
+[node name="Item_FlatRock142" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.99488, 0, -1.37376, 0, 5.18035, 0, 1.37376, 0, -4.99488, -88.4599, 6.28125, 319.854 )
+
+[node name="Item_FlatRock143" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -1.73221, 0, -3.26262, 0, 3.69395, 0, 3.26262, 0, -1.73221, -87.674, 10.1913, 321.33 )
+
+[node name="Item_FlatRock144" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.35549, 0, -1.54463, 0, 3.69395, 0, 1.54463, 0, -3.35549, -86.9053, 13.3351, 320.7 )
+
+[node name="Item_FlatRock145" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -2.15939, 0, -2.99704, 0, 3.69395, 0, 2.99704, 0, -2.15939, -86.9053, 16.807, 320.7 )
+
+[node name="Item_FlatRock146" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.56169, 0, -0.979582, 0, 3.69395, 0, 0.979582, 0, -3.56169, -86.9119, 20.1034, 320.831 )
+
+[node name="Item_FlatRock147" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.39998, 0, -1.22527, 0, 4.5674, 0, 1.22527, 0, -4.39998, -87.8826, 24.2369, 320.924 )
+
+[node name="Item_FlatRock148" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.24206, 0, 1.69293, 0, 4.5674, 0, -1.69293, 0, -4.24206, -86.6625, 28.124, 321.077 )
+
+[node name="Item_FlatRock149" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.52564, 0, -0.616154, 0, 4.5674, 0, 0.616154, 0, -4.52564, -86.6625, 32.4168, 321.077 )
+
+[node name="Item_FlatRock150" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.91108, 0, 2.35894, 0, 4.5674, 0, -2.35894, 0, -3.91108, -86.7855, 36.4928, 321.183 )
+
+[node name="Item_FlatRock151" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.70571, 0, -2.16617, 0, 5.18035, 0, 2.16617, 0, -4.70571, -87.288, 41.9379, 321.652 )
+
+[node name="Item_FlatRock152" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.02831, 0, -4.20302, 0, 5.18035, 0, 4.20302, 0, -3.02831, -87.288, 46.8068, 321.652 )
+
+[node name="Item_FlatRock153" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.99488, 0, -1.37376, 0, 5.18035, 0, 1.37376, 0, -4.99488, -87.2972, 51.4298, 321.835 )
+
+[node name="Item_FlatRock154" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -1.73221, 0, -3.26262, 0, 3.69395, 0, 3.26262, 0, -1.73221, -86.5113, 55.3398, 323.312 )
+
+[node name="Item_FlatRock155" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.35549, 0, -1.54463, 0, 3.69395, 0, 1.54463, 0, -3.35549, -85.7426, 58.4836, 322.681 )
+
+[node name="Item_FlatRock156" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -2.15939, 0, -2.99704, 0, 3.69395, 0, 2.99704, 0, -2.15939, -85.7426, 61.9555, 322.681 )
+
+[node name="Item_FlatRock157" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.56169, 0, -0.979582, 0, 3.69395, 0, 0.979582, 0, -3.56169, -85.7491, 65.252, 322.812 )
+
+[node name="Item_FlatRock158" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.39998, 0, -1.22527, 0, 4.5674, 0, 1.22527, 0, -4.39998, -86.7198, 69.3854, 322.907 )
+
+[node name="Item_FlatRock159" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.24206, 0, 1.69293, 0, 4.5674, 0, -1.69293, 0, -4.24206, -85.4998, 73.2725, 323.059 )
+
+[node name="Item_FlatRock160" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.52564, 0, -0.616154, 0, 4.5674, 0, 0.616154, 0, -4.52564, -85.4998, 77.5653, 323.059 )
+
+[node name="Item_FlatRock161" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.91108, 0, 2.35894, 0, 4.5674, 0, -2.35894, 0, -3.91108, -85.6228, 81.6413, 323.165 )
+
+[node name="Item_FlatRock162" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -2.42923, 0, -4.57546, 0, 5.18035, 0, 4.57546, 0, -2.42923, 61.1686, -7.6194, 320.555 )
+
+[node name="Item_FlatRock163" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.70571, 0, -2.16617, 0, 5.18035, 0, 2.16617, 0, -4.70571, 62.2466, -3.21066, 319.67 )
+
+[node name="Item_FlatRock164" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.02831, 0, -4.20302, 0, 5.18035, 0, 4.20302, 0, -3.02831, 62.2466, 1.65832, 319.67 )
+
+[node name="Item_FlatRock165" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.99488, 0, -1.37376, 0, 5.18035, 0, 1.37376, 0, -4.99488, 62.2374, 6.28125, 319.854 )
+
+[node name="Item_FlatRock166" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -1.73221, 0, -3.26262, 0, 3.69395, 0, 3.26262, 0, -1.73221, 63.0233, 10.1913, 321.33 )
+
+[node name="Item_FlatRock167" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.35549, 0, -1.54463, 0, 3.69395, 0, 1.54463, 0, -3.35549, 63.792, 13.3351, 320.7 )
+
+[node name="Item_FlatRock168" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -2.15939, 0, -2.99704, 0, 3.69395, 0, 2.99704, 0, -2.15939, 63.792, 16.807, 320.7 )
+
+[node name="Item_FlatRock169" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.56169, 0, -0.979582, 0, 3.69395, 0, 0.979582, 0, -3.56169, 63.7854, 20.1034, 320.831 )
+
+[node name="Item_FlatRock170" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.39998, 0, -1.22527, 0, 4.5674, 0, 1.22527, 0, -4.39998, 62.8147, 24.2369, 320.924 )
+
+[node name="Item_FlatRock171" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.24206, 0, 1.69293, 0, 4.5674, 0, -1.69293, 0, -4.24206, 64.0348, 28.124, 321.077 )
+
+[node name="Item_FlatRock172" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.52564, 0, -0.616154, 0, 4.5674, 0, 0.616154, 0, -4.52564, 64.0348, 32.4168, 321.077 )
+
+[node name="Item_FlatRock173" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.91108, 0, 2.35894, 0, 4.5674, 0, -2.35894, 0, -3.91108, 63.9118, 36.4928, 321.183 )
+
+[node name="Item_FlatRock174" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.70571, 0, -2.16617, 0, 5.18035, 0, 2.16617, 0, -4.70571, 63.4093, 41.9379, 321.652 )
+
+[node name="Item_FlatRock175" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.02831, 0, -4.20302, 0, 5.18035, 0, 4.20302, 0, -3.02831, 63.4093, 46.8068, 321.652 )
+
+[node name="Item_FlatRock176" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.99488, 0, -1.37376, 0, 5.18035, 0, 1.37376, 0, -4.99488, 63.4001, 51.4298, 321.835 )
+
+[node name="Item_FlatRock177" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -1.73221, 0, -3.26262, 0, 3.69395, 0, 3.26262, 0, -1.73221, 64.186, 55.3398, 323.312 )
+
+[node name="Item_FlatRock178" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.35549, 0, -1.54463, 0, 3.69395, 0, 1.54463, 0, -3.35549, 64.9547, 58.4836, 322.681 )
+
+[node name="Item_FlatRock179" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -2.15939, 0, -2.99704, 0, 3.69395, 0, 2.99704, 0, -2.15939, 64.9547, 61.9555, 322.681 )
+
+[node name="Item_FlatRock180" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.56169, 0, -0.979582, 0, 3.69395, 0, 0.979582, 0, -3.56169, 64.9482, 65.252, 322.812 )
+
+[node name="Item_FlatRock181" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.39998, 0, -1.22527, 0, 4.5674, 0, 1.22527, 0, -4.39998, 63.9775, 69.3854, 322.907 )
+
+[node name="Item_FlatRock182" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.24206, 0, 1.69293, 0, 4.5674, 0, -1.69293, 0, -4.24206, 65.1975, 73.2725, 323.059 )
+
+[node name="Item_FlatRock183" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.52564, 0, -0.616154, 0, 4.5674, 0, 0.616154, 0, -4.52564, 65.1975, 77.5653, 323.059 )
+
+[node name="Item_FlatRock184" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.91108, 0, 2.35894, 0, 4.5674, 0, -2.35894, 0, -3.91108, 65.0745, 81.6413, 323.165 )
+
+[node name="Item_FlatRock185" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -2.42923, 0, -4.57546, 0, 5.18035, 0, 4.57546, 0, -2.42923, -187.787, -7.6194, 320.555 )
+
+[node name="Item_FlatRock186" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.70571, 0, -2.16617, 0, 5.18035, 0, 2.16617, 0, -4.70571, -186.709, -3.21066, 319.67 )
+
+[node name="Item_FlatRock187" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.02831, 0, -4.20302, 0, 5.18035, 0, 4.20302, 0, -3.02831, -186.709, 1.65832, 319.67 )
+
+[node name="Item_FlatRock188" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.99488, 0, -1.37376, 0, 5.18035, 0, 1.37376, 0, -4.99488, -186.719, 6.28125, 319.854 )
+
+[node name="Item_FlatRock189" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -1.73221, 0, -3.26262, 0, 3.69395, 0, 3.26262, 0, -1.73221, -185.933, 10.1913, 321.33 )
+
+[node name="Item_FlatRock190" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.35549, 0, -1.54463, 0, 3.69395, 0, 1.54463, 0, -3.35549, -185.164, 13.3351, 320.7 )
+
+[node name="Item_FlatRock191" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -2.15939, 0, -2.99704, 0, 3.69395, 0, 2.99704, 0, -2.15939, -185.164, 16.807, 320.7 )
+
+[node name="Item_FlatRock192" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.56169, 0, -0.979582, 0, 3.69395, 0, 0.979582, 0, -3.56169, -185.171, 20.1034, 320.831 )
+
+[node name="Item_FlatRock193" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.39998, 0, -1.22527, 0, 4.5674, 0, 1.22527, 0, -4.39998, -186.141, 24.2369, 320.924 )
+
+[node name="Item_FlatRock194" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.24206, 0, 1.69293, 0, 4.5674, 0, -1.69293, 0, -4.24206, -184.921, 28.124, 321.077 )
+
+[node name="Item_FlatRock195" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.52564, 0, -0.616154, 0, 4.5674, 0, 0.616154, 0, -4.52564, -184.921, 32.4168, 321.077 )
+
+[node name="Item_FlatRock196" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.91108, 0, 2.35894, 0, 4.5674, 0, -2.35894, 0, -3.91108, -185.044, 36.4928, 321.183 )
+
+[node name="Item_FlatRock197" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.70571, 0, -2.16617, 0, 5.18035, 0, 2.16617, 0, -4.70571, -185.547, 41.9379, 321.652 )
+
+[node name="Item_FlatRock198" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.02831, 0, -4.20302, 0, 5.18035, 0, 4.20302, 0, -3.02831, -185.547, 46.8068, 321.652 )
+
+[node name="Item_FlatRock199" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.99488, 0, -1.37376, 0, 5.18035, 0, 1.37376, 0, -4.99488, -185.556, 51.4298, 321.835 )
+
+[node name="Item_FlatRock200" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -1.73221, 0, -3.26262, 0, 3.69395, 0, 3.26262, 0, -1.73221, -184.77, 55.3398, 323.312 )
+
+[node name="Item_FlatRock201" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.35549, 0, -1.54463, 0, 3.69395, 0, 1.54463, 0, -3.35549, -184.001, 58.4836, 322.681 )
+
+[node name="Item_FlatRock202" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -2.15939, 0, -2.99704, 0, 3.69395, 0, 2.99704, 0, -2.15939, -184.001, 61.9555, 322.681 )
+
+[node name="Item_FlatRock203" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.56169, 0, -0.979582, 0, 3.69395, 0, 0.979582, 0, -3.56169, -184.008, 65.252, 322.812 )
+
+[node name="Item_FlatRock204" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.39998, 0, -1.22527, 0, 4.5674, 0, 1.22527, 0, -4.39998, -184.979, 69.3854, 322.907 )
+
+[node name="Item_FlatRock205" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.24206, 0, 1.69293, 0, 4.5674, 0, -1.69293, 0, -4.24206, -183.759, 73.2725, 323.059 )
+
+[node name="Item_FlatRock206" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.52564, 0, -0.616154, 0, 4.5674, 0, 0.616154, 0, -4.52564, -183.759, 77.5653, 323.059 )
+
+[node name="Item_FlatRock207" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.91108, 0, 2.35894, 0, 4.5674, 0, -2.35894, 0, -3.91108, -183.882, 81.6413, 323.165 )
+
+[node name="Item_FlatRock208" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -2.42923, 0, -4.57546, 0, 5.18035, 0, 4.57546, 0, -2.42923, 138.61, -7.6194, 320.555 )
+
+[node name="Item_FlatRock209" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.70571, 0, -2.16617, 0, 5.18035, 0, 2.16617, 0, -4.70571, 139.688, -3.21066, 319.67 )
+
+[node name="Item_FlatRock210" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.02831, 0, -4.20302, 0, 5.18035, 0, 4.20302, 0, -3.02831, 139.688, 1.65832, 319.67 )
+
+[node name="Item_FlatRock211" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.99488, 0, -1.37376, 0, 5.18035, 0, 1.37376, 0, -4.99488, 139.679, 6.28125, 319.854 )
+
+[node name="Item_FlatRock231" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.99488, 0, -1.37376, 0, 5.18035, 0, 1.37376, 0, -4.99488, 134.891, 85.7828, 319.854 )
+
+[node name="Item_FlatRock232" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -5.0346, 0.132028, -0.477172, 0.164575, 5.28928, -0.443448, 0.446112, -0.461268, -5.22152, 122.032, 85.1354, 320.227 )
+
+[node name="Item_FlatRock233" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -5.17891, 0, 0.122406, 0, 5.18035, 0, -0.122406, 0, -5.17891, 108.395, 85.7828, 319.854 )
+
+[node name="Item_FlatRock234" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.96761, 0, -1.46931, 0, 5.18035, 0, 1.46931, 0, -4.96761, 99.3401, 85.7828, 319.137 )
+
+[node name="Item_FlatRock235" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -5.18018, 0, -0.0425884, 0, 5.18035, 0, 0.0425884, 0, -5.18018, 87.0172, 85.7828, 318.047 )
+
+[node name="Item_FlatRock236" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.78497, -0.261428, -1.50676, -0.222389, 5.62493, -0.0700289, 1.31745, 0, -5.48435, 78.0742, 86.0485, 319.854 )
+
+[node name="Item_FlatRock237" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.99488, 0, -1.37376, 0, 5.18035, 0, 1.37376, 0, -4.99488, 71.8721, 85.7828, 322.564 )
+
+[node name="Item_FlatRock212" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -1.73221, 0, -3.26262, 0, 3.69395, 0, 3.26262, 0, -1.73221, 140.465, 10.1913, 321.33 )
+
+[node name="Item_FlatRock213" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.35549, 0, -1.54463, 0, 3.69395, 0, 1.54463, 0, -3.35549, 141.233, 13.3351, 320.7 )
+
+[node name="Item_FlatRock214" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -2.15939, 0, -2.99704, 0, 3.69395, 0, 2.99704, 0, -2.15939, 141.233, 16.807, 320.7 )
+
+[node name="Item_FlatRock215" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.56169, 0, -0.979582, 0, 3.69395, 0, 0.979582, 0, -3.56169, 141.227, 20.1034, 320.831 )
+
+[node name="Item_FlatRock216" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.39998, 0, -1.22527, 0, 4.5674, 0, 1.22527, 0, -4.39998, 140.256, 24.2369, 320.924 )
+
+[node name="Item_FlatRock217" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.24206, 0, 1.69293, 0, 4.5674, 0, -1.69293, 0, -4.24206, 141.476, 28.124, 321.077 )
+
+[node name="Item_FlatRock218" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.52564, 0, -0.616154, 0, 4.5674, 0, 0.616154, 0, -4.52564, 141.476, 32.4168, 321.077 )
+
+[node name="Item_FlatRock219" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.91108, 0, 2.35894, 0, 4.5674, 0, -2.35894, 0, -3.91108, 141.353, 36.4928, 321.183 )
+
+[node name="Item_FlatRock220" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.70571, 0, -2.16617, 0, 5.18035, 0, 2.16617, 0, -4.70571, 140.85, 41.9379, 321.652 )
+
+[node name="Item_FlatRock221" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.02831, 0, -4.20302, 0, 5.18035, 0, 4.20302, 0, -3.02831, 140.85, 46.8068, 321.652 )
+
+[node name="Item_FlatRock222" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.99488, 0, -1.37376, 0, 5.18035, 0, 1.37376, 0, -4.99488, 140.841, 51.4298, 321.835 )
+
+[node name="Item_FlatRock223" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -1.73221, 0, -3.26262, 0, 3.69395, 0, 3.26262, 0, -1.73221, 141.627, 55.3398, 323.312 )
+
+[node name="Item_FlatRock224" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.35549, 0, -1.54463, 0, 3.69395, 0, 1.54463, 0, -3.35549, 142.396, 58.4836, 322.681 )
+
+[node name="Item_FlatRock225" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -2.15939, 0, -2.99704, 0, 3.69395, 0, 2.99704, 0, -2.15939, 142.396, 61.9555, 322.681 )
+
+[node name="Item_FlatRock226" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.56169, 0, -0.979582, 0, 3.69395, 0, 0.979582, 0, -3.56169, 142.389, 65.252, 322.812 )
+
+[node name="Item_FlatRock227" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.39998, 0, -1.22527, 0, 4.5674, 0, 1.22527, 0, -4.39998, 141.419, 69.3854, 322.907 )
+
+[node name="Item_FlatRock228" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.24206, 0, 1.69293, 0, 4.5674, 0, -1.69293, 0, -4.24206, 142.639, 73.2725, 323.059 )
+
+[node name="Item_FlatRock229" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -4.52564, 0, -0.616154, 0, 4.5674, 0, 0.616154, 0, -4.52564, 142.639, 77.5653, 323.059 )
+
+[node name="Item_FlatRock230" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( -3.91108, 0, 2.35894, 0, 4.5674, 0, -2.35894, 0, -3.91108, 142.516, 81.6413, 323.165 )
 
 [node name="Item_FlatRock47" parent="Assets/Items" instance=ExtResource( 3 )]
 transform = Transform( -2.42923, 0, -4.57546, 0, 5.18035, 0, 4.57546, 0, -2.42923, 125.808, -7.6194, 34.4678 )
@@ -462,7 +1365,7 @@ transform = Transform( -4.52564, 0, -0.616154, 0, 4.5674, 0, 0.616154, 0, -4.525
 transform = Transform( -3.91108, 0, 2.35894, 0, 4.5674, 0, -2.35894, 0, -3.91108, -127.646, 95.2322, 37.0776 )
 
 [node name="SkyClock" parent="Assets" instance=ExtResource( 8 )]
-transform = Transform( 2.05688, 0, 0, 0, 2.05688, 0, 0, 0, 2.05688, 0, 0, 0 )
+transform = Transform( 2.05688, 0, 0, 0, 2.05688, 0, 0, 0, 2.05688, 1.29155, 0.111633, 0.171108 )
 
 [node name="AllWecker" type="Node" parent="."]
 script = ExtResource( 7 )
@@ -474,7 +1377,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -132.788, 2.22424, -7.61185 )
 transform = Transform( -0.993197, 0, -0.116445, 0, 1, 0, 0.116445, 0, -0.993197, 54.6032, 2.22424, 16.6583 )
 
 [node name="Wecker3" parent="AllWecker" instance=ExtResource( 5 )]
-transform = Transform( -0.278471, 0, 0.960445, 0.344474, 0.933468, 0.0998769, -0.896544, 0.358661, -0.259944, 54.6032, -4.9123, 139.99 )
+transform = Transform( -0.278471, 0, 0.960445, 0.344474, 0.933468, 0.0998769, -0.896544, 0.358661, -0.259944, 54.0111, -4.9123, 139.99 )
 
 [node name="Wecker4" parent="AllWecker" instance=ExtResource( 5 )]
 transform = Transform( 0.11599, -0.109211, -0.987228, 0.653276, 0.757087, -0.00699826, 0.748182, -0.64412, 0.159159, 54.6032, 4.02484, -141.743 )
