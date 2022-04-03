@@ -8,6 +8,7 @@ var WeckersArray = []
 var WeckersAnzahl = 0
 var rng = RandomNumberGenerator.new()
 var SpawnerLocations = []
+var SpawnerIndex = []
 var t = Timer
 
 export var difficultyLevel = 1
@@ -17,8 +18,10 @@ func _ready():
 	rng.randomize()
 	WeckersArray = get_children()
 	SpawnerLocations = get_tree().get_root().get_node("Spielwelt").get_node("Other").get_node("Spawner")
+	SpawnerIndex = SpawnerLocations
 	t = get_tree().get_root().get_node("Spielwelt").get_node("Other").get_node("SpawnTimer")
 	WeckersAnzahl = SpawnerLocations.get_child_count()
+	print(SpawnerLocations)
 	
 	#Timer that spawns the Wecker
 	t.set_wait_time(difficultyLevel*5)

@@ -12,7 +12,7 @@ var is_triggered = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	spielwelt = get_tree().get_root().get_node("Spielwelt")
-	manager_items = get_tree().get_root().get_node("Spielwelt").get_node("Assets").get_node("Items")
+	manager_items = spielwelt.get_node("Assets").get_node("Items")
 
 func albtraum():
 #	print(self.name, " ist nun im Alptraumland")
