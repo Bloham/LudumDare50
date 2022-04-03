@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://MainMenu.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Bodenplatte.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Audio/Music/music_layer_1.ogg" type="AudioStream" id=4]
 [ext_resource path="res://Wecker.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Spielwelt.gd" type="Script" id=6]
+[ext_resource path="res://WeckerManager.gd" type="Script" id=7]
 
 [node name="Spielwelt" type="Spatial"]
 script = ExtResource( 6 )
@@ -95,6 +96,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 92.6843, -0.23607, 92.4346 )
 transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 51.125, 2.25078, 32.2208 )
 
 [node name="Wecker" type="Node" parent="."]
+script = ExtResource( 7 )
 
 [node name="Wecker" parent="Wecker" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -132.788, 2.22424, -7.61185 )
