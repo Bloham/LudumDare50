@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SM_Rock_Big_Evil.obj-a62b3852b11d13b09c557c89f379bdfa.mesh"
+
+[deps]
+
+files=[ "res://.import/SM_Rock_Big_Evil.obj-a62b3852b11d13b09c557c89f379bdfa.mesh" ]
+
+source_file="res://Assets/Rock_Big/SM_Rock_Big_Evil.obj"
+dest_files=[ "res://.import/SM_Rock_Big_Evil.obj-a62b3852b11d13b09c557c89f379bdfa.mesh", "res://.import/SM_Rock_Big_Evil.obj-a62b3852b11d13b09c557c89f379bdfa.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

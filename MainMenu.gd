@@ -4,6 +4,7 @@ func _ready():
 	$VBoxContainer/StartButton.grab_focus()
 
 
+
 func _on_StartButton_pressed():
 	self.visible = false
 	var menueCamera = find_node("MenueCamera")
