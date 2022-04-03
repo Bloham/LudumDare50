@@ -1,18 +1,20 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://Assets/Tree/SM_Tree_Happy.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Assets/Tree/SM_Tree_Top_Happy.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://Prefabs/Mesh.gd" type="Script" id=2]
 [ext_resource path="res://Prefabs/Item.gd" type="Script" id=3]
 [ext_resource path="res://Materials/M_Tree_Evil.tres" type="Material" id=4]
 [ext_resource path="res://Materials/M_Tree_Happy.tres" type="Material" id=5]
+[ext_resource path="res://Assets/Tree/SM_Tree_Top_Evil.obj" type="ArrayMesh" id=6]
 
-[sub_resource type="CylinderShape" id=1]
+[sub_resource type="SphereShape" id=1]
 
-[node name="Item_Tree" type="Spatial"]
+[node name="Item_Hedge" type="Spatial"]
 script = ExtResource( 3 )
 
 [node name="MeshEvil" type="MeshInstance" parent="."]
-mesh = ExtResource( 1 )
+transform = Transform( 1.2, 0, 0, 0, -0.208378, -1.18177, 0, 1.18177, -0.208378, 0, 0, 0 )
+mesh = ExtResource( 6 )
 material/0 = ExtResource( 4 )
 script = ExtResource( 2 )
 is_visible = false
@@ -27,5 +29,5 @@ collision_layer = 4
 collision_mask = 0
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
-transform = Transform( 0.25, 0, 0, 0, 4.25, 0, 0, 0, 0.25, 0, 4, 0 )
+transform = Transform( 2.1, 0, 0, 0, 1.5, 0, 0, 0, 2.2, 0, 0, 0 )
 shape = SubResource( 1 )
