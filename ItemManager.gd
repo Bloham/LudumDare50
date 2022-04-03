@@ -26,6 +26,8 @@ func coruptionRise():
 		t.set_one_shot(true)
 		self.add_child(t)
 		t.start()
+		var spielwelt = get_tree().get_root().get_node("Spielwelt")
+		spielwelt.get_node("Assets").get_node("SkyClock").gameOver()
 		print("game over timer startet")
 		yield(t, "timeout")
 		gameOver()
