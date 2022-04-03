@@ -1,0 +1,32 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Assets/Tree/SM_Tree_Happy.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Prefabs/Mesh.gd" type="Script" id=2]
+[ext_resource path="res://Prefabs/Item.gd" type="Script" id=3]
+[ext_resource path="res://Materials/M_Tree_Evil.tres" type="Material" id=4]
+[ext_resource path="res://Materials/M_Tree_Happy.tres" type="Material" id=5]
+[ext_resource path="res://Assets/Tree/SM_Tree_Evil.obj" type="ArrayMesh" id=6]
+
+[sub_resource type="CylinderShape" id=1]
+
+[node name="Item_Tree" type="Spatial"]
+script = ExtResource( 3 )
+
+[node name="MeshEvil" type="MeshInstance" parent="."]
+mesh = ExtResource( 6 )
+material/0 = ExtResource( 4 )
+script = ExtResource( 2 )
+is_visible = false
+
+[node name="MeshHappy" type="MeshInstance" parent="."]
+mesh = ExtResource( 1 )
+material/0 = ExtResource( 5 )
+script = ExtResource( 2 )
+
+[node name="StaticBody" type="StaticBody" parent="."]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 0.25, 0, 0, 0, 4.25, 0, 0, 0, 0.25, 0, 4, 0 )
+shape = SubResource( 1 )
