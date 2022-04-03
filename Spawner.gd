@@ -16,7 +16,7 @@ func _ready():
 	SpawnLocations = get_node("SpawnLocations").get_children()
 	t = get_node("SpawnTimer")
 	WeckersAnzahl = get_node("SpawnLocations").get_child_count()
-	print(SpawnLocations)
+#	print(SpawnLocations)
 	SpawnLocationIndices = []
 	for i in SpawnLocations:
 		SpawnLocationIndices.append(false)
@@ -35,6 +35,7 @@ func SpawnWecker():
 		SpawnLocationIndices[weckerNummerX] = true
 		var weckerScene = preload("res://Wecker.tscn")
 		var Wecker = weckerScene.instance()
+		Wecker.translation = SpawnLocations[weckerNummerX].translation
 		Wecker.spawn_index = weckerNummerX
 		Wecker.set_spawner(self)
 		var spielwelt = get_tree().get_root().get_node("Spielwelt")
