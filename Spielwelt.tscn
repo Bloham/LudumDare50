@@ -2,7 +2,7 @@
 
 [ext_resource path="res://MainMenu.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Bodenplatte.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Prefabs/console.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Prefabs/Item.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Audio/Music/music_layer_1.ogg" type="AudioStream" id=4]
 [ext_resource path="res://Wecker.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Spielwelt.gd" type="Script" id=6]
@@ -89,78 +89,23 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 93.6399, -0.23607, -94.0593 )
 [node name="Bodenplatte6" parent="Assets/Boden" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 92.6843, -0.23607, 92.4346 )
 
-[node name="console" parent="Assets" instance=ExtResource( 3 )]
-transform = Transform( 0.218673, 0, -9.99761, 0, 10, 0, 9.99761, 0, 0.218673, -1.02621, 2.96124, -75.4103 )
+[node name="Items" type="Node" parent="Assets"]
 
-[node name="console4" parent="Assets" instance=ExtResource( 3 )]
-transform = Transform( 0.158502, -6.88924, -7.2466, -9.99761, -4.37114e-07, -0.218673, 0.150649, 7.24833, -6.88759, -84.4326, 10.6815, -64.6032 )
+[node name="Item" parent="Assets/Items" instance=ExtResource( 3 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 51.125, 2.25078, 32.2208 )
 
-[node name="console5" parent="Assets" instance=ExtResource( 3 )]
-transform = Transform( 0.158502, -6.88924, -7.2466, -9.81113, -1.50454, 1.21575, -1.92784, 7.09047, -6.78297, -65.9268, 10.6815, -82.6266 )
+[node name="Wecker" type="Node" parent="."]
 
-[node name="console6" parent="Assets" instance=ExtResource( 3 )]
-transform = Transform( -7.69737, 0.33249, -6.37494, 0.550534, 9.9838, -0.144026, 6.35982, -0.461825, -7.7032, -74.7066, 26.1048, -74.1774 )
-
-[node name="console2" parent="Assets" instance=ExtResource( 3 )]
-transform = Transform( 6.73877, 0, -7.38844, 0, 10, 0, 7.38844, 0, 6.73877, 23.9212, 2.96124, -75.4103 )
-
-[node name="console3" parent="Assets" instance=ExtResource( 3 )]
-transform = Transform( 9.99994, 0, -0.0347319, 0, 10, 0, 0.0347319, 0, 9.99994, 13.3497, 12.2823, -75.4103 )
-
-[node name="console7" parent="Assets" instance=ExtResource( 3 )]
-transform = Transform( 0.218673, 0, -9.99761, 0, 10, 0, 9.99761, 0, 0.218673, -1.02621, 2.96124, 72.3715 )
-
-[node name="console8" parent="Assets" instance=ExtResource( 3 )]
-transform = Transform( 6.73877, 0, -7.38844, 0, 10, 0, 7.38844, 0, 6.73877, 23.9212, 2.96124, 72.3715 )
-
-[node name="console9" parent="Assets" instance=ExtResource( 3 )]
-transform = Transform( 9.99994, 0, -0.0347319, 0, 10, 0, 0.0347319, 0, 9.99994, 13.3497, 12.2823, 72.3715 )
-
-[node name="console18" parent="Assets" instance=ExtResource( 3 )]
-transform = Transform( -5.73413, 0, -4.01494, 0, 7, 0, 4.01494, 0, -5.73413, 30.5608, 2.96124, -21.5157 )
-
-[node name="console19" parent="Assets" instance=ExtResource( 3 )]
-transform = Transform( -1.68005, 0, -6.7954, 0, 7, 0, 6.7954, 0, -1.68005, 44.4194, 2.96124, -0.771677 )
-
-[node name="console20" parent="Assets" instance=ExtResource( 3 )]
-transform = Transform( 3.86835, 0, -5.83403, 0, 7, 0, 5.83403, 0, 3.86835, 38.5468, 8.47098, -12.1886 )
-
-[node name="console10" parent="Assets" instance=ExtResource( 3 )]
-transform = Transform( 7.9791, 0, -6.02776, 0, 10, 0, 6.02776, 0, 7.9791, 59.221, 2.96124, 82.1576 )
-
-[node name="console11" parent="Assets" instance=ExtResource( 3 )]
-transform = Transform( 4.98754, 0, 0.3527, 0, 5, 0, -0.3527, 0, 4.98754, 62.3088, 2.96124, 65.5715 )
-
-[node name="console12" parent="Assets" instance=ExtResource( 3 )]
-transform = Transform( 9.66007, 0, 2.58516, 0, 10, 0, -2.58516, 0, 9.66007, 43.5653, 12.2823, 79.3067 )
-
-[node name="console13" parent="Assets" instance=ExtResource( 3 )]
-transform = Transform( 0.296782, -9.89927, -1.38436, 8.05667, -0.582835, 5.89495, -5.91625, -1.29028, 7.95821, 27.2929, 20.007, 72.5543 )
-
-[node name="console14" parent="Assets" instance=ExtResource( 3 )]
-transform = Transform( 0.567171, -9.98328, -0.111232, 2.04052, 0.00685191, 9.7896, -9.77316, -0.577935, 2.0375, 28.3996, 33.3672, 53.2537 )
-
-[node name="console15" parent="Assets" instance=ExtResource( 3 )]
-transform = Transform( 0.567171, -9.98328, -0.111232, -1.42533, -0.191236, 9.89605, -9.88164, -0.545421, -1.43379, 28.3996, 33.3672, 30.2214 )
-
-[node name="console16" parent="Assets" instance=ExtResource( 3 )]
-transform = Transform( 0.567171, -9.98328, -0.111232, -7.33953, -0.49245, 6.77413, -6.76828, -0.30257, -7.35519, 28.3996, 25.6166, 11.1168 )
-
-[node name="console17" parent="Assets" instance=ExtResource( 3 )]
-transform = Transform( 0.567171, -9.98328, -0.111232, -9.94204, -0.554566, -0.921031, 0.913324, 0.162826, -9.95687, 28.3996, 9.49682, -0.261061 )
-
-[node name="Items" type="Node" parent="."]
-
-[node name="Wecker" parent="Items" instance=ExtResource( 5 )]
+[node name="Wecker" parent="Wecker" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -132.788, 2.22424, -7.61185 )
 
-[node name="Wecker2" parent="Items" instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.6032, 2.22424, -7.61185 )
+[node name="Wecker2" parent="Wecker" instance=ExtResource( 5 )]
+transform = Transform( -0.993197, 0, -0.116445, 0, 1, 0, 0.116445, 0, -0.993197, 54.6032, 2.22424, -7.61185 )
 
-[node name="Wecker3" parent="Items" instance=ExtResource( 5 )]
+[node name="Wecker3" parent="Wecker" instance=ExtResource( 5 )]
 transform = Transform( -0.278471, 0, 0.960445, 0.344474, 0.933468, 0.0998769, -0.896544, 0.358661, -0.259944, 54.6032, 4.60349, 139.99 )
 
-[node name="Wecker4" parent="Items" instance=ExtResource( 5 )]
+[node name="Wecker4" parent="Wecker" instance=ExtResource( 5 )]
 transform = Transform( 0.11599, -0.109211, -0.987228, 0.776774, 0.629408, 0.0216359, 0.619006, -0.769362, 0.157837, 54.6032, 0.0682278, -145.378 )
 
 [node name="Other" type="Node" parent="."]
