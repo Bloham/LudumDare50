@@ -1750,14 +1750,14 @@ bus = "Music"
 [node name="MainMenu" parent="Other/StartGame" instance=ExtResource( 1 )]
 
 [node name="MenueCamera" type="InterpolatedCamera" parent="Other/StartGame"]
-transform = Transform( 1, 0, 0, 0, 0.92278, 0.385326, 0, -0.385326, 0.92278, 0, 46.0927, 166.682 )
-far = 500.0
+transform = Transform( 1, 0, 0, 0, 0.92278, 0.385326, 0, -0.385326, 0.92278, 0, 253.049, 435.998 )
+far = 1000.0
 target = NodePath("../CameraTarget")
 speed = 0.05
 enabled = true
 
 [node name="CameraTarget" type="Spatial" parent="Other/StartGame"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 32.2194, -82.2219 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 32.2194, -373.22 )
 
 [node name="Spawner" type="Node" parent="Other"]
 script = ExtResource( 11 )
