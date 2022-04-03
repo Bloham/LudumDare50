@@ -112,9 +112,9 @@ custom_styles/normal = ExtResource( 3 )
 text = "Quit"
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_left = 232.0
+margin_left = 231.0
 margin_top = 290.0
-margin_right = 272.0
+margin_right = 271.0
 margin_bottom = 330.0
 rect_scale = Vector2( 20.2108, 3.68 )
 color = Color( 0.0117647, 0.0117647, 0.0117647, 0.352941 )
