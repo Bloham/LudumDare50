@@ -14,3 +14,7 @@ var rotation_speed_S = 60 * rotation_speed_L
 func _process(delta):
 	pointer_L.rotate(Vector3(0,1,0),delta * rotation_speed_L)
 	pointer_S.rotate(Vector3(0,1,0),delta * rotation_speed_S)
+	
+func gameOver():
+	print ("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+	pass

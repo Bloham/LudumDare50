@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Materials/M_SkyClock_Fading.tres" type="Material" id=1]
 [ext_resource path="res://Materials/M_skyClock_Pointer.tres" type="Material" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Assets/skyClockSet/Mesh_SkyClock_BG.obj" type="ArrayMesh" id=5]
 [ext_resource path="res://SkyClock.gd" type="Script" id=6]
 [ext_resource path="res://Assets/skyClockSet/Mesh_SkyClock_Mark.obj" type="ArrayMesh" id=7]
+[ext_resource path="res://Prefabs/Mesh.gd" type="Script" id=8]
 
 [node name="Prefab_SkyClock" type="Spatial"]
 script = ExtResource( 6 )
@@ -14,6 +15,7 @@ script = ExtResource( 6 )
 [node name="Mesh_SkyClock_BG" type="MeshInstance" parent="."]
 mesh = ExtResource( 5 )
 material/0 = ExtResource( 1 )
+script = ExtResource( 8 )
 
 [node name="Mesh_SkyClock_PointerL" type="MeshInstance" parent="."]
 transform = Transform( 0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 0, 0, 0 )

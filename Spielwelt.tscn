@@ -1,10 +1,9 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://MainMenu.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Prefabs/Terrain.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Prefabs/Items/Item_FlatRock.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Audio/Music/music_layer_1-01.ogg" type="AudioStream" id=4]
-[ext_resource path="res://Wecker.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Spielwelt.gd" type="Script" id=6]
 [ext_resource path="res://Prefabs/Prefab_SkyClock.tscn" type="PackedScene" id=8]
 [ext_resource path="res://ItemManager.gd" type="Script" id=9]
@@ -1723,21 +1722,6 @@ transform = Transform( 2.05688, 0, 0, 0, 2.05688, 0, 0, 0, 2.05688, 1.29155, 0.1
 
 [node name="AllWecker" type="Node" parent="."]
 
-[node name="Wecker" parent="AllWecker" instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -132.788, 2.22424, -7.61185 )
-
-[node name="Wecker2" parent="AllWecker" instance=ExtResource( 5 )]
-transform = Transform( -0.993197, 0, -0.116445, 0, 1, 0, 0.116445, 0, -0.993197, 54.6032, 2.22424, 16.6583 )
-
-[node name="Wecker3" parent="AllWecker" instance=ExtResource( 5 )]
-transform = Transform( -0.278471, 0, 0.960445, 0.344474, 0.933468, 0.0998769, -0.896544, 0.358661, -0.259944, 54.0111, -4.9123, 139.99 )
-
-[node name="Wecker4" parent="AllWecker" instance=ExtResource( 5 )]
-transform = Transform( 0.11599, -0.109211, -0.987228, 0.653276, 0.757087, -0.00699826, 0.748182, -0.64412, 0.159159, 54.6032, 4.02484, -141.743 )
-
-[node name="Wecker5" parent="AllWecker" instance=ExtResource( 5 )]
-transform = Transform( -0.993197, 0, -0.116445, 0, 1, 0, 0.116445, 0, -0.993197, 54.6032, 183.342, 16.6583 )
-
 [node name="Other" type="Node" parent="."]
 
 [node name="Music" type="AudioStreamPlayer" parent="Other"]
@@ -1774,3 +1758,5 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -52.3363, -7.20244, 19.4343 )
 
 [node name="SpawnLocation3" type="Position3D" parent="Other/Spawner/SpawnLocations"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 132.488, -1.10728, 13.7908 )
+
+[connection signal="timeout" from="Other/Spawner/SpawnTimer" to="Other/Spawner" method="_on_SpawnTimer_timeout"]
