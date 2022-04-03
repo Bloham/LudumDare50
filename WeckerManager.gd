@@ -22,13 +22,13 @@ func _ready():
 	 # Replace with function body.
 
 func onGameStart():
-	var t = Timer.new()
-	t.set_wait_time(gameOverDelay)
-	t.set_one_shot(true)
-	self.add_child(t)
-	t.start()
-	print("game over timer startet")
-	yield(t, "timeout")
+#	var t = Timer.new()
+#	t.set_wait_time(gameOverDelay)
+#	t.set_one_shot(true)
+#	self.add_child(t)
+#	t.start()
+#	print("game over timer startet")
+#	yield(t, "timeout")
 	pass
 
 func SpawnWecker():
