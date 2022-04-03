@@ -11,14 +11,14 @@ roughness = 0.32
 
 [node name="Bodenplatte" type="Spatial"]
 
-[node name="StaticBody" type="StaticBody" parent="."]
+[node name="StaticBodyBP" type="StaticBody" parent="."]
 collision_layer = 4
 collision_mask = 0
 
-[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="StaticBodyBP"]
 shape = SubResource( 2 )
 
-[node name="SM_Base_Plane" type="MeshInstance" parent="StaticBody"]
+[node name="SM_Base_Plane" type="MeshInstance" parent="StaticBodyBP"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0 )
 mesh = ExtResource( 1 )
 skeleton = NodePath("")

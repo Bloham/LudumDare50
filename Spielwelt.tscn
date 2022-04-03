@@ -100,7 +100,7 @@ transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 51.125, 2.25078, 32.2208 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -132.788, 2.22424, -7.61185 )
 
 [node name="Wecker2" parent="Wecker" instance=ExtResource( 5 )]
-transform = Transform( -0.993197, 0, -0.116445, 0, 1, 0, 0.116445, 0, -0.993197, 54.6032, 2.22424, -7.61185 )
+transform = Transform( -0.993197, 0, -0.116445, 0, 1, 0, 0.116445, 0, -0.993197, 54.6032, 2.22424, 16.6583 )
 
 [node name="Wecker3" parent="Wecker" instance=ExtResource( 5 )]
 transform = Transform( -0.278471, 0, 0.960445, 0.344474, 0.933468, 0.0998769, -0.896544, 0.358661, -0.259944, 54.6032, 4.60349, 139.99 )
