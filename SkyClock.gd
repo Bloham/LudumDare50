@@ -16,5 +16,4 @@ func _process(delta):
 	pointer_S.rotate(Vector3(0,1,0),delta * rotation_speed_S)
 	
 func gameOver():
-	print ("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
-	pass
+	get_node("Mesh_SkyClock_BG").is_fading = true
