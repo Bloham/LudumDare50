@@ -18,6 +18,7 @@ func albtraum():
 #	print(self.name, " ist nun im Alptraumland")
 	if(!is_triggered):
 		is_triggered = true
+		manager_items.coruptionRise()
 		get_node("MeshHappy").is_fading = true
 		get_node("MeshEvil").is_fading = true
 
