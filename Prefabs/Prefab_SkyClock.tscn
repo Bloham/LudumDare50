@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://Materials/M_skyClock_BackPlate.tres" type="Material" id=1]
+[ext_resource path="res://Materials/M_SkyClock_Fading.tres" type="Material" id=1]
 [ext_resource path="res://Materials/M_skyClock_Pointer.tres" type="Material" id=2]
 [ext_resource path="res://Assets/skyClockSet/Mesh_SkyClock_PointerL.obj" type="ArrayMesh" id=3]
 [ext_resource path="res://Assets/skyClockSet/Mesh_SkyClock_PointerS.obj" type="ArrayMesh" id=4]
