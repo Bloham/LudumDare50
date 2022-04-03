@@ -25,7 +25,8 @@ func _process(delta):
 			albtraum()
 
 
-#func _on_Area_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+func _on_Area_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	pass
 #	if area.get_name() == "WeckerArea":
 #		albtraum()
 		
