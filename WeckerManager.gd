@@ -4,15 +4,20 @@ extends Node
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-var Weckers = []
+var WeckersArray = []
+var WeckersAnzahl = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	Weckers = get_children()
-	print(Weckers)
-	pass # Replace with function body.
+	WeckersArray = get_children()
+	WeckersAnzahl = get_child_count()
+	
 
+	 # Replace with function body.
 
+func onGameStart():
+	
+	pass
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
