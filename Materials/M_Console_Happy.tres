@@ -2,8 +2,8 @@
 
 [ext_resource path="res://noisetexture.tres" type="Texture" id=1]
 [ext_resource path="res://Textures/T_Console_Happy_Albedo.png" type="Texture" id=2]
-[ext_resource path="res://Textures/T_Console_Happy_Normal.png" type="Texture" id=3]
-[ext_resource path="res://Textures/T_Console_Happy_Roughness.png" type="Texture" id=4]
+[ext_resource path="res://Textures/T_Console_Happy_Roughness.png" type="Texture" id=3]
+[ext_resource path="res://Textures/T_Console_Happy_Normal.png" type="Texture" id=4]
 
 [sub_resource type="VisualShaderNodeScalarOp" id=2]
 output_port_for_preview = 0
@@ -35,12 +35,12 @@ texture_type = 2
 [sub_resource type="VisualShaderNodeTextureUniform" id=17]
 uniform_name = "Texture_Roughness"
 
+[sub_resource type="VisualShaderNodeScalarUniform" id=19]
+uniform_name = "ScalarInput"
+
 [sub_resource type="VisualShaderNodeInput" id=7]
 output_port_for_preview = 0
 input_name = "uv"
-
-[sub_resource type="VisualShaderNodeInput" id=8]
-input_name = "time"
 
 [sub_resource type="VisualShaderNodeScalarFunc" id=9]
 function = 0
@@ -66,6 +66,7 @@ render_mode depth_draw_alpha_prepass, cull_disabled, specular_schlick_ggx;
 
 uniform sampler2D Textrure_Albedo;
 uniform sampler2D tex_frg_7;
+uniform float ScalarInput;
 uniform sampler2D Texture_Roughness;
 uniform sampler2D Texture_Normal : hint_normal;
 
@@ -94,11 +95,11 @@ void fragment() {
 	vec3 n_out7p0 = tex_frg_7_read.rgb;
 	float n_out7p1 = tex_frg_7_read.a;
 
-// Input:3
-	float n_out3p0 = TIME;
+// ScalarUniform:19
+	float n_out19p0 = ScalarInput;
 
 // ScalarFunc:4
-	float n_out4p0 = sin(n_out3p0);
+	float n_out4p0 = sin(n_out19p0);
 
 // ScalarOp:5
 	float n_in5p1 = 2.00000;
@@ -160,13 +161,12 @@ void light() {
 
 }
 "
+graph_offset = Vector2( -771, 262 )
 modes/cull = 2
 modes/depth_draw = 3
 nodes/fragment/0/position = Vector2( 1200, 200 )
 nodes/fragment/2/node = SubResource( 7 )
 nodes/fragment/2/position = Vector2( -400, 200 )
-nodes/fragment/3/node = SubResource( 8 )
-nodes/fragment/3/position = Vector2( -580, 400 )
 nodes/fragment/4/node = SubResource( 9 )
 nodes/fragment/4/position = Vector2( -400, 400 )
 nodes/fragment/5/node = SubResource( 10 )
@@ -193,10 +193,13 @@ nodes/fragment/16/node = SubResource( 16 )
 nodes/fragment/16/position = Vector2( 840, 0 )
 nodes/fragment/17/node = SubResource( 17 )
 nodes/fragment/17/position = Vector2( 840, -200 )
-nodes/fragment/connections = PoolIntArray( 3, 0, 4, 0, 4, 0, 5, 0, 2, 0, 7, 0, 7, 0, 8, 0, 8, 0, 9, 0, 5, 0, 8, 1, 9, 0, 0, 1, 8, 0, 10, 0, 10, 0, 11, 1, 11, 0, 12, 0, 12, 0, 13, 0, 14, 0, 13, 1, 13, 0, 0, 5, 15, 0, 0, 0, 17, 0, 0, 3, 16, 0, 0, 8 )
+nodes/fragment/19/node = SubResource( 19 )
+nodes/fragment/19/position = Vector2( -600, 400 )
+nodes/fragment/connections = PoolIntArray( 4, 0, 5, 0, 2, 0, 7, 0, 7, 0, 8, 0, 8, 0, 9, 0, 5, 0, 8, 1, 9, 0, 0, 1, 8, 0, 10, 0, 10, 0, 11, 1, 11, 0, 12, 0, 12, 0, 13, 0, 14, 0, 13, 1, 13, 0, 0, 5, 15, 0, 0, 0, 17, 0, 0, 3, 16, 0, 0, 8, 19, 0, 4, 0 )
 
 [resource]
 shader = SubResource( 14 )
+shader_param/ScalarInput = null
 shader_param/Textrure_Albedo = ExtResource( 2 )
-shader_param/Texture_Roughness = ExtResource( 4 )
-shader_param/Texture_Normal = ExtResource( 3 )
+shader_param/Texture_Roughness = ExtResource( 3 )
+shader_param/Texture_Normal = ExtResource( 4 )
