@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Mesh_SkyClock_BG.obj-de3164775b97585863a4d59c4b974f21.mesh"
+
+[deps]
+
+files=[ "res://.import/Mesh_SkyClock_BG.obj-de3164775b97585863a4d59c4b974f21.mesh" ]
+
+source_file="res://Assets/skyClockSet/Mesh_SkyClock_BG.obj"
+dest_files=[ "res://.import/Mesh_SkyClock_BG.obj-de3164775b97585863a4d59c4b974f21.mesh", "res://.import/Mesh_SkyClock_BG.obj-de3164775b97585863a4d59c4b974f21.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286
