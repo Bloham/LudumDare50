@@ -124,21 +124,21 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -410.5
-margin_top = -49.0
-margin_right = 410.5
-margin_bottom = 49.0
+margin_left = -283.5
+margin_top = -49.5
+margin_right = 283.5
+margin_bottom = 49.5
 rect_scale = Vector2( 0.996986, 1.14231 )
 
 [node name="Label" type="Label" parent="CenterContainer"]
-margin_left = 69.0
-margin_top = 16.0
-margin_right = 752.0
-margin_bottom = 81.0
-text = "Primary control – thumb & index fingers. Flexible and precise, usable for primary actions (shoot, jump, etc.).
-Secondary control – middle finger. Flexible but not so precise, 
-usable for primary hold actions (aiming mode, [w] for walking, etc.).
-Support – ring & pinkie fingers. Weak and not very flexible, can be used for secondary actions."
+margin_right = 567.0
+margin_bottom = 99.0
+text = "Use W, A, S, D to walk around.
+You can run by holding SHIFT
+
+Welcome to your dream! 
+How wonderful it would be if there was no alarm clock ringing and trying to wake you up. 
+Run and destroy the alarms or you will wake up in a nightmare! "
 align = 1
 valign = 1
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://MainMenu.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Prefabs/Terrain.tscn" type="PackedScene" id=2]
@@ -11,30 +11,6 @@
 [ext_resource path="res://Spawner.gd" type="Script" id=11]
 [ext_resource path="res://Prefabs/Items/Item_TallRock.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Prefabs/Items/Item_Hedge.tscn" type="PackedScene" id=13]
-
-[sub_resource type="ProceduralSky" id=3]
-
-[sub_resource type="Environment" id=4]
-background_mode = 3
-background_sky = SubResource( 3 )
-background_color = Color( 0.376471, 0.937255, 0.870588, 1 )
-ambient_light_color = Color( 0.513726, 0.235294, 0.878431, 1 )
-ambient_light_sky_contribution = 0.64
-fog_enabled = true
-fog_color = Color( 0.376471, 0.937255, 0.870588, 1 )
-fog_depth_begin = 0.0
-fog_depth_end = 350.0
-fog_transmit_enabled = true
-fog_height_enabled = true
-fog_height_min = 5.0
-fog_height_max = -20.3
-dof_blur_far_enabled = true
-dof_blur_far_distance = 70.0
-dof_blur_far_transition = 15.0
-glow_enabled = true
-glow_intensity = 2.5
-glow_strength = 1.27
-glow_hdr_threshold = 0.98
 
 [node name="Spielwelt" type="Spatial"]
 script = ExtResource( 6 )
@@ -68,7 +44,7 @@ transform = Transform( 2.93739, 0, 0.609695, 0, 3, 0, -0.609695, 0, 2.93739, -17
 transform = Transform( -1.32665, 0, 1.49666, 0, 2, 0, -1.49666, 0, -1.32665, -147.008, 22.2949, -45.5349 )
 
 [node name="Item_Tree40" parent="Assets/Items" instance=ExtResource( 10 )]
-transform = Transform( -0.663326, 0, 0.748331, 0, 1, 0, -0.748331, 0, -0.663326, -158.628, 30.879, -38.8727 )
+transform = Transform( -0.663326, 0, 0.748331, 0, 1, 0, -0.748331, 0, -0.663326, -158.628, 23.58, -38.8727 )
 
 [node name="Item_Tree41" parent="Assets/Items" instance=ExtResource( 10 )]
 transform = Transform( -0.331663, 0, 0.374165, 0, 0.5, 0, -0.374165, 0, -0.331663, -173.873, 30.827, -39.6598 )
@@ -98,7 +74,7 @@ transform = Transform( -0.628126, 0, 0.778112, 0, 1, 0, -0.778112, 0, -0.628126,
 transform = Transform( -0.628126, 0, 0.778112, 0, 1, 0, -0.778112, 0, -0.628126, -148.991, 21.2432, -27.3596 )
 
 [node name="Item_Tree50" parent="Assets/Items" instance=ExtResource( 10 )]
-transform = Transform( -0.314063, 0, 0.389056, 0, 0.5, 0, -0.389056, 0, -0.314063, -151.089, 31.6103, -47.7688 )
+transform = Transform( -0.314063, 0, 0.389056, 0, 0.5, 0, -0.389056, 0, -0.314063, -151.089, 24.3113, -47.7688 )
 
 [node name="Item_Tree51" parent="Assets/Items" instance=ExtResource( 10 )]
 transform = Transform( -0.628126, 0, 0.778112, 0, 1, 0, -0.778112, 0, -0.628126, -171.24, 29.9845, -28.1263 )
@@ -107,7 +83,7 @@ transform = Transform( -0.628126, 0, 0.778112, 0, 1, 0, -0.778112, 0, -0.628126,
 transform = Transform( -1.86383, 0, -0.725331, 0, 2, 0, 0.725331, 0, -1.86383, -159.326, 25.5648, -34.2459 )
 
 [node name="Item_Tree47" parent="Assets/Items" instance=ExtResource( 10 )]
-transform = Transform( 0.979131, 0, 0.203232, 0, 1, 0, -0.203232, 0, 0.979131, -177.215, 29.9845, -60.7463 )
+transform = Transform( 0.979131, 0, 0.203232, 0, 1, 0, -0.203232, 0, 0.979131, -177.215, 33.0363, -60.7463 )
 
 [node name="Item_Tree48" parent="Assets/Items" instance=ExtResource( 10 )]
 transform = Transform( -0.331663, 0, 0.374165, 0, 0.5, 0, -0.374165, 0, -0.331663, -173.873, 31.6103, -79.3934 )
@@ -131,7 +107,7 @@ transform = Transform( -1.98998, 0, 2.24499, 0, 3, 0, -2.24499, 0, -1.98998, -17
 transform = Transform( 0.930484, 0, -1.77036, 0, 2, 0, 1.77036, 0, 0.930484, -189.828, 37.8389, -69.5111 )
 
 [node name="Item_Tree57" parent="Assets/Items" instance=ExtResource( 10 )]
-transform = Transform( 0.870072, 0, -0.492925, 0, 1, 0, 0.492925, 0, 0.870072, -180.995, 29.9845, -79.58 )
+transform = Transform( 0.870072, 0, -0.492925, 0, 1, 0, 0.492925, 0, 0.870072, -180.995, 33.0363, -79.58 )
 
 [node name="Item_Tree58" parent="Assets/Items" instance=ExtResource( 10 )]
 transform = Transform( 2.61022, 0, -1.47877, 0, 3, 0, 1.47877, 0, 2.61022, -172.806, 31.458, -91.644 )
@@ -188,7 +164,7 @@ transform = Transform( 1.90724, 0, 0.602008, 0, 2, 0, -0.602008, 0, 1.90724, -16
 transform = Transform( 0.10786, 0, -0.994166, 0, 1, 0, 0.994166, 0, 0.10786, -154.792, 18.1385, 79.8669 )
 
 [node name="Item_Tree63" parent="Assets/Items" instance=ExtResource( 10 )]
-transform = Transform( 0.0409513, 0, 0.999161, 0, 1, 0, -0.999161, 0, 0.0409513, -133.271, 22.5315, -71.3259 )
+transform = Transform( 0.0409513, 0, 0.999161, 0, 1, 0, -0.999161, 0, 0.0409513, -133.271, 25.5833, -71.3259 )
 
 [node name="Item_Tree75" parent="Assets/Items" instance=ExtResource( 10 )]
 transform = Transform( 0.696364, 0, 0.717689, 0, 1, 0, -0.717689, 0, 0.696364, -124.548, 18.864, -67.1554 )
@@ -197,13 +173,13 @@ transform = Transform( 0.696364, 0, 0.717689, 0, 1, 0, -0.717689, 0, 0.696364, -
 transform = Transform( 0.0409513, 0, 0.999161, 0, 1, 0, -0.999161, 0, 0.0409513, -148.003, 26.7855, -74.3894 )
 
 [node name="Item_Tree65" parent="Assets/Items" instance=ExtResource( 10 )]
-transform = Transform( 0.0409513, 0, 0.999161, 0, 1, 0, -0.999161, 0, 0.0409513, -136.931, 24.3291, -87.0103 )
+transform = Transform( 0.0409513, 0, 0.999161, 0, 1, 0, -0.999161, 0, 0.0409513, -136.931, 27.3809, -87.0103 )
 
 [node name="Item_Tree76" parent="Assets/Items" instance=ExtResource( 10 )]
 transform = Transform( 0.930484, 0, -1.77036, 0, 2, 0, 1.77036, 0, 0.930484, 339.405, -2.18418, -69.5111 )
 
 [node name="Item_Tree77" parent="Assets/Items" instance=ExtResource( 10 )]
-transform = Transform( 0.870072, 0, -0.492925, 0, 1, 0, 0.492925, 0, 0.870072, 348.238, 12.2267, -79.58 )
+transform = Transform( 0.870072, 0, -0.492925, 0, 1, 0, 0.492925, 0, 0.870072, 348.238, 13.7877, -79.58 )
 
 [node name="Item_Tree78" parent="Assets/Items" instance=ExtResource( 10 )]
 transform = Transform( 2.61022, 0, -1.47877, 0, 3, 0, 1.47877, 0, 2.61022, 356.427, 1.45448, -91.644 )
@@ -278,7 +254,7 @@ transform = Transform( 0.0409513, 0, 0.999161, 0, 1, 0, -0.999161, 0, 0.0409513,
 transform = Transform( 0.0409513, 0, 0.999161, 0, 1, 0, -0.999161, 0, 0.0409513, -155.592, 26.7855, -65.7383 )
 
 [node name="Item_Tree74" parent="Assets/Items" instance=ExtResource( 10 )]
-transform = Transform( -0.461857, 0, 0.886954, 0, 1, 0, -0.886954, 0, -0.461857, -145.612, 22.8397, -65.7383 )
+transform = Transform( -0.461857, 0, 0.886954, 0, 1, 0, -0.886954, 0, -0.461857, -145.612, 24.7988, -65.7383 )
 
 [node name="Item_Tree67" parent="Assets/Items" instance=ExtResource( 10 )]
 transform = Transform( -2.25348, 0, 1.98036, 0, 3, 0, -1.98036, 0, -2.25348, -169.783, 26.8327, -81.8516 )
@@ -1130,7 +1106,7 @@ transform = Transform( 2.66643, 0, -3.70827, 0, 4.5674, 0, 3.70827, 0, 2.66643, 
 transform = Transform( -0.249467, 0, -4.56058, 0, 4.5674, 0, 4.56058, 0, -0.249467, -11.3418, 81.6413, -55.8805 )
 
 [node name="Item_FlatRock93" parent="Assets/Items" instance=ExtResource( 3 )]
-transform = Transform( 5.18035, 0, 0, 0, 5.18035, 0, 0, 0, 5.18035, -11.2858, 87.8151, -55.6909 )
+transform = Transform( 4.73685, -2.0972, 0, 2.0972, 4.73685, 0, 0, 0, 5.18035, -11.696, 87.0235, -55.6909 )
 
 [node name="Item_FlatRock94" parent="Assets/Items" instance=ExtResource( 3 )]
 transform = Transform( 4.1199, 0, -3.14045, 0, 5.18035, 0, 3.14045, 0, 4.1199, -12.5726, 92.2238, -56.2282 )
@@ -2003,7 +1979,7 @@ transform = Transform( 4.18412, -8.92389, -1.69037, 0.28584, 1.98957, -9.79591, 
 transform = Transform( 5.95026, -13.5267, -2.57367, 0.428761, 2.98436, -14.6939, 13.7626, 5.75526, 1.5705, -320.923, 18.0591, 132.933 )
 
 [node name="SkyClock" parent="Assets" instance=ExtResource( 8 )]
-transform = Transform( 2.057, 0, 0, 0, 2.057, 0, 0, 0, 2.057, 1.29155, 0.111633, 0.171108 )
+transform = Transform( 2.057, 0, 0, 0, 2.057, 0, 0, 0, 2.057, 2.92055, 1.78093, -1.34458 )
 
 [node name="AllWecker" type="Node" parent="."]
 
@@ -2019,14 +1995,14 @@ bus = "Music"
 [node name="MainMenu" parent="Other/StartGame" instance=ExtResource( 1 )]
 
 [node name="MenueCamera" type="InterpolatedCamera" parent="Other/StartGame"]
-transform = Transform( 1, 0, 0, 0, 0.92278, 0.385326, 0, -0.385326, 0.92278, -83.1804, 85.6225, 435.293 )
+transform = Transform( 0.220156, -0.517199, 0.827065, -0.0303318, 0.843828, 0.535755, -0.974993, -0.143036, 0.170086, 445.432, 85.6225, 68.5983 )
 far = 1000.0
 target = NodePath("../CameraTarget")
 speed = 0.05
 enabled = true
 
 [node name="CameraTarget" type="Spatial" parent="Other/StartGame"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 111.473, 92.453, -389.743 )
+transform = Transform( -0.294224, 0, 0.955737, 0, 1, 0, -0.955737, 0, -0.294224, -384.42, 92.453, -21.4529 )
 
 [node name="Spawner" type="Node" parent="Other"]
 script = ExtResource( 11 )
@@ -2042,7 +2018,16 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14.4798, -7.15599, 124.526 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -52.3363, -7.61862, 19.4343 )
 
 [node name="SpawnLocation3" type="Position3D" parent="Other/Spawner/SpawnLocations"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 132.488, -1.60597, 13.7908 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 132.488, -1.54926, 13.7908 )
+
+[node name="SpawnLocation10" type="Position3D" parent="Other/Spawner/SpawnLocations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 69.814, -6.67417, 328.601 )
+
+[node name="SpawnLocation11" type="Position3D" parent="Other/Spawner/SpawnLocations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -95.286, -6.67417, 331.201 )
+
+[node name="SpawnLocation12" type="Position3D" parent="Other/Spawner/SpawnLocations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -380.883, -0.253849, 131.48 )
 
 [node name="SpawnLocation4" type="Position3D" parent="Other/Spawner/SpawnLocations"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 144.595, 10.5761, 327.181 )
@@ -2060,9 +2045,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -222.434, 35.6764, 25.7838 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -261.899, -8.00296, -232.307 )
 
 [node name="SpawnLocation9" type="Position3D" parent="Other/Spawner/SpawnLocations"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.59464, -7.00737, -324.311 )
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource( 4 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.2846, -7.14807, -324.311 )
 
 [connection signal="timeout" from="Other/Spawner/SpawnTimer" to="Other/Spawner" method="_on_SpawnTimer_timeout"]
