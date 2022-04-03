@@ -1,0 +1,111 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://MainMenuAssets/ARCADE_N.TTF" type="DynamicFontData" id=1]
+[ext_resource path="res://EndGame.gd" type="Script" id=2]
+[ext_resource path="res://MainMenuAssets/ARCADE_I.TTF" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 20
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=7]
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0, 0, 0, 0 )
+shadow_color = Color( 0.972549, 0, 0, 0.356863 )
+shadow_size = 9
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0, 0, 0, 0 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0, 0, 0, 0 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 20
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0, 0, 0, 0 )
+shadow_color = Color( 0.105882, 0.423529, 0.109804, 0.6 )
+shadow_size = 21
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0, 0, 0, 0.0313726 )
+border_color = Color( 1, 1, 1, 1 )
+shadow_color = Color( 0.105882, 0.423529, 0.109804, 0.6 )
+shadow_size = 25
+
+[node name="EndGame" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -584.0
+margin_top = -163.0
+margin_right = 1717.0
+margin_bottom = -62.0
+rect_scale = Vector2( 0.994964, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "...and again you've lost the fight against the inevitable .
+Now get up and face your challenges!"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -85.0
+margin_top = -23.0
+margin_right = 115.0
+margin_bottom = 37.0
+
+[node name="quit" type="Button" parent="VBoxContainer"]
+margin_right = 200.0
+margin_bottom = 17.0
+custom_fonts/font = SubResource( 7 )
+custom_styles/hover = SubResource( 8 )
+custom_styles/pressed = SubResource( 9 )
+custom_styles/normal = SubResource( 6 )
+text = "Quit Game"
+
+[node name="leer2" type="Label" parent="VBoxContainer"]
+margin_top = 21.0
+margin_right = 200.0
+margin_bottom = 35.0
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+margin_top = 39.0
+margin_right = 200.0
+margin_bottom = 56.0
+custom_fonts/font = SubResource( 2 )
+text = "Or"
+align = 1
+
+[node name="leer" type="Label" parent="VBoxContainer"]
+margin_top = 60.0
+margin_right = 200.0
+margin_bottom = 74.0
+
+[node name="PlayAgain" type="Button" parent="VBoxContainer"]
+margin_top = 78.0
+margin_right = 200.0
+margin_bottom = 99.0
+custom_fonts/font = SubResource( 3 )
+custom_styles/hover = SubResource( 5 )
+custom_styles/normal = SubResource( 4 )
+text = "Play Again"
