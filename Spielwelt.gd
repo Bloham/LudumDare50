@@ -5,8 +5,6 @@ extends Spatial
 # var a = 2
 # var b = "text"
 export var corruption_scalar = 0.0
-export var wecker_count = 0
-var score_time = 0
 
 var player_instance = self
 var terrain_material
@@ -32,13 +30,4 @@ func _init():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	score_time += delta
 	terrain_material.get_active_material(0).set_shader_param("corruption_scalar", corruption_scalar)
-
-func start_score():
-	score_time = 0
-	wecker_count = 0
-	
-func gameover():
-	get_node("Other/UI/GameOverMenue").gameover(wecker_count, score_time)
-	pass
