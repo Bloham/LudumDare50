@@ -1,13 +1,14 @@
 extends Control
 
 func _ready():
-	$VBoxContainer/StartButton.grab_focus()
+	$MediumAnker/VBoxContainer/StartButton.grab_focus()
+	
+
 
 
 
 func _on_StartButton_pressed():
 	self.visible = false
-	var menueCamera = find_node("MenueCamera")
 	
 	var player = load("res://Player.tscn")
 	var player_instance = player.instance()
@@ -25,3 +26,4 @@ func _on_StartButton_pressed():
 
 func _on_QuitButton_pressed():
 	get_tree().quit()
+

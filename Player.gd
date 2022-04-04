@@ -26,10 +26,12 @@ var mouseDelta = Vector2()
 onready var camera = $Camera
 onready var audioPlayerFootsteps = $Footsteps
 onready var audioPlayerJump = $Jump
+var uiNode = Node
 
 func _ready():
 	#hide and lock mouse
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	uiNode = get_tree().get_root().get_node("Spielwelt").get_node("Other").get_node("UI")
 	
 	#set up steps sound
 
@@ -117,5 +119,9 @@ func _input(event):
 	#quit with ESC
 	if event is InputEventKey:
 		if event.pressed and event.scancode == KEY_ESCAPE:
-			get_tree().quit()
+			var pause = uiNode.get_node("PauseMenue")
+			pause._activatePause()
+#			var pauseMenueResource = load("res://PauseMenue.tscn")
+#			var pauseMenue = pauseMenueResource.instance()
+#			uiNode.add_child(pauseMenue)
 	
