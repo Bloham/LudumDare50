@@ -4129,7 +4129,6 @@ visible = false
 [node name="UI" type="Node" parent="Other"]
 
 [node name="MainMenu" parent="Other/UI" instance=ExtResource( 1 )]
-visible = false
 
 [node name="MenueCamera" type="InterpolatedCamera" parent="Other/UI"]
 transform = Transform( 0.220156, -0.517199, 0.827065, -0.0303318, 0.843828, 0.535755, -0.974993, -0.143036, 0.170086, 445.432, 85.6225, 68.5983 )
@@ -4145,6 +4144,7 @@ transform = Transform( -0.294224, 0, 0.955737, 0, 1, 0, -0.955737, 0, -0.294224,
 visible = false
 
 [node name="GameOverMenue" parent="Other/UI" instance=ExtResource( 15 )]
+visible = false
 
 [node name="Spawner" type="Node" parent="Other"]
 script = ExtResource( 11 )
@@ -4161,13 +4161,13 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14.4798, -7.15599, 124.526 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -40.3473, 78.5781, -19.6651 )
 
 [node name="SpawnLocation17" type="Position3D" parent="Other/Spawner/SpawnLocations"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31.7572, 15.9649, -162.451 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 73.7295, 15.9649, -175.764 )
 
 [node name="SpawnLocation18" type="Position3D" parent="Other/Spawner/SpawnLocations"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60.1942, -8.47267, -337.719 )
 
 [node name="SpawnLocation16" type="Position3D" parent="Other/Spawner/SpawnLocations"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14.434, -4.56973, -299.064 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -210.17, 45.0692, -331.525 )
 
 [node name="SpawnLocation15" type="Position3D" parent="Other/Spawner/SpawnLocations"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 37.9642, -9.11551, 284.614 )
