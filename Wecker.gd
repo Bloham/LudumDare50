@@ -41,8 +41,7 @@ func _on_Area_body_entered(body):
 	$AudioStreamPlayer3D.play()
 	animation.play("destroy")
 	
-	get_tree().get_root().get_node("Spielwelt").wecker_count+=1
-	print(get_tree().get_root().get_node("Spielwelt").wecker_count)
+	get_tree().get_root().get_node("Spielwelt").score_wecker+=1
 	
 	yield(get_tree().create_timer(2.0), "timeout")
 	queue_free()
