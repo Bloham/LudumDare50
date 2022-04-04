@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Prefabs/Items/Item_TallRock.tscn" type="PackedScene" id=1]
 [ext_resource path="res://WorldEnvironment.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Prefabs/Prefab_Console_Happy.tscn" type="PackedScene" id=3]
+[ext_resource path="res://DirectionalLight.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Prefabs/Prefab_Clock.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Prefabs/Prefab_Rock_Big_Happy.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Prefabs/Prefab_Tree_Happy_Top.tscn" type="PackedScene" id=8]
@@ -93,13 +94,6 @@ transform = Transform( -0.734433, 0, -4.57448, 0, 4.63306, 0, 4.57448, 0, -0.734
 [node name="Prefab_Tree_Happy4" parent="." instance=ExtResource( 9 )]
 transform = Transform( -4.20484, 0, 1.9454, 0, 4.63306, 0, -1.9454, 0, -4.20484, -32.0727, -9.83116, -29.1131 )
 
-[node name="DirectionalLight" type="DirectionalLight" parent="."]
-transform = Transform( 0.738573, 0.674173, -1.91323e-08, -0.638942, 0.699976, 0.319042, 0.21509, -0.235636, 0.947741, -7.73869, 48.7218, 0 )
-light_color = Color( 0.647059, 0.380392, 0.996078, 1 )
-light_energy = 2.0
-light_specular = 4.0
-light_bake_mode = 0
-shadow_enabled = true
-shadow_color = Color( 0.470588, 0.980392, 0.933333, 1 )
+[node name="DirectionalLight" parent="." instance=ExtResource( 4 )]
 
 [node name="WorldEnvironment" parent="." instance=ExtResource( 2 )]
