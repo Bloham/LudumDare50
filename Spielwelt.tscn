@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://MainMenu.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Prefabs/Terrain.tscn" type="PackedScene" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://Spawner.gd" type="Script" id=11]
 [ext_resource path="res://Prefabs/Items/Item_TallRock.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Prefabs/Items/Item_Hedge.tscn" type="PackedScene" id=13]
+[ext_resource path="res://PauseMenue.tscn" type="PackedScene" id=14]
 
 [node name="Spielwelt" type="Spatial"]
 script = ExtResource( 6 )
@@ -4034,19 +4035,22 @@ visible = false
 
 [node name="Other" type="Node" parent="."]
 
-[node name="StartGame" type="Node" parent="Other"]
+[node name="UI" type="Node" parent="Other"]
 
-[node name="MainMenu" parent="Other/StartGame" instance=ExtResource( 1 )]
+[node name="MainMenu" parent="Other/UI" instance=ExtResource( 1 )]
 
-[node name="MenueCamera" type="InterpolatedCamera" parent="Other/StartGame"]
+[node name="MenueCamera" type="InterpolatedCamera" parent="Other/UI"]
 transform = Transform( 0.220156, -0.517199, 0.827065, -0.0303318, 0.843828, 0.535755, -0.974993, -0.143036, 0.170086, 445.432, 85.6225, 68.5983 )
 far = 1000.0
 target = NodePath("../CameraTarget")
 speed = 0.01
 enabled = true
 
-[node name="CameraTarget" type="Spatial" parent="Other/StartGame"]
+[node name="CameraTarget" type="Spatial" parent="Other/UI"]
 transform = Transform( -0.294224, 0, 0.955737, 0, 1, 0, -0.955737, 0, -0.294224, -384.42, 92.453, -21.4529 )
+
+[node name="PauseMenue" parent="Other/UI" instance=ExtResource( 14 )]
+visible = false
 
 [node name="Spawner" type="Node" parent="Other"]
 script = ExtResource( 11 )
