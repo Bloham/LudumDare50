@@ -1,10 +1,12 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://MainMenu.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Prefabs/Terrain.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Prefabs/Items/Item_FlatRock.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Audio/Music/music_layer_1-01.ogg" type="AudioStream" id=4]
+[ext_resource path="res://Audio/Music/music_layer2_v01.ogg" type="AudioStream" id=4]
+[ext_resource path="res://Audio/Music/music_layer1_v03.ogg" type="AudioStream" id=5]
 [ext_resource path="res://Spielwelt.gd" type="Script" id=6]
+[ext_resource path="res://MusicManager.gd" type="Script" id=7]
 [ext_resource path="res://Prefabs/Prefab_SkyClock.tscn" type="PackedScene" id=8]
 [ext_resource path="res://ItemManager.gd" type="Script" id=9]
 [ext_resource path="res://Prefabs/Items/Item_Tree.tscn" type="PackedScene" id=10]
@@ -3834,11 +3836,6 @@ visible = false
 
 [node name="Other" type="Node" parent="."]
 
-[node name="Music" type="AudioStreamPlayer" parent="Other"]
-stream = ExtResource( 4 )
-autoplay = true
-bus = "Music"
-
 [node name="StartGame" type="Node" parent="Other"]
 
 [node name="MainMenu" parent="Other/StartGame" instance=ExtResource( 1 )]
@@ -3920,5 +3917,18 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.2846, -7.14807, -324.311 )
 
 [node name="SpawnLocation14" type="Position3D" parent="Other/Spawner/SpawnLocations"]
 transform = Transform( 0.731199, 0, 0.682164, 0, 1, 0, -0.682164, 0, 0.731199, -207.858, 45.2673, -327.178 )
+
+[node name="MusicManager" type="Node" parent="."]
+script = ExtResource( 7 )
+
+[node name="MusicLayer1" type="AudioStreamPlayer" parent="MusicManager"]
+stream = ExtResource( 5 )
+autoplay = true
+bus = "Music"
+
+[node name="MusicLayer2" type="AudioStreamPlayer" parent="MusicManager"]
+stream = ExtResource( 4 )
+volume_db = -80.0
+bus = "Music"
 
 [connection signal="timeout" from="Other/Spawner/SpawnTimer" to="Other/Spawner" method="_on_SpawnTimer_timeout"]
