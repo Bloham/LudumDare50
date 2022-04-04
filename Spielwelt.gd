@@ -6,6 +6,7 @@ extends Spatial
 # var b = "text"
 export var corruption_scalar = 0.0
 
+var player_instance = self
 var terrain_material
 
 func _ready():
@@ -25,7 +26,6 @@ func _ready():
 
 func _init():
 	pass
-
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

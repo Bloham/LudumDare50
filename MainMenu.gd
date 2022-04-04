@@ -15,6 +15,7 @@ func _on_StartButton_pressed():
 	var WeckerSpawnerStartet = get_tree().get_root().get_node("Spielwelt").get_node("Other").get_node("Spawner")
 	
 	player_instance.set_name("Player")
+	get_tree().get_root().get_node("Spielwelt").player_instance = player_instance
 	add_child(player_instance)
 	
 	WeckerSpawnerStartet.onGameStart()

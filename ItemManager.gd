@@ -6,6 +6,8 @@ onready var coruptionCounter = 0
 onready var spielwelt = get_tree().get_root().get_node("Spielwelt")
 
 var ItemsAufMap = 0
+var turning_eyes
+var eye_index = 0
 
 export var gameOverDelay = 15
 
@@ -14,6 +16,13 @@ func _ready():
 	ItemsAufMap = get_child_count()
 	print("Items auf der Map: ",ItemsAufMap)
 	coruptionCounter = ItemsAufMap
+	
+	turning_eyes = []
+	for item in self.get_children():
+		if "Hedge" in item.name:
+				turning_eyes.append(item)
+#	print ("There are ",turning_eyes.size()," eyes to turn")
+	
 	pass # Replace with function body.
 
 #diese Funktion benutzen um die Coruption hochzählen zu lassen
@@ -42,5 +51,10 @@ func gameOver():
 	pass
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	var turning_eye = turning_eyes[eye_index]
+	print ("turning eye ",turning_eye.name)
+	if turning_eye.is_triggered:
+		turning_eye.look_at(spielwelt.player_instance.translation, Vector3.UP)
+	eye_index = (eye_index+1)%turning_eyes.size()
+	pass
