@@ -16,14 +16,12 @@ radius = 1.5
 script = ExtResource( 3 )
 
 [node name="MeshEvil" type="MeshInstance" parent="."]
-visible = false
 mesh = ExtResource( 6 )
 material/0 = ExtResource( 4 )
 script = ExtResource( 2 )
 is_visible = false
 
 [node name="MeshHappy" type="MeshInstance" parent="."]
-visible = false
 mesh = ExtResource( 1 )
 material/0 = ExtResource( 5 )
 script = ExtResource( 2 )
@@ -41,5 +39,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.6, 0 )
 shape = SubResource( 2 )
 
 [node name="SM_Tree_Happy" type="MeshInstance" parent="."]
+visible = false
 mesh = ExtResource( 1 )
 material/0 = null
