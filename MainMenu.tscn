@@ -1,125 +1,24 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://MainMenu.gd" type="Script" id=1]
-[ext_resource path="res://MainMenuAssets/ButtonStyle.tres" type="StyleBox" id=3]
-[ext_resource path="res://MainMenuAssets/DancingScript-Bold.ttf" type="DynamicFontData" id=4]
-
-[sub_resource type="DynamicFont" id=2]
-size = 20
-font_data = ExtResource( 4 )
-
-[sub_resource type="StyleBoxFlat" id=3]
-bg_color = Color( 0.2, 0.352941, 0.156863, 1 )
-border_width_left = 5
-border_width_top = 5
-border_width_right = 5
-border_width_bottom = 5
-border_blend = true
-corner_radius_top_left = 100
-corner_radius_top_right = 100
-corner_radius_bottom_right = 100
-corner_radius_bottom_left = 100
-shadow_color = Color( 0.0737305, 0.0737305, 0.065975, 1 )
-shadow_size = 4
-anti_aliasing_size = 0.01
-
-[sub_resource type="StyleBoxFlat" id=4]
-bg_color = Color( 0.329412, 0.4, 0.337255, 1 )
-border_width_left = 5
-border_width_top = 5
-border_width_right = 5
-border_width_bottom = 5
-border_blend = true
-corner_radius_top_left = 100
-corner_radius_top_right = 100
-corner_radius_bottom_right = 100
-corner_radius_bottom_left = 100
-shadow_color = Color( 0.0737305, 0.0737305, 0.065975, 1 )
-shadow_size = 4
-anti_aliasing_size = 0.01
-
-[sub_resource type="DynamicFont" id=5]
-size = 20
-font_data = ExtResource( 4 )
-
-[sub_resource type="StyleBoxFlat" id=6]
-bg_color = Color( 0.196078, 0.360784, 0.145098, 1 )
-border_width_left = 5
-border_width_top = 5
-border_width_right = 5
-border_width_bottom = 5
-border_blend = true
-corner_radius_top_left = 100
-corner_radius_top_right = 100
-corner_radius_bottom_right = 100
-corner_radius_bottom_left = 100
-shadow_color = Color( 0.0737305, 0.0737305, 0.065975, 1 )
-shadow_size = 4
-anti_aliasing_size = 0.01
-
-[sub_resource type="StyleBoxFlat" id=7]
-bg_color = Color( 0.0901961, 0.176471, 0.0627451, 1 )
-border_width_left = 5
-border_width_top = 5
-border_width_right = 5
-border_width_bottom = 5
-border_blend = true
-corner_radius_top_left = 100
-corner_radius_top_right = 100
-corner_radius_bottom_right = 100
-corner_radius_bottom_left = 100
-shadow_color = Color( 0.0737305, 0.0737305, 0.065975, 1 )
-shadow_size = 4
-anti_aliasing_size = 0.01
+[ext_resource path="res://MainMenuAssets/MainTheme.tres" type="Theme" id=2]
 
 [node name="MainMenu" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-anchor_top = 1.0
+[node name="VSplitContainer" type="VSplitContainer" parent="."]
+visible = false
+anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 100.0
-margin_top = -200.0
-margin_right = 400.0
-margin_bottom = -100.0
-grow_horizontal = 2
-grow_vertical = 2
-rect_min_size = Vector2( 50, 50 )
-alignment = 1
 
-[node name="StartButton" type="Button" parent="VBoxContainer"]
-margin_top = 13.0
-margin_right = 300.0
-margin_bottom = 48.0
-focus_neighbour_top = NodePath("../QuitButton")
-custom_fonts/font = SubResource( 2 )
-custom_styles/hover = SubResource( 3 )
-custom_styles/pressed = SubResource( 4 )
-custom_styles/normal = ExtResource( 3 )
-text = "Start"
-
-[node name="QuitButton" type="Button" parent="VBoxContainer"]
-margin_top = 52.0
-margin_right = 300.0
-margin_bottom = 87.0
-focus_neighbour_bottom = NodePath("../StartButton")
-custom_fonts/font = SubResource( 5 )
-custom_styles/hover = SubResource( 6 )
-custom_styles/pressed = SubResource( 7 )
-custom_styles/normal = ExtResource( 3 )
-text = "Quit"
-
-[node name="ColorRect" type="ColorRect" parent="."]
-margin_left = 231.0
-margin_top = 290.0
-margin_right = 271.0
-margin_bottom = 330.0
-rect_scale = Vector2( 20.2108, 3.68 )
+[node name="ColorRect" type="ColorRect" parent="VSplitContainer"]
+margin_right = 1280.0
+margin_bottom = 720.0
 color = Color( 0.0117647, 0.0117647, 0.0117647, 0.352941 )
 
-[node name="CenterContainer" type="CenterContainer" parent="."]
+[node name="Label" type="Label" parent="VSplitContainer/ColorRect"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -128,11 +27,6 @@ margin_left = -283.5
 margin_top = -49.5
 margin_right = 283.5
 margin_bottom = 49.5
-rect_scale = Vector2( 0.996986, 1.14231 )
-
-[node name="Label" type="Label" parent="CenterContainer"]
-margin_right = 567.0
-margin_bottom = 99.0
 text = "Use W, A, S, D to walk around.
 You can run by holding SHIFT
 
@@ -142,5 +36,41 @@ Run and destroy the alarms or you will wake up in a nightmare! "
 align = 1
 valign = 1
 
-[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_StartButton_pressed"]
-[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_QuitButton_pressed"]
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -720.0
+margin_right = 1280.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AspectRatioContainer"]
+margin_left = 280.0
+margin_right = 1000.0
+margin_bottom = 720.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_min_size = Vector2( 50, 50 )
+alignment = 1
+
+[node name="StartButton" type="Button" parent="AspectRatioContainer/VBoxContainer"]
+margin_top = 334.0
+margin_right = 720.0
+margin_bottom = 358.0
+focus_neighbour_top = NodePath("../QuitButton")
+theme = ExtResource( 2 )
+text = "Start"
+
+[node name="QuitButton" type="Button" parent="AspectRatioContainer/VBoxContainer"]
+margin_top = 362.0
+margin_right = 720.0
+margin_bottom = 386.0
+focus_neighbour_bottom = NodePath("../StartButton")
+theme = ExtResource( 2 )
+text = "Quit"
+
+[node name="PanelContainer" type="PanelContainer" parent="AspectRatioContainer"]
+margin_left = 280.0
+margin_right = 1000.0
+margin_bottom = 720.0
+
+[connection signal="pressed" from="AspectRatioContainer/VBoxContainer/StartButton" to="." method="_on_StartButton_pressed"]
+[connection signal="pressed" from="AspectRatioContainer/VBoxContainer/QuitButton" to="." method="_on_QuitButton_pressed"]
