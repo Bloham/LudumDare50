@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Assets/Tree/SM_Tree_Top_Happy.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://Prefabs/Mesh.gd" type="Script" id=2]
@@ -8,9 +8,6 @@
 [ext_resource path="res://Assets/Tree/SM_Tree_Top_Evil.obj" type="ArrayMesh" id=6]
 
 [sub_resource type="SphereShape" id=1]
-
-[sub_resource type="SphereShape" id=2]
-radius = 20.0
 
 [node name="Item_Hedge" type="Spatial"]
 script = ExtResource( 3 )
@@ -39,11 +36,3 @@ shape = SubResource( 1 )
 visible = false
 mesh = ExtResource( 1 )
 material/0 = null
-
-[node name="WatchArea" type="Area" parent="."]
-collision_layer = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="WatchArea"]
-shape = SubResource( 2 )
-
-[connection signal="body_entered" from="WatchArea" to="." method="_on_WatchArea_body_entered"]

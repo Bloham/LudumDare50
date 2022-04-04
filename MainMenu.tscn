@@ -41,6 +41,9 @@ anchor_top = 1.0
 anchor_bottom = 1.0
 margin_top = -720.0
 margin_right = 1280.0
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [node name="VBoxContainer" type="VBoxContainer" parent="AspectRatioContainer"]
 margin_left = 280.0
@@ -67,10 +70,9 @@ focus_neighbour_bottom = NodePath("../StartButton")
 theme = ExtResource( 2 )
 text = "Quit"
 
-[node name="PanelContainer" type="PanelContainer" parent="AspectRatioContainer"]
-margin_left = 280.0
-margin_right = 1000.0
-margin_bottom = 720.0
+[node name="Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
 
 [connection signal="pressed" from="AspectRatioContainer/VBoxContainer/StartButton" to="." method="_on_StartButton_pressed"]
 [connection signal="pressed" from="AspectRatioContainer/VBoxContainer/QuitButton" to="." method="_on_QuitButton_pressed"]

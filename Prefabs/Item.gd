@@ -34,8 +34,3 @@ func _process(delta):
 		if(wa.currentRadius > dist):
 			albtraum()
 	
-
-func _on_WatchArea_body_entered(body):
-	if is_triggered == true:
-		self.look_at(body.translation, Vector3.UP)
-	pass # Replace with function body.
