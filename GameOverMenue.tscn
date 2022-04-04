@@ -33,29 +33,34 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -288.5
+margin_left = -215.5
 margin_top = -94.0
-margin_right = 288.5
+margin_right = 215.5
 theme = ExtResource( 1 )
+
+[node name="IconWecker" type="Sprite" parent="MediumAnker/PanelContainer"]
+position = Vector2( 224.5, -120 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 4 )
 
 [node name="GridContainer" type="GridContainer" parent="MediumAnker/PanelContainer"]
 margin_left = 5.0
 margin_top = 5.0
-margin_right = 585.0
+margin_right = 426.0
 margin_bottom = 89.0
 columns = 2
 
 [node name="WeckerGesammelt" type="Label" parent="MediumAnker/PanelContainer/GridContainer"]
 margin_top = 4.0
-margin_right = 420.0
+margin_right = 241.0
 margin_bottom = 31.0
-text = "You found this many alarm Clocks: "
+text = "Alarm clocks found: "
 align = 2
 valign = 1
 
 [node name="WeckerScore" type="Label" parent="MediumAnker/PanelContainer/GridContainer"]
-margin_left = 424.0
-margin_right = 580.0
+margin_left = 245.0
+margin_right = 401.0
 margin_bottom = 36.0
 custom_fonts/font = SubResource( 1 )
 text = "27"
@@ -64,25 +69,20 @@ valign = 1
 
 [node name="GetraeumteZeit" type="Label" parent="MediumAnker/PanelContainer/GridContainer"]
 margin_top = 44.0
-margin_right = 420.0
+margin_right = 241.0
 margin_bottom = 71.0
-text = "You dreamt for that long: "
+text = "Time of dreaming: "
 align = 2
 valign = 1
 
 [node name="GetraeumteZeitScore" type="Label" parent="MediumAnker/PanelContainer/GridContainer"]
-margin_left = 424.0
+margin_left = 245.0
 margin_top = 40.0
-margin_right = 580.0
+margin_right = 401.0
 margin_bottom = 76.0
 custom_fonts/font = SubResource( 2 )
 text = "12:23 min"
 valign = 1
-
-[node name="IconWecker" type="Sprite" parent="MediumAnker/PanelContainer"]
-position = Vector2( 303.5, -117 )
-scale = Vector2( 0.2, 0.2 )
-texture = ExtResource( 4 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MediumAnker"]
 anchor_left = 0.5
