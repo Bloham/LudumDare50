@@ -37,18 +37,10 @@ func coruptionRise():
 		t.set_one_shot(true)
 		self.add_child(t)
 		t.start()
-		var spielwelt = get_tree().get_root().get_node("Spielwelt")
 		spielwelt.get_node("Assets").get_node("SkyClock").gameOver()
 		print("game over timer startet")
 		yield(t, "timeout")
-		gameOver()
-		
-		
-
-
-func gameOver():
-	get_tree().change_scene(("res://EndGame.tscn"))
-	pass
+		spielwelt.gameover()
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

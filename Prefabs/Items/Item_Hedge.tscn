@@ -14,12 +14,14 @@ script = ExtResource( 3 )
 
 [node name="MeshEvil" type="MeshInstance" parent="."]
 transform = Transform( 1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0, 0 )
+visible = false
 mesh = ExtResource( 6 )
 material/0 = ExtResource( 4 )
 script = ExtResource( 2 )
 is_visible = false
 
 [node name="MeshHappy" type="MeshInstance" parent="."]
+visible = false
 mesh = ExtResource( 1 )
 material/0 = ExtResource( 5 )
 script = ExtResource( 2 )
@@ -33,6 +35,5 @@ transform = Transform( 2.1, 0, 0, 0, 1.5, 0, 0, 0, 2.2, 0, 0, 0 )
 shape = SubResource( 1 )
 
 [node name="SM_Tree_Top_Happy" type="MeshInstance" parent="."]
-visible = false
 mesh = ExtResource( 1 )
 material/0 = null
