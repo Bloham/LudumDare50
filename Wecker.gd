@@ -7,12 +7,15 @@ extends Spatial
 export var currentRadius = 45
 export var spawn_index = -1
 
-var radiusIncrease = 1
+var spielwelt
+var radiusIncrease = 1.0
+var radiusIncrease_corruptionFactor = 2.0
 var spawner
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	spielwelt = get_tree().get_root().get_node("Spielwelt")
 	$AudioStreamPlayer3D.stream = load ("res://Audio/SFX/Wecker_loop.ogg")
 	$AudioStreamPlayer3D.play()
 
@@ -24,7 +27,8 @@ func _play_alarm_sfx():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	currentRadius += delta*radiusIncrease
+	var increase = radiusIncrease + radiusIncrease_corruptionFactor * spielwelt.corruption_scalar
+	currentRadius += delta*increase
 	pass
 
 
