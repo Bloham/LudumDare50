@@ -20,6 +20,7 @@ func _gameOver(scoreWecker, scoreTime):
 	menueCamera.set_current(true)
 	LableWecker = scoreWecker
 	LableZeit = scoreTime
+	print(scoreTime,scoreWecker)
 
 
 func _on_QuitButton_pressed():

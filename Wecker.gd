@@ -42,6 +42,7 @@ func _on_Area_body_entered(body):
 	animation.play("destroy")
 	
 	get_tree().get_root().get_node("Spielwelt").score_wecker+=1
+	print(get_tree().get_root().get_node("Spielwelt").score_wecker)
 	
 	yield(get_tree().create_timer(2.0), "timeout")
 	queue_free()
