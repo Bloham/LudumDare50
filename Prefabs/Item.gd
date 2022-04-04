@@ -9,6 +9,7 @@ var manager_items
 var is_triggered = false
 
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	spielwelt = get_tree().get_root().get_node("Spielwelt")
@@ -21,6 +22,8 @@ func albtraum():
 		manager_items.coruptionRise()
 		get_node("MeshHappy").is_fading = true
 		get_node("MeshEvil").is_fading = true
+		
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -30,3 +33,9 @@ func _process(delta):
 		var dist = translation.distance_to(wa.global_transform.origin)
 		if(wa.currentRadius > dist):
 			albtraum()
+	
+
+func _on_WatchArea_body_entered(body):
+	if is_triggered == true:
+		self.look_at(body.translation, Vector3.UP)
+	pass # Replace with function body.

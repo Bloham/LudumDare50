@@ -7,7 +7,7 @@
 [sub_resource type="CapsuleShape" id=1]
 height = 3.0
 
-[node name="KinematicBody" type="KinematicBody"]
+[node name="KinematicBody" type="KinematicBody" groups=["Player"]]
 collision_mask = 4
 script = ExtResource( 2 )
 walkSpeed = 18
