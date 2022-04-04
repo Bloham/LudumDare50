@@ -14,6 +14,7 @@ script = ExtResource( 6 )
 
 [node name="Mesh_SkyClock_BG" type="MeshInstance" parent="."]
 layers = 2
+cast_shadow = 0
 generate_lightmap = false
 mesh = ExtResource( 5 )
 material/0 = ExtResource( 1 )
