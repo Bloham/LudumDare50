@@ -13,12 +13,14 @@
 script = ExtResource( 3 )
 
 [node name="MeshEvil" type="MeshInstance" parent="."]
+visible = false
 mesh = ExtResource( 6 )
 material/0 = ExtResource( 4 )
 script = ExtResource( 2 )
 is_visible = false
 
 [node name="MeshHappy" type="MeshInstance" parent="."]
+visible = false
 mesh = ExtResource( 1 )
 material/0 = ExtResource( 5 )
 script = ExtResource( 2 )
@@ -30,3 +32,7 @@ collision_mask = 0
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
 transform = Transform( 0.5, 0, 0, 0, 4.25, 0, 0, 0, 0.5, 0, 4, 0 )
 shape = SubResource( 1 )
+
+[node name="SM_Tree_Happy" type="MeshInstance" parent="."]
+mesh = ExtResource( 1 )
+material/0 = null
