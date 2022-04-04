@@ -1,90 +1,121 @@
 extends KinematicBody
 
-var velocity = Vector3.ZERO
-var speed = 10
-var gravity = 1
 
-export var walk_speed = 8
-export var run_speed = 20
-export var jump_strength := 20.0
+#Physics
+export var walkSpeed = 16
+export var runSpeed = 30
+export var jumpForce = 20
 
-#var camera rotation
-onready var player_camera = $Camera
-var spin = 0.1
-export var mouse_sensitivity = 5
+#Footstep Sound
+export var audioWalkPitch = 0.66
+export var audioRunPitch = 1
+
+var gravity = 40
+var moveSpeed = 18
+
+#Camera
+var minLookAngle = -90
+var maxLookAngle = 90
+var lookSensitivity = 50
+
+#Vectors
+var vel = Vector3()
+var mouseDelta = Vector2()
+
+#Conponents
+onready var camera = $Camera
+onready var audioPlayerFootsteps = $Footsteps
+onready var audioPlayerJump = $Jump
 
 func _ready():
+	#hide and lock mouse
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	player_camera.current = true
+	
+	#set up steps sound
+
 
 func _physics_process(delta):
-	player_camera.rotation_degrees.y = 180
-	player_camera.rotation_degrees.z = 0
 	
-	if not is_on_floor():
-		velocity.y += -gravity
-		#print("falling")
+	#reset x and z velocity
+	vel.x = 0
+	vel.z = 0
 	
-	movement()
-	velocity = move_and_slide(velocity, Vector3.ZERO)
-
-func movement():
-	var dir = Vector3.ZERO
-	var vel_y = velocity.y
+	var input = Vector2()
 	
-	velocity = Vector3.ZERO
-	
-	#move Forward and Backwards
+	#Movement Inputs
 	if Input.is_action_pressed("ui_up"):
-		dir += transform.basis.z
-		_play_footsteps()
-	elif Input.is_action_pressed("ui_down"):
-		dir -= transform.basis.z
-		_play_footsteps()
-	
-	#move sideways
+		input.y -= 1
+	if Input.is_action_pressed("ui_down"):
+		input.y += 1
 	if Input.is_action_pressed("ui_left"):
-		dir += transform.basis.x
-		_play_footsteps()
-	elif Input.is_action_pressed("ui_right"):
-		dir -= transform.basis.x
-		_play_footsteps()
-	
-	#running
-	if Input.is_action_pressed("run"):
-		speed = run_speed
-	else:
-		speed = walk_speed
-	
-	#Jumping
-	if is_on_floor() and Input.is_action_just_pressed("ui_accept"):
-		velocity.y += jump_strength
-		print("Jump")
-	
-	velocity = dir.normalized() * speed
-	velocity.y = vel_y
-	
-	if velocity == Vector3(0,-1,0):
-		$AudioStreamPlayer.stop()
-
-func _play_footsteps():
-	if  !$AudioStreamPlayer.playing:
-		$AudioStreamPlayer.stream = load("res://Audio/SFX/sfx_footsteps_walk.wav")
-		$AudioStreamPlayer.pitch_scale = 0.66
-		$AudioStreamPlayer.play()
+		input.x -= 1
+	if Input.is_action_pressed("ui_right"):
+		input.x += 1
 		
+	input = input.normalized()
+	
+	#get the forward and right directions
+	var forward = global_transform.basis.z
+	var right = global_transform.basis.x
+	
+	var relativeDir = (forward * input.y + right * input.x)
+	
+	#set Velocity
+	vel.x = relativeDir.x * moveSpeed
+	vel.z = relativeDir.z * moveSpeed
+	
+	#Gravity
+	vel.y -= gravity * delta
+	
+	#move the player
+	vel = move_and_slide(vel, Vector3.UP)
+	
+	#jumping
+	if Input.is_action_pressed("ui_accept") and is_on_floor():
+		vel.y = jumpForce
+		audioPlayerJump.play()
+	
+	#play fotsteps
+	if Input.is_action_pressed("ui_down") or Input.is_action_pressed("ui_up") or Input.is_action_pressed("ui_left") or Input.is_action_pressed("ui_right") and is_on_floor() == true:
+		_playFootsteps()
+	
+	#play runing fotsteps and speed
+	if Input.is_action_pressed("run"):
+		audioPlayerFootsteps.pitch_scale = audioRunPitch
+		moveSpeed = runSpeed
+	else:
+		audioPlayerFootsteps.pitch_scale = audioWalkPitch
+		moveSpeed = walkSpeed
+	
+	if input == Vector2.ZERO:
+		audioPlayerFootsteps.stop()
+	if is_on_floor() == false:
+		audioPlayerFootsteps.stop()
+
+
+func _playFootsteps():
+	if audioPlayerFootsteps.playing == false and is_on_floor() == true:
+		audioPlayerFootsteps.play()
+
+func _process(delta):
+	#rotate camera along the x axis
+	camera.rotation_degrees.x -= mouseDelta.y * lookSensitivity * delta
+	
+	#clamp camera x axis
+	camera.rotation_degrees.x = clamp(camera.rotation_degrees.x, minLookAngle, maxLookAngle)
+	
+	#rotate camera along y axis
+	rotation_degrees.y -= mouseDelta.x * lookSensitivity * delta
+	
+	#reset the mouse delta vector
+	mouseDelta = Vector2()
 
 func _input(event):
-	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
-		rotate_y(lerp(0, -spin, event.relative.x*(mouse_sensitivity * 0.01)))
-		player_camera.rotate_x(lerp(0, spin, event.relative.y*(mouse_sensitivity * 0.01)))
-		
-		#clamp rotation
-		var curr_rot = player_camera.rotation_degrees
-		curr_rot.x = clamp(curr_rot.x, -60, 60)
-		player_camera.rotation_degrees = curr_rot
+	if event is InputEventMouseMotion:
+		mouseDelta = event.relative
 	
-	#quit game with ESC
+	#quit with ESC
 	if event is InputEventKey:
 		if event.pressed and event.scancode == KEY_ESCAPE:
 			get_tree().quit()
+	

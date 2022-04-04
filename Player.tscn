@@ -1,31 +1,31 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
+[ext_resource path="res://Audio/SFX/sfx_footsteps_walk.wav" type="AudioStream" id=1]
 [ext_resource path="res://Player.gd" type="Script" id=2]
+[ext_resource path="res://Audio/SFX/WeckerDestroy.wav" type="AudioStream" id=3]
 
-[sub_resource type="CapsuleMesh" id=1]
-radius = 0.9
-mid_height = 1.8
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.5
+height = 1.5
 
-[sub_resource type="CapsuleShape" id=2]
-height = 1.94201
-
-[node name="Player" type="KinematicBody" groups=["Player"]]
+[node name="KinematicBody" type="KinematicBody"]
 collision_mask = 4
 script = ExtResource( 2 )
-walk_speed = 16
-run_speed = 25
-
-[node name="CSGMesh" type="CSGMesh" parent="."]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
-mesh = SubResource( 1 )
+runSpeed = 25
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
-shape = SubResource( 2 )
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 1.25, 0 )
+shape = SubResource( 1 )
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
-far = 8192.0
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0 )
+current = true
+far = 400.0
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="Footsteps" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+bus = "SFXRev"
+
+[node name="Jump" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
 bus = "SFXRev"
