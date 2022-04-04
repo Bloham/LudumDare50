@@ -3,6 +3,7 @@ extends Node
 
 # Der Zähler für wie viele corumpierte Items es gibt. 
 onready var coruptionCounter = 0
+onready var spielwelt = get_tree().get_root().get_node("Spielwelt")
 
 var ItemsAufMap = 0
 
@@ -18,7 +19,8 @@ func _ready():
 #diese Funktion benutzen um die Coruption hochzählen zu lassen
 func coruptionRise():
 	coruptionCounter -= 1
-	print("Current Coruption: ",coruptionCounter, " / ", ItemsAufMap)
+	spielwelt.corruption_scalar = 1 - coruptionCounter/(1.0*ItemsAufMap)
+	print("Current Coruption: ",coruptionCounter, " / ", ItemsAufMap," (",(100*spielwelt.corruption_scalar),"%)")
 	if coruptionCounter <= 0:
 		#initiate Game Over in X seconds
 		var t = Timer.new()
