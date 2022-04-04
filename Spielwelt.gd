@@ -6,6 +6,8 @@ extends Spatial
 # var b = "text"
 export var corruption_scalar = 0.0
 
+var terrain_material
+
 func _ready():
 	var lightning = load("res://DirectionalLight.tscn")
 	var lightning_instance = lightning.instance()
@@ -18,6 +20,8 @@ func _ready():
 	add_child(lightning_instance)
 	add_child(envorment_instance)
 	
+	terrain_material = get_node("Assets/Boden/Terrain/Terrain_low")
+	
 
 func _init():
 	pass
@@ -25,5 +29,5 @@ func _init():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	terrain_material.get_active_material(0).set_shader_param("corruption_scalar", corruption_scalar)
