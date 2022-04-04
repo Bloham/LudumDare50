@@ -33,10 +33,14 @@ func _process(delta):
 
 
 func _on_Area_body_entered(body):
-	print(body)
+#	print(body)
 	spawner.clear_spawnIndex(spawn_index)
 	$AudioStreamPlayer3D.stream = load ("res://Audio/SFX/WeckerDestroy.wav")
 	$AudioStreamPlayer3D.play()
+	
+	get_tree().get_root().get_node("Spielwelt").wecker_count+=1
+	print(get_tree().get_root().get_node("Spielwelt").wecker_count)
+	
 	yield(get_tree().create_timer(2.0), "timeout")
 	queue_free()
 	pass # Replace with function body.
