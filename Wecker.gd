@@ -4,7 +4,10 @@ extends Spatial
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
+export var currentRadius = 45
 export var spawn_index = -1
+
+var radiusIncrease = 1
 var spawner
 
 
@@ -20,8 +23,9 @@ func _play_alarm_sfx():
 	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	currentRadius += delta*radiusIncrease
+	pass
 
 
 func _on_Area_body_entered(body):

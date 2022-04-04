@@ -29,8 +29,7 @@ func albtraum():
 func _process(delta):
 	var wm = spielwelt.get_node("AllWecker")
 	for w in wm.get_children():
-		var wa = w.get_node("WeckerAsset").get_node("WeckerArea")
-		var dist = translation.distance_to(wa.global_transform.origin)
-		if(wa.currentRadius > dist):
+		var dist = translation.distance_to(w.global_transform.origin)
+		if(w.currentRadius > dist):
 			albtraum()
 	

@@ -53,8 +53,8 @@ func gameOver():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	var turning_eye = turning_eyes[eye_index]
-	print ("turning eye ",turning_eye.name)
 	if turning_eye.is_triggered:
 		turning_eye.look_at(spielwelt.player_instance.translation, Vector3.UP)
+#		print ("turning eye ",turning_eye.name)
 	eye_index = (eye_index+1)%turning_eyes.size()
 	pass
