@@ -14,14 +14,12 @@ extents = Vector3( 1.25688, 0.502815, 1.04678 )
 script = ExtResource( 3 )
 
 [node name="MeshEvil" type="MeshInstance" parent="."]
-visible = false
 mesh = ExtResource( 1 )
 material/0 = ExtResource( 6 )
 script = ExtResource( 2 )
 is_visible = false
 
 [node name="MeshHappy" type="MeshInstance" parent="."]
-visible = false
 mesh = ExtResource( 5 )
 material/0 = ExtResource( 4 )
 script = ExtResource( 2 )
@@ -34,5 +32,6 @@ collision_mask = 0
 shape = SubResource( 2 )
 
 [node name="placeholder" type="MeshInstance" parent="."]
+visible = false
 mesh = ExtResource( 5 )
 material/0 = null
