@@ -9,7 +9,7 @@ export var spawn_index = -1
 
 var spielwelt
 var radiusIncrease = 1.0
-var radiusIncrease_corruptionFactor = 4.0
+var radiusIncrease_corruptionFactor = 20.0
 var spawner
 var animation
 
