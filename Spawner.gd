@@ -26,6 +26,9 @@ func _ready():
 
 
 func onGameStart():
+	SpawnLocationIndices = []
+	for i in SpawnLocations:
+		SpawnLocationIndices.append(false)
 	t.start()
 
 func SpawnWecker():

@@ -41,5 +41,5 @@ func start_score():
 	score_wecker = 0
 	
 func gameover():
-	print("scores: ",score_wecker,", ",score_time)
-	get_tree().get_root().get_node("Spielwelt/Other/UI/GameOverMenue")._gameOver(score_wecker, score_time)
+#	print("scores: ",score_wecker,", ",score_time)
+	get_tree().get_root().get_node("Spielwelt/Other/UI/GameOverMenue")._gameOver(score_wecker, round(score_time))

@@ -4620,7 +4620,6 @@ transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, 100.314, 19.1937, -191.685 )
 
 [node name="SkyClock" parent="Assets" instance=ExtResource( 8 )]
 transform = Transform( 2.057, 0, 0, 0, 2.057, 0, 0, 0, 2.057, 2.92055, 1.78093, -1.34458 )
-visible = false
 
 [node name="AllWecker" type="Node" parent="."]
 

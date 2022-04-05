@@ -34,6 +34,7 @@ func _on_ContinetButton_pressed():
 
 
 func _on_StartButton_pressed():
+	get_tree().paused = false
 	get_tree().change_scene("res://Spielwelt.tscn")
 
 
