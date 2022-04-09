@@ -29,7 +29,7 @@ func _ready():
 func coruptionRise():
 	coruptionCounter -= 1
 	spielwelt.corruption_scalar = 1 - coruptionCounter/(1.0*ItemsAufMap)
-	print("Current Coruption: ",coruptionCounter, " / ", ItemsAufMap," (",(100*spielwelt.corruption_scalar),"%)")
+#	print("Current Coruption: ",coruptionCounter, " / ", ItemsAufMap," (",(100*spielwelt.corruption_scalar),"%)")
 	if coruptionCounter <= 0:
 		#initiate Game Over in X seconds
 		var t = Timer.new()
@@ -44,9 +44,10 @@ func coruptionRise():
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	var turning_eye = turning_eyes[eye_index]
-	if turning_eye.is_triggered:
-		turning_eye.look_at(spielwelt.player_instance.translation, Vector3.UP)
+	for turning_eye in turning_eyes:
+#	var turning_eye = turning_eyes[eye_index]
+		if turning_eye.is_triggered:
+			turning_eye.look_at(spielwelt.player_instance.translation, Vector3.UP)
 #		print ("turning eye ",turning_eye.name)
-	eye_index = (eye_index+1)%turning_eyes.size()
+#	eye_index = (eye_index+1)%turning_eyes.size()
 	pass

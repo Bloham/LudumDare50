@@ -21,7 +21,6 @@ func _ready():
 	SpawnerIndex = SpawnerLocations
 	t = get_tree().get_root().get_node("Spielwelt").get_node("Other").get_node("SpawnTimer")
 	WeckersAnzahl = SpawnerLocations.get_child_count()
-	print(SpawnerLocations)
 	
 	#Timer that spawns the Wecker
 	t.set_wait_time(difficultyLevel*5)

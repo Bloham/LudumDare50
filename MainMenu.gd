@@ -13,7 +13,7 @@ func _on_StartButton_pressed():
 	var player = load("res://Player.tscn")
 	var player_instance = player.instance()
 	
-	var WeckerSpawnerStartet = get_tree().get_root().get_node("Spielwelt").get_node("Other").get_node("Spawner")
+	var WeckerSpawner = get_tree().get_root().get_node("Spielwelt/Other/Spawner")
 	
 	player_instance.set_name("Player")
 	var spielwelt = get_tree().get_root().get_node("Spielwelt")
@@ -21,7 +21,7 @@ func _on_StartButton_pressed():
 	spielwelt.start_score()
 	add_child(player_instance)
 	
-	WeckerSpawnerStartet.onGameStart()
+	WeckerSpawner.onGameStart()
 	
 	
 

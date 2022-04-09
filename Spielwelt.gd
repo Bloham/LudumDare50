@@ -7,27 +7,36 @@ extends Spatial
 export var corruption_scalar = 0.0
 
 var player_instance = self
+var environment_instance
 var terrain_material
 
 var score_time = 0.0
 var score_wecker = 0
+
+var is_fullscreen = true
 
 func _ready():
 	var lightning = load("res://DirectionalLight.tscn")
 	var lightning_instance = lightning.instance()
 	lightning_instance.set_name("DirectionalLight")
 	
-	var envorment = load("res://WorldEnvironment.tscn")
-	var envorment_instance = envorment.instance()
-	envorment_instance.set_name("WorldEnviorment")
+	var environment = load("res://WorldEnvironment.tscn")
+	environment_instance = environment.instance()
+	environment_instance.set_name("WorldEnviorment")
 	
 	add_child(lightning_instance)
-	add_child(envorment_instance)
+	add_child(environment_instance)
 	
 	terrain_material = get_node("Assets/Boden/Terrain/Terrain_low")
 	
 
 func _init():
+	_toggle_fullscreen()
+	pass
+	
+func _toggle_fullscreen():
+	is_fullscreen = !is_fullscreen
+	OS.window_fullscreen = is_fullscreen
 	pass
 
 

@@ -23,7 +23,7 @@ function = 15
 operator = 2
 
 [sub_resource type="VisualShaderNodeColorConstant" id=6]
-constant = Color( 0.376471, 0.25098, 0.376471, 1 )
+constant = Color( 0.282353, 0.0862745, 0.0784314, 1 )
 
 [sub_resource type="VisualShaderNodeTextureUniform" id=15]
 uniform_name = "Textrure_Albedo"
@@ -132,7 +132,7 @@ void fragment() {
 	float n_out12p0 = round(n_out11p0);
 
 // Color:14
-	vec3 n_out14p0 = vec3(0.376471, 0.250980, 0.376471);
+	vec3 n_out14p0 = vec3(0.282353, 0.086274, 0.078431);
 	float n_out14p1 = 1.000000;
 
 // VectorOp:13
@@ -161,7 +161,7 @@ void light() {
 
 }
 "
-graph_offset = Vector2( 292, 367 )
+graph_offset = Vector2( 345, 531 )
 modes/cull = 2
 modes/depth_draw = 3
 nodes/fragment/0/position = Vector2( 1200, 200 )
