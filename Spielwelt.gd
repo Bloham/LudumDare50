@@ -13,9 +13,9 @@ var terrain_material
 
 var ambient_colour_initial
 var light_colour_initial
-var light_colour_final
 var fog_colour_initial
 var bg_colour_initial
+export var light_colour_final = Color(0.9,0.1,0)
 export var ambient_colour_final = Color(0.3,0.6,0)
 export var bg_colour_final = Color(0.6,0.22,0.12)
 
@@ -28,8 +28,7 @@ func _ready():
 	var lightning = load("res://DirectionalLight.tscn")
 	lightning_instance = lightning.instance()
 	lightning_instance.set_name("DirectionalLight")
-	light_colour_initial = Color(1,1,1)
-	light_colour_final = lightning_instance.get_color()
+	light_colour_initial = lightning_instance.get_color()
 	
 	var environment = load("res://WorldEnvironment.tscn")
 	environment_instance = environment.instance()
@@ -67,7 +66,7 @@ func _change_environment():
 	var g = corruption_scalar * light_colour_final.g + (1 - corruption_scalar) * light_colour_initial.g
 	var b = corruption_scalar * light_colour_final.b + (1 - corruption_scalar) * light_colour_initial.b
 	lightning_instance.light_color = Color(r,g,b)
-	lightning_instance.light_energy = 2 + 2 * corruption_scalar
+#	lightning_instance.light_energy = 2 + 2 * corruption_scalar
 	
 	r = corruption_scalar * ambient_colour_final.r + (1 - corruption_scalar) * ambient_colour_initial.r
 	g = corruption_scalar * ambient_colour_final.g + (1 - corruption_scalar) * ambient_colour_initial.g

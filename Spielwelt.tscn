@@ -44,6 +44,7 @@ tracks/0/keys = {
 
 [node name="Spielwelt" type="Spatial"]
 script = ExtResource( 6 )
+bg_colour_final = Color( 0.376471, 0.564706, 0.25098, 1 )
 
 [node name="Assets" parent="." instance=ExtResource( 2 )]
 
