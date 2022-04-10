@@ -12,12 +12,12 @@ var lightning_instance
 var terrain_material
 
 var ambient_colour_initial
-var ambient_colour_final = Color(0.08,0.4,0)
 var light_colour_initial
 var light_colour_final
 var fog_colour_initial
 var bg_colour_initial
-var bg_colour_final = Color(0.6,0.18,0.12)
+export var ambient_colour_final = Color(0.3,0.6,0)
+export var bg_colour_final = Color(0.6,0.22,0.12)
 
 var score_time = 0.0
 var score_wecker = 0
