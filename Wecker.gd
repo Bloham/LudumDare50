@@ -27,7 +27,7 @@ func _ready():
 	var audio = $AudioStreamPlayer3D
 	_wecker_stellen(audio)
 	audio.set_emission_angle_enabled(false)
-	audio.stream = load ("res://Audio/SFX/Wecker_loop.ogg")
+	audio.stream = load ("res://Audio/SFX/Wecker_Loop.wav")
 	audio.play()
 	animation = get_node("WeckerAsset").get_node("AnimationPlayer")
 
