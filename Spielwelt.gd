@@ -20,11 +20,14 @@ var score_time = 0.0
 var score_wecker = 0
 
 var is_fullscreen = true
+var is_game_started = false
 
 var M_wecker;
+var assets_instance
 
 
 func _ready():
+	
 	var lightning = load("res://DirectionalLight.tscn")
 	lightning_instance = lightning.instance()
 	lightning_instance.set_name("DirectionalLight")
@@ -41,36 +44,54 @@ func _ready():
 	
 	add_child(environment_instance)
 	
-	terrain_material = get_node("Assets/Boden/Terrain/Terrain_low")
-	
 	var weckerScene = preload("res://Wecker.tscn")
 	var wecker = weckerScene.instance()
 	M_wecker = wecker._get_shaderMaterial()
 
 
 func _init():
+	
 	OS.window_fullscreen = is_fullscreen
 	pass
-	
+
+
 func _toggle_fullscreen():
+	
 	is_fullscreen = !is_fullscreen
 	OS.window_fullscreen = is_fullscreen
 	pass
 
 
-func onGameStart():
+func onGameStart(var level_index):
+	
+	if level_index == 0:
+		var assets = load("res://Assets_1.tscn")
+		assets_instance = assets.instance()
+	else:
+		var assets = load("res://Assets_2.tscn")
+		assets_instance = assets.instance()
+		
+	self.add_child(assets_instance)
+	
+	terrain_material = get_node("Assets/Boden/Terrain/Terrain_low")
+	
 	score_time = 0.0
 	score_wecker = 0
 	var WeckerSpawner = get_tree().get_root().get_node("Spielwelt/Assets/Spawner")
 	WeckerSpawner.onGameStart(self)
+	
+	is_game_started = true
 
 
 func _process(delta):
-	score_time += delta
-	_change_environment()
+	
+	if is_game_started:
+		score_time += delta
+		_change_environment()
 
 
 func _change_environment():
+	
 	M_wecker.set_shader_param("corruption_scalar", corruption_scalar)
 	
 	terrain_material.get_active_material(0).set_shader_param("corruption_scalar", corruption_scalar)
@@ -103,5 +124,7 @@ func _change_environment():
 
 
 func gameover():
+	
+	is_game_started = false
 #	print("scores: ",score_wecker,", ",score_time)
 	get_tree().get_root().get_node("Spielwelt/Other/UI/GameOverMenue")._gameOver(score_wecker, round(score_time))

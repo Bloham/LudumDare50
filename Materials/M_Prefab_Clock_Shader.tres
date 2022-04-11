@@ -116,7 +116,7 @@ void fragment() {
 	float n_out2p0 = corruption_scalar;
 
 // Scalar:12
-	float n_out12p0 = 3.141593;
+	float n_out12p0 = 3.141590;
 
 // ScalarOp:21
 	float n_in21p1 = 0.50000;

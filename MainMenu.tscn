@@ -64,18 +64,26 @@ rect_min_size = Vector2( 400, 100 )
 alignment = 1
 
 [node name="StartButton" type="Button" parent="MediumAnker/VBoxContainer"]
-margin_top = 7.0
 margin_right = 400.0
-margin_bottom = 57.0
+margin_bottom = 50.0
 rect_min_size = Vector2( 0, 50 )
 focus_neighbour_top = NodePath("../QuitButton")
 theme = ExtResource( 2 )
-text = "Start"
+text = "Level 1"
+
+[node name="StartButton_Level2" type="Button" parent="MediumAnker/VBoxContainer"]
+margin_top = 54.0
+margin_right = 400.0
+margin_bottom = 104.0
+rect_min_size = Vector2( 0, 50 )
+focus_neighbour_top = NodePath("../QuitButton")
+theme = ExtResource( 2 )
+text = "Level 2"
 
 [node name="QuitButton" type="Button" parent="MediumAnker/VBoxContainer"]
-margin_top = 61.0
+margin_top = 108.0
 margin_right = 400.0
-margin_bottom = 111.0
+margin_bottom = 158.0
 rect_min_size = Vector2( 0, 50 )
 focus_neighbour_bottom = NodePath("../StartButton")
 theme = ExtResource( 2 )
@@ -85,5 +93,6 @@ text = "Quit"
 position = Vector2( 639, 313 )
 texture = ExtResource( 3 )
 
-[connection signal="pressed" from="MediumAnker/VBoxContainer/StartButton" to="." method="_on_StartButton_pressed"]
+[connection signal="pressed" from="MediumAnker/VBoxContainer/StartButton" to="." method="_on_StartButton_pressed" binds= [ 0 ]]
+[connection signal="pressed" from="MediumAnker/VBoxContainer/StartButton_Level2" to="." method="_on_StartButton_pressed" binds= [ 1 ]]
 [connection signal="pressed" from="MediumAnker/VBoxContainer/QuitButton" to="." method="_on_QuitButton_pressed"]
