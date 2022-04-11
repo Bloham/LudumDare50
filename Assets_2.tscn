@@ -676,7 +676,7 @@ transform = Transform( -9.26899, 0, -7.62145, 0, 12, 0, 7.62145, 0, -9.26899, -1
 transform = Transform( -0.340337, 0.745625, 0.5729, 0.0964801, 0.633746, -0.767501, -0.935341, -0.205936, -0.287625, 164.238, -9.37288, -68.4571 )
 
 [node name="Item_TallRock514" parent="Items/large_rock_set" instance=ExtResource( 3 )]
-transform = Transform( 7.18184, 7.18561, 3.54241, 9.11431, -6.49568, 0.344078, 3.05793, 2.48462, -9.34521, 2.08997, 18.0327, 7.05894 )
+transform = Transform( -1.51306, -0.193244, 9.91829, 9.03434, -6.4784, 0.828872, 7.75189, 7.51246, 0.96991, 1.73697, 18.4768, 7.43285 )
 
 [node name="Item_TallRock517" parent="Items/large_rock_set" instance=ExtResource( 3 )]
 transform = Transform( 1.53441, 3.51988, 7.01827, -2.58633, 6.97852, -2.93449, -7.41327, -1.7061, 2.47643, -40.2614, 14.4918, 8.87035 )
@@ -1104,54 +1104,106 @@ transform = Transform( 0.712037, 0.0270748, -0.0283958, -0.00651324, 0.334815, 0
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12, 0 )
 
 [node name="borer_wall_Item_FlatRock" parent="Items/border_wall" instance=ExtResource( 5 )]
-transform = Transform( -0.465789, -49.9977, -0.116804, 0.443968, 0.112668, -49.9979, 49.9958, -0.466807, 0.442898, 234.228, 19.532, -2.14959 )
+transform = Transform( -2.12948, -49.7326, -4.70481, -6.38347, 4.94139, -49.344, 49.545, -1.50088, -6.55979, 234.26, 9.2781, -2.13601 )
 
 [node name="borer_wall_Item_FlatRock2" parent="Items/border_wall" instance=ExtResource( 5 )]
-transform = Transform( 19.9096, -45.865, 0.0734373, 0.443968, 0.112668, -49.9979, 45.8629, 19.9094, 0.452116, 213.104, 19.532, -97.2331 )
+transform = Transform( 19.2008, -45.6613, -6.80985, 13.4743, 12.5969, -46.4732, 44.1562, 16.0113, 17.1425, 213.15, -11.8162, -96.9496 )
 
 [node name="borer_wall_Item_FlatRock3" parent="Items/border_wall" instance=ExtResource( 5 )]
-transform = Transform( 36.8425, -33.8019, 0.25098, 0.443968, 0.112668, -49.9979, 33.7999, 36.8432, 0.383159, 155.132, 19.532, -175.504 )
+transform = Transform( 34.1443, -33.5679, 14.4002, 24.4539, 6.36517, -43.145, 27.1325, 36.506, 20.764, 155.397, -33.3347, -175.099 )
 
 [node name="borer_wall_Item_FlatRock4" parent="Items/border_wall" instance=ExtResource( 5 )]
-transform = Transform( 47.4049, -15.8941, 0.385127, 0.443968, 0.112668, -49.9979, 15.8926, 47.4064, 0.24795, 70.3362, 19.532, -223.429 )
+transform = Transform( 48.8161, -9.29362, 5.53296, 10.8129, 41.326, -25.9855, 0.256888, 26.5668, 42.3573, 49.1824, -26.7906, -194.048 )
 
 [node name="borer_wall_Item_FlatRock5" parent="Items/border_wall" instance=ExtResource( 5 )]
-transform = Transform( 49.7707, 4.76193, 0.452681, 0.443968, 0.112668, -49.9979, -4.76275, 49.7726, 0.0698684, -26.6214, 25.532, -232.721 )
+transform = Transform( 49.2134, 3.98945, -7.88214, -7.48558, -4.85972, -49.197, -4.69149, 49.6031, -4.186, -26.3934, 0.352531, -232.686 )
 
 [node name="borer_wall_Item_FlatRock6" parent="Items/border_wall" instance=ExtResource( 5 )]
-transform = Transform( 43.5306, 24.5946, 0.441963, 0.443968, 0.112668, -49.9979, -24.5945, 43.5327, -0.120294, -118.976, 25.532, -201.773 )
+transform = Transform( 43.5306, 24.5946, 0.441963, 0.443968, 0.112668, -49.9979, -24.5945, 43.5327, -0.120294, -118.976, 25.556, -201.773 )
 
 [node name="borer_wall_Item_FlatRock7" parent="Items/border_wall" instance=ExtResource( 5 )]
-transform = Transform( 29.7636, 40.1746, 0.354825, 0.443968, 0.112668, -49.9979, -40.1737, 29.7656, -0.289656, -190.758, 25.532, -135.937 )
+transform = Transform( 29.7636, 40.1746, 0.354825, 0.443968, 0.112668, -49.9979, -40.1737, 29.7656, -0.289656, -190.852, 38.7443, -135.86 )
 
 [node name="borer_wall_Item_FlatRock8" parent="Items/border_wall" instance=ExtResource( 5 )]
-transform = Transform( 10.8503, 48.8081, 0.206335, 0.443968, 0.112668, -49.9979, -48.8065, 10.8517, -0.408935, -229.557, 25.532, -46.5962 )
+transform = Transform( 7.01586, 49.156, -5.87063, 7.50397, -6.91673, -48.9474, -48.9333, 5.9871, -8.34784, -229.554, 24.8257, -46.602 )
 
 [node name="borer_wall_Item_FlatRock102" parent="Items/border_wall" instance=ExtResource( 5 )]
-transform = Transform( 0.465785, 49.9977, 0.116804, 0.443968, 0.112668, -49.9979, -49.9958, 0.466803, -0.442898, -234.228, 19.532, 2.14961 )
+transform = Transform( 0.465785, 49.9977, 0.116804, 0.443968, 0.112668, -49.9979, -49.9958, 0.466803, -0.442898, -234.194, 5.18218, 2.02249 )
 
 [node name="borer_wall_Item_FlatRock103" parent="Items/border_wall" instance=ExtResource( 5 )]
-transform = Transform( -19.9096, 45.865, -0.0734374, 0.443968, 0.112668, -49.9979, -45.8629, -19.9095, -0.452116, -213.104, 19.532, 97.2331 )
+transform = Transform( -19.7863, 45.865, -2.21322, 5.81596, 0.112667, -49.6605, -45.5485, -19.9094, -5.37958, -213.106, -10.4477, 97.0595 )
 
 [node name="borer_wall_Item_FlatRock104" parent="Items/border_wall" instance=ExtResource( 5 )]
-transform = Transform( -36.8425, 33.8019, -0.25098, 0.443968, 0.112668, -49.9979, -33.7999, -36.8432, -0.383159, -155.132, 19.532, 175.504 )
+transform = Transform( -36.6854, 33.8019, 3.40753, -4.5214, 0.112668, -49.795, -33.671, -36.8432, 2.97397, -155.296, -13.0546, 175.254 )
 
 [node name="borer_wall_Item_FlatRock105" parent="Items/border_wall" instance=ExtResource( 5 )]
-transform = Transform( -47.4049, 15.8941, -0.385127, 0.443968, 0.112668, -49.9979, -15.8926, -47.4064, -0.24795, -70.3362, 19.532, 223.429 )
+transform = Transform( -42.4789, 18.6219, -18.6753, 22.2307, 6.2339, -44.3501, -14.1893, -45.9822, -13.5757, -79.0622, -24.6436, 220.172 )
 
 [node name="borer_wall_Item_FlatRock106" parent="Items/border_wall" instance=ExtResource( 5 )]
-transform = Transform( -49.7707, -4.76194, -0.452681, 0.443968, 0.112668, -49.9979, 4.76276, -49.7726, -0.0698683, 26.6214, 25.532, 232.721 )
+transform = Transform( -49.2407, -4.76193, 7.25795, -7.30174, 0.112668, -49.4638, 4.69452, -49.7726, -0.806365, 26.1272, -37.3295, 232.645 )
 
 [node name="borer_wall_Item_FlatRock107" parent="Items/border_wall" instance=ExtResource( 5 )]
-transform = Transform( -43.5306, -24.5946, -0.441963, 0.443968, 0.112668, -49.9979, 24.5945, -43.5327, 0.120294, 118.976, 25.532, 201.773 )
+transform = Transform( -43.4969, -24.6575, -0.160868, 4.31298, -7.28681, -49.2778, 24.2779, -42.8826, 8.46601, 118.528, -25.1624, 201.895 )
 
 [node name="borer_wall_Item_FlatRock108" parent="Items/border_wall" instance=ExtResource( 5 )]
-transform = Transform( -29.7636, -40.1746, -0.354825, 0.443968, 0.112668, -49.9979, 40.1737, -29.7656, 0.289657, 190.758, 25.532, 135.937 )
+transform = Transform( -29.7636, -40.1746, -0.354825, 0.443968, 0.112668, -49.9979, 40.1737, -29.7656, 0.289657, 190.623, 6.55337, 136.047 )
 
 [node name="borer_wall_Item_FlatRock109" parent="Items/border_wall" instance=ExtResource( 5 )]
+transform = Transform( -12.4088, -48.2129, -4.64075, 0.819093, 4.58106, -49.783, 48.4288, -12.431, -0.347093, 230.312, 40.6558, 54.0353 )
+
+[node name="border_wall2" type="Spatial" parent="Items"]
+transform = Transform( 1.08329, 0, 0.191013, 0, 1, 0, -0.191013, 0, 1.08329, 0, 0, 0 )
+
+[node name="borer_wall_Item_FlatRock" parent="Items/border_wall2" instance=ExtResource( 5 )]
+transform = Transform( -0.465789, -49.9977, -0.116804, 0.443968, 0.112668, -49.9979, 49.9958, -0.466807, 0.442898, 234.25, 30.9884, -2.23346 )
+
+[node name="borer_wall_Item_FlatRock2" parent="Items/border_wall2" instance=ExtResource( 5 )]
+transform = Transform( 19.9096, -45.865, 0.0734373, 0.443968, 0.112668, -49.9979, 45.8629, 19.9094, 0.452116, 213.121, 5.87733, -97.1311 )
+
+[node name="borer_wall_Item_FlatRock3" parent="Items/border_wall2" instance=ExtResource( 5 )]
+transform = Transform( 36.8438, -33.8014, -1.19757e-06, -2.11842e-06, -5.37615e-07, -50, 33.8014, 36.8438, -1.82826e-06, 155.132, -46.1379, -175.504 )
+
+[node name="borer_wall_Item_FlatRock4" parent="Items/border_wall2" instance=ExtResource( 5 )]
+transform = Transform( 47.4049, -15.8941, 0.385127, 0.443968, 0.112668, -49.9979, 15.8926, 47.4064, 0.24795, 70.7821, -50.5106, -223.142 )
+
+[node name="borer_wall_Item_FlatRock5" parent="Items/border_wall2" instance=ExtResource( 5 )]
+transform = Transform( 49.7707, 4.76193, 0.452681, 0.443968, 0.112668, -49.9979, -4.76275, 49.7726, 0.0698684, -26.5934, 21.7817, -232.717 )
+
+[node name="borer_wall_Item_FlatRock6" parent="Items/border_wall2" instance=ExtResource( 5 )]
+transform = Transform( 43.5306, 24.5946, 0.441963, 0.443968, 0.112668, -49.9979, -24.5945, 43.5327, -0.120294, -119.067, 38.0403, -201.748 )
+
+[node name="borer_wall_Item_FlatRock7" parent="Items/border_wall2" instance=ExtResource( 5 )]
+transform = Transform( 29.7636, 40.1746, 0.354825, 0.443968, 0.112668, -49.9979, -40.1737, 29.7656, -0.289656, -190.894, 48.7173, -135.826 )
+
+[node name="borer_wall_Item_FlatRock8" parent="Items/border_wall2" instance=ExtResource( 5 )]
+transform = Transform( 10.8503, 48.8081, 0.206335, 0.443968, 0.112668, -49.9979, -48.8065, 10.8517, -0.408935, -229.672, 59.2878, -46.368 )
+
+[node name="borer_wall_Item_FlatRock102" parent="Items/border_wall2" instance=ExtResource( 5 )]
+transform = Transform( 0.465785, 49.9977, 0.116804, 0.443968, 0.112668, -49.9979, -49.9958, 0.466805, -0.442898, -234.165, -13.2561, 1.90957 )
+
+[node name="borer_wall_Item_FlatRock103" parent="Items/border_wall2" instance=ExtResource( 5 )]
+transform = Transform( -19.9096, 45.865, -0.0734374, 0.443968, 0.112668, -49.9979, -45.8629, -19.9095, -0.452116, -213.154, -21.537, 96.9262 )
+
+[node name="borer_wall_Item_FlatRock104" parent="Items/border_wall2" instance=ExtResource( 5 )]
+transform = Transform( -36.8425, 33.8019, -0.25098, 0.443968, 0.112668, -49.9979, -33.7999, -36.8432, -0.383159, -155.327, -27.3717, 175.207 )
+
+[node name="borer_wall_Item_FlatRock105" parent="Items/border_wall2" instance=ExtResource( 5 )]
+transform = Transform( -47.4049, 15.8941, -0.385127, 0.443968, 0.112668, -49.9979, -15.8926, -47.4064, -0.24795, -71.0247, -88.624, 222.986 )
+visible = false
+
+[node name="borer_wall_Item_FlatRock106" parent="Items/border_wall2" instance=ExtResource( 5 )]
+transform = Transform( -44.9209, -4.76194, 21.4347, -21.5423, 0.112667, -45.1212, 4.24899, -49.7726, -2.15287, 26.2577, -23.0731, 232.665 )
+
+[node name="borer_wall_Item_FlatRock107" parent="Items/border_wall2" instance=ExtResource( 5 )]
+transform = Transform( -42.4498, -24.5946, 9.65004, -11.1457, 0.112668, -48.7418, 23.9539, -43.5327, -5.5781, 118.795, 0.670285, 201.823 )
+
+[node name="borer_wall_Item_FlatRock108" parent="Items/border_wall2" instance=ExtResource( 5 )]
+transform = Transform( -29.7636, -40.1746, -0.354825, 0.443968, 0.112668, -49.9979, 40.1737, -29.7656, 0.289657, 190.73, 20.711, 135.96 )
+
+[node name="borer_wall_Item_FlatRock109" parent="Items/border_wall2" instance=ExtResource( 5 )]
 transform = Transform( -10.8503, -48.8081, -0.206335, 0.443968, 0.112668, -49.9979, 48.8065, -10.8517, 0.408935, 229.557, 25.532, 46.5962 )
 
 [node name="SkyClock" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1.6, 0, 0, 0, 1, 0, 55, 0 )
+transform = Transform( 1.1, 0, 0, 0, 1.8, 0, 0, 0, 1.1, 0, 50, 0 )
 
 [connection signal="timeout" from="Spawner/SpawnTimer" to="Spawner" method="_on_SpawnTimer_timeout"]
