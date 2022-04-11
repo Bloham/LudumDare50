@@ -4,18 +4,17 @@ extends Node
 #onready var _anim_player := $AnimationPlayer
 #onready var _layer_1 := $MusicLayer1
 #onready var _layer_2 := $MusicLayer2
-
 var Layer2IsPlaying = false
+
 
 func _process(delta):
 	_startLayer2FadeIn()
 	
 
 func _startLayer2FadeIn():
-	
 	if get_tree().get_root().get_node("Spielwelt").corruption_scalar >0.4 and Layer2IsPlaying==false:
 		Layer2IsPlaying = true
-		print ("Start Fade in")
+		print ("MusicManager-_startLayer2FadeIn(): start fade in. Layer2IsPlaying = ",Layer2IsPlaying)
 		$AnimationPlayer.play("FadeInLayer2")
 	else:
 		pass

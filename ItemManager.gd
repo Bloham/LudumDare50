@@ -38,7 +38,7 @@ func coruptionRise():
 		self.add_child(t)
 		t.start()
 		spielwelt.get_node("Assets").get_node("SkyClock").gameOver()
-		print("game over timer startet")
+#		print("game over timer startet")
 		yield(t, "timeout")
 		spielwelt.gameover()
 	

@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://Assets/Clock/SM_Clock_Pinöpel.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://Assets/Clock/SM_Clock_Hand_Small.obj" type="ArrayMesh" id=2]
@@ -8,14 +8,13 @@
 [ext_resource path="res://Assets/Clock/SM_Clock_Metal.obj" type="ArrayMesh" id=6]
 [ext_resource path="res://Assets/Clock/SM_Clock_Body.obj" type="ArrayMesh" id=7]
 [ext_resource path="res://Prefabs/Prefab_Clock.gd" type="Script" id=8]
+[ext_resource path="res://Materials/M_Prefab_Clock_Shader.tres" type="Shader" id=9]
+[ext_resource path="res://Materials/M_skyClock_BackPlate.tres" type="Material" id=10]
+[ext_resource path="res://Materials/M_Prefab_Clock._metal.tres" type="Material" id=11]
 
-[sub_resource type="SpatialMaterial" id=1]
-albedo_color = Color( 1, 0.113725, 0.113725, 1 )
-metallic = 0.42
-roughness = 0.32
-
-[sub_resource type="SpatialMaterial" id=2]
-albedo_color = Color( 0, 0, 0, 1 )
+[sub_resource type="ShaderMaterial" id=10]
+shader = ExtResource( 9 )
+shader_param/corruption_scalar = 0.0
 
 [sub_resource type="SpatialMaterial" id=3]
 albedo_color = Color( 0, 0, 0, 1 )
@@ -187,7 +186,7 @@ tracks/14/keys = {
 "times": PoolRealArray( 0 )
 }
 tracks/15/type = "bezier"
-tracks/15/path = NodePath("SM_Clock_Body:rotation_degrees:x")
+tracks/15/path = NodePath("SM_Clock_Body:rotation_degrees:z")
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/imported = false
@@ -207,7 +206,7 @@ tracks/16/keys = {
 "times": PoolRealArray( 0 )
 }
 tracks/17/type = "bezier"
-tracks/17/path = NodePath("SM_Clock_Body:rotation_degrees:z")
+tracks/17/path = NodePath("SM_Clock_Body:rotation_degrees:x")
 tracks/17/interp = 1
 tracks/17/loop_wrap = true
 tracks/17/imported = false
@@ -247,7 +246,7 @@ tracks/20/keys = {
 "times": PoolRealArray( 0 )
 }
 tracks/21/type = "value"
-tracks/21/path = NodePath("SM_Clock_Background:translation")
+tracks/21/path = NodePath("SM_Clock_Body:scale")
 tracks/21/interp = 1
 tracks/21/loop_wrap = true
 tracks/21/imported = false
@@ -256,10 +255,10 @@ tracks/21/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector3( 0, 0, 0 ) ]
+"values": [ Vector3( 1, 1, 1 ) ]
 }
 tracks/22/type = "value"
-tracks/22/path = NodePath("SM_Clock_Background:rotation_degrees")
+tracks/22/path = NodePath("SM_Clock_Body:rotation_degrees")
 tracks/22/interp = 1
 tracks/22/loop_wrap = true
 tracks/22/imported = false
@@ -271,7 +270,7 @@ tracks/22/keys = {
 "values": [ Vector3( 0, 0, 0 ) ]
 }
 tracks/23/type = "value"
-tracks/23/path = NodePath("SM_Clock_Background:scale")
+tracks/23/path = NodePath("SM_Clock_Body:translation")
 tracks/23/interp = 1
 tracks/23/loop_wrap = true
 tracks/23/imported = false
@@ -280,10 +279,10 @@ tracks/23/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector3( 1, 1, 1 ) ]
+"values": [ Vector3( 0, 0, 0 ) ]
 }
 tracks/24/type = "value"
-tracks/24/path = NodePath("SM_Clock_Body:translation")
+tracks/24/path = NodePath("SM_Clock_Background:translation")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/imported = false
@@ -295,7 +294,7 @@ tracks/24/keys = {
 "values": [ Vector3( 0, 0, 0 ) ]
 }
 tracks/25/type = "value"
-tracks/25/path = NodePath("SM_Clock_Body:rotation_degrees")
+tracks/25/path = NodePath("SM_Clock_Background:rotation_degrees")
 tracks/25/interp = 1
 tracks/25/loop_wrap = true
 tracks/25/imported = false
@@ -307,7 +306,7 @@ tracks/25/keys = {
 "values": [ Vector3( 0, 0, 0 ) ]
 }
 tracks/26/type = "value"
-tracks/26/path = NodePath("SM_Clock_Body:scale")
+tracks/26/path = NodePath("SM_Clock_Background:scale")
 tracks/26/interp = 1
 tracks/26/loop_wrap = true
 tracks/26/imported = false
@@ -634,7 +633,7 @@ tracks/2/keys = {
 "values": [ Vector3( 1, 1, 1 ), Vector3( 1, 1.2, 1 ), Vector3( 1, 1.2, 1 ), Vector3( 1, 1.2, 1 ) ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("SM_Clock_Body:translation")
+tracks/3/path = NodePath("SM_Clock_Body:scale")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -643,7 +642,7 @@ tracks/3/keys = {
 "times": PoolRealArray( 0, 0.5, 1, 2 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 2.62617, 0 ), Vector3( -0.400562, -0.767698, 0.0310111 ), Vector3( -0.400562, -2.82091, 0.0310111 ) ]
+"values": [ Vector3( 1, 1, 1 ), Vector3( 1, 1.2, 1.2 ), Vector3( 1, 1, 1 ), Vector3( 1, 1, 1 ) ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath("SM_Clock_Body:rotation_degrees")
@@ -658,7 +657,7 @@ tracks/4/keys = {
 "values": [ Vector3( 0, 0, 0 ), Vector3( -7.689, 0, 69.293 ), Vector3( -6.88769, -3.42595, 95.8212 ), Vector3( -6.88769, -3.42595, 95.8212 ) ]
 }
 tracks/5/type = "value"
-tracks/5/path = NodePath("SM_Clock_Body:scale")
+tracks/5/path = NodePath("SM_Clock_Body:translation")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/imported = false
@@ -667,7 +666,7 @@ tracks/5/keys = {
 "times": PoolRealArray( 0, 0.5, 1, 2 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector3( 1, 1, 1 ), Vector3( 1, 1.2, 1.2 ), Vector3( 1, 1, 1 ), Vector3( 1, 1, 1 ) ]
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 2.62617, 0 ), Vector3( -0.400562, -0.767698, 0.0310111 ), Vector3( -0.400562, -2.82091, 0.0310111 ) ]
 }
 tracks/6/type = "value"
 tracks/6/path = NodePath("SM_Clock_Hand_Big:translation")
@@ -856,17 +855,17 @@ script = ExtResource( 8 )
 [node name="SM_Clock_Background" type="MeshInstance" parent="."]
 cast_shadow = 0
 mesh = ExtResource( 4 )
-material/0 = null
+material/0 = ExtResource( 10 )
 
 [node name="SM_Clock_Body" type="MeshInstance" parent="."]
 mesh = ExtResource( 7 )
-material/0 = SubResource( 1 )
+material/0 = SubResource( 10 )
 
 [node name="SM_Clock_Hand_Big" type="MeshInstance" parent="."]
-transform = Transform( 1, 0, 0, 0, 0.896215, -0.443619, 0, 0.443619, 0.896215, 0, 0, 0 )
+transform = Transform( 1, 0, 0, 0, 0.896216, -0.443619, 0, 0.443619, 0.896216, 0, 0, 0 )
 cast_shadow = 0
 mesh = ExtResource( 3 )
-material/0 = SubResource( 2 )
+material/0 = ExtResource( 11 )
 
 [node name="SM_Clock_Hand_Small" type="MeshInstance" parent="."]
 cast_shadow = 0

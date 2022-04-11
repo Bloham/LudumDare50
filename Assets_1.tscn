@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Prefabs/Items/Item_Tree.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Prefabs/Terrain.tscn" type="PackedScene" id=2]
@@ -6,9 +6,98 @@
 [ext_resource path="res://Prefabs/Prefab_SkyClock.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Prefabs/Items/Item_TallRock.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Prefabs/Items/Item_FlatRock.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Spawner.gd" type="Script" id=7]
 [ext_resource path="res://ItemManager.gd" type="Script" id=8]
 
 [node name="Assets" type="Node"]
+
+[node name="Spawner" type="Node" parent="."]
+script = ExtResource( 7 )
+
+[node name="SpawnTimer" type="Timer" parent="Spawner"]
+
+[node name="SpawnLocations" type="Node" parent="Spawner"]
+
+[node name="SpawnLocation1" type="Position3D" parent="Spawner/SpawnLocations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14.4798, -6.91779, 124.526 )
+
+[node name="SpawnLocation21" type="Position3D" parent="Spawner/SpawnLocations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -40.3473, 78.5781, -19.6651 )
+
+[node name="SpawnLocation17" type="Position3D" parent="Spawner/SpawnLocations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 73.7295, 17.2714, -175.764 )
+
+[node name="SpawnLocation18" type="Position3D" parent="Spawner/SpawnLocations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 92.2362, -8.41059, -337.719 )
+
+[node name="SpawnLocation16" type="Position3D" parent="Spawner/SpawnLocations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -210.17, 45.2679, -331.525 )
+
+[node name="SpawnLocation15" type="Position3D" parent="Spawner/SpawnLocations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 53.2514, -9.11551, 284.614 )
+
+[node name="SpawnLocation13" type="Position3D" parent="Spawner/SpawnLocations"]
+transform = Transform( 0.200394, 0, 0.979715, 0, 1, 0, -0.979715, 0, 0.200394, -13.9485, 61.9468, 146.733 )
+
+[node name="SpawnLocation2" type="Position3D" parent="Spawner/SpawnLocations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -52.3363, -7.61862, 19.4343 )
+
+[node name="SpawnLocation3" type="Position3D" parent="Spawner/SpawnLocations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 132.488, -1.54926, 13.7908 )
+
+[node name="SpawnLocation20" type="Position3D" parent="Spawner/SpawnLocations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 245.779, 25.8218, 147.543 )
+
+[node name="SpawnLocation10" type="Position3D" parent="Spawner/SpawnLocations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 69.814, 7.86804, 391.725 )
+
+[node name="SpawnLocation11" type="Position3D" parent="Spawner/SpawnLocations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -95.286, -6.67417, 331.201 )
+
+[node name="SpawnLocation12" type="Position3D" parent="Spawner/SpawnLocations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -385.773, -0.89286, 175.893 )
+
+[node name="SpawnLocation27" type="Position3D" parent="Spawner/SpawnLocations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -356.614, -0.547169, -95.1174 )
+
+[node name="SpawnLocation4" type="Position3D" parent="Spawner/SpawnLocations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 203.757, 8.20853, 327.181 )
+
+[node name="SpawnLocation5" type="Position3D" parent="Spawner/SpawnLocations"]
+transform = Transform( 1, 0, 0, 0, 0.999528, 0.030713, 0, -0.030713, 0.999528, -182.975, -4.15159, 331.302 )
+
+[node name="SpawnLocation19" type="Position3D" parent="Spawner/SpawnLocations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -258.591, 28.8895, 145.034 )
+
+[node name="SpawnLocation6" type="Position3D" parent="Spawner/SpawnLocations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -323.888, 5.8218, 308.174 )
+
+[node name="SpawnLocation7" type="Position3D" parent="Spawner/SpawnLocations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -222.434, 35.6764, 25.7838 )
+
+[node name="SpawnLocation8" type="Position3D" parent="Spawner/SpawnLocations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -263.219, -8.00296, -232.307 )
+
+[node name="SpawnLocation9" type="Position3D" parent="Spawner/SpawnLocations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.2846, -7.14807, -324.311 )
+
+[node name="SpawnLocation14" type="Position3D" parent="Spawner/SpawnLocations"]
+transform = Transform( 0.731199, 0, 0.682164, 0, 1, 0, -0.682164, 0, 0.731199, -207.858, 45.2673, -327.178 )
+
+[node name="SpawnLocation22" type="Position3D" parent="Spawner/SpawnLocations"]
+transform = Transform( 0.731199, 0, 0.682164, 0, 1, 0, -0.682164, 0, 0.731199, 345.222, -1.89614, -159.805 )
+
+[node name="SpawnLocation23" type="Position3D" parent="Spawner/SpawnLocations"]
+transform = Transform( 0.731199, 0, 0.682164, 0, 1, 0, -0.682164, 0, 0.731199, 360.814, 9.97497, 101.283 )
+
+[node name="SpawnLocation24" type="Position3D" parent="Spawner/SpawnLocations"]
+transform = Transform( 0.731199, 0, 0.682164, 0, 1, 0, -0.682164, 0, 0.731199, 269.404, 19.7475, 261.402 )
+
+[node name="SpawnLocation26" type="Position3D" parent="Spawner/SpawnLocations"]
+transform = Transform( 0.731199, 0, 0.682164, 0, 1, 0, -0.682164, 0, 0.731199, -398.496, -0.489548, 214.521 )
+
+[node name="SpawnLocation25" type="Position3D" parent="Spawner/SpawnLocations"]
+transform = Transform( 0.731199, 0, 0.682164, 0, 1, 0, -0.682164, 0, 0.731199, -212.867, 39.4465, -56.0335 )
 
 [node name="Boden" type="Node" parent="."]
 
@@ -3117,3 +3206,5 @@ transform = Transform( 5.58432, -0.0347376, 5.72828, 0.730642, -5.94648, -0.7763
 
 [node name="SkyClock" parent="." instance=ExtResource( 4 )]
 transform = Transform( 2.057, 0, 0, 0, 2.057, 0, 0, 0, 2.057, 2.92055, 1.78093, -1.34458 )
+
+[connection signal="timeout" from="Spawner/SpawnTimer" to="Spawner" method="_on_SpawnTimer_timeout"]

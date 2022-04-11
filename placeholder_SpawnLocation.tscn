@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/Clock/SM_Clock_Background.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Assets/Clock/SM_Clock_Body.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://Materials/placeholder.tres" type="Material" id=3]
+[ext_resource path="res://Assets/Clock/SM_Clock_Metal.obj" type="ArrayMesh" id=4]
+[ext_resource path="res://Materials/M_skyClock_Pointer.tres" type="Material" id=5]
+
+[node name="SpawnLocation1" type="Position3D"]
+
+[node name="placeholder" type="Spatial" parent="."]
+transform = Transform( 0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 0, 0, 0 )
+
+[node name="SM_Clock_Background" type="MeshInstance" parent="placeholder"]
+cast_shadow = 0
+mesh = ExtResource( 1 )
+skeleton = NodePath("../SM_Clock_Body2")
+material/0 = ExtResource( 3 )
+
+[node name="SM_Clock_Body2" type="MeshInstance" parent="placeholder"]
+mesh = ExtResource( 2 )
+skeleton = NodePath("")
+material/0 = ExtResource( 3 )
+
+[node name="SM_Clock_Body3" type="MeshInstance" parent="placeholder"]
+mesh = ExtResource( 4 )
+skeleton = NodePath("")
+material/0 = ExtResource( 5 )
