@@ -49,7 +49,7 @@ func SpawnWecker():
 			
 			spielwelt.get_node("AllWecker").add_child(wecker)
 			
-			print(" Spawner places wecker at spawn point ",spawn_location_index,"/",spawn_location_count)
+#			print(" Spawner places wecker at spawn point ",spawn_location_index,"/",spawn_location_count)
 
 
 func clear_spawnIndex(cleared_index):

@@ -8,7 +8,7 @@
 [ext_resource path="res://Prefabs/Items/Item_Hedge.tscn" type="PackedScene" id=6]
 [ext_resource path="res://ItemManager.gd" type="Script" id=7]
 [ext_resource path="res://Spawner.gd" type="Script" id=8]
-[ext_resource path="res://placeholder_SpawnLocation.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Prefabs/placeholder_SpawnLocation.tscn" type="PackedScene" id=9]
 
 [node name="Assets" type="Node"]
 

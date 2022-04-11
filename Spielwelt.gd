@@ -46,11 +46,10 @@ func _ready():
 	var weckerScene = preload("res://Wecker.tscn")
 	var wecker = weckerScene.instance()
 	M_wecker = wecker._get_shaderMaterial()
-#	M_wecker = load("res://Materials/M_Prefab_Clock_Shader.tres")
-	
+
 
 func _init():
-#	OS.window_fullscreen = is_fullscreen
+	OS.window_fullscreen = is_fullscreen
 	pass
 	
 func _toggle_fullscreen():

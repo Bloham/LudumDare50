@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Prefabs/Items/Item_Tree.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Prefabs/Terrain.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Prefabs/Items/Item_FlatRock.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Spawner.gd" type="Script" id=7]
 [ext_resource path="res://ItemManager.gd" type="Script" id=8]
+[ext_resource path="res://Prefabs/placeholder_SpawnLocation.tscn" type="PackedScene" id=9]
 
 [node name="Assets" type="Node"]
 
@@ -18,86 +19,86 @@ script = ExtResource( 7 )
 
 [node name="SpawnLocations" type="Node" parent="Spawner"]
 
-[node name="SpawnLocation1" type="Position3D" parent="Spawner/SpawnLocations"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14.4798, -6.91779, 124.526 )
+[node name="SpawnLocation1" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.0764, -4.48344, 124.526 )
 
-[node name="SpawnLocation21" type="Position3D" parent="Spawner/SpawnLocations"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -40.3473, 78.5781, -19.6651 )
+[node name="SpawnLocation28" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
+transform = Transform( -0.555668, 0.100032, 0.825365, 0.0558647, 0.994984, -0.0829789, -0.829525, 0, -0.558469, -41.1102, 96.3914, -0.562178 )
 
-[node name="SpawnLocation17" type="Position3D" parent="Spawner/SpawnLocations"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 73.7295, 17.2714, -175.764 )
+[node name="SpawnLocation21" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 73.7295, 19.3354, -175.764 )
 
-[node name="SpawnLocation18" type="Position3D" parent="Spawner/SpawnLocations"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 92.2362, -8.41059, -337.719 )
+[node name="SpawnLocation17" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 92.2362, -6.40361, -337.719 )
 
-[node name="SpawnLocation16" type="Position3D" parent="Spawner/SpawnLocations"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -210.17, 45.2679, -331.525 )
+[node name="SpawnLocation18" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -210.17, 47.9565, -331.525 )
 
-[node name="SpawnLocation15" type="Position3D" parent="Spawner/SpawnLocations"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 53.2514, -9.11551, 284.614 )
+[node name="SpawnLocation16" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
+transform = Transform( 0.41188, 0, 0.911238, 0, 1, 0, -0.911238, 0, 0.41188, 33.732, -6.92943, 284.614 )
 
-[node name="SpawnLocation13" type="Position3D" parent="Spawner/SpawnLocations"]
-transform = Transform( 0.200394, 0, 0.979715, 0, 1, 0, -0.979715, 0, 0.200394, -13.9485, 61.9468, 146.733 )
+[node name="SpawnLocation15" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
+transform = Transform( 0.200394, 0, 0.979715, 0, 1, 0, -0.979715, 0, 0.200394, -14.5522, 68.5908, 146.733 )
 
-[node name="SpawnLocation2" type="Position3D" parent="Spawner/SpawnLocations"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -52.3363, -7.61862, 19.4343 )
+[node name="SpawnLocation13" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -52.3363, -5.68049, 19.4343 )
 
-[node name="SpawnLocation3" type="Position3D" parent="Spawner/SpawnLocations"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 132.488, -1.54926, 13.7908 )
+[node name="SpawnLocation2" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 132.488, 0.353862, 13.7908 )
 
-[node name="SpawnLocation20" type="Position3D" parent="Spawner/SpawnLocations"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 245.779, 25.8218, 147.543 )
+[node name="SpawnLocation3" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 245.779, 28.0602, 147.543 )
 
-[node name="SpawnLocation10" type="Position3D" parent="Spawner/SpawnLocations"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 69.814, 7.86804, 391.725 )
+[node name="SpawnLocation20" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 69.814, 9.95671, 391.725 )
 
-[node name="SpawnLocation11" type="Position3D" parent="Spawner/SpawnLocations"]
+[node name="SpawnLocation10" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -95.286, -6.67417, 331.201 )
 
-[node name="SpawnLocation12" type="Position3D" parent="Spawner/SpawnLocations"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -385.773, -0.89286, 175.893 )
+[node name="SpawnLocation11" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 0.990849, 0.134972, 0, -0.134972, 0.990849, -385.773, 1.1523, 177.009 )
 
-[node name="SpawnLocation27" type="Position3D" parent="Spawner/SpawnLocations"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -356.614, -0.547169, -95.1174 )
+[node name="SpawnLocation12" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
+transform = Transform( 0.787688, 0, -0.616074, 0, 1, 0, 0.616074, 0, 0.787688, -358.551, 1.68209, -91.0922 )
 
-[node name="SpawnLocation4" type="Position3D" parent="Spawner/SpawnLocations"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 203.757, 8.20853, 327.181 )
+[node name="SpawnLocation27" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 0.971669, -0.236346, 0, 0.236346, 0.971669, 203.757, 9.68149, 327.181 )
 
-[node name="SpawnLocation5" type="Position3D" parent="Spawner/SpawnLocations"]
-transform = Transform( 1, 0, 0, 0, 0.999528, 0.030713, 0, -0.030713, 0.999528, -182.975, -4.15159, 331.302 )
+[node name="SpawnLocation4" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 0.957682, 0.287829, 0, -0.287829, 0.957682, -182.975, -2.12357, 331.302 )
 
-[node name="SpawnLocation19" type="Position3D" parent="Spawner/SpawnLocations"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -258.591, 28.8895, 145.034 )
+[node name="SpawnLocation5" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
+transform = Transform( 0.997091, 0.00506695, 0.0760458, 0, 0.997788, -0.0664829, -0.0762144, 0.0662895, 0.994886, -259.01, 30.9626, 145.034 )
 
-[node name="SpawnLocation6" type="Position3D" parent="Spawner/SpawnLocations"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -323.888, 5.8218, 308.174 )
+[node name="SpawnLocation19" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -323.888, 8.09313, 308.174 )
 
-[node name="SpawnLocation7" type="Position3D" parent="Spawner/SpawnLocations"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -222.434, 35.6764, 25.7838 )
+[node name="SpawnLocation6" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
+transform = Transform( 0.956773, 0.027456, 0.289537, 0.00118779, 0.995157, -0.098293, -0.290833, 0.094388, 0.952107, -208.572, 36.3355, 25.7838 )
 
-[node name="SpawnLocation8" type="Position3D" parent="Spawner/SpawnLocations"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -263.219, -8.00296, -232.307 )
+[node name="SpawnLocation7" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
+transform = Transform( -0.236448, 0, -0.971644, 0, 1, 0, 0.971644, 0, -0.236448, -264.705, -6.06594, -232.307 )
 
-[node name="SpawnLocation9" type="Position3D" parent="Spawner/SpawnLocations"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.2846, -7.14807, -324.311 )
+[node name="SpawnLocation8" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.2846, -4.75235, -324.311 )
 
-[node name="SpawnLocation14" type="Position3D" parent="Spawner/SpawnLocations"]
-transform = Transform( 0.731199, 0, 0.682164, 0, 1, 0, -0.682164, 0, 0.731199, -207.858, 45.2673, -327.178 )
+[node name="SpawnLocation9" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
+transform = Transform( 0.731199, 0, 0.682164, 0, 1, 0, -0.682164, 0, 0.731199, -210.174, 48.0117, -317.564 )
 
-[node name="SpawnLocation22" type="Position3D" parent="Spawner/SpawnLocations"]
-transform = Transform( 0.731199, 0, 0.682164, 0, 1, 0, -0.682164, 0, 0.731199, 345.222, -1.89614, -159.805 )
+[node name="SpawnLocation14" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
+transform = Transform( -0.846546, 0, -0.532315, 0, 1, 0, 0.532315, 0, -0.846546, 345.222, 0.111612, -159.805 )
 
-[node name="SpawnLocation23" type="Position3D" parent="Spawner/SpawnLocations"]
-transform = Transform( 0.731199, 0, 0.682164, 0, 1, 0, -0.682164, 0, 0.731199, 360.814, 9.97497, 101.283 )
+[node name="SpawnLocation22" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
+transform = Transform( 0.731199, 0, 0.682164, 0, 1, 0, -0.682164, 0, 0.731199, 360.814, 11.9065, 101.283 )
 
-[node name="SpawnLocation24" type="Position3D" parent="Spawner/SpawnLocations"]
-transform = Transform( 0.731199, 0, 0.682164, 0, 1, 0, -0.682164, 0, 0.731199, 269.404, 19.7475, 261.402 )
+[node name="SpawnLocation23" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
+transform = Transform( 0.731199, 0, 0.682164, 0, 1, 0, -0.682164, 0, 0.731199, 269.404, 21.955, 261.402 )
 
-[node name="SpawnLocation26" type="Position3D" parent="Spawner/SpawnLocations"]
-transform = Transform( 0.731199, 0, 0.682164, 0, 1, 0, -0.682164, 0, 0.731199, -398.496, -0.489548, 214.521 )
+[node name="SpawnLocation24" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
+transform = Transform( 0.731199, 0, 0.682164, 0, 1, 0, -0.682164, 0, 0.731199, -398.496, 1.84277, 214.521 )
 
-[node name="SpawnLocation25" type="Position3D" parent="Spawner/SpawnLocations"]
-transform = Transform( 0.731199, 0, 0.682164, 0, 1, 0, -0.682164, 0, 0.731199, -212.867, 39.4465, -56.0335 )
+[node name="SpawnLocation26" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
+transform = Transform( 0.731199, 0, 0.682164, 0, 1, 0, -0.682164, 0, 0.731199, -212.867, 41.6289, -56.0335 )
 
 [node name="Boden" type="Node" parent="."]
 
