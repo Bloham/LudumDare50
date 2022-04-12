@@ -30,7 +30,17 @@ func onGameStart(_spielwelt):
 	print (" - Spawner starts timer with ",spawn_location_count," spawn points")
 
 
-func SpawnWecker():
+func clear_spawnIndex(cleared_index):
+	
+		SpawnLocationIndices[cleared_index] = false
+
+
+func _on_SpawnTimer_timeout():
+	
+	try_Spawn()
+
+
+func try_Spawn():
 	
 	var attempt = spawn_location_count
 	while attempt > 0:
@@ -39,25 +49,22 @@ func SpawnWecker():
 		if(SpawnLocationIndices[spawn_location_index] == false):
 			attempt = -1
 			SpawnLocationIndices[spawn_location_index] = true
-			
-			var weckerScene = preload("res://Wecker.tscn")
-			var wecker = weckerScene.instance()
-			wecker.translation = SpawnLocations[spawn_location_index].translation
-			wecker.spawn_index = spawn_location_index
-			wecker.set_spawner(self)
-			wecker.radiusIncrease = difficultyLevel
-			wecker.currentRadius = wecker_radius
-			
-			spielwelt.get_node("AllWecker").add_child(wecker)
-			
-#			print(" Spawner places wecker at spawn point ",spawn_location_index,"/",spawn_location_count)
+			Spawn(spawn_location_index)
 
 
-func clear_spawnIndex(cleared_index):
+func Spawn(spawn_location_index):
+
+	SpawnLocationIndices[spawn_location_index] = true
 	
-		SpawnLocationIndices[cleared_index] = false
-
-
-func _on_SpawnTimer_timeout():
+	var weckerScene = preload("res://Wecker.tscn")
+	var wecker = weckerScene.instance()
 	
-	SpawnWecker()
+	wecker.set_spawner(self)
+	wecker.spawn_index = spawn_location_index
+	wecker.radiusIncrease = difficultyLevel
+	wecker.currentRadius = wecker_radius
+	wecker.translation = SpawnLocations[spawn_location_index].translation
+	wecker.rotation = SpawnLocations[spawn_location_index].rotation
+	spielwelt.get_node("AllWecker").add_child(wecker)
+	
+#	print(" Spawner places wecker at spawn point ",spawn_location_index,"/",spawn_location_count)

@@ -16,7 +16,7 @@ var moveSpeed = 18
 var minLookAngle = -90
 var maxLookAngle = 90
 var lookSensitivity = 50
-var pad_lookSensitivity = 80.0
+var pad_lookSensitivity = 120.0
 
 #Vectors
 var vel = Vector3()

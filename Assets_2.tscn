@@ -14,7 +14,7 @@
 
 [node name="Spawner" type="Node" parent="."]
 script = ExtResource( 8 )
-difficultyLevel = 0.82
+difficultyLevel = 0.85
 wecker_radius = 20
 
 [node name="SpawnTimer" type="Timer" parent="Spawner"]
