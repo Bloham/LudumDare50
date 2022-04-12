@@ -1,5 +1,7 @@
 extends Spatial
 
+export var is_restart_version = false
+export var restart_level_index = -1
 
 export var corruption_scalar = 0.0
 
@@ -16,11 +18,11 @@ export var light_colour_final = Color(0.9,0.1,0)
 export var ambient_colour_final = Color(0.3,0.6,0)
 export var bg_colour_final = Color(0.6,0.22,0.12)
 
-var score_time = 0.0
-var score_wecker = 0
-
 var is_fullscreen = true
 var is_game_started = false
+var level_index = -1
+var score_time = 0.0
+var score_wecker = 0
 
 var M_wecker;
 var assets_instance
@@ -47,23 +49,31 @@ func _ready():
 	var weckerScene = preload("res://Wecker.tscn")
 	var wecker = weckerScene.instance()
 	M_wecker = wecker._get_shaderMaterial()
+	
+	if is_restart_version:
+		self.get_node("Other/UI/MainMenu")._on_StartButton_pressed(restart_level_index)
 
 
 func _init():
 	
 	OS.window_fullscreen = is_fullscreen
-	pass
+	var assets = load("res://Assets_1.tscn")
+	assets_instance = assets.instance()
+	self.add_child(assets_instance)
 
 
 func _toggle_fullscreen():
 	
 	is_fullscreen = !is_fullscreen
 	OS.window_fullscreen = is_fullscreen
-	pass
 
 
-func onGameStart(var level_index):
+func onGameStart(var _level_index):
 	
+	if _level_index > -1:
+		level_index = _level_index
+	
+	self.remove_child(assets_instance)
 	if level_index == 0:
 		var assets = load("res://Assets_1.tscn")
 		assets_instance = assets.instance()

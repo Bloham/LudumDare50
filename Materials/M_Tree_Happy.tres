@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=20 format=2]
 
-[ext_resource path="res://noisetexture.tres" type="Texture" id=1]
+[ext_resource path="res://Textures/noisetexture.tres" type="Texture" id=1]
 [ext_resource path="res://Textures/T_Tree_Happy_Normal.png" type="Texture" id=2]
 [ext_resource path="res://Textures/T_Tree_Happy_Albedo.png" type="Texture" id=3]
 

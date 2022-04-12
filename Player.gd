@@ -1,6 +1,5 @@
 extends KinematicBody
 
-
 #Physics
 export var walkSpeed = 1
 export var runSpeed = 2
@@ -31,12 +30,11 @@ onready var audioPlayerJump = $Jump
 
 var uiNode
 
+
 func _ready():
-	#hide and lock mouse
+	
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	uiNode = get_tree().get_root().get_node("Spielwelt").get_node("Other").get_node("UI").get_node("PauseMenue")
-	
-	#set up steps sound
 
 
 func _physics_process(delta):
@@ -101,12 +99,16 @@ func _physics_process(delta):
 
 
 func _playFootsteps():
+	
 	if audioPlayerFootsteps.playing == false and is_on_floor() == true:
 		audioPlayerFootsteps.play()
 
+
 func _process(delta):
+	
 	var pad_aim = Input.get_vector("gamepad_aim_left", "gamepad_aim_right", "gamepad_aim_up", "gamepad_aim_down")
 	pad_aim *= pad_lookSensitivity * delta
+	
 	#rotate camera along the x axis
 	camera.rotation_degrees.x -= (mouseDelta.y + pad_aim.y) * lookSensitivity * delta
 	
@@ -119,7 +121,9 @@ func _process(delta):
 	#reset the mouse delta vector
 	mouseDelta = Vector2()
 
+
 func _input(event):
+	
 	if event is InputEventMouseMotion:
 		mouseDelta = event.relative
 	

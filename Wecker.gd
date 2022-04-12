@@ -1,6 +1,5 @@
 extends Spatial
 
-
 export var currentRadius = 45
 export var spawn_index = -1
 
@@ -12,7 +11,6 @@ var is_deactivated = false;
 var spawner
 var animation
 
-
 # audio tuning variables
 var audio_db = -10						# volume of the alarm sound
 var audio_max_db = -20					# maximum volume of the alarm sound
@@ -23,6 +21,7 @@ var audio_attenuation_filter_db = -3.6	# falloff strength (I think)
 
 
 func _ready():
+	
 	spielwelt = get_tree().get_root().get_node("Spielwelt")
 	var audio = $AudioStreamPlayer3D
 	_wecker_stellen(audio)
@@ -33,6 +32,7 @@ func _ready():
 
 
 func _wecker_stellen(audio):
+	
 	audio.set_unit_db(audio_db)
 	audio.set_max_db(audio_max_db)
 	audio.set_attenuation_model(audio_attenuation_model)
@@ -41,14 +41,17 @@ func _wecker_stellen(audio):
 
 
 func set_spawner(spawner_set):
+	
 	spawner = spawner_set
 
 
 func _get_shaderMaterial():
+	
 	return self.get_node("WeckerAsset/SM_Clock_Body").get_active_material(0)
 
+
 func _process(delta):
-#	self.get_node("WeckerAsset/SM_Clock_Body").get_active_material(0).set_shader_param("corruption_scalar", spielwelt.corruption_scalar)
+	
 	if !is_deactivated:
 		currentRadius += delta*(radiusIncrease + radiusIncrease_corruptionFactor * spielwelt.corruption_scalar)
 		var distance_toPlayer = translation.distance_to(spielwelt.player_instance.global_transform.origin)
@@ -57,6 +60,7 @@ func _process(delta):
 
 
 func _deactivate():
+	
 	is_deactivated = true
 	spawner.clear_spawnIndex(spawn_index)
 	$AudioStreamPlayer3D.set_unit_db(audio_deactivation_db)

@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://MainMenuAssets/MainTheme.tres" type="Theme" id=1]
 [ext_resource path="res://GameOverMenue.gd" type="Script" id=2]
 [ext_resource path="res://MainMenuAssets/MorningRainbow.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://MainMenuAssets/iconWecker.png" type="Texture" id=4]
+[ext_resource path="res://MainMenuAssets/Theme_Gameover.tres" type="Theme" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 35
@@ -33,32 +33,57 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -215.5
-margin_top = -94.0
-margin_right = 215.5
-theme = ExtResource( 1 )
+margin_left = -240.0
+margin_top = -160.0
+margin_right = 240.0
+margin_bottom = -5.0
+rect_scale = Vector2( 1.00176, 1.00464 )
+theme = ExtResource( 5 )
+
+[node name="IconWecker2" type="Sprite" parent="MediumAnker/PanelContainer"]
+position = Vector2( 358, -33.0462 )
+rotation = 0.349066
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 4 )
+offset = Vector2( 0.5, 0 )
+
+[node name="IconWecker3" type="Sprite" parent="MediumAnker/PanelContainer"]
+position = Vector2( 120, -31.0462 )
+rotation = -0.698132
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 4 )
+offset = Vector2( 0.5, 0 )
 
 [node name="IconWecker" type="Sprite" parent="MediumAnker/PanelContainer"]
-position = Vector2( 224.5, -120 )
-scale = Vector2( 0.2, 0.2 )
+position = Vector2( 239, -45.0462 )
+rotation = 0.0349066
+scale = Vector2( 0.225, 0.225 )
 texture = ExtResource( 4 )
+offset = Vector2( 0.5, 0 )
 
-[node name="GridContainer" type="GridContainer" parent="MediumAnker/PanelContainer"]
-margin_left = 5.0
-margin_top = 5.0
-margin_right = 426.0
-margin_bottom = 89.0
+[node name="score_Control" type="Control" parent="MediumAnker"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -219.0
+margin_top = -90.0
+margin_right = 202.0
+margin_bottom = -10.0
+
+[node name="score_GridContainer" type="GridContainer" parent="MediumAnker/score_Control"]
+margin_right = 420.0
+margin_bottom = 80.0
+theme = ExtResource( 5 )
 columns = 2
 
-[node name="WeckerGesammelt" type="Label" parent="MediumAnker/PanelContainer/GridContainer"]
+[node name="WeckerGesammelt" type="Label" parent="MediumAnker/score_Control/score_GridContainer"]
 margin_top = 4.0
 margin_right = 241.0
 margin_bottom = 31.0
 text = "Alarm clocks found: "
-align = 2
+align = 1
 valign = 1
 
-[node name="WeckerScore" type="Label" parent="MediumAnker/PanelContainer/GridContainer"]
+[node name="WeckerScore" type="Label" parent="MediumAnker/score_Control/score_GridContainer"]
 margin_left = 245.0
 margin_right = 401.0
 margin_bottom = 36.0
@@ -67,7 +92,7 @@ text = "27"
 align = 1
 valign = 1
 
-[node name="GetraeumteZeit" type="Label" parent="MediumAnker/PanelContainer/GridContainer"]
+[node name="GetraeumteZeit" type="Label" parent="MediumAnker/score_Control/score_GridContainer"]
 margin_top = 44.0
 margin_right = 241.0
 margin_bottom = 71.0
@@ -75,7 +100,7 @@ text = "Time of dreaming: "
 align = 2
 valign = 1
 
-[node name="GetraeumteZeitScore" type="Label" parent="MediumAnker/PanelContainer/GridContainer"]
+[node name="GetraeumteZeitScore" type="Label" parent="MediumAnker/score_Control/score_GridContainer"]
 margin_left = 245.0
 margin_top = 40.0
 margin_right = 401.0
@@ -96,26 +121,45 @@ rect_min_size = Vector2( 400, 100 )
 alignment = 1
 
 [node name="StartButton" type="Button" parent="MediumAnker/VBoxContainer"]
-margin_top = 48.0
+margin_top = 12.0
 margin_right = 400.0
-margin_bottom = 98.0
+margin_bottom = 62.0
 rect_min_size = Vector2( 0, 50 )
 focus_neighbour_top = NodePath("../QuitButton")
-theme = ExtResource( 1 )
+focus_neighbour_bottom = NodePath("../MainButton")
+theme = ExtResource( 5 )
 text = "Restart"
 
 [node name="Spaceing" type="Label" parent="MediumAnker/VBoxContainer"]
-margin_top = 102.0
+margin_top = 66.0
 margin_right = 400.0
-margin_bottom = 116.0
+margin_bottom = 80.0
+
+[node name="MainButton" type="Button" parent="MediumAnker/VBoxContainer"]
+margin_top = 84.0
+margin_right = 400.0
+margin_bottom = 134.0
+rect_min_size = Vector2( 0, 50 )
+focus_neighbour_top = NodePath("../StartButton")
+focus_neighbour_bottom = NodePath("../QuitButton")
+theme = ExtResource( 5 )
+text = "Main Menu"
+
+[node name="Spaceing2" type="Label" parent="MediumAnker/VBoxContainer"]
+margin_top = 138.0
+margin_right = 400.0
+margin_bottom = 152.0
 
 [node name="QuitButton" type="Button" parent="MediumAnker/VBoxContainer"]
-margin_top = 120.0
+margin_top = 156.0
 margin_right = 400.0
-margin_bottom = 170.0
+margin_bottom = 206.0
 rect_min_size = Vector2( 0, 50 )
-theme = ExtResource( 1 )
-text = "Quit"
+focus_neighbour_top = NodePath("../MainButton")
+focus_neighbour_bottom = NodePath("../StartButton")
+theme = ExtResource( 5 )
+text = "Quit Game"
 
-[connection signal="pressed" from="MediumAnker/VBoxContainer/StartButton" to="." method="_on_StartButton_pressed"]
+[connection signal="pressed" from="MediumAnker/VBoxContainer/StartButton" to="." method="_on_RestartButton_pressed"]
+[connection signal="pressed" from="MediumAnker/VBoxContainer/MainButton" to="." method="_on_StartButton_pressed"]
 [connection signal="pressed" from="MediumAnker/VBoxContainer/QuitButton" to="." method="_on_QuitButton_pressed"]

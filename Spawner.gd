@@ -6,13 +6,13 @@ var SpawnLocationIndices = []
 var rng = RandomNumberGenerator.new()
 var timer = Timer
 var spawn_location_count = 0
-var spawn_attempts = 0
 
 export var difficultyLevel = 1.0
 export var wecker_radius = 45
 
 
 func onGameStart(_spielwelt):
+	
 	spielwelt = _spielwelt
 	timer = get_node("SpawnTimer")
 	SpawnLocations = get_node("SpawnLocations").get_children()
@@ -20,7 +20,6 @@ func onGameStart(_spielwelt):
 	spawn_location_count = SpawnLocations.size()
 	for i in SpawnLocations:
 		SpawnLocationIndices.append(false)
-	spawn_attempts = difficultyLevel * spawn_location_count
 	
 	timer.set_wait_time((1.0/difficultyLevel)*10.0)
 	timer.set_one_shot(false)
@@ -28,10 +27,12 @@ func onGameStart(_spielwelt):
 	
 	rng.randomize()
 	
-	print (" Spawner starts timer with ",spawn_location_count," spawn points and ",spawn_attempts," attempts per spawn")
+	print (" - Spawner starts timer with ",spawn_location_count," spawn points")
+
 
 func SpawnWecker():
-	var attempt = spawn_attempts
+	
+	var attempt = spawn_location_count
 	while attempt > 0:
 		attempt -= 1
 		var spawn_location_index = round(rng.randf_range(0,spawn_location_count - 1))
@@ -53,7 +54,10 @@ func SpawnWecker():
 
 
 func clear_spawnIndex(cleared_index):
+	
 		SpawnLocationIndices[cleared_index] = false
 
+
 func _on_SpawnTimer_timeout():
+	
 	SpawnWecker()

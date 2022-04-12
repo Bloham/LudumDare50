@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=21 format=2]
 
-[ext_resource path="res://noisetexture.tres" type="Texture" id=1]
+[ext_resource path="res://Textures/noisetexture.tres" type="Texture" id=1]
 
 [sub_resource type="VisualShaderNodeScalarOp" id=2]
 output_port_for_preview = 0

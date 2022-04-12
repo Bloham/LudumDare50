@@ -1,19 +1,21 @@
 extends Spatial
 
-
 var spielwelt
 var is_triggered = false
 
 
 func _init():
+	
 	self.add_to_group("items")
 	
 	
 func _ready():
+	
 	spielwelt = get_tree().get_root().get_node("Spielwelt")
 
 
 func albtraum():
+	
 	if(!is_triggered):
 		is_triggered = true
 		spielwelt.get_node("Assets/Items").coruptionRise()
@@ -22,6 +24,7 @@ func albtraum():
 
 
 func _process(delta):
+	
 	var wm = spielwelt.get_node("AllWecker")
 	for w in wm.get_children():
 		var dist = global_transform.origin.distance_to(w.global_transform.origin)

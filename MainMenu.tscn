@@ -1,8 +1,12 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://MainMenu.gd" type="Script" id=1]
-[ext_resource path="res://MainMenuAssets/MainTheme.tres" type="Theme" id=2]
+[ext_resource path="res://MainMenuAssets/Theme_Main.tres" type="Theme" id=2]
 [ext_resource path="res://MainMenuAssets/DontWakeUp.png" type="Texture" id=3]
+
+[sub_resource type="CanvasItemMaterial" id=1]
+blend_mode = 1
+light_mode = 1
 
 [node name="MainMenu" type="Control"]
 pause_mode = 2
@@ -24,15 +28,31 @@ anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
 
+[node name="Control" type="Control" parent="MediumAnker"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+
+[node name="DontWakeUp" type="Sprite" parent="MediumAnker/Control"]
+modulate = Color( 1, 1, 1, 0.784314 )
+position = Vector2( 0, -200 )
+texture = ExtResource( 3 )
+
+[node name="DontWakeUp_Backup" type="Sprite" parent="MediumAnker/Control"]
+modulate = Color( 1, 1, 1, 0.784314 )
+material = SubResource( 1 )
+position = Vector2( 0, -200 )
+texture = ExtResource( 3 )
+
 [node name="PanelContainer" type="PanelContainer" parent="MediumAnker"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 margin_left = -393.0
-margin_top = -170.0
+margin_top = -296.0
 margin_right = 393.0
-margin_bottom = 126.0
 theme = ExtResource( 2 )
 
 [node name="Label" type="Label" parent="MediumAnker/PanelContainer"]
@@ -40,14 +60,15 @@ margin_left = 5.0
 margin_top = 29.0
 margin_right = 781.0
 margin_bottom = 266.0
-text = "Use W, A, S, D to walk around.
-SHIFT to run.
+theme = ExtResource( 2 )
+text = "Welcome to your dream.
 
-Welcome to your dream! 
-How wonderful it would be if there was no alarm 
- and I could just continue to dream this dream.
+Move (W, A, S, D keys),
+jump (SPACE key) and run (SHIFT key) as much as you like.
+How eternally wonderful it would be if there was no alarm 
+ and you could just continue to dream this dream.
 
-Run and destroy the alarms or you will wake up in a nightmare! "
+Search & destroy all alarms!"
 align = 1
 valign = 1
 
@@ -55,7 +76,7 @@ valign = 1
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -200.0
-margin_top = 174.0
+margin_top = 52.0
 margin_right = 200.0
 margin_bottom = 293.0
 grow_horizontal = 2
@@ -64,34 +85,44 @@ rect_min_size = Vector2( 400, 100 )
 alignment = 1
 
 [node name="StartButton" type="Button" parent="MediumAnker/VBoxContainer"]
+margin_top = 23.0
 margin_right = 400.0
-margin_bottom = 50.0
+margin_bottom = 73.0
 rect_min_size = Vector2( 0, 50 )
 focus_neighbour_top = NodePath("../QuitButton")
+focus_neighbour_bottom = NodePath("../StartButton_Level2")
 theme = ExtResource( 2 )
-text = "Level 1"
+text = "Start Level 1"
+
+[node name="Spacing" type="Label" parent="MediumAnker/VBoxContainer"]
+margin_top = 77.0
+margin_right = 400.0
+margin_bottom = 91.0
 
 [node name="StartButton_Level2" type="Button" parent="MediumAnker/VBoxContainer"]
-margin_top = 54.0
+margin_top = 95.0
 margin_right = 400.0
-margin_bottom = 104.0
+margin_bottom = 145.0
 rect_min_size = Vector2( 0, 50 )
-focus_neighbour_top = NodePath("../QuitButton")
+focus_neighbour_top = NodePath("../StartButton")
+focus_neighbour_bottom = NodePath("../QuitButton")
 theme = ExtResource( 2 )
-text = "Level 2"
+text = "Start Level 2"
+
+[node name="Spacing2" type="Label" parent="MediumAnker/VBoxContainer"]
+margin_top = 149.0
+margin_right = 400.0
+margin_bottom = 163.0
 
 [node name="QuitButton" type="Button" parent="MediumAnker/VBoxContainer"]
-margin_top = 108.0
+margin_top = 167.0
 margin_right = 400.0
-margin_bottom = 158.0
+margin_bottom = 217.0
 rect_min_size = Vector2( 0, 50 )
+focus_neighbour_top = NodePath("../StartButton_Level2")
 focus_neighbour_bottom = NodePath("../StartButton")
 theme = ExtResource( 2 )
-text = "Quit"
-
-[node name="DontWakeUp" type="Sprite" parent="."]
-position = Vector2( 639, 313 )
-texture = ExtResource( 3 )
+text = "Quit Game"
 
 [connection signal="pressed" from="MediumAnker/VBoxContainer/StartButton" to="." method="_on_StartButton_pressed" binds= [ 0 ]]
 [connection signal="pressed" from="MediumAnker/VBoxContainer/StartButton_Level2" to="." method="_on_StartButton_pressed" binds= [ 1 ]]
