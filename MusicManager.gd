@@ -15,7 +15,7 @@ func _startLayer2FadeIn():
 	
 	if get_tree().get_root().get_node("Spielwelt").corruption_scalar >0.5 and Layer2IsPlaying==false:
 		Layer2IsPlaying = true
-		print ("Start Fade in")
+#		print ("Start Fade in")
 		$AnimationPlayer.play("FadeInLayer2")
 	else:
 		pass

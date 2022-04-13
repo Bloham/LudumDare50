@@ -27,7 +27,7 @@ func onGameStart(_spielwelt):
 	
 	rng.randomize()
 	
-	print (" - Spawner starts timer with ",spawn_location_count," spawn points")
+#	print (" - Spawner starts timer with ",spawn_location_count," spawn points")
 
 
 func clear_spawnIndex(cleared_index):

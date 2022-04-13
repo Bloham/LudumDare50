@@ -84,30 +84,51 @@ grow_vertical = 2
 rect_min_size = Vector2( 400, 100 )
 alignment = 1
 
-[node name="StartButton" type="Button" parent="MediumAnker/VBoxContainer"]
+[node name="StartButtons" type="Control" parent="MediumAnker/VBoxContainer"]
 margin_top = 23.0
 margin_right = 400.0
 margin_bottom = 73.0
 rect_min_size = Vector2( 0, 50 )
 focus_neighbour_top = NodePath("../QuitButton")
-focus_neighbour_bottom = NodePath("../StartButton_Level2")
+focus_neighbour_bottom = NodePath("../StartButton_Level3")
+theme = ExtResource( 2 )
+
+[node name="StartButton_Level1" type="Button" parent="MediumAnker/VBoxContainer/StartButtons"]
+margin_left = -210.0
+margin_right = 190.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 0, 50 )
+focus_neighbour_top = NodePath("../../QuitButton")
+focus_neighbour_right = NodePath("../StartButton_Level2")
+focus_neighbour_bottom = NodePath("../../StartButton_Level3")
 theme = ExtResource( 2 )
 text = "Start Level 1"
+
+[node name="StartButton_Level2" type="Button" parent="MediumAnker/VBoxContainer/StartButtons"]
+margin_left = 210.0
+margin_right = 610.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 0, 50 )
+focus_neighbour_left = NodePath("../StartButton_Level1")
+focus_neighbour_top = NodePath("../../QuitButton")
+focus_neighbour_bottom = NodePath("../../StartButton_Level3")
+theme = ExtResource( 2 )
+text = "Start Level 2"
 
 [node name="Spacing" type="Label" parent="MediumAnker/VBoxContainer"]
 margin_top = 77.0
 margin_right = 400.0
 margin_bottom = 91.0
 
-[node name="StartButton_Level2" type="Button" parent="MediumAnker/VBoxContainer"]
+[node name="StartButton_Level3" type="Button" parent="MediumAnker/VBoxContainer"]
 margin_top = 95.0
 margin_right = 400.0
 margin_bottom = 145.0
 rect_min_size = Vector2( 0, 50 )
-focus_neighbour_top = NodePath("../StartButton")
+focus_neighbour_top = NodePath("../StartButtons/StartButton_Level1")
 focus_neighbour_bottom = NodePath("../QuitButton")
 theme = ExtResource( 2 )
-text = "Start Level 2"
+text = "Start Level 3"
 
 [node name="Spacing2" type="Label" parent="MediumAnker/VBoxContainer"]
 margin_top = 149.0
@@ -119,11 +140,12 @@ margin_top = 167.0
 margin_right = 400.0
 margin_bottom = 217.0
 rect_min_size = Vector2( 0, 50 )
-focus_neighbour_top = NodePath("../StartButton_Level2")
-focus_neighbour_bottom = NodePath("../StartButton")
+focus_neighbour_top = NodePath("../StartButton_Level3")
+focus_neighbour_bottom = NodePath("../StartButtons/StartButton_Level2")
 theme = ExtResource( 2 )
 text = "Quit Game"
 
-[connection signal="pressed" from="MediumAnker/VBoxContainer/StartButton" to="." method="_on_StartButton_pressed" binds= [ 0 ]]
-[connection signal="pressed" from="MediumAnker/VBoxContainer/StartButton_Level2" to="." method="_on_StartButton_pressed" binds= [ 1 ]]
+[connection signal="pressed" from="MediumAnker/VBoxContainer/StartButtons/StartButton_Level1" to="." method="_on_StartButton_pressed" binds= [ 0 ]]
+[connection signal="pressed" from="MediumAnker/VBoxContainer/StartButtons/StartButton_Level2" to="." method="_on_StartButton_pressed" binds= [ 1 ]]
+[connection signal="pressed" from="MediumAnker/VBoxContainer/StartButton_Level3" to="." method="_on_StartButton_pressed" binds= [ 2 ]]
 [connection signal="pressed" from="MediumAnker/VBoxContainer/QuitButton" to="." method="_on_QuitButton_pressed"]

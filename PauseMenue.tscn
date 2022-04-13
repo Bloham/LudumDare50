@@ -68,29 +68,29 @@ grow_vertical = 2
 rect_min_size = Vector2( 400, 100 )
 alignment = 1
 
-[node name="Continue_Button" type="Button" parent="MediumAnker/VBoxContainer"]
+[node name="Restart_Button" type="Button" parent="MediumAnker/VBoxContainer"]
 margin_right = 400.0
 margin_bottom = 50.0
 rect_min_size = Vector2( 0, 50 )
 focus_neighbour_top = NodePath("../MainMenu_Button")
-focus_neighbour_bottom = NodePath("../Restart_Button")
+focus_neighbour_bottom = NodePath("../Continue_Button")
 theme = ExtResource( 3 )
-text = "Continue"
+text = "Restart Level"
 
 [node name="Spacing" type="Label" parent="MediumAnker/VBoxContainer"]
 margin_top = 54.0
 margin_right = 400.0
 margin_bottom = 68.0
 
-[node name="Restart_Button" type="Button" parent="MediumAnker/VBoxContainer"]
+[node name="Continue_Button" type="Button" parent="MediumAnker/VBoxContainer"]
 margin_top = 72.0
 margin_right = 400.0
 margin_bottom = 122.0
 rect_min_size = Vector2( 0, 50 )
-focus_neighbour_top = NodePath("../Continue_Button")
+focus_neighbour_top = NodePath("../Restart_Button")
 focus_neighbour_bottom = NodePath("../MainMenu_Button")
 theme = ExtResource( 3 )
-text = "Restart Level"
+text = "Continue"
 
 [node name="Spaceing" type="Label" parent="MediumAnker/VBoxContainer"]
 margin_top = 126.0
@@ -102,11 +102,11 @@ margin_top = 144.0
 margin_right = 400.0
 margin_bottom = 194.0
 rect_min_size = Vector2( 0, 50 )
-focus_neighbour_top = NodePath("../Restart_Button")
-focus_neighbour_bottom = NodePath("../Continue_Button")
+focus_neighbour_top = NodePath("../Continue_Button")
+focus_neighbour_bottom = NodePath("../Restart_Button")
 theme = ExtResource( 3 )
 text = "Main Menu"
 
-[connection signal="pressed" from="MediumAnker/VBoxContainer/Continue_Button" to="." method="_on_ContinetButton_pressed"]
 [connection signal="pressed" from="MediumAnker/VBoxContainer/Restart_Button" to="." method="_on_RestartButton_pressed"]
+[connection signal="pressed" from="MediumAnker/VBoxContainer/Continue_Button" to="." method="_on_ContinetButton_pressed"]
 [connection signal="pressed" from="MediumAnker/VBoxContainer/MainMenu_Button" to="." method="_on_MainMenu_Button_pressed"]

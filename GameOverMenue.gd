@@ -36,13 +36,7 @@ func _gameOver(scoreWecker, scoreTime):
 
 func _on_RestartButton_pressed():
 	
-	get_tree().paused = false
-	var spiel = get_tree().get_root().get_node("Spielwelt")
-	if spiel.level_index == 0:
-		get_tree().change_scene("res://Spielwelt_restart_version_0.tscn")
-	else:
-		get_tree().change_scene("res://Spielwelt_restart_version_1.tscn")
-
+	get_tree().get_root().get_node("Spielwelt").restart()
 
 func _on_StartButton_pressed():
 	

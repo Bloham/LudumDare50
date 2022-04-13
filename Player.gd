@@ -1,9 +1,12 @@
 extends KinematicBody
 
 #Physics
-export var walkSpeed = 1
-export var runSpeed = 2
-export var jumpForce = 3
+export var walk_speed = 30
+#export var runSpeed = 30
+export var jump_force = 36
+export var dash_force = 128
+export var dash_duration = 0.25
+export var dash_cooldown = 2.0
 
 #Footstep Sound
 export var audioWalkPitch = 0.66
@@ -11,17 +14,21 @@ export var audioRunPitch = 1
 
 var gravity = 40
 var moveSpeed = 18
+var dash_time = 0.0
 
 #Camera
 var minLookAngle = -90
 var maxLookAngle = 90
 var lookSensitivity = 50
-var pad_lookSensitivity = 120.0
+var pad_lookSensitivity = 135.0
 
 #Vectors
 var vel = Vector3()
+var dash_vel = Vector3()
 var mouseDelta = Vector2()
 var padDelta = Vector2()
+
+var is_dashing = false
 
 #Conponents
 onready var camera = $Camera
@@ -34,58 +41,76 @@ var uiNode
 func _ready():
 	
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	uiNode = get_tree().get_root().get_node("Spielwelt").get_node("Other").get_node("UI").get_node("PauseMenue")
+	uiNode = get_tree().get_root().get_node("Spielwelt/Other/UI/PauseMenue")
 
 
 func _physics_process(delta):
-	
-	#reset x and z velocity
-	vel.x = 0
-	vel.z = 0
-	
+		
 	var input = Vector2()
 	
-	#Movement Inputs
-	if Input.is_action_pressed("ui_up"):
-		input.y -= 1
-	if Input.is_action_pressed("ui_down"):
-		input.y += 1
-	if Input.is_action_pressed("ui_left"):
-		input.x -= 1
-	if Input.is_action_pressed("ui_right"):
-		input.x += 1
-		
-	var pad_move = Input.get_vector("gamepad_move_left", "gamepad_move_right", "gamepad_move_forward", "gamepad_move_back")
-	input += pad_move
-	
-	input = input.normalized()
-	
-	#get the forward and right directions
-	var forward = global_transform.basis.z
-	var right = global_transform.basis.x
-	
-	var relativeDir = (forward * input.y + right * input.x)
-	
-	#play runing fotsteps and speed
-	if Input.is_action_pressed("run") or Input.is_action_pressed("gamepad_sprint"):
-		audioPlayerFootsteps.pitch_scale = audioRunPitch
-		moveSpeed = runSpeed
+	dash_time += delta
+	if is_dashing:
+		vel.x = dash_force * dash_vel.x
+		vel.y = dash_force * dash_vel.y
+		vel.z = dash_force * dash_vel.z
+		if dash_time > dash_duration:
+			is_dashing = false
+			dash_time = 0.0
 	else:
-		audioPlayerFootsteps.pitch_scale = audioWalkPitch
-		moveSpeed = walkSpeed
+		
+		#reset x and z velocity
+		vel.x = 0
+		vel.z = 0
+		
+		#Movement Inputs
+		if Input.is_action_pressed("ui_up"):
+			input.y -= 1
+		if Input.is_action_pressed("ui_down"):
+			input.y += 1
+		if Input.is_action_pressed("ui_left"):
+			input.x -= 1
+		if Input.is_action_pressed("ui_right"):
+			input.x += 1
+			
+		var pad_move = Input.get_vector("gamepad_move_left", "gamepad_move_right", "gamepad_move_forward", "gamepad_move_back")
+		input += pad_move
+		
+		input = input.normalized()
+		
+		#get the forward and right directions
+		var forward = global_transform.basis.z
+		var right = global_transform.basis.x
+		
+		var relativeDir = (forward * input.y + right * input.x)
+		
+		#play runing fotsteps and speed
+	#	if Input.is_action_pressed("run") or Input.is_action_pressed("gamepad_sprint"):
+	#		audioPlayerFootsteps.pitch_scale = audioRunPitch
+	#		moveSpeed = runSpeed
+	#	else:
+	#		audioPlayerFootsteps.pitch_scale = audioWalkPitch
+	#		moveSpeed = walk_speed
+
+		if not is_dashing and (dash_time > dash_cooldown) and (Input.is_action_pressed("run") or Input.is_action_pressed("gamepad_sprint")):
+			is_dashing = true
+			dash_time = 0.0
+			dash_vel = -forward
+			vel = dash_force * dash_vel
+		else:
+			#set Velocity
+			moveSpeed = walk_speed
+			vel.x = relativeDir.x * moveSpeed
+			vel.z = relativeDir.z * moveSpeed
+			
+			#Gravity
+			vel.y -= 0.018* gravity
+		
+		#move the player
+		if is_on_floor():
+			if Input.is_action_pressed("ui_accept") or Input.is_action_pressed("gamepad_jump"):
+				vel.y = jump_force
+				audioPlayerJump.play()
 	
-	#set Velocity
-	vel.x = relativeDir.x * moveSpeed
-	vel.z = relativeDir.z * moveSpeed
-	
-	#Gravity
-	vel.y -= 0.018* gravity
-	
-	#move the player
-	if is_on_floor():
-		if Input.is_action_pressed("ui_accept") or Input.is_action_pressed("gamepad_jump"):
-			vel.y = jumpForce
-			audioPlayerJump.play()
 	vel = move_and_slide(vel, Vector3.UP)
 	
 	#play fotsteps

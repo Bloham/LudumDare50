@@ -5,7 +5,7 @@ export var restart_level_index = -1
 
 export var corruption_scalar = 0.0
 
-var player_instance = self
+var player_instance
 var environment_instance
 var lightning_instance
 var terrain_material
@@ -70,17 +70,20 @@ func _toggle_fullscreen():
 
 func onGameStart(var _level_index):
 	
-	if _level_index > -1:
-		level_index = _level_index
+	var player = load("res://Player.tscn")
+	player_instance = player.instance()
+	player_instance.set_name("Player")
+	add_child(player_instance)
 	
+	level_index = _level_index
 	self.remove_child(assets_instance)
-	if level_index == 0:
-		var assets = load("res://Assets_1.tscn")
+	if level_index > -1:
+		var level_name = "res://Assets_"+String(_level_index)+".tscn"
+		var assets = load(level_name)
 		assets_instance = assets.instance()
 	else:
-		var assets = load("res://Assets_2.tscn")
-		assets_instance = assets.instance()
-		
+		print ("ERROR - Spielwelt.onGameStart")
+	
 	self.add_child(assets_instance)
 	
 	terrain_material = get_node("Assets/Boden/Terrain/Terrain_low")
@@ -89,6 +92,12 @@ func onGameStart(var _level_index):
 	score_wecker = 0
 	var WeckerSpawner = get_tree().get_root().get_node("Spielwelt/Assets/Spawner")
 	WeckerSpawner.onGameStart(self)
+	
+	var player_spawnpoint = assets_instance.get_node("Player_Spawn")
+	if player_spawnpoint:
+		player_instance.translation = player_spawnpoint.translation
+		player_instance.rotation.y = player_spawnpoint.rotation.y
+		player_instance.camera.rotation.x = player_spawnpoint.rotation.x
 	
 	is_game_started = true
 
@@ -138,3 +147,13 @@ func gameover():
 	is_game_started = false
 #	print("scores: ",score_wecker,", ",score_time)
 	get_tree().get_root().get_node("Spielwelt/Other/UI/GameOverMenue")._gameOver(score_wecker, round(score_time))
+	
+func restart():
+
+	if level_index == 0:
+		get_tree().change_scene("res://Spielwelt_restart_version_0.tscn")
+	if level_index == 1:
+		get_tree().change_scene("res://Spielwelt_restart_version_1.tscn")
+	if level_index == 2:
+		get_tree().change_scene("res://Spielwelt_restart_version_2.tscn")
+	get_tree().paused = false

@@ -13,7 +13,7 @@ export var gameOverDelay = 15
 func _ready():
 	
 	ItemsAufMap = get_tree().get_nodes_in_group("items").size()
-	print("- Session started with ",ItemsAufMap," items on the map")
+#	print("- ther are ",ItemsAufMap," items on the map")
 	coruptionCounter = ItemsAufMap
 	
 	turning_eyes = []
