@@ -11,7 +11,7 @@ func _activatePause():
 	playerCamera = get_tree().get_root().get_node("Spielwelt").player_instance.get_node("Camera")
 	get_tree().paused = true
 	self.visible = true
-	menueCamera = get_tree().get_root().get_node("Spielwelt").get_node("Other").get_node("UI").get_node("MenueCamera")
+	menueCamera = get_tree().get_root().get_node("Spielwelt/Other/UI/Camera/MenueCamera")
 	menueCamera.set_current(true)
 #	print(playerCamera)
 

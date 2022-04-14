@@ -17,7 +17,7 @@ func _gameOver(scoreWecker, scoreTime):
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	get_tree().paused = true
 	self.visible = true
-	menueCamera = get_tree().get_root().get_node("Spielwelt/Other/UI/MenueCamera")
+	menueCamera = get_tree().get_root().get_node("Spielwelt/Other/UI/Camera/MenueCamera")
 	menueCamera.set_current(true)
 	
 	LableWecker.text = String(scoreWecker)

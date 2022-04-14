@@ -14,6 +14,6 @@ func _on_StartButton_pressed(var _level_index):
 	spielwelt.onGameStart(_level_index)
 
 
-func _on_QuitButton_pressed():
+func _on_quit_button_pressed():
 	
 	get_tree().quit()

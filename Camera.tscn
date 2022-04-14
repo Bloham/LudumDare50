@@ -1,0 +1,14 @@
+[gd_scene format=2]
+
+[node name="Camera" type="Node"]
+
+[node name="MenueCamera" type="InterpolatedCamera" parent="."]
+pause_mode = 2
+transform = Transform( 0.709381, -0.359438, 0.606286, -0.0303318, 0.843828, 0.535756, -0.704172, -0.398445, 0.587693, 191.981, 85.6225, 431.572 )
+far = 1000.0
+target = NodePath("../CameraTarget")
+speed = 0.01
+enabled = true
+
+[node name="CameraTarget" type="Spatial" parent="."]
+transform = Transform( -0.294224, 0, 0.955737, 0, 1, 0, -0.955737, 0, -0.294224, -366.598, 92.453, -237.967 )
