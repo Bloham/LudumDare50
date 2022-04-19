@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Audio/SFX/sfx_footsteps_walk.wav" type="AudioStream" id=1]
 [ext_resource path="res://Player.gd" type="Script" id=2]
 [ext_resource path="res://Audio/SFX/sfx_jump.wav" type="AudioStream" id=3]
+[ext_resource path="res://Audio/SFX/sfx_dash2.wav" type="AudioStream" id=4]
 
 [sub_resource type="CapsuleShape" id=1]
 height = 3.0
@@ -28,4 +29,10 @@ bus = "SFXRev"
 stream = ExtResource( 3 )
 volume_db = 2.0
 pitch_scale = 0.84
+bus = "SFXRev"
+
+[node name="Dash" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -26.35
+pitch_scale = 0.62
 bus = "SFXRev"

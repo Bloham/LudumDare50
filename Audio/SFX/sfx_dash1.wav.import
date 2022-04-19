@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/sfx_dash1.wav-dad0a85567cb1e09b4f15f5f2d77d62e.sample"
+
+[deps]
+
+source_file="res://Audio/SFX/sfx_dash1.wav"
+dest_files=[ "res://.import/sfx_dash1.wav-dad0a85567cb1e09b4f15f5f2d77d62e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

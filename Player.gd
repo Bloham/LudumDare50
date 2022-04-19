@@ -34,6 +34,7 @@ var is_dashing = false
 onready var camera = $Camera
 onready var audioPlayerFootsteps = $Footsteps
 onready var audioPlayerJump = $Jump
+onready var audioPlayerDash = $Dash
 
 var uiNode
 
@@ -53,6 +54,8 @@ func _physics_process(delta):
 		vel.x = dash_force * dash_vel.x
 		vel.y = dash_force * dash_vel.y
 		vel.z = dash_force * dash_vel.z
+		if audioPlayerDash.playing == false:
+			audioPlayerDash.play()
 		if dash_time > dash_duration:
 			is_dashing = false
 			dash_time = 0.0
