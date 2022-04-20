@@ -5,8 +5,11 @@ export var walk_speed = 30
 #export var runSpeed = 30
 export var jump_force = 36
 export var dash_force = 128
+export var grounded_duration = 0.5
 export var dash_duration = 0.25
 export var dash_cooldown = 2.0
+var is_grounded = false
+var is_jumping = false
 
 #Footstep Sound
 export var audioWalkPitch = 0.66
@@ -14,6 +17,7 @@ export var audioRunPitch = 1
 
 var gravity = 40
 var moveSpeed = 18
+var grounded_time = 0.0
 var dash_time = 0.0
 
 #Camera
@@ -50,6 +54,13 @@ func _physics_process(delta):
 	var input = Vector2()
 	
 	dash_time += delta
+	if is_on_floor():
+		is_jumping = false
+		grounded_time = grounded_duration
+	else:
+		grounded_time -= delta
+	is_grounded = grounded_time > 0
+	
 	if is_dashing:
 		vel.x = dash_force * dash_vel.x
 		vel.y = dash_force * dash_vel.y
@@ -109,8 +120,9 @@ func _physics_process(delta):
 			vel.y -= 0.018* gravity
 		
 		#move the player
-		if is_on_floor():
+		if is_grounded and not is_jumping:
 			if Input.is_action_pressed("ui_accept") or Input.is_action_pressed("gamepad_jump"):
+				is_jumping = true
 				vel.y = jump_force
 				audioPlayerJump.play()
 	
@@ -122,7 +134,7 @@ func _physics_process(delta):
 	
 	if input == Vector2.ZERO:
 		audioPlayerFootsteps.stop()
-	if is_on_floor() == false:
+	if is_grounded == false:
 		audioPlayerFootsteps.stop()
 		
 	if Input.is_action_pressed("ui_cancel"):
@@ -131,7 +143,7 @@ func _physics_process(delta):
 
 func _playFootsteps():
 	
-	if audioPlayerFootsteps.playing == false and is_on_floor() == true:
+	if audioPlayerFootsteps.playing == false and is_grounded == true:
 		audioPlayerFootsteps.play()
 
 
