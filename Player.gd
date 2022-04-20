@@ -124,6 +124,9 @@ func _physics_process(delta):
 		audioPlayerFootsteps.stop()
 	if is_on_floor() == false:
 		audioPlayerFootsteps.stop()
+		
+	if Input.is_action_pressed("ui_cancel"):
+		uiNode._activatePause()
 
 
 func _playFootsteps():
@@ -156,9 +159,9 @@ func _input(event):
 		mouseDelta = event.relative
 	
 	#quit with ESC
-	if event is InputEventKey:
-		if event.pressed and event.scancode == KEY_ESCAPE:
-			uiNode._activatePause()
+#	if event is InputEventKey:
+#		if event.pressed and event.scancode == KEY_ESCAPE:
+#			uiNode._activatePause()
 #			var pauseMenueResource = load("res://PauseMenue.tscn")
 #			var pauseMenue = pauseMenueResource.instance()
 #			uiNode.add_child(pauseMenue)
