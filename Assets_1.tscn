@@ -22,7 +22,7 @@ wecker_radius = 20
 [node name="SpawnLocations" type="Node" parent="Spawner"]
 
 [node name="SpawnLocation1" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
-transform = Transform( 0.625973, -0.0398984, 0.778824, 0.0636092, 0.997975, 5.70838e-09, -0.777247, 0.0495403, 0.627243, -20.0401, -8.1359, -11.1139 )
+transform = Transform( 0.625973, -0.0398984, 0.778824, 0.0636092, 0.997975, 5.70838e-09, -0.777247, 0.0495403, 0.627243, -20.0401, -8.1359, -15.2167 )
 
 [node name="SpawnLocation2" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
 transform = Transform( 0.75116, -0.202186, 0.628395, 0.170381, 0.979067, 0.111348, -0.637753, 0.0234271, 0.769884, -85.5403, 46.3882, 42.9848 )
@@ -34,7 +34,7 @@ transform = Transform( 0.309378, 0.414434, -0.85588, 0.197042, 0.852565, 0.48405
 transform = Transform( -0.917587, -0.0264867, 0.396651, 0.00469087, 0.996987, 0.0774263, -0.397506, 0.072906, -0.914698, 51.1569, -4.34403, 50.7986 )
 
 [node name="SpawnLocation5" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
-transform = Transform( 0.0083212, -0.220745, 0.975296, 0.199358, 0.956117, 0.214703, -0.979891, 0.192647, 0.0519634, -66.2937, 39.4132, 102.495 )
+transform = Transform( 0.0083212, -0.220745, 0.975296, 0.199358, 0.956117, 0.214703, -0.979891, 0.192647, 0.0519634, -66.2937, 71.6128, 102.495 )
 
 [node name="SpawnLocation6" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
 transform = Transform( 0.745532, 0.0758083, 0.662144, 0.0442029, 0.985698, -0.162621, -0.665002, 0.150508, 0.731518, -126.259, 57.6173, 89.7895 )
@@ -82,7 +82,7 @@ transform = Transform( 0.582368, -0.322713, -0.746125, 0.277658, 0.941594, -0.19
 transform = Transform( -0.746627, 0.2159, 0.629234, 0.193294, 0.975469, -0.105343, -0.636542, 0.0429747, -0.770044, 158.307, -8.87047, -88.6863 )
 
 [node name="SpawnLocation17" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
-transform = Transform( 0.46031, -0.135731, -0.87732, 0.35101, 0.935541, 0.0394279, 0.815417, -0.326097, 0.478282, 193.332, 17.2696, -46.9832 )
+transform = Transform( 0.46031, -0.135731, -0.87732, 0.35101, 0.935541, 0.0394279, 0.815417, -0.326097, 0.478282, 193.332, 14.7612, -46.9832 )
 
 [node name="SpawnLocation18" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
 transform = Transform( -0.579304, 0.0514689, 0.813485, 0.109059, 0.993925, 0.0147786, -0.807783, 0.0972795, -0.581398, 57.2414, -7.31763, -69.3455 )
@@ -105,8 +105,14 @@ transform = Transform( 0.915055, -0.202949, 0.348549, 0.172393, 0.978066, 0.1169
 [node name="SpawnLocation28" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
 transform = Transform( -0.726476, 0.152127, -0.670142, 0.179377, 0.98336, 0.0287728, 0.663368, -0.0993054, -0.741675, -172.449, 32.968, -47.4522 )
 
+[node name="SpawnLocation29" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
+transform = Transform( -0.726476, 0.152127, -0.670142, 0.179377, 0.98336, 0.0287728, 0.663368, -0.0993054, -0.741675, -172.449, 32.968, -47.4522 )
+
+[node name="SpawnLocation30" parent="Spawner/SpawnLocations" instance=ExtResource( 9 )]
+transform = Transform( -0.746381, -0.0169839, -0.665302, 0.0534711, 0.994913, -0.0853865, 0.663368, -0.0993054, -0.741675, -24.6625, 132.12, 52.5092 )
+
 [node name="Player_Spawn" type="Spatial" parent="."]
-transform = Transform( 0.826393, -0.281547, -0.487653, 0, 0.866025, -0.5, 0.563093, 0.413197, 0.715677, 11.4077, -4.5, 22.628 )
+transform = Transform( 0.826393, -0.281547, -0.487653, 0, 0.866025, -0.5, 0.563093, 0.413197, 0.715677, 21.6422, -4.5, 8.45123 )
 
 [node name="Boden" type="Node" parent="."]
 
@@ -235,34 +241,34 @@ transform = Transform( 7.11072, -1.33759, -0.384238, 2.1779, 4.36715, -0.117686,
 transform = Transform( 0.98592, 0.00759431, -0.167044, 0, 0.998968, 0.0454161, 0.167216, -0.0447767, 0.984903, -8.23548, 11.7811, -151.081 )
 
 [node name="Item_FlatRock281" parent="Items/rock_trees" instance=ExtResource( 5 )]
-transform = Transform( 17.9706, -5.365, 6.94793, 2.65872, 18.4129, 7.34125, -8.36589, -5.67272, 17.2578, -19.766, 98.01, -15.2272 )
+transform = Transform( 17.9706, -5.365, 6.94793, 2.65872, 18.4129, 7.34125, -8.36589, -5.67272, 17.2578, 14.3061, 95.5508, 185.76 )
 
 [node name="Item_FlatRock282" parent="Items/rock_trees" instance=ExtResource( 5 )]
-transform = Transform( 20, 0, 0, 6.92862e-07, 19.1379, -5.80871, 5.08829e-07, 5.80871, 19.1379, 1.52588e-05, 92.4155, 23.9423 )
+transform = Transform( 20, 2.38419e-07, 4.76837e-07, 7.00355e-07, 19.1379, -5.80871, 4.76837e-07, 5.80871, 19.1379, 34.0721, 89.9562, 224.93 )
 
 [node name="Item_FlatRock283" parent="Items/rock_trees" instance=ExtResource( 5 )]
-transform = Transform( 17.0204, -10.178, 2.59076, 10.4918, 16.2534, -5.07448, 0.476987, 5.67757, 19.1713, -30.844, 92.8738, 13.8607 )
+transform = Transform( 17.0204, -10.178, 2.59076, 10.4918, 16.2534, -5.07448, 0.476988, 5.67757, 19.1713, 3.22812, 90.4146, 214.848 )
 
 [node name="Item_FlatRock284" parent="Items/rock_trees" instance=ExtResource( 5 )]
-transform = Transform( 16.2088, 10.8488, 4.42483, -9.76718, 16.6833, -5.12526, -6.47117, 1.9928, 18.8189, 23.128, 93.2317, 5.98972 )
+transform = Transform( 16.2088, 10.8488, 4.42483, -9.76719, 16.6833, -5.12526, -6.47117, 1.9928, 18.8189, 57.2001, 90.7725, 206.977 )
 
 [node name="Item_FlatRock285" parent="Items/rock_trees" instance=ExtResource( 5 )]
-transform = Transform( 8.22293, 8.97215, 15.8709, -9.34982, 17.0219, -4.77856, -15.6513, -5.45484, 11.1929, 1.85703, 94.3128, -17.7917 )
+transform = Transform( 8.22293, 8.97215, 15.8709, -9.34982, 17.0219, -4.77856, -15.6513, -5.45484, 11.1929, 35.9291, 91.8536, 183.195 )
 
 [node name="Item_Tree120" parent="Items/rock_trees" instance=ExtResource( 1 )]
-transform = Transform( -14.3958, 4.21427, 0, -4.20992, -14.3809, -0.681243, -0.191397, -0.653802, 14.9845, -30.233, 86.2142, 1.67056 )
+transform = Transform( -14.3958, 4.21427, -2.14577e-06, -4.20993, -14.3809, -0.681244, -0.191396, -0.653802, 14.9845, 3.88886, 83.9599, 202.677 )
 
 [node name="Item_Tree121" parent="Items/rock_trees" instance=ExtResource( 1 )]
-transform = Transform( 13.9053, -4.07067, -3.88229, -4.0407, -14.4305, 0.658031, -3.91347, 0.435803, -14.4739, 22.299, 86.2142, 1.67056 )
+transform = Transform( 13.9053, -4.07067, -3.88229, -4.0407, -14.4305, 0.658031, -3.91347, 0.435803, -14.4739, 56.3711, 83.7549, 202.658 )
 
 [node name="Item_Tree122" parent="Items/rock_trees" instance=ExtResource( 1 )]
-transform = Transform( 2.46442, -0.72144, 14.7786, -4.85407, -14.1924, 0.116622, 13.9773, -4.80157, -2.5652, 0.529007, 85.0389, 27.5229 )
+transform = Transform( 2.46442, -0.72144, 14.7786, -4.85407, -14.1924, 0.116622, 13.9773, -4.80157, -2.5652, 34.6011, 82.5796, 228.51 )
 
 [node name="Item_Tree123" parent="Items/rock_trees" instance=ExtResource( 1 )]
-transform = Transform( -6.05136, 1.77149, -13.6104, -3.61669, -14.5546, -0.286364, -13.2401, 3.16611, 6.29881, -8.46399, 87.3895, -24.1808 )
+transform = Transform( -6.05136, 1.77149, -13.6104, -3.61669, -14.5546, -0.286364, -13.2401, 3.16611, 6.29881, 25.6081, 84.9303, 176.806 )
 
 [node name="Item_Hedge298" parent="Items/rock_trees" instance=ExtResource( 6 )]
-transform = Transform( -1.53035, -0.0843811, -11.9017, -1.19969, 11.9397, 0.0696077, 11.8414, 1.19874, -1.53109, -5.18631, 81.6669, 1.95224 )
+transform = Transform( -1.53035, -0.0843811, -11.9017, -1.19969, 11.9397, 0.0696077, 11.8414, 1.19874, -1.53109, 28.8858, 79.2077, 202.939 )
 
 [node name="grave_stone_group" type="Spatial" parent="Items"]
 transform = Transform( 0.861594, 0, 0.507599, 0, 1, 0, -0.507599, 0, 0.861594, 61.3665, 0, -99.3649 )
@@ -445,7 +451,7 @@ transform = Transform( 8, 0, 0, 0, 11.9343, -3.13585, 0, 1.25434, 29.8357, 20, 7
 transform = Transform( 8, 0, 0, 0, 11.9927, -1.04698, 0, 0.418794, 29.9817, -1.52588e-05, 5.72205e-06, -3.8147e-06 )
 
 [node name="rock_wall_Item_FlatRock5" parent="Items/rock_wall" instance=ExtResource( 5 )]
-transform = Transform( 8, 0, 0, 0, 11.9982, -0.523572, 0, 0.209429, 29.9954, -20, 5.72205e-06, -7.62939e-06 )
+transform = Transform( 8, 0, 9.53674e-07, -2.38419e-07, 11.9982, -0.523572, 0, 0.209429, 29.9954, -20, 4.76837e-06, -5.72205e-06 )
 
 [node name="rock_wall_Item_FlatRock6" parent="Items/rock_wall" instance=ExtResource( 5 )]
 transform = Transform( 7.86771, 0.349296, -5.36244, -9.53674e-07, 11.844, 4.82176, 1.44882, -1.89681, 29.1203, -37.2663, -5.8366, -0.166927 )
@@ -982,7 +988,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 71.9863, 0 )
 transform = Transform( -0.732583, 0, -17.9664, 0, 20, 0, 11.9776, 0, -1.09887, 0.918259, 13.9491, 1.51371 )
 
 [node name="Stone_Pillar_Base_Item_FlatRock2" parent="Items/altar/top/Stone_Pillar_Base_Item_FlatRock6" instance=ExtResource( 5 )]
-transform = Transform( 1.2, 4.47035e-10, -7.45058e-09, -2.68221e-09, 0.2, 0, -2.98023e-08, -1.38778e-17, 1.2, -0.00899863, 0.199999, 0.0170002 )
+transform = Transform( 1.2, 4.47035e-10, 8.19564e-08, -2.68221e-09, 0.2, 0, -2.98023e-08, -1.56125e-17, 1.2, -0.0111673, 0.196053, 0.0128326 )
 
 [node name="Stone_Pillar_Base_Item_FlatRock3" parent="Items/altar/top" instance=ExtResource( 5 )]
 transform = Transform( -0.0476444, -3.44566e-07, 25.182, 4.87956e-06, 4, 2.20148e-06, -29.9999, 3.22722e-06, -0.0399927, 6.24397, 1.10703, 2.84619 )
@@ -1284,9 +1290,6 @@ transform = Transform( 5.55985, -0.86603, 5.68665, -0.622933, 7.77165, 1.7926, -
 [node name="Item_Tree2" parent="Items/large rock with stairs" instance=ExtResource( 1 )]
 transform = Transform( 10.3382, 5.96046e-08, 10.8684, -0.41475, 14.9891, 0.394517, -10.8605, -0.572416, 10.3307, 1.5742, 11.5268, -40.2457 )
 
-[node name="Item_TallRock" parent="Items/large rock with stairs" instance=ExtResource( 3 )]
-transform = Transform( -19.8199, 1.52555, -2.20059, 1.53487, 19.941, 0, 2.19409, -0.168881, -19.8786, -3.10204, 45.4742, -9.82053 )
-
 [node name="platform with pillar" type="Spatial" parent="Items/large rock with stairs"]
 transform = Transform( 0.996907, 3.7835e-10, -0.0785807, -1.39698e-09, 1, -1.74623e-10, 0.0785809, 4.07454e-10, 0.996908, 1.22877, 2.12425, 14.4072 )
 
@@ -1375,16 +1378,25 @@ transform = Transform( 6.5, 1.11759e-08, 4.76837e-07, -2.23517e-08, 6, 5.96046e-
 transform = Transform( 0.824126, -0.0676757, -0.562346, 0.104187, 0.994011, 0.0330624, 0.556739, -0.0858367, 0.82624, -32.5526, 10.4365, 36.2626 )
 
 [node name="platform_Item_FlatRock_11" parent="Items/Platfrom with stairs/platfrom2" instance=ExtResource( 5 )]
-transform = Transform( 6.5, 3.72529e-09, 4.76837e-07, 0, 6, 2.98023e-08, -1.19209e-07, 1.49012e-08, 8, 6.50001, -7.62939e-06, 8 )
+transform = Transform( 6.50001, -6.89179e-08, 4.76837e-07, 5.21541e-07, 6, 2.98023e-08, 0, -4.47035e-08, 8, 8.34721, -3.37407, 8.03227 )
 
 [node name="platform_Item_FlatRock_10" parent="Items/Platfrom with stairs/platfrom2" instance=ExtResource( 5 )]
-transform = Transform( 6.5, -2.98023e-08, 5.96046e-08, 2.98023e-08, 5.90884, 1.38918, 0, -1.04189, 7.87846, 6.4865, 1.49854, 23.9113 )
+transform = Transform( 6.49851, -0.0622491, -0.15064, 0.0687657, 5.99932, 0.0863644, 0.121655, -0.0659527, 7.99812, 13.8508, -6.47876, 29.1977 )
+
+[node name="platform_Item_FlatRock_12" parent="Items/Platfrom with stairs/platfrom2" instance=ExtResource( 5 )]
+transform = Transform( 6.47247, -0.123911, 0.71695, 0.17108, 5.98618, -0.500295, -0.572781, 0.387786, 7.95209, 11.7508, -7.37363, 55.8386 )
 
 [node name="platform_Item_FlatRock_13" parent="Items/Platfrom with stairs/platfrom2" instance=ExtResource( 5 )]
-transform = Transform( 6, 1.11759e-08, 4.76837e-07, -1.86265e-08, 6, 5.96046e-08, 0, -1.49012e-08, 8, -9.50001, 7.62939e-06, 8 )
+transform = Transform( 5.99996, -0.0138571, -0.0220626, 0.0133551, 5.99729, -0.239681, 0.0169551, 0.179724, 7.99638, -9.05177, 0.191017, 2.31358 )
 
 [node name="platform_Item_FlatRock_14" parent="Items/Platfrom with stairs/platfrom2" instance=ExtResource( 5 )]
-transform = Transform( 6.49523, 0.229261, -0.0233719, -0.248956, 5.95999, -0.870015, -0.00814718, 0.652704, 7.95252, -9.50001, 1.00002, -9 )
+transform = Transform( 6.49523, 0.229261, -0.0233718, -0.248956, 5.95999, -0.870015, -0.00814718, 0.652704, 7.95252, -8.91406, 1.24969, -16.4334 )
+
+[node name="platform_Item_FlatRock_15" parent="Items/Platfrom with stairs/platfrom2" instance=ExtResource( 5 )]
+transform = Transform( 6.45708, 0.296883, 0.82814, -0.274625, 5.97953, -0.567275, -0.693372, 0.396402, 7.93678, -36.3784, 3.29594, -5.89815 )
+
+[node name="platform_Item_FlatRock_16" parent="Items/Platfrom with stairs/platfrom2" instance=ExtResource( 5 )]
+transform = Transform( 4.8817, 0.429168, 5.25107, 0.0137722, 5.9631, -0.885819, -4.29172, 0.507298, 5.97007, -52.2732, 1.692, 13.0866 )
 
 [node name="platfrom3" type="Spatial" parent="Items/Platfrom with stairs"]
 transform = Transform( 0.655389, -0.123466, -0.745131, 0.0909282, 0.992273, -0.0844398, 0.749796, -0.0124121, 0.66155, -78.6892, 8.68144, 83.9163 )
@@ -1398,14 +1410,272 @@ transform = Transform( 6.28522, 1.19361, 1.27577, -1.49712, 5.69882, 1.69393, -0
 [node name="platform_Item_FlatRock_15" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
 transform = Transform( 5.86508, -0.650994, 3.33758, -0.28389, 5.63893, 2.71101, -2.78756, -1.94397, 6.74624, 12.997, 9.68624, 69.6201 )
 
+[node name="platform_Item_FlatRock_22" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.80058, 0.190032, 0.122815, -0.197859, 0.870465, 0.0153276, -0.109219, -0.0471168, 0.838283, 149.908, -0.473961, -77.5884 )
+
+[node name="platform_Item_FlatRock_55" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.822371, -0.024565, 0.131977, 0.00454528, 0.891822, 0.00946261, -0.125263, -0.00957439, 0.836977, 150.439, -0.298477, -74.6528 )
+
+[node name="platform_Item_FlatRock_23" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.485798, 0.204609, 0.0290902, -0.115844, 0.867118, 0.0182485, -0.0240928, -0.0436545, 0.498819, 145.234, -0.104782, -77.6045 )
+
+[node name="platform_Item_FlatRock_24" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.485682, 0.11525, 0.0488112, -0.116233, 0.48607, 0.0254467, -0.0245489, -0.0212898, 0.845209, 167.954, -2.21206, -81.749 )
+
+[node name="platform_Item_FlatRock_25" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.808047, 0.18816, 0.0524845, -0.193382, 0.871356, 0.0214326, -0.0408431, -0.0371002, 0.845472, 168.475, -2.0398, -78.8684 )
+
+[node name="platform_Item_FlatRock_26" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.808047, 0.18816, 0.0524845, -0.193382, 0.871356, 0.0214326, -0.040843, -0.0371002, 0.845472, 168.997, -1.86715, -75.9805 )
+
+[node name="platform_Item_FlatRock_48" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.790307, 0.190931, 0.179371, -0.201122, 0.869783, 0.0100925, -0.164223, -0.0553576, 0.828107, 171.396, -2.08844, -76.4013 )
+
+[node name="platform_Item_FlatRock_32" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.475724, 0.156293, 0.0328533, -0.171672, 0.871906, -0.0557101, -0.028164, 0.044213, 0.548882, 152.122, 0.111649, -75.9228 )
+
+[node name="platform_Item_FlatRock_33" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.79642, 0.235501, 0.0510466, -0.237525, 0.859396, 0.0269516, -0.0361, -0.0449489, 0.845402, 159.754, -1.60263, -82.2906 )
+
+[node name="platform_Item_FlatRock_98" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.79642, 0.235502, 0.0510467, -0.237525, 0.859396, 0.0269516, -0.0361, -0.0449489, 0.845402, 166.009, -2.201, -83.6767 )
+
+[node name="platform_Item_FlatRock_34" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.808048, 0.18816, 0.0524846, -0.193382, 0.871357, 0.0214326, -0.0408429, -0.0371003, 0.845472, 161.144, -1.54883, -80.0786 )
+
+[node name="platform_Item_FlatRock_35" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.9756, 0.209196, 0.0666382, -0.217052, 0.964674, 0.149306, -0.0330499, -0.160127, 0.986543, 157.945, -1.13214, -77.8776 )
+
+[node name="platform_Item_FlatRock_36" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.808048, 0.18816, 0.0524847, -0.193382, 0.871357, 0.0214326, -0.0408429, -0.0371003, 0.845473, 160.965, -1.20246, -75.5983 )
+
+[node name="platform_Item_FlatRock_99" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.79582, 0.237688, 0.0509873, -0.239562, 0.858776, 0.0272103, -0.0358698, -0.0453075, 0.845399, 171.101, -1.62392, -70.4485 )
+
+[node name="platform_Item_FlatRock_27" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.808048, 0.18816, 0.0524848, -0.193382, 0.871357, 0.0214326, -0.0408429, -0.0371003, 0.845473, 165.516, -1.55202, -75.4481 )
+
+[node name="platform_Item_FlatRock_28" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.808048, 0.18816, 0.0524848, -0.193382, 0.871357, 0.0214326, -0.0408429, -0.0371003, 0.845473, 164.914, -1.44249, -78.9387 )
+
+[node name="platform_Item_FlatRock_100" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.808049, 0.18816, 0.0524848, -0.193382, 0.871358, 0.0214326, -0.0408429, -0.0371003, 0.845474, 171.292, -2.54281, -86.9663 )
+
+[node name="platform_Item_FlatRock_29" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.291409, 0.0691501, 0.0172885, -0.0697401, 0.291642, 0.00901302, -0.0147293, -0.0127739, 0.299366, 164.37, -1.93067, -81.7815 )
+
+[node name="platform_Item_FlatRock_51" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.291409, 0.0691501, 0.0172885, -0.0697401, 0.291643, 0.00901303, -0.0147293, -0.0127739, 0.299366, 159.521, -1.88626, -86.3657 )
+
+[node name="platform_Item_FlatRock_52" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.29141, 0.0691501, 0.0172885, -0.0697401, 0.291643, 0.00901303, -0.0147293, -0.0127739, 0.299366, 162.068, -1.0443, -72.2841 )
+
+[node name="platform_Item_FlatRock_42" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.291409, 0.0691501, 0.0172885, -0.0697401, 0.291642, 0.00901302, -0.0147293, -0.0127739, 0.299366, 157.824, -1.32696, -80.6335 )
+
+[node name="platform_Item_FlatRock_43" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.291409, 0.0691501, 0.0172885, -0.0697401, 0.291642, 0.00901303, -0.0147293, -0.0127739, 0.299366, 158.709, -1.03453, -75.7425 )
+
+[node name="platform_Item_FlatRock_49" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.29141, 0.0691501, 0.0172885, -0.0697401, 0.291643, 0.00901303, -0.0147293, -0.0127739, 0.299366, 165.93, -1.42616, -73.3081 )
+
+[node name="platform_Item_FlatRock_50" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.284482, 0.0937667, 0.0166665, -0.0944776, 0.284475, 0.0121797, -0.011997, -0.0167984, 0.299289, 157.621, 2.9744, -81.0064 )
+
+[node name="platform_Item_FlatRock_44" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.291409, 0.0691501, 0.0172885, -0.0697401, 0.291643, 0.00901303, -0.0147293, -0.0127739, 0.299366, 153.006, -0.508568, -74.7424 )
+
+[node name="platform_Item_FlatRock_53" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.29141, 0.0691501, 0.0172885, -0.0697401, 0.291643, 0.00901303, -0.0147293, -0.0127739, 0.299366, 151.352, -1.05531, -83.8863 )
+
+[node name="platform_Item_FlatRock_54" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.291409, 0.0691501, 0.0172885, -0.0697402, 0.291643, 0.00901303, -0.0147292, -0.0127739, 0.299366, 150.358, -0.118813, -72.3148 )
+
+[node name="platform_Item_FlatRock_45" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.29141, 0.0691501, 0.0172885, -0.0697401, 0.291643, 0.00901303, -0.0147293, -0.0127739, 0.299366, 152.101, -0.807655, -79.7445 )
+
+[node name="platform_Item_FlatRock_46" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.29141, 0.0691501, 0.0172885, -0.0697401, 0.291643, 0.00901303, -0.0147292, -0.0127739, 0.299366, 145.338, -0.183876, -78.5583 )
+
+[node name="platform_Item_FlatRock_47" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.291409, 0.0691501, 0.0172885, -0.0697402, 0.291643, 0.00901303, -0.0147292, -0.0127739, 0.299366, 145.921, 0.00875092, -75.3365 )
+
+[node name="platform_Item_FlatRock_30" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.819813, 0.123529, 0.0555425, -0.1359, 0.879378, 0.0718717, -0.0380218, -0.0865054, 0.842491, 161.584, -1.40183, -77.6247 )
+
+[node name="platform_Item_FlatRock_31" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.809653, 0.185192, -0.0241258, -0.187991, 0.872381, 0.0275842, 0.0336092, -0.0264741, 0.84658, 154.618, -1.15671, -81.7637 )
+
+[node name="platform_Item_FlatRock_37" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.807768, 0.183235, -0.0646233, -0.184925, 0.872943, 0.0306274, 0.0729533, -0.020976, 0.844349, 156.007, -0.674988, -73.7804 )
+
+[node name="platform_Item_FlatRock_38" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.971365, 0.2305, 0.0576283, -0.232467, 0.97214, 0.0300434, -0.0490977, -0.0425797, 0.997886, 171.175, -2.33902, -80.0175 )
+
+[node name="platform_Item_FlatRock_39" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.808175, 0.2305, 0.0488111, -0.193412, 0.97214, 0.0254468, -0.0408493, -0.0425798, 0.845209, 147.528, -0.433098, -79.58 )
+
+[node name="platform_Item_FlatRock_56" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.808176, 0.2305, 0.0488111, -0.193413, 0.972141, 0.0254468, -0.0408492, -0.0425798, 0.845209, 147.7, -0.179039, -75.9686 )
+
+[node name="platform_Item_FlatRock_40" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.809868, 0.185825, -0.00969297, -0.189047, 0.872185, 0.0264648, 0.0195854, -0.0284535, 0.846904, 170.556, -2.54366, -83.4399 )
+
+[node name="platform_Item_FlatRock_57" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 1.56358, 0.297487, 0.0994899, -0.268229, 0.860556, 0.0174789, -0.243035, -0.0659623, 0.842375, 146.128, 2.08878, -71.6568 )
+
+[node name="platform_Item_FlatRock_87" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.800581, 0.190032, 0.122816, -0.197859, 0.870466, 0.0153276, -0.109219, -0.0471168, 0.838284, 126.444, 3.50563, -73.5818 )
+
+[node name="platform_Item_FlatRock_102" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.800581, 0.190032, 0.122816, -0.197859, 0.870466, 0.0153276, -0.109219, -0.0471168, 0.838284, 151.58, 1.59447, -72.4985 )
+
+[node name="platform_Item_FlatRock_58" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.822372, -0.0245651, 0.131977, 0.00454524, 0.891824, 0.00946259, -0.125264, -0.00957443, 0.836978, 159.198, 1.06987, -71.4324 )
+
+[node name="platform_Item_FlatRock_90" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.822372, -0.0245651, 0.131977, 0.00454524, 0.891823, 0.00946259, -0.125264, -0.00957443, 0.836978, 127.665, 3.014, -70.5135 )
+
+[node name="platform_Item_FlatRock_59" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.485798, 0.204609, 0.0290902, -0.115844, 0.867121, 0.0182485, -0.0240927, -0.0436546, 0.49882, 116.813, 4.37936, -72.0886 )
+
+[node name="platform_Item_FlatRock_93" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 2.26887, 0.15145, 0.413588, -0.928477, 0.978508, 0.0927652, 0.0940972, -0.0458837, 3.90892, 107.261, 5.91458, -71.0955 )
+
+[node name="platform_Item_FlatRock_94" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 2.15494, 0.238227, 0.352421, -1.14658, 0.933528, 0.470985, 0.179505, -0.244939, 3.18051, 96.1731, 11.3226, -69.4132 )
+
+[node name="platform_Item_FlatRock_95" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 2.04866, 0.234198, 0.319731, -1.0929, 0.879173, 0.34721, 0.119979, -0.18903, 2.99506, 84.5804, 17.9575, -67.3795 )
+
+[node name="platform_Item_FlatRock_96" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 2.3401, 0.490928, 0.15517, -1.3425, 0.700229, 0.320699, -0.0289408, -0.200181, 2.22316, 75.6451, 24.7675, -66.504 )
+
+[node name="platform_Item_FlatRock_88" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.485798, 0.204609, 0.0290902, -0.115844, 0.867119, 0.0182485, -0.0240928, -0.0436546, 0.49882, 124.426, 2.22554, -73.9798 )
+
+[node name="platform_Item_FlatRock_60" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.485682, 0.11525, 0.0488112, -0.116233, 0.48607, 0.0254467, -0.0245489, -0.0212898, 0.84521, 140.499, 0.731277, -76.9586 )
+
+[node name="platform_Item_FlatRock_61" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.819349, 0.19407, 0.155684, -0.189647, 0.87331, 0.0555431, 0.0216295, -0.00442839, 1.41596, 141.02, 0.903503, -74.078 )
+
+[node name="platform_Item_FlatRock_97" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.790308, 0.190931, 0.179371, -0.201122, 0.869784, 0.0100925, -0.164223, -0.0553576, 0.828108, 171.313, -1.42636, -73.1306 )
+
+[node name="platform_Item_FlatRock_64" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.475724, 0.156293, 0.0328534, -0.171672, 0.871907, -0.0557102, -0.0281639, 0.0442131, 0.548882, 124.777, 4.4491, -71.2358 )
+
+[node name="platform_Item_FlatRock_65" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.796421, 0.235502, 0.0510467, -0.237525, 0.859396, 0.0269516, -0.0361, -0.0449489, 0.845402, 133.523, 1.22778, -77.7149 )
+
+[node name="platform_Item_FlatRock_91" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.796421, 0.235502, 0.0510467, -0.237525, 0.859396, 0.0269516, -0.0361, -0.0449489, 0.845403, 127.033, 1.89301, -75.6769 )
+
+[node name="platform_Item_FlatRock_66" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.808048, 0.18816, 0.0524846, -0.193382, 0.871357, 0.0214326, -0.0408429, -0.0371003, 0.845472, 133.69, 1.3945, -75.2882 )
+
+[node name="platform_Item_FlatRock_67" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.975601, 0.209196, 0.0666382, -0.217052, 0.964674, 0.149306, -0.0330499, -0.160127, 0.986543, 130.49, 1.8112, -73.0872 )
+
+[node name="platform_Item_FlatRock_92" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.975601, 0.209196, 0.0666383, -0.217052, 0.964675, 0.149306, -0.0330499, -0.160127, 0.986544, 133.754, 1.54678, -73.1661 )
+
+[node name="platform_Item_FlatRock_68" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.808048, 0.18816, 0.0524847, -0.193382, 0.871357, 0.0214326, -0.0408429, -0.0371003, 0.845473, 133.51, 1.74088, -70.808 )
+
+[node name="platform_Item_FlatRock_69" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 1.93815, 0.343307, -0.0799933, -0.297738, 0.858012, 0.0336792, -0.238932, -0.0643145, 0.869635, 137.81, 1.41453, -70.6136 )
+
+[node name="platform_Item_FlatRock_101" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 1.93815, 0.343307, -0.0799933, -0.297738, 0.858013, 0.0336792, -0.238932, -0.0643146, 0.869635, 165.227, -0.761406, -70.6641 )
+
+[node name="platform_Item_FlatRock_70" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.808049, 0.18816, 0.0524848, -0.193382, 0.871358, 0.0214326, -0.0408429, -0.0371003, 0.845474, 137.46, 1.50088, -74.1483 )
+
+[node name="platform_Item_FlatRock_71" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.291409, 0.0691501, 0.0172885, -0.0697401, 0.291642, 0.00901303, -0.0147293, -0.0127739, 0.299366, 136.916, 1.01265, -76.9912 )
+
+[node name="platform_Item_FlatRock_72" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.29141, 0.0691501, 0.0172885, -0.0697401, 0.291643, 0.00901303, -0.0147292, -0.0127739, 0.299366, 132.066, 1.05709, -81.5753 )
+
+[node name="platform_Item_FlatRock_73" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.291409, 0.0691501, 0.0172885, -0.0697402, 0.291643, 0.00901303, -0.0147292, -0.0127739, 0.299366, 134.613, 1.89906, -67.4937 )
+
+[node name="platform_Item_FlatRock_74" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.291409, 0.0691501, 0.0172885, -0.0697401, 0.291643, 0.00901303, -0.0147293, -0.0127739, 0.299366, 130.37, 1.61637, -75.8431 )
+
+[node name="platform_Item_FlatRock_75" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.29141, 0.0691501, 0.0172885, -0.0697401, 0.291643, 0.00901303, -0.0147293, -0.0127739, 0.299366, 131.254, 1.90881, -70.9522 )
+
+[node name="platform_Item_FlatRock_76" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.291409, 0.0691501, 0.0172885, -0.0697402, 0.291643, 0.00901303, -0.0147292, -0.0127739, 0.299366, 138.475, 1.51718, -68.5177 )
+
+[node name="platform_Item_FlatRock_77" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.284482, 0.0937667, 0.0166665, -0.0944776, 0.284475, 0.0121797, -0.011997, -0.0167984, 0.299289, 130.166, 5.91774, -76.216 )
+
+[node name="platform_Item_FlatRock_78" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.291409, 0.0691501, 0.0172885, -0.0697402, 0.291643, 0.00901303, -0.0147292, -0.012774, 0.299366, 125.956, 3.92587, -68.4327 )
+
+[node name="platform_Item_FlatRock_89" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.286281, 0.0881004, 0.0167869, -0.0887869, 0.286333, 0.0114394, -0.0126626, -0.0158845, 0.299312, 128.375, 2.0724, -71.8232 )
+
+[node name="platform_Item_FlatRock_79" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.291409, 0.0691501, 0.0172885, -0.0697402, 0.291643, 0.00901303, -0.0147292, -0.012774, 0.299366, 124.122, 3.31969, -78.5708 )
+
+[node name="platform_Item_FlatRock_80" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.291409, 0.0691501, 0.0172885, -0.0697402, 0.291643, 0.00901303, -0.0147292, -0.012774, 0.299366, 122.42, 2.66491, -70.194 )
+
+[node name="platform_Item_FlatRock_81" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.291409, 0.0691501, 0.0172885, -0.0697402, 0.291643, 0.00901303, -0.0147292, -0.012774, 0.299366, 117.883, 2.75946, -73.7679 )
+
+[node name="platform_Item_FlatRock_82" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.291409, 0.0691501, 0.0172885, -0.0697402, 0.291643, 0.00901303, -0.0147292, -0.012774, 0.299366, 118.466, 2.95207, -70.5462 )
+
+[node name="platform_Item_FlatRock_83" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.982826, 0.236321, 0.160331, -0.228679, 0.974065, 0.0639899, 0.0142563, -0.0104057, 1.56563, 143.72, 0.604279, -75.2271 )
+
+[node name="platform_Item_FlatRock_84" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 1.27166, 0.315816, 0.0523559, -0.233408, 0.965954, 0.050216, -0.0850224, -0.0348898, 1.18316, 120.436, 3.98765, -73.4995 )
+
+[node name="platform_Item_FlatRock_103" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 1.27166, 0.315816, 0.0523559, -0.233408, 0.965954, 0.050216, -0.0850224, -0.0348898, 1.18316, 153.636, 1.61053, -70.0832 )
+
+[node name="platform_Item_FlatRock_85" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.808176, 0.230501, 0.0488111, -0.193413, 0.972142, 0.0254468, -0.0408492, -0.0425798, 0.845209, 120.356, 4.15836, -71.2816 )
+
+[node name="platform_Item_FlatRock_86" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.809868, 0.185825, -0.00969292, -0.189047, 0.872185, 0.0264648, 0.0195854, -0.0284535, 0.846904, 143.101, 0.399681, -78.6495 )
+
+[node name="platform_Item_FlatRock_41" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 0.808049, 0.18816, 0.0524848, -0.193382, 0.871358, 0.0214326, -0.0408428, -0.0371003, 0.845475, 153.888, -0.804077, -77.7868 )
+
+[node name="platform_Item_FlatRock_17" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 5.73198, -0.826855, 4.36712, -0.588883, 4.31333, 2.95349, -3.85215, -1.7272, 5.49838, 19.1359, 20.3152, 99.0336 )
+
+[node name="platform_Item_FlatRock_18" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 5.30152, 0.12345, 3.80439, -0.398147, 4.5967, 0.151831, -3.18003, -0.26858, 5.37662, -9.50644, 29.0783, 91.1608 )
+
+[node name="platform_Item_FlatRock_19" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 5.2843, -0.426821, 3.80435, 0.303776, 4.5833, 0.490568, -3.21889, -0.168237, 5.35638, -18.6216, 37.439, 74.1498 )
+
+[node name="platform_Item_FlatRock_20" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 5.68612, 1.02612, 2.54375, -1.58048, 4.46494, 0.00427499, -1.88349, -0.478127, 6.07733, -22.5676, 39.9368, 52.7803 )
+
+[node name="platform_Item_FlatRock_21" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 7.03443, 1.03545, 2.87721, -1.65279, 3.79797, 0.638473, -1.97613, -0.959998, 5.77056, -18.7937, 37.8249, 28.3221 )
+
 [node name="platform_Item_FlatRock_12" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
 transform = Transform( 5.96986, -1.62509, -2.30649, 2.00619, 5.67914, 0.752163, 1.60827, -1.05203, 7.62333, -23.2808, -0.272842, 50.1835 )
 
 [node name="platform_Item_FlatRock_13" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
-transform = Transform( 5.94924, 0.0603335, -1.03543, 0.0186506, 5.96925, 0.808869, 0.778688, -0.603932, 7.89139, -10.7322, 0.655342, 8.64338 )
+transform = Transform( 5.94924, 0.0603334, -1.03543, 0.0186508, 5.96925, 0.80887, 0.778689, -0.603933, 7.8914, -10.0537, 0.879616, 12.3943 )
+
+[node name="platform_Item_FlatRock_16" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
+transform = Transform( 5.94924, 0.0603333, -1.03543, 0.0186511, 5.96925, 0.80887, 0.778691, -0.603933, 7.8914, -51.1543, 2.16071, -14.2531 )
 
 [node name="platform_Item_FlatRock_14" parent="Items/Platfrom with stairs/platfrom3" instance=ExtResource( 5 )]
-transform = Transform( 6.48702, -0.00125021, -0.505342, 0.0010061, 6, -0.00682474, 0.410591, 0.00504969, 7.98403, -9.25929, -1.06789, -7.95968 )
+transform = Transform( 6.48702, -0.00125013, -0.505342, 0.00100618, 6, -0.0068247, 0.410592, 0.00504977, 7.98404, -29.8729, 1.24075, 1.15307 )
 
 [node name="Item_FlatRock431" parent="Items/Platfrom with stairs" instance=ExtResource( 5 )]
 transform = Transform( 8.87867, -0.498146, 3.51039, -0.4356, 3.3269, 3.03652, -4.58033, -1.28202, 6.51588, -13.5162, -44.4431, -128.938 )
@@ -1486,10 +1756,10 @@ transform = Transform( 43.5306, 24.5946, 0.441963, 0.443968, 0.112668, -49.9979,
 transform = Transform( 29.7636, 40.1746, 0.354825, 0.443968, 0.112668, -49.9979, -40.1737, 29.7656, -0.289656, -190.852, 38.7443, -135.86 )
 
 [node name="borer_wall_Item_FlatRock8" parent="Items/border_wall" instance=ExtResource( 5 )]
-transform = Transform( 7.01586, 49.156, -5.87063, 7.50397, -6.91673, -48.9474, -48.9333, 5.9871, -8.34784, -229.554, 24.8257, -46.602 )
+transform = Transform( 7.01586, 49.156, -5.87063, 7.50397, -6.91673, -48.9474, -48.9333, 5.9871, -8.34784, -233.856, 24.6857, -49.7895 )
 
 [node name="borer_wall_Item_FlatRock102" parent="Items/border_wall" instance=ExtResource( 5 )]
-transform = Transform( 0.465785, 49.9977, 0.116804, 0.443968, 0.112668, -49.9979, -49.9958, 0.466803, -0.442898, -234.194, 5.18218, 2.02249 )
+transform = Transform( 0.465785, 49.9977, 0.116804, 0.443968, 0.112668, -49.9979, -49.9958, 0.466803, -0.442898, -238.55, 2.13223, -1.61984 )
 
 [node name="borer_wall_Item_FlatRock103" parent="Items/border_wall" instance=ExtResource( 5 )]
 transform = Transform( -19.7863, 45.865, -2.21322, 5.81596, 0.112667, -49.6605, -45.5485, -19.9094, -5.37958, -213.106, -10.4477, 97.0595 )
