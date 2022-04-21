@@ -7,7 +7,8 @@ export var jump_force = 36
 export var dash_force = 128
 export var grounded_duration = 0.5
 export var dash_duration = 0.25
-export var dash_cooldown = 2.0
+#export var dash_cooldown = 2.0
+var can_dash = true
 var is_grounded = false
 var is_jumping = false
 
@@ -24,7 +25,7 @@ var dash_time = 0.0
 var minLookAngle = -90
 var maxLookAngle = 90
 var lookSensitivity = 50
-var pad_lookSensitivity = 135.0
+var pad_lookSensitivity = 175.0
 
 #Vectors
 var vel = Vector3()
@@ -56,6 +57,7 @@ func _physics_process(delta):
 	dash_time += delta
 	if is_on_floor():
 		is_jumping = false
+		can_dash = true
 		grounded_time = grounded_duration
 	else:
 		grounded_time -= delta
@@ -105,8 +107,10 @@ func _physics_process(delta):
 	#		audioPlayerFootsteps.pitch_scale = audioWalkPitch
 	#		moveSpeed = walk_speed
 
-		if not is_dashing and (dash_time > dash_cooldown) and (Input.is_action_pressed("run") or Input.is_action_pressed("gamepad_sprint")):
+		if not is_dashing and can_dash and is_jumping and (Input.is_action_pressed("run") or Input.is_action_pressed("gamepad_sprint")):
+#			(dash_time > dash_cooldown)
 			is_dashing = true
+			can_dash = false
 			dash_time = 0.0
 			dash_vel = -forward
 			vel = dash_force * dash_vel
