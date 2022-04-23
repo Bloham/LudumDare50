@@ -8,9 +8,7 @@ export var dash_force = 128
 export var grounded_duration = 0.5
 export var dash_duration = 0.25
 #export var dash_cooldown = 2.0
-var can_dash = true
-var is_grounded = false
-var is_jumping = false
+export var dash_feedback_strength = 10.0
 
 #Footstep Sound
 export var audioWalkPitch = 0.66
@@ -20,6 +18,9 @@ var gravity = 40
 var moveSpeed = 18
 var grounded_time = 0.0
 var dash_time = 0.0
+var can_dash = true
+var is_grounded = false
+var is_jumping = false
 
 #Camera
 var minLookAngle = -90
@@ -75,7 +76,7 @@ func _physics_process(delta):
 			dash_time = 0.0
 			camera.fov = camera_fov_base
 		else:
-			var extra_fov = -9.99 * sin(PI * dash_time/dash_duration)
+			var extra_fov =  dash_feedback_strength * -1.0 * sin(PI * dash_time/dash_duration)
 			camera.fov = camera_fov_base + extra_fov
 			print ("fov: ",camera.fov)
 	else:
