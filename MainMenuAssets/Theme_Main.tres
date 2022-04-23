@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=8 format=2]
+[gd_resource type="Theme" load_steps=9 format=2]
 
 [ext_resource path="res://MainMenuAssets/MorningRainbow.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://MainMenuAssets/ButtonStyle_Main.tres" type="StyleBox" id=2]
@@ -10,6 +10,22 @@ outline_color = Color( 0, 0, 0, 1 )
 use_mipmaps = true
 use_filter = true
 font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.521569, 0.458824, 0.521569, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0.615686, 0.615686, 0.615686, 1 )
+border_blend = true
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color( 0.0737305, 0.0737305, 0.065975, 1 )
+shadow_size = 4
+anti_aliasing_size = 0.01
 
 [sub_resource type="StyleBoxFlat" id=2]
 bg_color = Color( 0.8, 0.272, 0.8, 1 )
@@ -68,6 +84,7 @@ Button/colors/font_color_focus = Color( 1, 1, 1, 1 )
 Button/colors/font_color_hover = Color( 1, 1, 1, 1 )
 Button/colors/font_color_pressed = Color( 0.605, 0.33, 0.66, 1 )
 Button/fonts/font = SubResource( 5 )
+Button/styles/disabled = SubResource( 6 )
 Button/styles/hover = SubResource( 2 )
 Button/styles/normal = ExtResource( 2 )
 Button/styles/pressed = SubResource( 1 )
