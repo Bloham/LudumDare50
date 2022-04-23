@@ -33,8 +33,3 @@ func _on_MainMenu_Button_pressed():
 	
 	get_tree().paused = false
 	get_tree().change_scene("res://Spielwelt.tscn")
-
-
-func _on_QuitButton_pressed():
-	
-	get_tree().quit()

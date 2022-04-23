@@ -148,4 +148,4 @@ text = "Quit Game"
 [connection signal="pressed" from="MediumAnker/VBoxContainer/StartButtons/StartButton_Level1" to="." method="_on_StartButton_pressed" binds= [ 0 ]]
 [connection signal="pressed" from="MediumAnker/VBoxContainer/StartButtons/StartButton_Level2" to="." method="_on_StartButton_pressed" binds= [ 1 ]]
 [connection signal="pressed" from="MediumAnker/VBoxContainer/StartButton_Level3" to="." method="_on_StartButton_pressed" binds= [ 2 ]]
-[connection signal="pressed" from="MediumAnker/VBoxContainer/QuitButton" to="." method="_on_QuitButton_pressed"]
+[connection signal="pressed" from="MediumAnker/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]

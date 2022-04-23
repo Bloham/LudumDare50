@@ -40,6 +40,7 @@ onready var camera = $Camera
 onready var audioPlayerFootsteps = $Footsteps
 onready var audioPlayerJump = $Jump
 onready var audioPlayerDash = $Dash
+onready var camera_fov_base = camera.fov
 
 var uiNode
 
@@ -72,6 +73,11 @@ func _physics_process(delta):
 		if dash_time > dash_duration:
 			is_dashing = false
 			dash_time = 0.0
+			camera.fov = camera_fov_base
+		else:
+			var extra_fov = -9.99 * sin(PI * dash_time/dash_duration)
+			camera.fov = camera_fov_base + extra_fov
+			print ("fov: ",camera.fov)
 	else:
 		
 		#reset x and z velocity

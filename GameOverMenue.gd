@@ -44,6 +44,6 @@ func _on_StartButton_pressed():
 	get_tree().change_scene("res://Spielwelt.tscn")
 
 
-func _on_QuitButton_pressed():
+func _on_quit_button_pressed():
 	
 	get_tree().quit()
