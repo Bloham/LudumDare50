@@ -69,5 +69,6 @@ func _deactivate():
 	animation.play("destroy")
 	
 	spielwelt.score_wecker+=1
+	spielwelt.get_node("Assets/Spawner").current_wecker -= 1
 	yield(get_tree().create_timer(2.0), "timeout")
 	queue_free()

@@ -10,6 +10,9 @@ var spawn_location_count = 0
 export var difficultyLevel = 1.0
 export var wecker_radius = 45
 
+var max_wecker = 6
+var current_wecker = 0
+
 
 func onGameStart(_spielwelt):
 	
@@ -37,7 +40,8 @@ func clear_spawnIndex(cleared_index):
 
 func _on_SpawnTimer_timeout():
 	
-	try_Spawn()
+	if current_wecker < max_wecker:
+		try_Spawn()
 
 
 func try_Spawn():
@@ -54,6 +58,8 @@ func try_Spawn():
 
 func Spawn(spawn_location_index):
 
+	current_wecker += 1
+	
 	SpawnLocationIndices[spawn_location_index] = true
 	
 	var weckerScene = preload("res://Wecker.tscn")
