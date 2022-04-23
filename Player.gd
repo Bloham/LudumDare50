@@ -11,8 +11,8 @@ export var dash_duration = 0.25
 export var dash_feedback_strength = 10.0
 
 #Footstep Sound
-export var audioWalkPitch = 0.66
-export var audioRunPitch = 1
+#export var audioWalkPitch = 0.66
+#export var audioRunPitch = 1
 
 var gravity = 40
 var moveSpeed = 18
@@ -180,12 +180,3 @@ func _input(event):
 	
 	if event is InputEventMouseMotion:
 		mouseDelta = event.relative
-	
-	#quit with ESC
-#	if event is InputEventKey:
-#		if event.pressed and event.scancode == KEY_ESCAPE:
-#			uiNode._activatePause()
-#			var pauseMenueResource = load("res://PauseMenue.tscn")
-#			var pauseMenue = pauseMenueResource.instance()
-#			uiNode.add_child(pauseMenue)
-	

@@ -16,18 +16,18 @@ func _ready():
 
 func albtraum():
 	
-	if(!is_triggered):
-		is_triggered = true
-		spielwelt.get_node("Assets/Items").coruptionRise()
-		get_node("MeshHappy").is_fading = true
-		get_node("MeshEvil").is_fading = true
+	is_triggered = true
+	spielwelt.get_node("Assets/Items").coruptionRise()
+	get_node("MeshHappy").is_fading = true
+	get_node("MeshEvil").is_fading = true
 
 
 func _process(delta):
 	
-	var wm = spielwelt.get_node("AllWecker")
-	for w in wm.get_children():
-		var dist = global_transform.origin.distance_to(w.global_transform.origin)
-		if(w.currentRadius > dist):
-			albtraum()
+	if(!is_triggered):
+		var wm = spielwelt.get_node("AllWecker")
+		for w in wm.get_children():
+			var dist = global_transform.origin.distance_to(w.global_transform.origin)
+			if(w.currentRadius > dist):
+				albtraum()
 
