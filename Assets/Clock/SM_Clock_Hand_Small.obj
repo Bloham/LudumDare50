@@ -1,5 +1,6 @@
 # Blender v3.0.0 OBJ File: 'Clock.blend'
 # www.blender.org
+mtllib Clock_Hand_Small.mtl
 o Clock_Hand_Small_clock_low_Mesh.003
 v 1.023339 -0.146393 0.093861
 v 1.074234 -0.146080 0.093861
@@ -81,6 +82,7 @@ vn 0.0051 -0.3602 -0.9328
 vn -0.0043 -0.3603 0.9328
 vn -0.0475 0.6988 0.7137
 vn -0.3471 0.6621 -0.6642
+usemtl Clock_Letters
 s 1
 f 1/1/1 2/2/1 3/3/2 4/4/2
 f 5/5/3 6/6/3 7/7/3 8/8/3
