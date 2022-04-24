@@ -1,10 +1,11 @@
 extends KinematicBody
 
 #Physics
-export var walk_speed = 30
+export var walk_speed = 25
 #export var runSpeed = 30
 export var jump_force = 36
 export var dash_force = 128
+export var corruption_Bonus = 6
 export var grounded_duration = 0.5
 export var dash_duration = 0.25
 #export var dash_cooldown = 2.0
@@ -36,6 +37,7 @@ var padDelta = Vector2()
 
 var is_dashing = false
 
+
 #Conponents
 onready var camera = $Camera
 onready var audioPlayerFootsteps = $Footsteps
@@ -44,17 +46,22 @@ onready var audioPlayerDash = $Dash
 onready var camera_fov_base = camera.fov
 
 var uiNode
+var corruption_Scalar
+
 
 
 func _ready():
 	
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	uiNode = get_tree().get_root().get_node("Spielwelt/Other/UI/PauseMenue")
+	corruption_Scalar = get_tree().get_root().get_node("Spielwelt").get("corruption_scalar")
 
 
 func _physics_process(delta):
-		
+	
+	var coruption_Movement_Bonus = 1 + (corruption_Bonus * corruption_Scalar)
 	var input = Vector2()
+	print(grounded_time)
 	
 	dash_time += delta
 	if is_on_floor():
@@ -66,9 +73,9 @@ func _physics_process(delta):
 	is_grounded = grounded_time > 0
 	
 	if is_dashing:
-		vel.x = dash_force * dash_vel.x
-		vel.y = dash_force * dash_vel.y
-		vel.z = dash_force * dash_vel.z
+		vel.x = dash_force * coruption_Movement_Bonus * dash_vel.x
+		vel.y = dash_force * coruption_Movement_Bonus * dash_vel.y
+		vel.z = dash_force * coruption_Movement_Bonus * dash_vel.z
 		if audioPlayerDash.playing == false:
 			audioPlayerDash.play()
 		if dash_time > dash_duration:
@@ -114,16 +121,16 @@ func _physics_process(delta):
 	#		audioPlayerFootsteps.pitch_scale = audioWalkPitch
 	#		moveSpeed = walk_speed
 
-		if not is_dashing and can_dash and is_jumping and (Input.is_action_pressed("run") or Input.is_action_pressed("gamepad_sprint")):
+		if not is_dashing and can_dash and grounded_time < 0.45 and (Input.is_action_just_pressed("run") or Input.is_action_just_pressed("gamepad_sprint")):
 #			(dash_time > dash_cooldown)
 			is_dashing = true
 			can_dash = false
 			dash_time = 0.0
 			dash_vel = -forward
-			vel = dash_force * dash_vel
+			vel = dash_force * coruption_Movement_Bonus * dash_vel
 		else:
 			#set Velocity
-			moveSpeed = walk_speed
+			moveSpeed = walk_speed * coruption_Movement_Bonus
 			vel.x = relativeDir.x * moveSpeed
 			vel.z = relativeDir.z * moveSpeed
 			
@@ -134,7 +141,7 @@ func _physics_process(delta):
 		if is_grounded and not is_jumping:
 			if Input.is_action_pressed("ui_accept") or Input.is_action_pressed("gamepad_jump"):
 				is_jumping = true
-				vel.y = jump_force
+				vel.y = jump_force * coruption_Movement_Bonus
 				audioPlayerJump.play()
 	
 	vel = move_and_slide(vel, Vector3.UP)
