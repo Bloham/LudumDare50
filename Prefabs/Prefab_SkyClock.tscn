@@ -40,3 +40,10 @@ material/0 = ExtResource( 2 )
 [node name="Mesh_SkyClock_Mark" type="MeshInstance" parent="."]
 mesh = ExtResource( 7 )
 material/0 = ExtResource( 2 )
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
