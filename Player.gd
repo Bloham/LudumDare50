@@ -1,15 +1,15 @@
 extends KinematicBody
 
 #Physics
-export var walk_speed = 25
+export var walk_speed = 28
 #export var runSpeed = 30
-export var jump_force = 36
-export var dash_force = 128
+export var jump_force = 37.5
+export var dash_force = 144
 export var corruption_Bonus = 6
 export var grounded_duration = 0.5
 export var dash_duration = 0.25
 #export var dash_cooldown = 2.0
-export var dash_feedback_strength = 15.0
+export var dash_feedback_strength = 14.2
 
 #Footstep Sound
 #export var audioWalkPitch = 0.66
