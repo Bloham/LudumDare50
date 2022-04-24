@@ -39,6 +39,7 @@ func coruptionRise():
 		endAnimation.get_node("Player")._playAnimation()
 		spielwelt.get_node("Assets").get_node("SkyClock").gameOver()
 		yield(t, "timeout")
+		endAnimation.get_node("Player").get_node("Vignette").visible = false
 		spielwelt.gameover()
 		
 
