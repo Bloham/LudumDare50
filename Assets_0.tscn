@@ -100,6 +100,18 @@ transform = Transform( 0.731199, 0, 0.682164, 0, 1, 0, -0.682164, 0, 0.731199, -
 [node name="SpawnLocation26" parent="Spawner/SpawnLocations" instance=ExtResource( 7 )]
 transform = Transform( 0.731199, 0, 0.682164, 0, 1, 0, -0.682164, 0, 0.731199, -212.867, 41.6289, -56.0335 )
 
+[node name="SpawnLocation25" parent="Spawner/SpawnLocations" instance=ExtResource( 7 )]
+transform = Transform( 0.976825, 0.160985, 0.141055, -0.147348, 0.983773, -0.102367, -0.155246, 0.0792102, 0.984695, 415.437, -1.67002, -7.5458 )
+
+[node name="SpawnLocation29" parent="Spawner/SpawnLocations" instance=ExtResource( 7 )]
+transform = Transform( 0.937105, -0.333561, 0.102812, 0.321973, 0.939811, 0.114404, -0.134784, -0.0741064, 0.9881, 104.744, -5.7275, 148.044 )
+
+[node name="SpawnLocation30" parent="Spawner/SpawnLocations" instance=ExtResource( 7 )]
+transform = Transform( 0.467878, 0.0340535, -0.883136, 0.0702986, 0.994657, 0.0755973, 0.880992, -0.0974536, 0.462985, -53.147, 79.5543, 101.269 )
+
+[node name="SpawnLocation31" parent="Spawner/SpawnLocations" instance=ExtResource( 7 )]
+transform = Transform( 0.466787, -0.041359, -0.883402, 0.102412, 0.994713, 0.00754402, 0.878419, -0.0939925, 0.468556, 177.378, 43.8177, -7.50306 )
+
 [node name="Player_Spawn" type="Spatial" parent="."]
 transform = Transform( 0.641008, 0.383767, 0.664704, 0, 0.866025, -0.5, -0.767534, 0.320504, 0.555129, 24.355, -2, 124.535 )
 
