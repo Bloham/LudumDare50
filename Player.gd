@@ -8,7 +8,7 @@ export var dash_force = 128
 export var grounded_duration = 0.5
 export var dash_duration = 0.25
 #export var dash_cooldown = 2.0
-export var dash_feedback_strength = 10.0
+export var dash_feedback_strength = 15.0
 
 #Footstep Sound
 #export var audioWalkPitch = 0.66
