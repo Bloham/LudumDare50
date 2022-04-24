@@ -156,6 +156,8 @@ func _physics_process(delta):
 		
 	if Input.is_action_pressed("ui_cancel"):
 		uiNode._activatePause()
+		var vignette = get_tree().get_root().get_node("Spielwelt").get_node("Other").get_node("UI").get_node("Vignette")
+		vignette.visible = false
 
 
 func _playFootsteps():

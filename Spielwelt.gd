@@ -143,7 +143,8 @@ func _change_environment():
 
 
 func gameover():
-	
+	var vignette = get_tree().get_root().get_node("Spielwelt").get_node("Other").get_node("UI").get_node("Vignette")
+	vignette.visible = false
 	is_game_started = false
 #	print("scores: ",score_wecker,", ",score_time)
 	get_tree().get_root().get_node("Spielwelt/Other/UI/GameOverMenue")._gameOver(score_wecker, round(score_time))
