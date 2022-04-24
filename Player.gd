@@ -186,3 +186,6 @@ func _input(event):
 	
 	if event is InputEventMouseMotion:
 		mouseDelta = event.relative
+
+func _playAnimation():
+	$AnimationPlayer.play("EyesCloseEnd")

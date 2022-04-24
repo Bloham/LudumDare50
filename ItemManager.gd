@@ -35,9 +35,12 @@ func coruptionRise():
 		t.set_one_shot(true)
 		self.add_child(t)
 		t.start()
+		var endAnimation = get_tree().get_root().get_node("Spielwelt")
+		endAnimation.get_node("Player")._playAnimation()
 		spielwelt.get_node("Assets").get_node("SkyClock").gameOver()
 		yield(t, "timeout")
 		spielwelt.gameover()
+		
 
 
 func _process(delta):
