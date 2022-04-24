@@ -158,6 +158,9 @@ func _physics_process(delta):
 		uiNode._activatePause()
 		var vignette = get_tree().get_root().get_node("Spielwelt").get_node("Other").get_node("UI").get_node("Vignette")
 		vignette.visible = false
+	
+	if Input.is_key_pressed(KEY_G):
+		_playAnimation()
 
 
 func _playFootsteps():
@@ -190,4 +193,11 @@ func _input(event):
 		mouseDelta = event.relative
 
 func _playAnimation():
-	$AnimationPlayer.play("EyesCloseEnd")
+	$Vignette.visible = true
+	var tween = get_node("Tween")
+	tween.interpolate_property($Vignette/VignetteDOWN, "rect_position",Vector2(0, 1440), Vector2(0, 0), 15,Tween.TRANS_BOUNCE, Tween.EASE_IN_OUT)
+	tween.start()
+	tween.interpolate_property($Vignette/VignetteUP, "rect_position",Vector2(0, -1440), Vector2(0 , 0), 15,Tween.TRANS_BOUNCE, Tween.EASE_IN_OUT)
+	tween.start()
+	#$AnimationPlayer.play("EyesCloseEnd")
+

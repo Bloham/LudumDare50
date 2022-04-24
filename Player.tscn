@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Audio/SFX/sfx_footsteps_walk.wav" type="AudioStream" id=1]
 [ext_resource path="res://Player.gd" type="Script" id=2]
 [ext_resource path="res://Audio/SFX/sfx_jump.wav" type="AudioStream" id=3]
 [ext_resource path="res://Audio/SFX/sfx_dash6.wav" type="AudioStream" id=4]
 [ext_resource path="res://Textures/Vignette.png" type="Texture" id=5]
+[ext_resource path="res://Textures/VignetteUnten.png" type="Texture" id=6]
 
 [sub_resource type="CapsuleShape" id=1]
 height = 3.0
@@ -22,7 +23,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 2, 2.3, 7, 7.3, 14.9, 15 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 0, -720 ), Vector2( 0, -420 ), Vector2( 0, -720 ), Vector2( 0, -320 ), Vector2( 0, -720 ), Vector2( 0, 0 ), Vector2( 0, 720 ) ]
+"values": [ Vector2( 0, -720 ), Vector2( 0, -420 ), Vector2( 0, -720 ), Vector2( 0, -320 ), Vector2( 0, -620 ), Vector2( 0, 0 ), Vector2( 0, -720 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("Vignette/VignetteDOWN:rect_position")
@@ -34,7 +35,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 2, 2.3, 7, 7.3, 14.9, 15 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 1280, 1440 ), Vector2( 1280, 1140 ), Vector2( 1280, 1440 ), Vector2( 1280, 1000 ), Vector2( 1280, 1440 ), Vector2( 1280, 740 ), Vector2( 1280, 0 ) ]
+"values": [ Vector2( 0, 720 ), Vector2( 0, 420 ), Vector2( 0, 720 ), Vector2( 0, 320 ), Vector2( 0, 620 ), Vector2( 0, 0 ), Vector2( 0, 720 ) ]
 }
 
 [sub_resource type="Animation" id=3]
@@ -122,27 +123,33 @@ anims/EyesCloseEnd = SubResource( 2 )
 anims/RESET = SubResource( 3 )
 
 [node name="Vignette" type="Control" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 0
 mouse_filter = 2
 
 [node name="VignetteUP" type="TextureRect" parent="Vignette"]
 anchor_right = 1.0
+anchor_bottom = 1.0
 margin_top = -720.0
-margin_right = 14080.0
+margin_right = 1280.0
 mouse_filter = 2
 texture = ExtResource( 5 )
-stretch_mode = 6
+expand = true
+stretch_mode = 5
 
 [node name="VignetteDOWN" type="TextureRect" parent="Vignette"]
-anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 1280.0
-margin_top = 720.0
-margin_right = 15360.0
-margin_bottom = 1440.0
-rect_rotation = 180.0
+margin_top = 1440.0
+margin_right = 2560.0
+margin_bottom = 2160.0
 mouse_filter = 2
-texture = ExtResource( 5 )
-stretch_mode = 6
+texture = ExtResource( 6 )
+expand = true
+stretch_mode = 5
+
+[node name="Tween" type="Tween" parent="."]
