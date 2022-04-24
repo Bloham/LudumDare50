@@ -5,6 +5,7 @@ export var spawn_index = -1
 
 var spielwelt
 var radiusIncrease = 1.0
+var radiusStart_corruptionFactor = 15.0
 var radiusIncrease_corruptionFactor = 2.0
 var radius_deactivation = 9
 var is_deactivated = false;
@@ -38,6 +39,8 @@ func _wecker_stellen(audio):
 	audio.set_attenuation_model(audio_attenuation_model)
 	audio.set_attenuation_filter_db(audio_attenuation_filter_db)
 	audio.unit_size = audio_radius
+	
+	currentRadius += spielwelt.corruption_scalar * 25.0
 
 
 func set_spawner(spawner_set):
@@ -53,7 +56,7 @@ func _get_shaderMaterial():
 func _process(delta):
 	
 	if !is_deactivated:
-		currentRadius += delta*(radiusIncrease + radiusIncrease_corruptionFactor * spielwelt.corruption_scalar)
+		currentRadius += delta * (radiusIncrease + radiusIncrease_corruptionFactor * spielwelt.corruption_scalar)
 		var distance_toPlayer = translation.distance_to(spielwelt.player_instance.global_transform.origin)
 		if radius_deactivation > distance_toPlayer:
 			_deactivate()

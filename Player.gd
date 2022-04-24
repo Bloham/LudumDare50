@@ -61,7 +61,7 @@ func _physics_process(delta):
 	
 	var coruption_Movement_Bonus = 1 + (corruption_Bonus * corruption_Scalar)
 	var input = Vector2()
-	print(grounded_time)
+#	print(grounded_time)
 	
 	dash_time += delta
 	if is_on_floor():
@@ -85,7 +85,6 @@ func _physics_process(delta):
 		else:
 			var extra_fov =  dash_feedback_strength * -1.0 * sin(PI * dash_time/dash_duration)
 			camera.fov = camera_fov_base + extra_fov
-			print ("fov: ",camera.fov)
 	else:
 		
 		#reset x and z velocity

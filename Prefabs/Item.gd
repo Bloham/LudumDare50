@@ -1,13 +1,16 @@
 extends Spatial
 
-var spielwelt
 var is_triggered = false
 var searchTimer = Timer
-var wm = []
 var searchDelay
 
 export var searchDelayMin = 3
 export var searchDelayMax = 6
+
+onready var spielwelt = get_tree().get_root().get_node("Spielwelt")
+onready var all_wecker = spielwelt.get_node("AllWecker")
+
+
 
 func _init():
 	
@@ -16,14 +19,13 @@ func _init():
 	
 func _ready():
 	
-	spielwelt = get_tree().get_root().get_node("Spielwelt")
 	searchTimer = Timer.new()
 	searchDelay = rand_range(searchDelayMin, searchDelayMax)
 	searchTimer.set_wait_time(searchDelay)
-	searchTimer.connect("timeout", self, "lookForNewWecker")
+#	searchTimer.connect("timeout", self, "lookForNewWecker")
 	add_child(searchTimer)
 	searchTimer.start()
-	lookForNewWecker()
+#	lookForNewWecker()
 
 
 func albtraum():
@@ -36,11 +38,11 @@ func albtraum():
 
 func _physics_process(delta):
 	if(!is_triggered):
-		for w in wm.get_children():
+		for w in all_wecker.get_children():
 			var dist = global_transform.origin.distance_to(w.global_transform.origin)
 			if(w.currentRadius > dist):
 				albtraum()
 
-func lookForNewWecker():
-	wm = spielwelt.get_node("AllWecker")
+#func lookForNewWecker():
+#	wm = spielwelt.get_node("AllWecker")
 
