@@ -4,9 +4,10 @@ var spielwelt
 var is_triggered = false
 var searchTimer = Timer
 var wm = []
+var searchDelay
 
-export var searchDelay = 4
-
+export var searchDelayMin = 3
+export var searchDelayMax = 6
 
 func _init():
 	
@@ -17,6 +18,7 @@ func _ready():
 	
 	spielwelt = get_tree().get_root().get_node("Spielwelt")
 	searchTimer = Timer.new()
+	searchDelay = rand_range(searchDelayMin, searchDelayMax)
 	searchTimer.set_wait_time(searchDelay)
 	searchTimer.connect("timeout", self, "lookForNewWecker")
 	add_child(searchTimer)

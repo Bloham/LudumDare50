@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=9 format=2]
+[gd_resource type="Theme" load_steps=10 format=2]
 
 [ext_resource path="res://MainMenuAssets/MorningRainbow.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://MainMenuAssets/ButtonStyle_Main.tres" type="StyleBox" id=2]
@@ -78,6 +78,9 @@ corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 
+[sub_resource type="DynamicFont" id=7]
+font_data = ExtResource( 1 )
+
 [resource]
 Button/colors/font_color = Color( 0.84, 0.54, 0.9, 1 )
 Button/colors/font_color_focus = Color( 1, 1, 1, 1 )
@@ -92,3 +95,4 @@ Label/colors/font_color = Color( 1, 1, 1, 1 )
 Label/fonts/font = SubResource( 3 )
 Label/styles/normal = null
 PanelContainer/styles/panel = SubResource( 4 )
+RichTextLabel/fonts/normal_font = SubResource( 7 )
