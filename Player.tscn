@@ -132,6 +132,7 @@ margin_top = -720.0
 margin_right = 14080.0
 mouse_filter = 2
 texture = ExtResource( 5 )
+stretch_mode = 6
 
 [node name="VignetteDOWN" type="TextureRect" parent="Vignette"]
 anchor_top = 1.0
@@ -144,3 +145,4 @@ margin_bottom = 1440.0
 rect_rotation = 180.0
 mouse_filter = 2
 texture = ExtResource( 5 )
+stretch_mode = 6

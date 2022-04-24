@@ -9,6 +9,7 @@
 [node name="SpawnLocation1" type="Position3D"]
 
 [node name="placeholder" type="Spatial" parent="."]
+visible = false
 
 [node name="SM_Clock_Background" type="MeshInstance" parent="placeholder"]
 cast_shadow = 0
