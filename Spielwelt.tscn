@@ -66,7 +66,6 @@ visible = false
 mouse_filter = 1
 
 [node name="Vignette" parent="Other/UI" instance=ExtResource( 3 )]
-visible = false
 
 [node name="MusicManager" type="Node" parent="."]
 script = ExtResource( 7 )
