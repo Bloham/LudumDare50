@@ -56,7 +56,7 @@ func _ready():
 
 func _init():
 	
-	OS.window_fullscreen = is_fullscreen
+	#OS.window_fullscreen = is_fullscreen
 	var assets = load("res://Assets_1.tscn")
 	assets_instance = assets.instance()
 	self.add_child(assets_instance)

@@ -10,7 +10,7 @@ var spawn_location_count = 0
 export var difficultyLevel = 1.0
 export var wecker_radius = 45
 
-var max_wecker = 6
+var max_wecker = 30
 var current_wecker = 0
 
 

@@ -2,6 +2,10 @@ extends Spatial
 
 var spielwelt
 var is_triggered = false
+var searchTimer = Timer
+var wm = []
+
+export var searchDelay = 4
 
 
 func _init():
@@ -12,6 +16,12 @@ func _init():
 func _ready():
 	
 	spielwelt = get_tree().get_root().get_node("Spielwelt")
+	searchTimer = Timer.new()
+	searchTimer.set_wait_time(searchDelay)
+	searchTimer.connect("timeout", self, "lookForNewWecker")
+	add_child(searchTimer)
+	searchTimer.start()
+	lookForNewWecker()
 
 
 func albtraum():
@@ -22,12 +32,13 @@ func albtraum():
 	get_node("MeshEvil").is_fading = true
 
 
-func _process(delta):
-	
+func _physics_process(delta):
 	if(!is_triggered):
-		var wm = spielwelt.get_node("AllWecker")
 		for w in wm.get_children():
 			var dist = global_transform.origin.distance_to(w.global_transform.origin)
 			if(w.currentRadius > dist):
 				albtraum()
+
+func lookForNewWecker():
+	wm = spielwelt.get_node("AllWecker")
 
