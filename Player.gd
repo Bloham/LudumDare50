@@ -55,6 +55,14 @@ func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	uiNode = get_tree().get_root().get_node("Spielwelt/Other/UI/PauseMenue")
 	corruption_Scalar = get_tree().get_root().get_node("Spielwelt").get("corruption_scalar")
+	
+	var vp_size = get_viewport().size
+	print (" > viewport: ",vp_size.x,", ",vp_size.y)
+	var w_size = OS.get_window_size()
+	print (" > window: ",w_size.x,", ",w_size.y)
+	
+	$Vignette/VignetteUP.rect_position = Vector2(0, -1440)
+	$Vignette/VignetteDOWN.rect_position = Vector2(0, 1440)
 
 
 func _physics_process(delta):
@@ -193,6 +201,7 @@ func _input(event):
 		mouseDelta = event.relative
 
 func _playAnimation():
+	
 	$Vignette.visible = true
 	var tween = get_node("Tween")
 	tween.interpolate_property($Vignette/VignetteDOWN, "rect_position",Vector2(0, 1440), Vector2(0, 0), 15,Tween.TRANS_BOUNCE, Tween.EASE_IN_OUT)
