@@ -168,8 +168,8 @@ func _physics_process(delta):
 		vignette.visible = false
 		$Vignette.visible = false
 	
-	if Input.is_key_pressed(KEY_G):
-		_playAnimation()
+#	if Input.is_key_pressed(KEY_G):
+#		_playAnimation()
 
 
 func _playFootsteps():
