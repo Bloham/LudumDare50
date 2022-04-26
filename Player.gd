@@ -166,6 +166,7 @@ func _physics_process(delta):
 		uiNode._activatePause()
 		var vignette = get_tree().get_root().get_node("Spielwelt").get_node("Other").get_node("UI").get_node("Vignette")
 		vignette.visible = false
+		$Vignette.visible = false
 	
 	if Input.is_key_pressed(KEY_G):
 		_playAnimation()

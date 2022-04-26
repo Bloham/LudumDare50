@@ -2,6 +2,7 @@ extends Control
 
 var menueCamera
 var playerCamera
+var playerVignette
 
 
 func _activatePause():
@@ -9,6 +10,7 @@ func _activatePause():
 	$MediumAnker/VBoxContainer/Continue_Button.grab_focus()
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	playerCamera = get_tree().get_root().get_node("Spielwelt").player_instance.get_node("Camera")
+	playerVignette = get_tree().get_root().get_node("Spielwelt").player_instance.get_node("Vignette")
 	get_tree().paused = true
 	self.visible = true
 	menueCamera = get_tree().get_root().get_node("Spielwelt/Other/UI/Camera/MenueCamera")
@@ -21,6 +23,7 @@ func _on_ContinetButton_pressed():
 	self.visible = false
 	get_tree().paused = false
 	playerCamera.set_current(true)
+	playerVignette.visible = true
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	var vignette = get_tree().get_root().get_node("Spielwelt").get_node("Other").get_node("UI").get_node("Vignette")
 	vignette.visible = true
