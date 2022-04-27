@@ -44,7 +44,7 @@ func coruptionRise():
 		
 
 
-func _process(delta):
+func _process(_delta):
 	
 	for turning_eye in turning_eyes:
 		if turning_eye.is_triggered:

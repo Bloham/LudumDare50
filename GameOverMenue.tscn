@@ -33,77 +33,114 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -240.0
+margin_left = -360.0
 margin_top = -160.0
-margin_right = 240.0
+margin_right = 360.0
 margin_bottom = -5.0
 rect_scale = Vector2( 1.00176, 1.00464 )
 theme = ExtResource( 5 )
 
 [node name="IconWecker2" type="Sprite" parent="MediumAnker/PanelContainer"]
-position = Vector2( 358, -33.0462 )
+position = Vector2( 386.652, -59.0838 )
 rotation = 0.349066
 scale = Vector2( 0.15, 0.15 )
 texture = ExtResource( 4 )
-offset = Vector2( 0.5, 0 )
+offset = Vector2( 648.012, -81.7255 )
 
 [node name="IconWecker3" type="Sprite" parent="MediumAnker/PanelContainer"]
-position = Vector2( 120, -31.0462 )
+position = Vector2( 386.537, -58.7979 )
 rotation = -0.698132
 scale = Vector2( 0.15, 0.15 )
 texture = ExtResource( 4 )
-offset = Vector2( 0.5, 0 )
+offset = Vector2( -828.995, -489.777 )
 
 [node name="IconWecker" type="Sprite" parent="MediumAnker/PanelContainer"]
-position = Vector2( 239, -45.0462 )
+position = Vector2( 386.69, -58.9804 )
 rotation = 0.0349066
 scale = Vector2( 0.225, 0.225 )
 texture = ExtResource( 4 )
-offset = Vector2( 0.5, 0 )
+offset = Vector2( -102.545, 46.7348 )
 
 [node name="score_Control" type="Control" parent="MediumAnker"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -219.0
+margin_left = -320.0
 margin_top = -90.0
-margin_right = 202.0
+margin_right = 320.0
 margin_bottom = -10.0
 
 [node name="score_GridContainer" type="GridContainer" parent="MediumAnker/score_Control"]
-margin_right = 420.0
+margin_left = -12.0
+margin_right = 660.0
 margin_bottom = 80.0
 theme = ExtResource( 5 )
-columns = 2
+columns = 4
 
 [node name="WeckerGesammelt" type="Label" parent="MediumAnker/score_Control/score_GridContainer"]
 margin_top = 4.0
-margin_right = 241.0
+margin_right = 203.0
 margin_bottom = 31.0
-text = "Alarm clocks found: "
+text = "Alarms stopped: "
 align = 1
 valign = 1
 
 [node name="WeckerScore" type="Label" parent="MediumAnker/score_Control/score_GridContainer"]
-margin_left = 245.0
-margin_right = 401.0
+margin_left = 207.0
+margin_right = 363.0
 margin_bottom = 36.0
 custom_fonts/font = SubResource( 1 )
-text = "27"
+text = "27x"
+align = 1
+valign = 1
+
+[node name="topLabel2" type="Label" parent="MediumAnker/score_Control/score_GridContainer"]
+margin_left = 367.0
+margin_top = 4.0
+margin_right = 493.0
+margin_bottom = 31.0
+text = "Top SCore:"
+align = 1
+valign = 1
+
+[node name="topScore2" type="Label" parent="MediumAnker/score_Control/score_GridContainer"]
+margin_left = 497.0
+margin_right = 653.0
+margin_bottom = 36.0
+custom_fonts/font = SubResource( 1 )
+text = "27x"
 align = 1
 valign = 1
 
 [node name="GetraeumteZeit" type="Label" parent="MediumAnker/score_Control/score_GridContainer"]
 margin_top = 44.0
-margin_right = 241.0
+margin_right = 203.0
 margin_bottom = 71.0
-text = "Time of dreaming: "
+text = "Dream Duration: "
 align = 2
 valign = 1
 
 [node name="GetraeumteZeitScore" type="Label" parent="MediumAnker/score_Control/score_GridContainer"]
-margin_left = 245.0
+margin_left = 207.0
 margin_top = 40.0
-margin_right = 401.0
+margin_right = 363.0
+margin_bottom = 76.0
+custom_fonts/font = SubResource( 2 )
+text = "12:23 min"
+valign = 1
+
+[node name="topLabel" type="Label" parent="MediumAnker/score_Control/score_GridContainer"]
+margin_left = 367.0
+margin_top = 44.0
+margin_right = 493.0
+margin_bottom = 71.0
+text = "Top Score:"
+align = 1
+valign = 1
+
+[node name="topScore" type="Label" parent="MediumAnker/score_Control/score_GridContainer"]
+margin_left = 497.0
+margin_top = 40.0
+margin_right = 653.0
 margin_bottom = 76.0
 custom_fonts/font = SubResource( 2 )
 text = "12:23 min"

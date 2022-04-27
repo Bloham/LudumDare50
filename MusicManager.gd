@@ -7,7 +7,7 @@ extends Node
 
 var Layer2IsPlaying = false
 
-func _process(delta):
+func _process(_delta):
 	_startLayer2FadeIn()
 	
 

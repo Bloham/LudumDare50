@@ -11,7 +11,7 @@ func _ready():
 	Mat = self.material
 
 
-func _process(delta):
+func _process(_delta):
 	
 	self.material.set_shader_param("multiplier", 1.0 - spiel.corruption_scalar)
 	self.material.set_shader_param("softness", 1.0 - 0.3 * spiel.corruption_scalar)

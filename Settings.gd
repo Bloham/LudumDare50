@@ -8,3 +8,6 @@ var scalar_audio = 1.0
 var is_fullscreen = true
 
 var restart_level = -1
+
+var highscore_wecker : int = 0
+var highscore_time : float = 0.0
