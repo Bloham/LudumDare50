@@ -59,6 +59,10 @@ bg_colour_final = Color( 0.321569, 0.564706, 0.25098, 1 )
 
 [node name="MainMenu" parent="Other/UI" instance=ExtResource( 1 )]
 visible = false
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 0.0
+margin_bottom = 0.0
 mouse_filter = 1
 
 [node name="PauseMenue" parent="Other/UI" instance=ExtResource( 14 )]
@@ -69,6 +73,8 @@ visible = false
 
 [node name="GameOverMenue" parent="Other/UI" instance=ExtResource( 15 )]
 visible = false
+margin_top = -8.0
+margin_bottom = -8.0
 mouse_filter = 1
 
 [node name="Vignette" parent="Other/UI" instance=ExtResource( 3 )]

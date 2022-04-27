@@ -3,9 +3,9 @@ extends Control
 
 func _ready():
 	
-	_activate_menu()
+	activate_menu()
 
-func _activate_menu():
+func activate_menu():
 	
 	self.visible = true
 	$MediumAnker/VBoxContainer/Buttons1/StartButton_Level1.grab_focus()
@@ -30,4 +30,4 @@ func _on_settings_button_pressed():
 
 func _on_quit_button_pressed():
 	
-	get_tree().quit()
+	get_tree().get_root().get_node("Spielwelt").close_application()

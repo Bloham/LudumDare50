@@ -24,9 +24,9 @@ anchor_bottom = 1.0
 script = ExtResource( 2 )
 
 [node name="MediumAnker" type="Control" parent="."]
-anchor_top = 0.5
+anchor_top = 0.65
 anchor_right = 1.0
-anchor_bottom = 0.5
+anchor_bottom = 0.65
 
 [node name="PanelContainer" type="PanelContainer" parent="MediumAnker"]
 anchor_left = 0.5
@@ -102,7 +102,7 @@ text = "Top SCore:"
 align = 1
 valign = 1
 
-[node name="topScore2" type="Label" parent="MediumAnker/score_Control/score_GridContainer"]
+[node name="topWecker" type="Label" parent="MediumAnker/score_Control/score_GridContainer"]
 margin_left = 497.0
 margin_right = 653.0
 margin_bottom = 36.0
@@ -137,7 +137,7 @@ text = "Top Score:"
 align = 1
 valign = 1
 
-[node name="topScore" type="Label" parent="MediumAnker/score_Control/score_GridContainer"]
+[node name="topTime" type="Label" parent="MediumAnker/score_Control/score_GridContainer"]
 margin_left = 497.0
 margin_top = 40.0
 margin_right = 653.0
@@ -158,9 +158,9 @@ rect_min_size = Vector2( 400, 100 )
 alignment = 1
 
 [node name="StartButton" type="Button" parent="MediumAnker/VBoxContainer"]
-margin_top = 12.0
+margin_top = 48.0
 margin_right = 400.0
-margin_bottom = 62.0
+margin_bottom = 98.0
 rect_min_size = Vector2( 0, 50 )
 focus_neighbour_top = NodePath("../QuitButton")
 focus_neighbour_bottom = NodePath("../MainButton")
@@ -168,14 +168,14 @@ theme = ExtResource( 5 )
 text = "Restart"
 
 [node name="Spaceing" type="Label" parent="MediumAnker/VBoxContainer"]
-margin_top = 66.0
+margin_top = 102.0
 margin_right = 400.0
-margin_bottom = 80.0
+margin_bottom = 116.0
 
 [node name="MainButton" type="Button" parent="MediumAnker/VBoxContainer"]
-margin_top = 84.0
+margin_top = 120.0
 margin_right = 400.0
-margin_bottom = 134.0
+margin_bottom = 170.0
 rect_min_size = Vector2( 0, 50 )
 focus_neighbour_top = NodePath("../StartButton")
 focus_neighbour_bottom = NodePath("../QuitButton")
@@ -183,11 +183,13 @@ theme = ExtResource( 5 )
 text = "Main Menu"
 
 [node name="Spaceing2" type="Label" parent="MediumAnker/VBoxContainer"]
+visible = false
 margin_top = 138.0
 margin_right = 400.0
 margin_bottom = 152.0
 
 [node name="QuitButton" type="Button" parent="MediumAnker/VBoxContainer"]
+visible = false
 margin_top = 156.0
 margin_right = 400.0
 margin_bottom = 206.0

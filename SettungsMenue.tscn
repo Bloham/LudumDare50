@@ -45,15 +45,15 @@ theme = ExtResource( 2 )
 
 [node name="Button_Less" type="Button" parent="MediumAnker/VBoxContainer/MouseLook_Buttons"]
 margin_left = -80.0
-margin_top = 1.5
+margin_top = -5.0
 margin_right = -20.0
-margin_bottom = 50.0
+margin_bottom = 55.0
 rect_min_size = Vector2( 0, 50 )
 focus_neighbour_top = NodePath("../../Return_Button")
 focus_neighbour_right = NodePath("../Button_More")
 focus_neighbour_bottom = NodePath("../../GamepadLook_Butons/Button_Less")
 theme = ExtResource( 2 )
-text = "-"
+text = "<"
 
 [node name="Button_Info" type="Button" parent="MediumAnker/VBoxContainer/MouseLook_Buttons"]
 margin_left = -10.0
@@ -71,15 +71,15 @@ text = "Mouse Look: 100%"
 
 [node name="Button_More" type="Button" parent="MediumAnker/VBoxContainer/MouseLook_Buttons"]
 margin_left = 420.0
-margin_top = 1.0
+margin_top = -5.0
 margin_right = 480.0
-margin_bottom = 50.0
+margin_bottom = 55.0
 rect_min_size = Vector2( 0, 50 )
 focus_neighbour_left = NodePath("../Button_Less")
 focus_neighbour_top = NodePath("../../Return_Button")
 focus_neighbour_bottom = NodePath("../../GamepadLook_Butons/Button_More")
 theme = ExtResource( 2 )
-text = "+"
+text = ">"
 
 [node name="Spacing" type="Label" parent="MediumAnker/VBoxContainer"]
 margin_top = 54.0
@@ -97,15 +97,15 @@ theme = ExtResource( 2 )
 
 [node name="Button_Less" type="Button" parent="MediumAnker/VBoxContainer/GamepadLook_Butons"]
 margin_left = -80.0
-margin_top = 1.5
+margin_top = -5.0
 margin_right = -20.0
-margin_bottom = 50.0
+margin_bottom = 55.0
 rect_min_size = Vector2( 0, 50 )
 focus_neighbour_top = NodePath("../../MouseLook_Buttons/Button_Less")
 focus_neighbour_right = NodePath("../Button_More")
 focus_neighbour_bottom = NodePath("../../Music_Buttons/Button_Less")
 theme = ExtResource( 2 )
-text = "-"
+text = "<"
 
 [node name="Button_Info" type="Button" parent="MediumAnker/VBoxContainer/GamepadLook_Butons"]
 margin_left = -10.0
@@ -122,15 +122,15 @@ text = "Gamepad Look: 100%"
 
 [node name="Button_More" type="Button" parent="MediumAnker/VBoxContainer/GamepadLook_Butons"]
 margin_left = 420.0
-margin_top = 1.0
+margin_top = -5.0
 margin_right = 480.0
-margin_bottom = 50.0
+margin_bottom = 55.0
 rect_min_size = Vector2( 0, 50 )
 focus_neighbour_left = NodePath("../Button_Less")
 focus_neighbour_top = NodePath("../../MouseLook_Buttons/Button_More")
 focus_neighbour_bottom = NodePath("../../Music_Buttons/Button_More")
 theme = ExtResource( 2 )
-text = "+"
+text = ">"
 
 [node name="Spacing5" type="Label" parent="MediumAnker/VBoxContainer"]
 margin_top = 126.0
@@ -148,15 +148,15 @@ theme = ExtResource( 2 )
 
 [node name="Button_Less" type="Button" parent="MediumAnker/VBoxContainer/Music_Buttons"]
 margin_left = -80.0
-margin_top = 1.5
+margin_top = -5.0
 margin_right = -20.0
-margin_bottom = 50.0
+margin_bottom = 55.0
 rect_min_size = Vector2( 0, 50 )
 focus_neighbour_top = NodePath("../../GamepadLook_Butons/Button_Less")
 focus_neighbour_right = NodePath("../Button_More")
 focus_neighbour_bottom = NodePath("../../Audio_Buttons/Button_Less")
 theme = ExtResource( 2 )
-text = "-"
+text = "<"
 
 [node name="Button_Info" type="Button" parent="MediumAnker/VBoxContainer/Music_Buttons"]
 margin_left = -10.0
@@ -173,15 +173,15 @@ text = "Music Volume: 100%"
 
 [node name="Button_More" type="Button" parent="MediumAnker/VBoxContainer/Music_Buttons"]
 margin_left = 420.0
-margin_top = 1.0
+margin_top = -5.0
 margin_right = 480.0
-margin_bottom = 50.0
+margin_bottom = 55.0
 rect_min_size = Vector2( 0, 50 )
 focus_neighbour_left = NodePath("../Button_Less")
 focus_neighbour_top = NodePath("../../GamepadLook_Butons/Button_More")
 focus_neighbour_bottom = NodePath("../../Audio_Buttons/Button_More")
 theme = ExtResource( 2 )
-text = "+"
+text = ">"
 
 [node name="Spacing4" type="Label" parent="MediumAnker/VBoxContainer"]
 margin_top = 198.0
@@ -199,15 +199,15 @@ theme = ExtResource( 2 )
 
 [node name="Button_Less" type="Button" parent="MediumAnker/VBoxContainer/Audio_Buttons"]
 margin_left = -80.0
-margin_top = 1.5
+margin_top = -5.0
 margin_right = -20.0
-margin_bottom = 50.0
+margin_bottom = 55.0
 rect_min_size = Vector2( 0, 50 )
 focus_neighbour_top = NodePath("../../Music_Buttons/Button_Less")
 focus_neighbour_right = NodePath("../Button_More")
 focus_neighbour_bottom = NodePath("../../ToggleScreen_Button")
 theme = ExtResource( 2 )
-text = "-"
+text = "<"
 
 [node name="Button_Info" type="Button" parent="MediumAnker/VBoxContainer/Audio_Buttons"]
 margin_left = -10.0
@@ -224,15 +224,15 @@ text = "Audio Volume: 100%"
 
 [node name="Button_More" type="Button" parent="MediumAnker/VBoxContainer/Audio_Buttons"]
 margin_left = 420.0
-margin_top = 1.0
+margin_top = -5.0
 margin_right = 480.0
-margin_bottom = 50.0
+margin_bottom = 55.0
 rect_min_size = Vector2( 0, 50 )
 focus_neighbour_left = NodePath("../Button_Less")
 focus_neighbour_top = NodePath("../../Music_Buttons/Button_More")
 focus_neighbour_bottom = NodePath("../../ToggleScreen_Button")
 theme = ExtResource( 2 )
-text = "+"
+text = ">"
 
 [node name="Spacing2" type="Label" parent="MediumAnker/VBoxContainer"]
 margin_top = 270.0

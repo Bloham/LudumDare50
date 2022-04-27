@@ -1,5 +1,7 @@
 extends Spatial
 
+var settings_file = "user://settings.save"
+
 export var corruption_scalar = 0.0
 
 var player_instance
@@ -29,10 +31,31 @@ var assets_instance
 
 func _init():
 	
+	load_settings()
+	
 	OS.window_fullscreen = Settings.is_fullscreen
 	var assets = load("res://Assets_1.tscn")
 	assets_instance = assets.instance()
 	self.add_child(assets_instance)
+
+
+func load_settings():
+	
+	var file = File.new()
+	if file.file_exists(settings_file):
+		file.open(settings_file, File.READ)
+		Settings.highscore_time_0 = file.get_var()
+		Settings.highscore_wecker_0 = file.get_var()
+		Settings.highscore_time_1 = file.get_var()
+		Settings.highscore_wecker_1 = file.get_var()
+		Settings.highscore_time_2 = file.get_var()
+		Settings.highscore_wecker_2 = file.get_var()
+		Settings.is_fullscreen = file.get_var()
+		Settings.scalar_mouse_look = file.get_var()
+		Settings.scalar_gamepad_look = file.get_var()
+		Settings.scalar_music = file.get_var()
+		Settings.scalar_audio = file.get_var()
+		file.close()
 
 
 func _ready():
@@ -177,11 +200,59 @@ func gameover():
 	var vignette = get_tree().get_root().get_node("Spielwelt").get_node("Other").get_node("UI").get_node("Vignette")
 	vignette.visible = false
 	is_game_started = false
-#	print("scores: ",score_wecker,", ",score_time)
-	get_tree().get_root().get_node("Spielwelt/Other/UI/GameOverMenue")._gameOver(score_wecker, round(score_time))
+	
+	score_time = round(score_time)
+	if Settings.restart_level == 0:
+		if score_time >= Settings.highscore_time_0:
+			Settings.highscore_time_0 = score_time
+		if score_wecker >= Settings.highscore_wecker_0:
+			Settings.highscore_wecker_0 = score_wecker
+		save_settings()
+		get_tree().get_root().get_node("Spielwelt/Other/UI/GameOverMenue").gameOver(score_wecker, score_time, Settings.highscore_wecker_0, Settings.highscore_time_0)
+	elif Settings.restart_level == 1:
+		if score_time >= Settings.highscore_time_1:
+			Settings.highscore_time_1 = score_time
+		if score_wecker >= Settings.highscore_wecker_1:
+			Settings.highscore_wecker_1 = score_wecker
+		save_settings()
+		get_tree().get_root().get_node("Spielwelt/Other/UI/GameOverMenue").gameOver(score_wecker, score_time, Settings.highscore_wecker_1, Settings.highscore_time_1)
+	elif Settings.restart_level == 2:
+		if score_time >= Settings.highscore_time_2:
+			Settings.highscore_time_2 = score_time
+		if score_wecker >= Settings.highscore_wecker_2:
+			Settings.highscore_wecker_2 = score_wecker
+		save_settings()
+		get_tree().get_root().get_node("Spielwelt/Other/UI/GameOverMenue").gameOver(score_wecker, score_time, Settings.highscore_wecker_2, Settings.highscore_time_2)
+	
+	
 
 
 func restart():
 
 	get_tree().change_scene("res://Spielwelt.tscn")
 	get_tree().paused = false
+
+
+func close_application():
+	
+	save_settings()
+	get_tree().quit()
+
+
+func save_settings():
+
+	var file = File.new()
+	file.open(settings_file, File.WRITE)
+	file.store_var(Settings.highscore_time_0)
+	file.store_var(Settings.highscore_wecker_0)
+	file.store_var(Settings.highscore_time_1)
+	file.store_var(Settings.highscore_wecker_1)
+	file.store_var(Settings.highscore_time_2)
+	file.store_var(Settings.highscore_wecker_2)
+	file.store_var(Settings.is_fullscreen)
+	file.store_var(Settings.scalar_mouse_look)
+	file.store_var(Settings.scalar_gamepad_look)
+	file.store_var(Settings.scalar_music)
+	file.store_var(Settings.scalar_audio)
+	file.close()
+

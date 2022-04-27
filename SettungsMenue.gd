@@ -27,7 +27,8 @@ func _on_toggle_fullscreen_button_pressed():
 func _on_return_button_pressed():
 	
 	self.visible = false
-	get_tree().get_root().get_node("Spielwelt/Other/UI/MainMenu")._activate_menu()
+	get_tree().get_root().get_node("Spielwelt").save_settings()
+	get_tree().get_root().get_node("Spielwelt/Other/UI/MainMenu").activate_menu()
 
 
 func _on_less_music_button_pressed():

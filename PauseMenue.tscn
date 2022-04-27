@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://PauseMenue.gd" type="Script" id=1]
+[ext_resource path="res://MainMenuAssets/Theme_Main.tres" type="Theme" id=2]
 [ext_resource path="res://MainMenuAssets/Theme_Pause.tres" type="Theme" id=3]
 
 [node name="PauseMenue" type="Control"]
@@ -34,47 +35,135 @@ anchor_right = 1.0
 anchor_bottom = 0.5
 mouse_filter = 1
 
-[node name="PanelContainer" type="PanelContainer" parent="MediumAnker"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MediumAnker"]
 anchor_left = 0.5
-anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 1.0
-margin_left = -393.0
-margin_top = -296.0
-margin_right = 393.0
-theme = ExtResource( 3 )
+margin_left = -529.0
+margin_top = -247.0
+margin_right = 529.0
 
-[node name="Label" type="Label" parent="MediumAnker/PanelContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MediumAnker/HBoxContainer"]
+margin_right = 345.0
+margin_bottom = 283.0
+
+[node name="Controls" type="PanelContainer" parent="MediumAnker/HBoxContainer/HBoxContainer"]
+margin_right = 257.0
+margin_bottom = 283.0
+theme = ExtResource( 2 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MediumAnker/HBoxContainer/HBoxContainer/Controls"]
 margin_left = 5.0
-margin_top = 44.0
-margin_right = 781.0
-margin_bottom = 251.0
-theme = ExtResource( 3 )
-text = "Controls:
+margin_top = 5.0
+margin_right = 252.0
+margin_bottom = 278.0
 
-Move: Use W, A, S, D keys / Left Stick
-Jump: Use SPACE key / A- Button
-Dash: Use SHIFT key / B-Button
-Look: Mouse / Right Stick
-"
+[node name="Label" type="Label" parent="MediumAnker/HBoxContainer/HBoxContainer/Controls/VBoxContainer"]
+margin_right = 247.0
+margin_bottom = 27.0
+theme = ExtResource( 2 )
+text = " Keyboard Controls  "
+align = 1
+valign = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="MediumAnker/HBoxContainer/HBoxContainer/Controls/VBoxContainer"]
+margin_top = 31.0
+margin_right = 247.0
+margin_bottom = 119.0
+theme = ExtResource( 2 )
+bbcode_enabled = true
+bbcode_text = "[table=<3>][cell]Move [/cell][cell]    [/cell][cell]W, A, S, D[/cell]
+
+[cell]Look  [/cell][cell]    [/cell][cell]Mouse[/cell]
+
+[cell]Jump [/cell][cell]    [/cell][cell]Space[/cell]
+
+[cell]Dash  [/cell][cell]    [/cell][cell]Shift[/cell]"
+text = "Move     W, A, S, DLook      MouseJump     SpaceDash      Shift"
+fit_content_height = true
+
+[node name="Label2" type="Label" parent="MediumAnker/HBoxContainer/HBoxContainer/Controls/VBoxContainer"]
+margin_top = 123.0
+margin_right = 247.0
+margin_bottom = 150.0
+theme = ExtResource( 2 )
+align = 1
+valign = 1
+
+[node name="Label3" type="Label" parent="MediumAnker/HBoxContainer/HBoxContainer/Controls/VBoxContainer"]
+margin_top = 154.0
+margin_right = 247.0
+margin_bottom = 181.0
+theme = ExtResource( 2 )
+text = "Gamepad Controls"
+align = 1
+valign = 1
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="MediumAnker/HBoxContainer/HBoxContainer/Controls/VBoxContainer"]
+margin_top = 185.0
+margin_right = 247.0
+margin_bottom = 273.0
+theme = ExtResource( 2 )
+bbcode_enabled = true
+bbcode_text = "[table=<3>][cell]Move [/cell][cell]    [/cell][cell]Left Stick[/cell]
+
+[cell]Look  [/cell][cell]    [/cell][cell]Right Stick[/cell]
+
+[cell]Jump [/cell][cell]    [/cell][cell]A-Button[/cell]
+
+[cell]Dash  [/cell][cell]    [/cell][cell]B-Button[/cell]"
+text = "Move     Left StickLook      Right StickJump     A-ButtonDash      B-Button"
+fit_content_height = true
+
+[node name="Label" type="Label" parent="MediumAnker/HBoxContainer/HBoxContainer"]
+margin_left = 261.0
+margin_top = 128.0
+margin_right = 345.0
+margin_bottom = 155.0
+theme = ExtResource( 2 )
+text = "            "
+align = 1
+valign = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="MediumAnker/HBoxContainer"]
+margin_left = 349.0
+margin_right = 1078.0
+margin_bottom = 283.0
+theme = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="MediumAnker/HBoxContainer/PanelContainer"]
+margin_left = 5.0
+margin_top = 23.0
+margin_right = 724.0
+margin_bottom = 260.0
+theme = ExtResource( 2 )
+text = "Welcome to your dream.
+
+This is the post LudumDare Game Jam version of the game.
+
+How eternally wonderful it would be if there was no alarm 
+ and you could just continue to dream this dream.
+
+Search & destroy all alarms!"
 align = 1
 valign = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MediumAnker"]
 anchor_left = 0.5
 anchor_right = 0.5
+anchor_bottom = 52.0
 margin_left = -200.0
-margin_top = 100.0
+margin_top = 52.0
 margin_right = 200.0
-margin_bottom = 219.0
+margin_bottom = 293.0
 grow_horizontal = 2
 grow_vertical = 2
 rect_min_size = Vector2( 400, 100 )
 alignment = 1
 
 [node name="Restart_Button" type="Button" parent="MediumAnker/VBoxContainer"]
+margin_top = 23.0
 margin_right = 400.0
-margin_bottom = 50.0
+margin_bottom = 73.0
 rect_min_size = Vector2( 0, 50 )
 focus_neighbour_top = NodePath("../MainMenu_Button")
 focus_neighbour_bottom = NodePath("../Continue_Button")
@@ -83,14 +172,14 @@ theme = ExtResource( 3 )
 text = "Restart Level"
 
 [node name="Spacing" type="Label" parent="MediumAnker/VBoxContainer"]
-margin_top = 54.0
+margin_top = 77.0
 margin_right = 400.0
-margin_bottom = 68.0
+margin_bottom = 91.0
 
 [node name="Continue_Button" type="Button" parent="MediumAnker/VBoxContainer"]
-margin_top = 72.0
+margin_top = 95.0
 margin_right = 400.0
-margin_bottom = 122.0
+margin_bottom = 145.0
 rect_min_size = Vector2( 0, 50 )
 focus_neighbour_top = NodePath("../Restart_Button")
 focus_neighbour_bottom = NodePath("../MainMenu_Button")
@@ -98,14 +187,14 @@ theme = ExtResource( 3 )
 text = "Continue"
 
 [node name="Spaceing" type="Label" parent="MediumAnker/VBoxContainer"]
-margin_top = 126.0
+margin_top = 149.0
 margin_right = 400.0
-margin_bottom = 140.0
+margin_bottom = 163.0
 
 [node name="MainMenu_Button" type="Button" parent="MediumAnker/VBoxContainer"]
-margin_top = 144.0
+margin_top = 167.0
 margin_right = 400.0
-margin_bottom = 194.0
+margin_bottom = 217.0
 rect_min_size = Vector2( 0, 50 )
 focus_neighbour_top = NodePath("../Continue_Button")
 focus_neighbour_bottom = NodePath("../Restart_Button")
