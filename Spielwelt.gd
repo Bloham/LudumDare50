@@ -1,8 +1,5 @@
 extends Spatial
 
-export var is_restart_version = false
-export var restart_level_index = -1
-
 export var corruption_scalar = 0.0
 
 var player_instance
@@ -18,7 +15,9 @@ export var light_colour_final = Color(0.9,0.1,0)
 export var ambient_colour_final = Color(0.3,0.6,0)
 export var bg_colour_final = Color(0.6,0.22,0.12)
 
-var is_fullscreen = true
+var music_max = -1.9
+var audio_max = 3.8
+
 var is_game_started = false
 var level_index = -1
 var score_time = 0.0
@@ -26,6 +25,14 @@ var score_wecker = 0
 
 var M_wecker;
 var assets_instance
+
+
+func _init():
+	
+	OS.window_fullscreen = Settings.is_fullscreen
+	var assets = load("res://Assets_1.tscn")
+	assets_instance = assets.instance()
+	self.add_child(assets_instance)
 
 
 func _ready():
@@ -50,39 +57,63 @@ func _ready():
 	var wecker = weckerScene.instance()
 	M_wecker = wecker._get_shaderMaterial()
 	
-	if is_restart_version:
-		self.get_node("Other/UI/MainMenu")._on_StartButton_pressed(restart_level_index)
-
-
-func _init():
-	
-	OS.window_fullscreen = is_fullscreen
-	var assets = load("res://Assets_1.tscn")
-	assets_instance = assets.instance()
-	self.add_child(assets_instance)
+	if Settings.restart_level > -1:
+		self.get_node("Other/UI/MainMenu")._on_StartButton_pressed(Settings.restart_level)
 
 
 func _toggle_fullscreen():
 	
-	is_fullscreen = !is_fullscreen
-	OS.window_fullscreen = is_fullscreen
+	Settings.is_fullscreen = not Settings.is_fullscreen
+	OS.window_fullscreen = Settings.is_fullscreen
+	if Settings.is_fullscreen:
+		return "on"
+	else:
+		return "off"
 
 
-func onGameStart(var _level_index):
+func change_mouse_look(var increase):
+	
+	Settings.scalar_mouse_look += increase
+	Settings.scalar_mouse_look = clamp(Settings.scalar_mouse_look, 0.0, 2.0)
+	return String(round(100 * Settings.scalar_mouse_look)) + "%"
+
+func change_gamepad_look(var increase):
+	
+	Settings.scalar_gamepad_look += increase
+	Settings.scalar_gamepad_look = clamp(Settings.scalar_gamepad_look, 0.0, 2.0)
+	return String(round(100 * Settings.scalar_gamepad_look)) + "%"
+
+func change_music_volume(var increase):
+	
+	Settings.scalar_music += increase
+	Settings.scalar_music = clamp(Settings.scalar_music, 0.0, 1.0)
+	var music = (1-Settings.scalar_music) * -72.0 + Settings.scalar_music * music_max
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Music"), music)
+	return String(round(100 * Settings.scalar_music)) + "%"
+
+func change_audio_volume(var increase):
+	
+	Settings.scalar_audio += increase
+	Settings.scalar_audio = clamp(Settings.scalar_audio, 0.0, 1.0)
+	var audio = (1-Settings.scalar_audio) * -72.0 + Settings.scalar_audio * audio_max
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("SFXRev"), audio)
+	return String(round(100 * Settings.scalar_audio)) + "%"
+
+
+func onGameStart():
 	
 	var player = load("res://Player.tscn")
 	player_instance = player.instance()
 	player_instance.set_name("Player")
 	add_child(player_instance)
 	
-	level_index = _level_index
 	self.remove_child(assets_instance)
-	if level_index > -1:
-		var level_name = "res://Assets_"+String(_level_index)+".tscn"
+	if Settings.restart_level > -1:
+		var level_name = "res://Assets_"+String(Settings.restart_level)+".tscn"
 		var assets = load(level_name)
 		assets_instance = assets.instance()
 	else:
-		print ("ERROR - Spielwelt.onGameStart")
+		print ("ERROR - Spielwelt.onGameStart: level index is ",Settings.restart_level)
 	
 	self.add_child(assets_instance)
 	
@@ -148,13 +179,9 @@ func gameover():
 	is_game_started = false
 #	print("scores: ",score_wecker,", ",score_time)
 	get_tree().get_root().get_node("Spielwelt/Other/UI/GameOverMenue")._gameOver(score_wecker, round(score_time))
-	
+
+
 func restart():
 
-	if level_index == 0:
-		get_tree().change_scene("res://Spielwelt_restart_version_0.tscn")
-	if level_index == 1:
-		get_tree().change_scene("res://Spielwelt_restart_version_1.tscn")
-	if level_index == 2:
-		get_tree().change_scene("res://Spielwelt_restart_version_2.tscn")
+	get_tree().change_scene("res://Spielwelt.tscn")
 	get_tree().paused = false

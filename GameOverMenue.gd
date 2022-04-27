@@ -40,6 +40,7 @@ func _on_RestartButton_pressed():
 
 func _on_StartButton_pressed():
 	
+	Settings.restart_level = -1
 	get_tree().paused = false
 	get_tree().change_scene("res://Spielwelt.tscn")
 
