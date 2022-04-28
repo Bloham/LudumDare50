@@ -8,6 +8,10 @@
 pause_mode = 2
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 2.0
+margin_top = 1.0
+margin_right = 2.0
+margin_bottom = 1.0
 mouse_filter = 1
 script = ExtResource( 1 )
 
@@ -39,36 +43,37 @@ mouse_filter = 1
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -529.0
-margin_top = -247.0
-margin_right = 529.0
+margin_top = -399.0
+margin_right = 555.0
+margin_bottom = 37.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MediumAnker/HBoxContainer"]
-margin_right = 345.0
-margin_bottom = 283.0
+margin_right = 411.0
+margin_bottom = 436.0
 
 [node name="Controls" type="PanelContainer" parent="MediumAnker/HBoxContainer/HBoxContainer"]
-margin_right = 257.0
-margin_bottom = 283.0
+margin_right = 239.0
+margin_bottom = 436.0
 theme = ExtResource( 2 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MediumAnker/HBoxContainer/HBoxContainer/Controls"]
 margin_left = 5.0
 margin_top = 5.0
-margin_right = 252.0
-margin_bottom = 278.0
+margin_right = 234.0
+margin_bottom = 431.0
 
 [node name="Label" type="Label" parent="MediumAnker/HBoxContainer/HBoxContainer/Controls/VBoxContainer"]
-margin_right = 247.0
-margin_bottom = 27.0
+margin_right = 229.0
+margin_bottom = 38.0
 theme = ExtResource( 2 )
 text = " Keyboard Controls  "
 align = 1
 valign = 1
 
 [node name="RichTextLabel" type="RichTextLabel" parent="MediumAnker/HBoxContainer/HBoxContainer/Controls/VBoxContainer"]
-margin_top = 31.0
-margin_right = 247.0
-margin_bottom = 119.0
+margin_top = 42.0
+margin_right = 229.0
+margin_bottom = 190.0
 theme = ExtResource( 2 )
 bbcode_enabled = true
 bbcode_text = "[table=<3>][cell]Move [/cell][cell]    [/cell][cell]W, A, S, D[/cell]
@@ -82,26 +87,26 @@ text = "Move     W, A, S, DLook      MouseJump     SpaceDash      Shift"
 fit_content_height = true
 
 [node name="Label2" type="Label" parent="MediumAnker/HBoxContainer/HBoxContainer/Controls/VBoxContainer"]
-margin_top = 123.0
-margin_right = 247.0
-margin_bottom = 150.0
+margin_top = 194.0
+margin_right = 229.0
+margin_bottom = 232.0
 theme = ExtResource( 2 )
 align = 1
 valign = 1
 
 [node name="Label3" type="Label" parent="MediumAnker/HBoxContainer/HBoxContainer/Controls/VBoxContainer"]
-margin_top = 154.0
-margin_right = 247.0
-margin_bottom = 181.0
+margin_top = 236.0
+margin_right = 229.0
+margin_bottom = 274.0
 theme = ExtResource( 2 )
 text = "Gamepad Controls"
 align = 1
 valign = 1
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="MediumAnker/HBoxContainer/HBoxContainer/Controls/VBoxContainer"]
-margin_top = 185.0
-margin_right = 247.0
-margin_bottom = 273.0
+margin_top = 278.0
+margin_right = 229.0
+margin_bottom = 426.0
 theme = ExtResource( 2 )
 bbcode_enabled = true
 bbcode_text = "[table=<3>][cell]Move [/cell][cell]    [/cell][cell]Left Stick[/cell]
@@ -115,26 +120,26 @@ text = "Move     Left StickLook      Right StickJump     A-ButtonDash      B-But
 fit_content_height = true
 
 [node name="Label" type="Label" parent="MediumAnker/HBoxContainer/HBoxContainer"]
-margin_left = 261.0
-margin_top = 128.0
-margin_right = 345.0
-margin_bottom = 155.0
+margin_left = 243.0
+margin_top = 199.0
+margin_right = 411.0
+margin_bottom = 237.0
 theme = ExtResource( 2 )
 text = "            "
 align = 1
 valign = 1
 
 [node name="PanelContainer" type="PanelContainer" parent="MediumAnker/HBoxContainer"]
-margin_left = 349.0
-margin_right = 1078.0
-margin_bottom = 283.0
+margin_left = 415.0
+margin_right = 1084.0
+margin_bottom = 436.0
 theme = ExtResource( 2 )
 
 [node name="Label" type="Label" parent="MediumAnker/HBoxContainer/PanelContainer"]
 margin_left = 5.0
-margin_top = 23.0
-margin_right = 724.0
-margin_bottom = 260.0
+margin_top = 55.0
+margin_right = 664.0
+margin_bottom = 380.0
 theme = ExtResource( 2 )
 text = "Welcome to your dream.
 
@@ -161,9 +166,9 @@ rect_min_size = Vector2( 400, 100 )
 alignment = 1
 
 [node name="Restart_Button" type="Button" parent="MediumAnker/VBoxContainer"]
-margin_top = 23.0
+margin_top = 19.0
 margin_right = 400.0
-margin_bottom = 73.0
+margin_bottom = 72.0
 rect_min_size = Vector2( 0, 50 )
 focus_neighbour_top = NodePath("../MainMenu_Button")
 focus_neighbour_bottom = NodePath("../Continue_Button")
@@ -172,14 +177,14 @@ theme = ExtResource( 3 )
 text = "Restart Level"
 
 [node name="Spacing" type="Label" parent="MediumAnker/VBoxContainer"]
-margin_top = 77.0
+margin_top = 76.0
 margin_right = 400.0
-margin_bottom = 91.0
+margin_bottom = 90.0
 
 [node name="Continue_Button" type="Button" parent="MediumAnker/VBoxContainer"]
-margin_top = 95.0
+margin_top = 94.0
 margin_right = 400.0
-margin_bottom = 145.0
+margin_bottom = 147.0
 rect_min_size = Vector2( 0, 50 )
 focus_neighbour_top = NodePath("../Restart_Button")
 focus_neighbour_bottom = NodePath("../MainMenu_Button")
@@ -187,14 +192,14 @@ theme = ExtResource( 3 )
 text = "Continue"
 
 [node name="Spaceing" type="Label" parent="MediumAnker/VBoxContainer"]
-margin_top = 149.0
+margin_top = 151.0
 margin_right = 400.0
-margin_bottom = 163.0
+margin_bottom = 165.0
 
 [node name="MainMenu_Button" type="Button" parent="MediumAnker/VBoxContainer"]
-margin_top = 167.0
+margin_top = 169.0
 margin_right = 400.0
-margin_bottom = 217.0
+margin_bottom = 222.0
 rect_min_size = Vector2( 0, 50 )
 focus_neighbour_top = NodePath("../Continue_Button")
 focus_neighbour_bottom = NodePath("../Restart_Button")
