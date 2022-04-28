@@ -34,6 +34,8 @@ func _init():
 	load_settings()
 	
 	OS.window_fullscreen = Settings.is_fullscreen
+	apply_audio_settings()
+	
 	var assets = load("res://Assets_1.tscn")
 	assets_instance = assets.instance()
 	self.add_child(assets_instance)
@@ -110,17 +112,23 @@ func change_music_volume(var increase):
 	
 	Settings.scalar_music += increase
 	Settings.scalar_music = clamp(Settings.scalar_music, 0.0, 1.0)
-	var music = (1-Settings.scalar_music) * -72.0 + Settings.scalar_music * music_max
-	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Music"), music)
+	apply_audio_settings()
 	return String(round(100 * Settings.scalar_music)) + "%"
 
 func change_audio_volume(var increase):
 	
 	Settings.scalar_audio += increase
 	Settings.scalar_audio = clamp(Settings.scalar_audio, 0.0, 1.0)
+	apply_audio_settings()
+	return String(round(100 * Settings.scalar_audio)) + "%"
+
+
+func apply_audio_settings():
+	
+	var music = (1-Settings.scalar_music) * -72.0 + Settings.scalar_music * music_max
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Music"), music)
 	var audio = (1-Settings.scalar_audio) * -72.0 + Settings.scalar_audio * audio_max
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("SFXRev"), audio)
-	return String(round(100 * Settings.scalar_audio)) + "%"
 
 
 func onGameStart():

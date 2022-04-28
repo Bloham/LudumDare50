@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://MainMenu.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Camera.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://MusicManager.gd" type="Script" id=7]
 [ext_resource path="res://Vignette.gd" type="Script" id=8]
 [ext_resource path="res://SettungsMenue.tscn" type="PackedScene" id=9]
+[ext_resource path="res://HighscoreMenue.tscn" type="PackedScene" id=10]
 [ext_resource path="res://PauseMenue.tscn" type="PackedScene" id=14]
 [ext_resource path="res://GameOverMenue.tscn" type="PackedScene" id=15]
 
@@ -58,6 +59,7 @@ bg_colour_final = Color( 0.321569, 0.564706, 0.25098, 1 )
 [node name="Camera" parent="Other/UI" instance=ExtResource( 2 )]
 
 [node name="MainMenu" parent="Other/UI" instance=ExtResource( 1 )]
+visible = false
 margin_left = 0.0
 margin_top = 0.0
 margin_right = 0.0
@@ -68,6 +70,9 @@ mouse_filter = 1
 visible = false
 
 [node name="SettingsMenu" parent="Other/UI" instance=ExtResource( 9 )]
+visible = false
+
+[node name="HighscoreMenu" parent="Other/UI" instance=ExtResource( 10 )]
 visible = false
 
 [node name="GameOverMenue" parent="Other/UI" instance=ExtResource( 15 )]

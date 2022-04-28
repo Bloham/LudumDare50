@@ -65,30 +65,43 @@ margin_right = 400.0
 margin_bottom = 68.0
 rect_min_size = Vector2( 0, 50 )
 focus_neighbour_top = NodePath("../QuitButton")
-focus_neighbour_bottom = NodePath("../Buttons2/StartButton_Level3")
+focus_neighbour_bottom = NodePath("StartButton_Level3")
 theme = ExtResource( 2 )
 
 [node name="StartButton_Level1" type="Button" parent="MediumAnker/VBoxContainer/Buttons1"]
-margin_left = -210.0
-margin_right = 190.0
-margin_bottom = 50.0
+margin_left = -410.0
+margin_right = -10.0
+margin_bottom = 60.0
 rect_min_size = Vector2( 0, 50 )
+focus_neighbour_left = NodePath("../StartButton_Level3")
 focus_neighbour_top = NodePath("../../QuitButton")
 focus_neighbour_right = NodePath("../StartButton_Level2")
-focus_neighbour_bottom = NodePath("../../Buttons2/StartButton_Level3")
+focus_neighbour_bottom = NodePath("../../Buttons2/SettingsButton")
 theme = ExtResource( 2 )
 text = "Start Level 1"
 
 [node name="StartButton_Level2" type="Button" parent="MediumAnker/VBoxContainer/Buttons1"]
-margin_left = 210.0
-margin_right = 610.0
-margin_bottom = 50.0
+margin_right = 400.0
+margin_bottom = 60.0
 rect_min_size = Vector2( 0, 50 )
 focus_neighbour_left = NodePath("../StartButton_Level1")
 focus_neighbour_top = NodePath("../../QuitButton")
+focus_neighbour_right = NodePath("../StartButton_Level3")
 focus_neighbour_bottom = NodePath("../../Buttons2/SettingsButton")
 theme = ExtResource( 2 )
 text = "Start Level 2"
+
+[node name="StartButton_Level3" type="Button" parent="MediumAnker/VBoxContainer/Buttons1"]
+margin_left = 410.0
+margin_right = 810.0
+margin_bottom = 60.0
+rect_min_size = Vector2( 0, 50 )
+focus_neighbour_left = NodePath("../StartButton_Level2")
+focus_neighbour_top = NodePath("../../QuitButton")
+focus_neighbour_right = NodePath("../StartButton_Level1")
+focus_neighbour_bottom = NodePath("../../Buttons2/HighscoresButton")
+theme = ExtResource( 2 )
+text = "Start Level 3"
 
 [node name="Spacing" type="Label" parent="MediumAnker/VBoxContainer"]
 margin_top = 72.0
@@ -101,32 +114,34 @@ margin_right = 400.0
 margin_bottom = 140.0
 rect_min_size = Vector2( 0, 50 )
 focus_neighbour_top = NodePath("../QuitButton")
-focus_neighbour_bottom = NodePath("StartButton_Level3")
+focus_neighbour_bottom = NodePath("../Buttons1/StartButton_Level3")
 theme = ExtResource( 2 )
-
-[node name="StartButton_Level3" type="Button" parent="MediumAnker/VBoxContainer/Buttons2"]
-margin_left = -210.0
-margin_top = 1.0
-margin_right = 190.0
-margin_bottom = 50.0
-rect_min_size = Vector2( 0, 50 )
-focus_neighbour_top = NodePath("../../Buttons1/StartButton_Level1")
-focus_neighbour_right = NodePath("../SettingsButton")
-focus_neighbour_bottom = NodePath("../../QuitButton")
-theme = ExtResource( 2 )
-text = "Start Level 3"
 
 [node name="SettingsButton" type="Button" parent="MediumAnker/VBoxContainer/Buttons2"]
+margin_left = -210.0
+margin_top = 2.0
+margin_right = 190.0
+margin_bottom = -50.0
+rect_min_size = Vector2( 0, 50 )
+focus_neighbour_left = NodePath("../../Buttons1/StartButton_Level1")
+focus_neighbour_top = NodePath("../../Buttons1/StartButton_Level2")
+focus_neighbour_right = NodePath("../HighscoresButton")
+focus_neighbour_bottom = NodePath("../../QuitButton")
+theme = ExtResource( 2 )
+text = "Settings"
+
+[node name="HighscoresButton" type="Button" parent="MediumAnker/VBoxContainer/Buttons2"]
 margin_left = 210.0
 margin_top = 2.0
 margin_right = 610.0
 margin_bottom = -50.0
 rect_min_size = Vector2( 0, 50 )
-focus_neighbour_left = NodePath("../StartButton_Level3")
+focus_neighbour_left = NodePath("../SettingsButton")
 focus_neighbour_top = NodePath("../../Buttons1/StartButton_Level2")
+focus_neighbour_right = NodePath("../../Buttons1/StartButton_Level3")
 focus_neighbour_bottom = NodePath("../../QuitButton")
 theme = ExtResource( 2 )
-text = "Settings"
+text = "Highscores"
 
 [node name="Spacing2" type="Label" parent="MediumAnker/VBoxContainer"]
 margin_top = 144.0
@@ -138,7 +153,9 @@ margin_top = 162.0
 margin_right = 400.0
 margin_bottom = 222.0
 rect_min_size = Vector2( 0, 50 )
-focus_neighbour_top = NodePath("../Buttons2/StartButton_Level3")
+focus_neighbour_left = NodePath("../Buttons2/SettingsButton")
+focus_neighbour_top = NodePath("../Buttons2/SettingsButton")
+focus_neighbour_right = NodePath("../Buttons2/HighscoresButton")
 focus_neighbour_bottom = NodePath("../Buttons1/StartButton_Level2")
 theme = ExtResource( 2 )
 text = "Quit Game"
@@ -260,6 +277,7 @@ valign = 1
 
 [connection signal="pressed" from="MediumAnker/VBoxContainer/Buttons1/StartButton_Level1" to="." method="_on_StartButton_pressed" binds= [ 0 ]]
 [connection signal="pressed" from="MediumAnker/VBoxContainer/Buttons1/StartButton_Level2" to="." method="_on_StartButton_pressed" binds= [ 1 ]]
-[connection signal="pressed" from="MediumAnker/VBoxContainer/Buttons2/StartButton_Level3" to="." method="_on_StartButton_pressed" binds= [ 2 ]]
-[connection signal="pressed" from="MediumAnker/VBoxContainer/Buttons2/SettingsButton" to="." method="_on_settings_button_pressed"]
-[connection signal="pressed" from="MediumAnker/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="MediumAnker/VBoxContainer/Buttons1/StartButton_Level3" to="." method="_on_StartButton_pressed" binds= [ 2 ]]
+[connection signal="pressed" from="MediumAnker/VBoxContainer/Buttons2/SettingsButton" to="." method="on_settings_button_pressed"]
+[connection signal="pressed" from="MediumAnker/VBoxContainer/Buttons2/HighscoresButton" to="." method="on_highscores_button_pressed"]
+[connection signal="pressed" from="MediumAnker/VBoxContainer/QuitButton" to="." method="on_quit_button_pressed"]

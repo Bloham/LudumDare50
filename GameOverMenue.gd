@@ -29,25 +29,8 @@ func gameOver(score_wecker, scoreTime, highscore_wecker, highscore_time):
 	label_top_wecker.text = String(highscore_wecker)
 	label_top_wecker.text += "x"
 	
-	label_time.text = ""
-	var minutes = floor(scoreTime/60.0)
-	if minutes < 10:
-		label_time.text += "0"
-	label_time.text += String(minutes)
-	label_time.text += "."
-	if (scoreTime - 60 * minutes) < 10:
-		label_time.text += "0"
-	label_time.text += String(scoreTime - 60 * minutes)
-	
-	label_top_time.text = ""
-	minutes = floor(highscore_time/60.0)
-	if minutes < 10:
-		label_top_time.text += "0"
-	label_top_time.text += String(minutes)
-	label_top_time.text += "."
-	if (scoreTime - 60 * minutes) < 10:
-		label_top_time.text += "0"
-	label_top_time.text += String(highscore_time - 60 * minutes)
+	label_time.text = Settings.get_highscore_time(scoreTime)
+	label_top_time.text = Settings.get_highscore_time(highscore_time)
 
 
 func _on_RestartButton_pressed():
