@@ -12,7 +12,9 @@ config_version=4
 
 config/name="LDJam50"
 run/main_scene="res://Spielwelt.tscn"
-config/icon="res://icon.png"
+boot_splash/image="res://MainMenuAssets/Thumbnail.png"
+config/icon="res://MainMenuAssets/logo.png"
+config/windows_native_icon="res://MainMenuAssets/icon.ico"
 
 [autoload]
 
