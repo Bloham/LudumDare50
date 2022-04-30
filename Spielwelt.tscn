@@ -15,7 +15,7 @@
 
 [sub_resource type="Animation" id=1]
 resource_name = "FadeInLayer2"
-length = 80.0
+length = 60.0
 step = 1.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("MusicLayer2:volume_db")
@@ -24,7 +24,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 80 ),
+"times": PoolRealArray( 0, 60 ),
 "transitions": PoolRealArray( 1, 2.14355 ),
 "update": 0,
 "values": [ -80.0, -7.0 ]
