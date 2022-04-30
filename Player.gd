@@ -26,7 +26,7 @@ var is_jumping = false
 #Camera
 var minLookAngle = -90
 var maxLookAngle = 90
-var lookSensitivity = 50
+var lookSensitivity = 12.5
 var pad_lookSensitivity = 175.0
 
 #Vectors
@@ -181,16 +181,12 @@ func _playFootsteps():
 func _process(delta):
 	
 	var pad_aim = Input.get_vector("gamepad_aim_left", "gamepad_aim_right", "gamepad_aim_up", "gamepad_aim_down")
-	pad_aim *= pad_lookSensitivity * delta
+	pad_aim *= pad_lookSensitivity * Settings.scalar_gamepad_look * delta
 	
-	#rotate camera along the x axis
-	camera.rotation_degrees.x -= (mouseDelta.y + pad_aim.y) * lookSensitivity * delta
-	
-	#clamp camera x axis
+	#rotate camera
+	rotation_degrees.y -= mouseDelta.x * lookSensitivity * Settings.scalar_mouse_look * delta + pad_aim.x
+	camera.rotation_degrees.x -= mouseDelta.y * lookSensitivity * Settings.scalar_mouse_look * delta + pad_aim.y
 	camera.rotation_degrees.x = clamp(camera.rotation_degrees.x, minLookAngle, maxLookAngle)
-	
-	#rotate camera along y axis
-	rotation_degrees.y -= (mouseDelta.x + pad_aim.x) * lookSensitivity * delta
 	
 	#reset the mouse delta vector
 	mouseDelta = Vector2()
@@ -199,7 +195,7 @@ func _process(delta):
 func _input(event):
 	
 	if event is InputEventMouseMotion:
-		mouseDelta = event.relative
+		mouseDelta += event.relative
 
 func _playAnimation():
 	
