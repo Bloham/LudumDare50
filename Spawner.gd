@@ -7,7 +7,7 @@ var rng = RandomNumberGenerator.new()
 var timer = Timer
 var spawn_location_count = 0
 
-export var difficultyLevel = 1.0
+export var difficultyLevel = 0.9
 export var wecker_radius = 45
 
 var max_wecker = 30

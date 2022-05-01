@@ -435,7 +435,7 @@ transform = Transform( 6.3113, 0, 6.63493, 0, 9.15723, 0, -6.63493, 0, 6.3113, -
 transform = Transform( 17.2304, 0, 18.1139, 0, 25, 0, -18.1139, 0, 17.2304, 235.631, -120.903, -260.521 )
 
 [node name="Item_Tree142" parent="Items/unsorted" instance=ExtResource( 4 )]
-transform = Transform( -1.55283, 0, -19.9396, 0, 20, 0, 19.9396, 0, -1.55283, 333.411, -60.0086, -252.15 )
+transform = Transform( -1.55283, 0, -19.9396, 0, 17.706, 0, 13.1976, 0, -1.02778, 333.411, -60.0086, -252.15 )
 
 [node name="Item_Tree147" parent="Items/unsorted" instance=ExtResource( 4 )]
 transform = Transform( -15.1176, 0, 5.23997, 0, 16, 0, -5.23997, 0, -15.1176, 353.892, -61.5988, -199.221 )
@@ -937,123 +937,6 @@ transform = Transform( -0.533089, 3.96307, 0.0996392, 0.407844, 0.154829, -3.976
 
 [node name="Item_Hedge299" parent="Items/unsorted" instance=ExtResource( 5 )]
 transform = Transform( -0.113097, -2.0716, 4.54925, 4.98616, -0.369194, -0.0441622, 0.354208, 4.53565, 2.07422, -124.442, -4.5695, 462.721 )
-
-[node name="Item_Hedge300" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.0226193, -0.41432, 0.90985, 0.997231, -0.0738387, -0.00883244, 0.0708416, 0.907131, 0.414843, 121.056, 14.6575, 468.078 )
-
-[node name="Item_Hedge301" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.0226193, -0.41432, 0.90985, 0.997231, -0.0738387, -0.00883244, 0.0708416, 0.907131, 0.414843, 121.056, 19.7317, 468.078 )
-
-[node name="Item_Hedge302" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.0226193, -0.41432, 0.90985, 0.997231, -0.0738387, -0.00883244, 0.0708416, 0.907131, 0.414843, 121.056, 24.7317, 468.078 )
-
-[node name="Item_Hedge303" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.0226193, -0.41432, 0.90985, 0.997231, -0.0738387, -0.00883244, 0.0708416, 0.907131, 0.414843, 121.056, 30.7317, 468.078 )
-
-[node name="Item_Hedge304" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.0226193, -0.41432, 0.90985, 0.997231, -0.0738387, -0.00883244, 0.0708416, 0.907131, 0.414843, 121.056, 36.3741, 468.078 )
-
-[node name="Item_Hedge305" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.0226193, -0.41432, 0.90985, 0.997231, -0.0738387, -0.00883244, 0.0708416, 0.907131, 0.414843, 111.123, 34.6709, 468.078 )
-
-[node name="Item_Hedge314" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.0226193, -0.41432, 0.90985, 0.997231, -0.0738387, -0.00883244, 0.0708416, 0.907131, 0.414843, 99.1007, 32.2559, 465.682 )
-
-[node name="Item_Hedge317" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.0226193, -0.41432, 0.90985, 0.997231, -0.0738387, -0.00883244, 0.0708416, 0.907131, 0.414843, 99.1007, 27.2559, 465.682 )
-
-[node name="Item_Hedge318" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.0226193, -0.41432, 0.90985, 0.997231, -0.0738387, -0.00883244, 0.0708416, 0.907131, 0.414843, 99.1007, 22.3023, 465.682 )
-
-[node name="Item_Hedge319" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.0226193, -0.41432, 0.90985, 0.997231, -0.0738387, -0.00883244, 0.0708416, 0.907131, 0.414843, 99.1007, 17.0262, 465.682 )
-
-[node name="Item_Hedge320" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.0226193, -0.41432, 0.90985, 0.997231, -0.0738387, -0.00883244, 0.0708416, 0.907131, 0.414843, 99.1007, 11.9849, 465.553 )
-
-[node name="Item_Hedge321" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.0226193, -0.41432, 0.90985, 0.997231, -0.0738387, -0.00883244, 0.0708416, 0.907131, 0.414843, 92.5692, 12.0451, 462.269 )
-
-[node name="Item_Hedge322" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.0226193, -0.41432, 0.90985, 0.997231, -0.0738387, -0.00883244, 0.0708416, 0.907131, 0.414843, 85.5692, 12.0451, 460.949 )
-
-[node name="Item_Hedge323" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.0226193, -0.41432, 0.90985, 0.997231, -0.0738387, -0.00883244, 0.0708416, 0.907131, 0.414843, 93.0813, 25.8399, 464.224 )
-
-[node name="Item_Hedge324" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.0226193, -0.41432, 0.90985, 0.997231, -0.0738387, -0.00883244, 0.0708416, 0.907131, 0.414843, 93.0813, 37.4423, 463.785 )
-
-[node name="Item_Hedge325" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.021662, -0.414391, 0.909841, 0.997252, -0.0734409, -0.00970583, 0.0708416, 0.907131, 0.414843, 87.0506, 37.4423, 460.824 )
-
-[node name="Item_Hedge326" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( 0.0211864, -0.0756774, 0.996907, 0.997481, -0.0659147, -0.0262024, 0.0676938, 0.994951, 0.0740903, 76.8, 37.3887, 459.437 )
-
-[node name="Item_Hedge327" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( 0.0211864, -0.0756774, 0.996907, 0.997481, -0.0659147, -0.0262024, 0.0676938, 0.994951, 0.0740903, 76.705, 32.0838, 460.233 )
-
-[node name="Item_Hedge328" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( 0.0211864, -0.0756774, 0.996907, 0.997481, -0.0659147, -0.0262024, 0.0676938, 0.994951, 0.0740903, 76.5975, 26.0849, 460.272 )
-
-[node name="Item_Hedge329" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( 0.0211864, -0.0756774, 0.996907, 0.997481, -0.0659147, -0.0262024, 0.0676938, 0.994951, 0.0740903, 76.5058, 20.9634, 461.019 )
-
-[node name="Item_Hedge330" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( 0.0211864, -0.0756774, 0.996907, 0.997481, -0.0659147, -0.0262024, 0.0676938, 0.994951, 0.0740903, 76.3803, 13.9586, 461.066 )
-
-[node name="Item_Hedge331" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.0035753, -0.415655, 0.909516, 0.997481, -0.0659147, -0.0262024, 0.0708416, 0.907131, 0.414843, 71.7329, 34.7423, 459.683 )
-
-[node name="Item_Hedge332" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.180072, -0.397425, 0.899793, 0.981099, -0.138444, 0.135195, 0.0708416, 0.907131, 0.414843, 68.7169, 29.6802, 458.662 )
-
-[node name="Item_Hedge333" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.180072, -0.397425, 0.899793, 0.981099, -0.138444, 0.135195, 0.0708416, 0.907131, 0.414843, 65.3396, 22.9793, 458.336 )
-
-[node name="Item_Hedge334" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.180072, -0.397425, 0.899793, 0.981099, -0.138444, 0.135195, 0.0708416, 0.907131, 0.414843, 61.5541, 15.3231, 457.322 )
-
-[node name="Item_Hedge335" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.0226193, -0.41432, 0.90985, 0.997231, -0.0738387, -0.00883244, 0.0708416, 0.907131, 0.414843, 61.6608, 20.3014, 457.192 )
-
-[node name="Item_Hedge336" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.0226193, -0.41432, 0.90985, 0.997231, -0.0738387, -0.00883244, 0.0708416, 0.907131, 0.414843, 61.6608, 25.9366, 458.52 )
-
-[node name="Item_Hedge337" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.0226193, -0.41432, 0.90985, 0.997231, -0.0738387, -0.00883244, 0.0708416, 0.907131, 0.414843, 61.6608, 31.9366, 458.52 )
-
-[node name="Item_Hedge338" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.0226193, -0.41432, 0.90985, 0.997231, -0.0738387, -0.00883244, 0.0708416, 0.907131, 0.414843, 61.9306, 37.0162, 458.52 )
-
-[node name="Item_Hedge315" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.0226193, -0.41432, 0.90985, 0.997231, -0.0738387, -0.00883244, 0.0708416, 0.907131, 0.414843, 115.185, 37.1915, 468.078 )
-
-[node name="Item_Hedge316" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.0226193, -0.41432, 0.90985, 0.997231, -0.0738387, -0.00883244, 0.0708416, 0.907131, 0.414843, 99.4821, 37.1915, 465.556 )
-
-[node name="Item_Hedge306" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.0226193, -0.41432, 0.90985, 0.997231, -0.0738387, -0.00883244, 0.0708416, 0.907131, 0.414843, 109.145, 29.8351, 468.078 )
-
-[node name="Item_Hedge307" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.0226193, -0.41432, 0.90985, 0.997231, -0.0738387, -0.00883244, 0.0708416, 0.907131, 0.414843, 110.671, 24.1134, 468.078 )
-
-[node name="Item_Hedge308" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.0226193, -0.41432, 0.90985, 0.997231, -0.0738387, -0.00883244, 0.0708416, 0.907131, 0.414843, 106.263, 19.359, 468.078 )
-
-[node name="Item_Hedge309" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.0226193, -0.41432, 0.90985, 0.997231, -0.0738387, -0.00883244, 0.0708416, 0.907131, 0.414843, 106.263, 13.3399, 468.078 )
-
-[node name="Item_Hedge310" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.0226193, -0.41432, 0.90985, 0.997231, -0.0738387, -0.00883244, 0.0708416, 0.907131, 0.414843, 112.299, 11.1385, 468.078 )
-
-[node name="Item_Hedge311" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.0226193, -0.41432, 0.90985, 0.997231, -0.0738387, -0.00883244, 0.0708416, 0.907131, 0.414843, 117.558, 11.1385, 468.078 )
-
-[node name="Item_Hedge312" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.0226193, -0.41432, 0.90985, 0.997231, -0.0738387, -0.00883244, 0.0708416, 0.907131, 0.414843, 116.384, 24.3183, 468.078 )
-
-[node name="Item_Hedge313" parent="Items/unsorted" instance=ExtResource( 5 )]
-transform = Transform( -0.0226193, -0.41432, 0.90985, 0.997231, -0.0738387, -0.00883244, 0.0708416, 0.907131, 0.414843, 116.384, 24.3183, 468.078 )
 
 [node name="Item_Hedge149" parent="Items/unsorted" instance=ExtResource( 5 )]
 transform = Transform( 14.6339, -5.49984, -3.40602, -5.95637, -14.7421, -1.78681, -2.52404, 2.90222, -15.5308, 21.2358, 127.527, 246.501 )
@@ -1686,7 +1569,7 @@ transform = Transform( -0.233209, -4.87468, -24.519, 24.9714, -1.19466, 0, -1.17
 transform = Transform( -0.373135, -7.79948, -39.2305, 39.9543, -1.91145, -1.0643e-07, -1.87468, -39.1856, 7.8084, 145.184, 33.3731, 482.283 )
 
 [node name="Item_FlatRock242" parent="Items/unsorted" instance=ExtResource( 6 )]
-transform = Transform( 0.34105, 7.12883, -39.3581, 39.9543, -1.91145, -1.0643e-07, -1.88078, -39.3132, -7.13698, 83.7355, 13.4985, 482.283 )
+transform = Transform( 0.34105, 7.12883, -39.3581, 39.9543, -1.91145, -1.0643e-07, -1.88078, -39.3132, -7.13698, 83.7355, 13.4985, 484.156 )
 
 [node name="Item_FlatRock243" parent="Items/unsorted" instance=ExtResource( 6 )]
 transform = Transform( -0.544769, -11.3871, -38.3411, 39.9543, -1.91145, -1.0643e-07, -1.83218, -38.2973, 11.4001, 32.4538, -2.24476, 502.094 )
@@ -3034,7 +2917,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -147.757, -20, -327.563 )
 transform = Transform( 5.55985, -0.86603, 5.68665, -0.622933, 7.77165, 1.7926, -5.71839, -1.68862, 5.33372, -23.617, 10.0025, -29.942 )
 
 [node name="Item_Tree2" parent="Items/large rock with stairs" instance=ExtResource( 4 )]
-transform = Transform( 10.3382, 0, 10.8684, -0.41475, 14.9891, 0.394517, -10.8605, -0.572416, 10.3307, 2.548, 11.6119, -38.017 )
+transform = Transform( 10.3382, 0, 10.8684, -0.368308, 13.3107, 0.350341, -10.8605, -0.572416, 10.3307, 2.548, 11.6119, -38.017 )
 
 [node name="Item_TallRock" parent="Items/large rock with stairs" instance=ExtResource( 3 )]
 transform = Transform( -19.8199, 1.52555, -2.20059, 1.53487, 19.941, 0, 2.19409, -0.168881, -19.8786, -3.10204, 45.4742, -9.82053 )
